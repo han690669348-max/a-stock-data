@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "source": "a-stock-agent",
+  "trade_date": "20260812",
+  "generated_at": "2026-08-12 18:02:31",
+  "timezone": "Asia/Shanghai",
+  "market": {
+    "top100_count": 100,
+    "limit_up_count": 92,
+    "broken_limit_count": 13,
+    "limit_down_count": 0
+  },
+  "lhb": {
+    "raw_records": 34,
+    "unique_stocks": 28,
+    "top100_intersection_count": 3
+  },
+  "core_pool": [
+    {
+      "股票代码": "002354",
+      "名称": "天娱数科",
+      "最新价": 8.53,
+      "涨跌幅": 2.524,
+      "成交额": 4066143520.0,
+      "龙虎榜原因": "换手率达20%的证券"
+    },
+    {
+      "股票代码": "002792",
+      "名称": "通宇通讯",
+      "最新价": 37.11,
+      "涨跌幅": 9.988,
+      "成交额": 3280191852.0,
+      "龙虎榜原因": "换手率达20%的证券 | 涨幅偏离值达7%的证券"
+    },
+    {
+      "股票代码": "001258",
+      "名称": "立新能源",
+      "最新价": 15.46,
+      "涨跌幅": -2.95,
+      "成交额": 3244938818.0,
+      "龙虎榜原因": "振幅值达15%的证券"
+    }
+  ],
+  "files": {
+    "top100": "/latest/top100.csv",
+    "lhb": "/latest/lhb.csv",
+    "core_pool": "/latest/core_pool.csv",
+    "limit_up": "/latest/zt.csv",
+    "broken_limit": "/latest/zb.csv",
+    "limit_down": "/latest/dt.csv"
+  }
+}

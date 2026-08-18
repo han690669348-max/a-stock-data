@@ -66,7 +66,9 @@
     "limit_down": "/latest/dt.csv",
     "intraday_5m": "/latest/intraday_5m.csv",
     "intraday_structure": "/latest/intraday_structure.csv",
-    "intraday_failures": "/latest/intraday_failures.csv"
+    "intraday_failures": "/latest/intraday_failures.csv",
+    "index_5m": "/latest/index_5m.csv",
+    "relative_strength": "/latest/relative_strength.csv"
   },
   "intraday": {
     "period": "5m",
@@ -74,5 +76,15 @@
     "success_stocks": 14,
     "failed_stocks": 0,
     "generated_at": "2026-08-18 20:09:58"
+  },
+  "relative_strength": {
+    "benchmarks": [
+      "上证指数",
+      "深证成指",
+      "创业板指",
+      "科创50"
+    ],
+    "stocks": 14,
+    "generated_at": "2026-08-18 20:19:25"
   }
 }

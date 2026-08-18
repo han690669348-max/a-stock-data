@@ -63,6 +63,16 @@
     "core_pool": "/latest/core_pool.csv",
     "limit_up": "/latest/zt.csv",
     "broken_limit": "/latest/zb.csv",
-    "limit_down": "/latest/dt.csv"
+    "limit_down": "/latest/dt.csv",
+    "intraday_5m": "/latest/intraday_5m.csv",
+    "intraday_structure": "/latest/intraday_structure.csv",
+    "intraday_failures": "/latest/intraday_failures.csv"
+  },
+  "intraday": {
+    "period": "5m",
+    "requested_stocks": 14,
+    "success_stocks": 14,
+    "failed_stocks": 0,
+    "generated_at": "2026-08-18 20:09:58"
   }
 }

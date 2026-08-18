@@ -1,0 +1,66 @@
+{
+  "trade_date": "20260818",
+  "market_regime": "RISK_ON_ROTATION",
+  "max_total_position": 0.7,
+  "A1": [
+    {
+      "股票代码": "603228",
+      "名称": "景旺电子",
+      "reference_close": 97.9,
+      "reference_high": 98.7,
+      "reference_low": 92.59,
+      "score": 12,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    }
+  ],
+  "A2": [
+    {
+      "股票代码": "001309",
+      "名称": "德明利",
+      "reference_close": 437.33,
+      "reference_high": 450.65,
+      "reference_low": 428.96,
+      "score": 6,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "002463",
+      "名称": "沪电股份",
+      "reference_close": 123.59,
+      "reference_high": 126.18,
+      "reference_low": 121.1,
+      "score": 5,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    }
+  ]
+}

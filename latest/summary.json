@@ -68,7 +68,12 @@
     "intraday_structure": "/latest/intraday_structure.csv",
     "intraday_failures": "/latest/intraday_failures.csv",
     "index_5m": "/latest/index_5m.csv",
-    "relative_strength": "/latest/relative_strength.csv"
+    "relative_strength": "/latest/relative_strength.csv",
+    "market_regime": "/latest/market_regime.json",
+    "a1": "/latest/a1.csv",
+    "a2": "/latest/a2.csv",
+    "triggers": "/latest/triggers.json",
+    "windvane": "/latest/windvane.csv"
   },
   "intraday": {
     "period": "5m",
@@ -86,5 +91,21 @@
     ],
     "stocks": 14,
     "generated_at": "2026-08-18 20:19:25"
+  },
+  "decision": {
+    "market_regime": "RISK_ON_ROTATION",
+    "market_regime_cn": "偏强但高分歧轮动",
+    "max_total_position": 0.7,
+    "decision_universe": 7,
+    "a1_count": 1,
+    "a2_count": 2,
+    "generated_at": "2026-08-18 20:25:13"
+  },
+  "windvane": {
+    "count": 13,
+    "leaders": 3,
+    "confirms": 0,
+    "weak_anchors": 10,
+    "generated_at": "2026-08-18 20:26:35"
   }
 }

@@ -1,0 +1,2 @@
+﻿股票代码,名称,最新价,涨跌幅,成交额,labels,day_rs_pct,late_rs_pct,rs_labels,core_pool,a1_score
+603228,景旺电子,97.9,1.001,5003985430.0,CLOSE_NEAR_HIGH|DIP_RECOVERY|TREND_UP,1.7074233025672347,0.7114896902068901,DAY_OUTPERFORM|LATE_OUTPERFORM,False,12

@@ -1,60 +1,44 @@
 {
   "status": "ok",
   "source": "a-stock-agent",
-  "trade_date": "20260818",
-  "generated_at": "2026-08-18 18:02:37",
+  "trade_date": "20260819",
+  "generated_at": "2026-08-19 18:01:50",
   "timezone": "Asia/Shanghai",
   "market": {
     "top100_count": 100,
-    "limit_up_count": 79,
-    "broken_limit_count": 23,
-    "limit_down_count": 5
+    "limit_up_count": 36,
+    "broken_limit_count": 12,
+    "limit_down_count": 118
   },
   "lhb": {
-    "raw_records": 82,
-    "unique_stocks": 69,
-    "top100_intersection_count": 5
+    "raw_records": 81,
+    "unique_stocks": 72,
+    "top100_intersection_count": 3
   },
   "core_pool": [
     {
-      "股票代码": "300570",
-      "名称": "太辰光",
-      "最新价": 199.27,
-      "涨跌幅": 2.822,
-      "成交额": 5658068913.0,
+      "股票代码": "603186",
+      "名称": "华正新材",
+      "最新价": 175.0,
+      "涨跌幅": -4.995,
+      "成交额": 7285102453.0,
+      "龙虎榜原因": "振幅值达15%的证券"
+    },
+    {
+      "股票代码": "688017",
+      "名称": "绿的谐波",
+      "最新价": 313.53,
+      "涨跌幅": -17.665,
+      "成交额": 5211157123.0,
       "龙虎榜原因": ""
     },
     {
-      "股票代码": "300684",
-      "名称": "中石科技",
-      "最新价": 97.0,
-      "涨跌幅": 20.005,
-      "成交额": 4847927868.0,
-      "龙虎榜原因": ""
-    },
-    {
-      "股票代码": "002081",
-      "名称": "金 螳 螂",
-      "最新价": 6.27,
-      "涨跌幅": 7.732,
-      "成交额": 4570048102.0,
-      "龙虎榜原因": "连续三个交易日内，涨幅偏离值累计达20%的证券"
-    },
-    {
-      "股票代码": "002747",
-      "名称": "埃斯顿",
-      "最新价": 40.04,
-      "涨跌幅": 10.0,
-      "成交额": 4528055935.0,
-      "龙虎榜原因": "涨幅偏离值达7%的证券"
-    },
-    {
-      "股票代码": "603118",
-      "名称": "共进股份",
-      "最新价": 19.01,
-      "涨跌幅": -1.605,
-      "成交额": 4393371028.0,
-      "龙虎榜原因": "换手率达20%的证券"
+      "股票代码": "600172",
+      "名称": "黄河旋风",
+      "最新价": 14.42,
+      "涨跌幅": 0.698,
+      "成交额": 4652065944.0,
+      "龙虎榜原因": "振幅值达15%的证券"
     }
   ],
   "files": {
@@ -69,18 +53,18 @@
     "intraday_failures": "/latest/intraday_failures.csv",
     "index_5m": "/latest/index_5m.csv",
     "relative_strength": "/latest/relative_strength.csv",
+    "windvane": "/latest/windvane.csv",
     "market_regime": "/latest/market_regime.json",
     "a1": "/latest/a1.csv",
     "a2": "/latest/a2.csv",
-    "triggers": "/latest/triggers.json",
-    "windvane": "/latest/windvane.csv"
+    "triggers": "/latest/triggers.json"
   },
   "intraday": {
     "period": "5m",
     "requested_stocks": 14,
     "success_stocks": 14,
     "failed_stocks": 0,
-    "generated_at": "2026-08-18 20:09:58"
+    "generated_at": "2026-08-19 18:02:55"
   },
   "relative_strength": {
     "benchmarks": [
@@ -90,22 +74,22 @@
       "科创50"
     ],
     "stocks": 14,
-    "generated_at": "2026-08-18 20:19:25"
-  },
-  "decision": {
-    "market_regime": "RISK_ON_ROTATION",
-    "market_regime_cn": "偏强但高分歧轮动",
-    "max_total_position": 0.7,
-    "decision_universe": 7,
-    "a1_count": 1,
-    "a2_count": 2,
-    "generated_at": "2026-08-18 20:25:13"
+    "generated_at": "2026-08-19 18:03:16"
   },
   "windvane": {
-    "count": 13,
-    "leaders": 3,
-    "confirms": 0,
-    "weak_anchors": 10,
-    "generated_at": "2026-08-18 20:26:35"
+    "count": 12,
+    "leaders": 0,
+    "confirms": 1,
+    "weak_anchors": 11,
+    "generated_at": "2026-08-19 18:03:17"
+  },
+  "decision": {
+    "market_regime": "RISK_OFF",
+    "market_regime_cn": "弱势",
+    "max_total_position": 0.3,
+    "decision_universe": 6,
+    "a1_count": 0,
+    "a2_count": 1,
+    "generated_at": "2026-08-19 18:03:18"
   }
 }

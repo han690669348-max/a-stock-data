@@ -57,14 +57,15 @@
     "market_regime": "/latest/market_regime.json",
     "a1": "/latest/a1.csv",
     "a2": "/latest/a2.csv",
-    "triggers": "/latest/triggers.json"
+    "triggers": "/latest/triggers.json",
+    "candidate_pool": "/latest/candidate_pool.csv"
   },
   "intraday": {
     "period": "5m",
-    "requested_stocks": 14,
-    "success_stocks": 14,
+    "requested_stocks": 38,
+    "success_stocks": 38,
     "failed_stocks": 0,
-    "generated_at": "2026-08-19 18:02:55"
+    "generated_at": "2026-08-19 18:48:11"
   },
   "relative_strength": {
     "benchmarks": [
@@ -73,23 +74,28 @@
       "创业板指",
       "科创50"
     ],
-    "stocks": 14,
-    "generated_at": "2026-08-19 18:03:16"
+    "stocks": 38,
+    "generated_at": "2026-08-19 18:55:43"
   },
   "windvane": {
-    "count": 12,
-    "leaders": 0,
-    "confirms": 1,
-    "weak_anchors": 11,
-    "generated_at": "2026-08-19 18:03:17"
+    "count": 35,
+    "leaders": 5,
+    "confirms": 3,
+    "weak_anchors": 27,
+    "generated_at": "2026-08-19 18:55:44"
   },
   "decision": {
     "market_regime": "RISK_OFF",
     "market_regime_cn": "弱势",
     "max_total_position": 0.3,
-    "decision_universe": 6,
-    "a1_count": 0,
+    "decision_universe": 19,
+    "a1_count": 5,
     "a2_count": 1,
-    "generated_at": "2026-08-19 18:03:18"
+    "generated_at": "2026-08-19 18:57:10"
+  },
+  "candidate_pool": {
+    "count": 38,
+    "max_pool": 40,
+    "generated_at": "2026-08-19 18:42:44"
   }
 }

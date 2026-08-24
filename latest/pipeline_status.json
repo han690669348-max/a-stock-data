@@ -1,0 +1,13 @@
+{
+  "status": "ABORTED",
+  "trade_date": "20260824",
+  "generated_at": "2026-08-24 19:45:00",
+  "review": "SUCCESS",
+  "candidate_pool": "SUCCESS",
+  "intraday": "ABORTED",
+  "relative_strength": "SKIPPED",
+  "windvane": "SKIPPED",
+  "decision": "SKIPPED",
+  "failed_step": "intraday",
+  "error_message": "manual pipeline test interrupted; official 20260824 production data had already completed successfully"
+}

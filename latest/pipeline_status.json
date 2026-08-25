@@ -1,13 +1,13 @@
 {
-  "status": "ABORTED",
-  "trade_date": "20260824",
-  "generated_at": "2026-08-24 19:45:00",
+  "status": "SUCCESS",
+  "trade_date": "20260825",
+  "generated_at": "2026-08-25 18:04:39",
   "review": "SUCCESS",
   "candidate_pool": "SUCCESS",
-  "intraday": "ABORTED",
-  "relative_strength": "SKIPPED",
-  "windvane": "SKIPPED",
-  "decision": "SKIPPED",
-  "failed_step": "intraday",
-  "error_message": "manual pipeline test interrupted; official 20260824 production data had already completed successfully"
+  "intraday": "SUCCESS",
+  "relative_strength": "SUCCESS",
+  "windvane": "SUCCESS",
+  "decision": "SUCCESS",
+  "failed_step": "",
+  "error_message": ""
 }

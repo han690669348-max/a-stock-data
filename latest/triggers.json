@@ -1,52 +1,14 @@
 {
-  "trade_date": "20260825",
-  "market_regime": "RISK_ON_ROTATION",
-  "max_total_position": 0.7,
+  "trade_date": "20260826",
+  "market_regime": "NEUTRAL",
+  "max_total_position": 0.5,
   "A1": [
     {
-      "股票代码": "002821",
-      "名称": "凯莱英",
-      "reference_close": 172.23,
-      "reference_high": 172.23,
-      "reference_low": 154.2,
-      "score": 12,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "002536",
-      "名称": "飞龙股份",
-      "reference_close": 51.56,
-      "reference_high": 52.65,
-      "reference_low": 47.0,
-      "score": 12,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "603986",
-      "名称": "兆易创新",
-      "reference_close": 395.51,
-      "reference_high": 398.5,
-      "reference_low": 367.0,
+      "股票代码": "601168",
+      "名称": "西部矿业",
+      "reference_close": 39.26,
+      "reference_high": 39.68,
+      "reference_low": 36.8,
       "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -61,11 +23,11 @@
       ]
     },
     {
-      "股票代码": "603259",
-      "名称": "药明康德",
-      "reference_close": 161.0,
-      "reference_high": 161.29,
-      "reference_low": 154.1,
+      "股票代码": "002475",
+      "名称": "立讯精密",
+      "reference_close": 57.11,
+      "reference_high": 58.0,
+      "reference_low": 53.8,
       "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -80,12 +42,50 @@
       ]
     },
     {
-      "股票代码": "600487",
-      "名称": "亨通光电",
-      "reference_close": 64.6,
-      "reference_high": 66.37,
-      "reference_low": 57.0,
-      "score": 10,
+      "股票代码": "002015",
+      "名称": "协鑫能科",
+      "reference_close": 17.14,
+      "reference_high": 17.4,
+      "reference_low": 15.41,
+      "score": 9,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "601212",
+      "名称": "白银有色",
+      "reference_close": 7.24,
+      "reference_high": 7.24,
+      "reference_low": 6.42,
+      "score": 8,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "603083",
+      "名称": "剑桥科技",
+      "reference_close": 190.85,
+      "reference_high": 190.85,
+      "reference_low": 175.5,
+      "score": 8,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,12 +101,12 @@
   ],
   "A2": [
     {
-      "股票代码": "002463",
-      "名称": "沪电股份",
-      "reference_close": 114.29,
-      "reference_high": 118.12,
-      "reference_low": 112.22,
-      "score": 6,
+      "股票代码": "600183",
+      "名称": "生益科技",
+      "reference_close": 130.01,
+      "reference_high": 131.99,
+      "reference_low": 124.0,
+      "score": 8,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",
@@ -120,11 +120,11 @@
       ]
     },
     {
-      "股票代码": "603083",
-      "名称": "剑桥科技",
-      "reference_close": 173.5,
-      "reference_high": 178.11,
-      "reference_low": 168.07,
+      "股票代码": "002536",
+      "名称": "飞龙股份",
+      "reference_close": 49.3,
+      "reference_high": 51.56,
+      "reference_low": 48.0,
       "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
@@ -139,11 +139,30 @@
       ]
     },
     {
-      "股票代码": "002384",
-      "名称": "东山精密",
-      "reference_close": 190.84,
-      "reference_high": 196.99,
-      "reference_low": 186.3,
+      "股票代码": "601899",
+      "名称": "紫金矿业",
+      "reference_close": 34.47,
+      "reference_high": 35.35,
+      "reference_low": 33.7,
+      "score": 4,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "603986",
+      "名称": "兆易创新",
+      "reference_close": 392.5,
+      "reference_high": 399.0,
+      "reference_low": 384.88,
       "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",

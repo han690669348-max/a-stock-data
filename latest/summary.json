@@ -1,52 +1,52 @@
 {
   "status": "ok",
   "source": "a-stock-agent",
-  "trade_date": "20260826",
-  "generated_at": "2026-08-26 18:01:22",
+  "trade_date": "20260827",
+  "generated_at": "2026-08-27 18:01:27",
   "timezone": "Asia/Shanghai",
   "market": {
     "top100_count": 100,
-    "limit_up_count": 52,
-    "broken_limit_count": 20,
-    "limit_down_count": 0
+    "limit_up_count": 77,
+    "broken_limit_count": 17,
+    "limit_down_count": 3
   },
   "lhb": {
-    "raw_records": 68,
-    "unique_stocks": 57,
+    "raw_records": 64,
+    "unique_stocks": 56,
     "top100_intersection_count": 4
   },
   "core_pool": [
     {
+      "股票代码": "001309",
+      "名称": "德明利",
+      "最新价": 429.76,
+      "涨跌幅": 10.0,
+      "成交额": 8762050141.0,
+      "龙虎榜原因": "涨幅偏离值达7%的证券"
+    },
+    {
       "股票代码": "002491",
       "名称": "通鼎互联",
-      "最新价": 22.48,
-      "涨跌幅": 5.047,
-      "成交额": 7332403495.0,
-      "龙虎榜原因": "振幅值达15%的证券 | 换手率达20%的证券"
-    },
-    {
-      "股票代码": "002015",
-      "名称": "协鑫能科",
-      "最新价": 17.14,
-      "涨跌幅": 7.935,
-      "成交额": 3546353330.0,
-      "龙虎榜原因": "连续三个交易日内，涨幅偏离值累计达20%的证券"
-    },
-    {
-      "股票代码": "600127",
-      "名称": "金健米业",
-      "最新价": 9.8,
-      "涨跌幅": 5.263,
-      "成交额": 2922678175.0,
+      "最新价": 23.64,
+      "涨跌幅": 5.16,
+      "成交额": 7083337235.0,
       "龙虎榜原因": "换手率达20%的证券"
     },
     {
-      "股票代码": "002437",
-      "名称": "誉衡药业",
-      "最新价": 4.14,
-      "涨跌幅": -3.721,
-      "成交额": 2645231075.0,
-      "龙虎榜原因": "换手率达20%的证券"
+      "股票代码": "688300",
+      "名称": "联瑞新材",
+      "最新价": 186.24,
+      "涨跌幅": 20.0,
+      "成交额": 3769790833.0,
+      "龙虎榜原因": ""
+    },
+    {
+      "股票代码": "002636",
+      "名称": "金安国纪",
+      "最新价": 69.41,
+      "涨跌幅": 10.0,
+      "成交额": 3480428436.0,
+      "龙虎榜原因": "涨幅偏离值达7%的证券"
     }
   ],
   "files": {
@@ -63,22 +63,25 @@
     "index_5m": "/latest/index_5m.csv",
     "relative_strength": "/latest/relative_strength.csv",
     "windvane": "/latest/windvane.csv",
+    "sector_industry": "/latest/sector_industry.csv",
+    "sector_theme": "/latest/sector_theme.csv",
+    "sector_strength": "/latest/sector_strength.csv",
     "market_regime": "/latest/market_regime.json",
     "a1": "/latest/a1.csv",
     "a2": "/latest/a2.csv",
     "triggers": "/latest/triggers.json"
   },
   "candidate_pool": {
-    "count": 38,
+    "count": 35,
     "max_pool": 40,
-    "generated_at": "2026-08-26 18:01:23"
+    "generated_at": "2026-08-27 18:01:28"
   },
   "intraday": {
     "period": "5m",
-    "requested_stocks": 38,
-    "success_stocks": 38,
+    "requested_stocks": 35,
+    "success_stocks": 35,
     "failed_stocks": 0,
-    "generated_at": "2026-08-26 18:04:06"
+    "generated_at": "2026-08-27 18:04:11"
   },
   "relative_strength": {
     "benchmarks": [
@@ -87,23 +90,31 @@
       "创业板指",
       "科创50"
     ],
-    "stocks": 38,
-    "generated_at": "2026-08-26 18:04:24"
+    "stocks": 35,
+    "generated_at": "2026-08-27 18:04:31"
   },
   "windvane": {
-    "count": 32,
-    "leaders": 9,
-    "confirms": 5,
-    "weak_anchors": 15,
-    "generated_at": "2026-08-26 18:04:25"
+    "count": 29,
+    "leaders": 18,
+    "confirms": 4,
+    "weak_anchors": 6,
+    "generated_at": "2026-08-27 18:04:31"
+  },
+  "sector_strength": {
+    "version": "1.2",
+    "breadth_universe": 100,
+    "signal_universe": 34,
+    "industry_count": 18,
+    "theme_count": 11,
+    "generated_at": "2026-08-27 18:04:33"
   },
   "decision": {
-    "market_regime": "NEUTRAL",
-    "market_regime_cn": "中性震荡",
-    "max_total_position": 0.5,
-    "decision_universe": 23,
+    "market_regime": "RISK_ON",
+    "market_regime_cn": "强势",
+    "max_total_position": 0.8,
+    "decision_universe": 19,
     "a1_count": 5,
-    "a2_count": 4,
-    "generated_at": "2026-08-26 18:04:26"
+    "a2_count": 5,
+    "generated_at": "2026-08-27 18:04:34"
   }
 }

@@ -1,0 +1,366 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20260828",
+  "published_at": "2026-08-29T00:53:39.148439+08:00",
+  "market": {
+    "regime": "RISK_ON_ROTATION",
+    "position_cap_pct": 40,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "002396",
+      "name": "星网锐捷",
+      "tier": "TIER_A",
+      "score": 81,
+      "confidence": 70,
+      "theme": "通信设备局部强势",
+      "trigger": "竞价及开盘后保持强于深成指，第一次回踩出现承接并重新站回昨日收盘36.69，随后以前30分钟相对强势放量突破为确认。",
+      "invalidation": "开盘后跌破昨日收盘36.69且回抽无力，或冲高后持续走弱并失去前30分钟相对强势。",
+      "forbidden": "禁止在大幅高开后无承接直接追涨；禁止在通信设备整体走弱、涨停反复开板时参与。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 36.69,
+          "source": "intraday_structure.csv"
+        },
+        "day_high": {
+          "value": 36.69,
+          "source": "intraday_structure.csv"
+        },
+        "day_low": {
+          "value": 33.4,
+          "source": "intraday_structure.csv"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "002437",
+      "name": "誉衡药业",
+      "tier": "TIER_A",
+      "score": 79,
+      "confidence": 68,
+      "theme": "医药",
+      "trigger": "开盘后维持在昨日收盘4.86附近或上方，分歧回踩能够获得承接，并在医药板块同步活跃下重新形成前30分钟相对强势。",
+      "invalidation": "跌破昨日收盘4.86后无法迅速收回，或午后强势特征消失且医药涨停梯队明显退潮。",
+      "forbidden": "禁止高开过多后直接接力；禁止在高换手放量冲高回落、无法重新站回昨日收盘时参与。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 4.86,
+          "source": "intraday_structure.csv"
+        },
+        "day_high": {
+          "value": 4.86,
+          "source": "intraday_structure.csv"
+        },
+        "day_low": {
+          "value": 4.17,
+          "source": "intraday_structure.csv"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "601212",
+      "name": "白银有色",
+      "tier": "TIER_A",
+      "score": 75,
+      "confidence": 63,
+      "theme": "贵金属与有色",
+      "trigger": "开盘后不跌破昨日收盘7.63，第一次回踩有承接并重新走强，且湖南黄金等有色核心同步保持相对强势。",
+      "invalidation": "跌破昨日收盘7.63后持续运行弱势，或有色板块内部继续分化、强势核心无法维持午后承接。",
+      "forbidden": "禁止在快速拉升接近日内高点时追涨；禁止在有研新材等内部弱势扩大、板块无同步性时参与。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 7.63,
+          "source": "intraday_structure.csv"
+        },
+        "day_high": {
+          "value": 7.68,
+          "source": "intraday_structure.csv"
+        },
+        "day_low": {
+          "value": 6.94,
+          "source": "intraday_structure.csv"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "002155",
+      "name": "湖南黄金",
+      "tier": "TIER_A",
+      "score": 73,
+      "confidence": 61,
+      "theme": "贵金属与有色",
+      "trigger": "开盘后守住昨日收盘28.92附近，第一次回踩承接后重回强势，并与白银有色形成同步走强及前30分钟相对强势。",
+      "invalidation": "跌破昨日收盘28.92且承接不足，或贵金属方向仅个股冲高、无板块同步。",
+      "forbidden": "禁止在白银有色走弱、贵金属方向失去同步时单独追涨；禁止追逐快速高开后的加速段。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 28.92,
+          "source": "intraday_structure.csv"
+        },
+        "day_high": {
+          "value": 29.54,
+          "source": "intraday_structure.csv"
+        },
+        "day_low": {
+          "value": 27.5,
+          "source": "intraday_structure.csv"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "600183",
+      "name": "生益科技",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "化工与农化",
+        "confidence": 76,
+        "thesis": "化学制品6家、农化制品5家涨停，化学原料3家涨停，涨停扩散度居前，且多氟多、金安国纪、东材科技等高成交个股走强。",
+        "evidence": [
+          "化学制品6家涨停、农化制品5家涨停、化学原料3家涨停",
+          "化工制造业Top100样本上涨比例75%，平均涨幅2.71%，状态为BREADTH_STRONG",
+          "多氟多上涨5.18%，金安国纪上涨5.43%，东材科技上涨4.44%"
+        ],
+        "risk": "高成交样本的完整5分钟同步验证不足，部分强势股存在炸板或反复开板，尚未形成可确认的大容量交易主线。"
+      },
+      {
+        "rank": 2,
+        "name": "医药",
+        "confidence": 69,
+        "thesis": "医药方向存在化学制药和中药涨停扩散，誉衡药业午后涨停并收于日内高位，成为当天最明确的午后情绪风向标之一。",
+        "evidence": [
+          "化学制药2家涨停、中药Ⅱ3家涨停",
+          "誉衡药业上涨9.96%，换手率38.86%，14:35涨停后收于日内高位",
+          "誉衡药业午后相对强度显著，late_rs_pct为7.34%，风向标角色为LEADER"
+        ],
+        "risk": "高成交行业样本仅2只，板块容量和同步性验证不足；誉衡药业高换手，次日容易出现分歧。"
+      },
+      {
+        "rank": 3,
+        "name": "软件开发与IT服务",
+        "confidence": 61,
+        "thesis": "软件开发5家涨停、IT服务Ⅱ3家涨停，存在涨停情绪扩散，星网锐捷涨停提供了高成交辨识度。",
+        "evidence": [
+          "软件开发5家涨停，IT服务Ⅱ3家涨停",
+          "星网锐捷成交额41.41亿元，涨停收盘，风向标评分9",
+          "天融信、税友股份、鸿博股份等涨停"
+        ],
+        "risk": "高成交软件与信息服务核心整体并未同步走强，软件和信息技术服务业状态为BREADTH_WEAK。"
+      }
+    ],
+    "trading": [],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "贵金属与有色",
+        "confidence": 58,
+        "thesis": "白银有色和湖南黄金均在午后维持相对强势，具备轮动方向的观察价值，但行业内部高成交同步性仍不充分。",
+        "evidence": [
+          "白银有色上涨5.97%，收盘接近日内高位，具备LATE_STRENGTH和V_REVERSAL结构",
+          "湖南黄金上涨7.03%，具备DIP_RECOVERY，日内及午后相对强度均为正",
+          "白银有色和湖南黄金均为风向标LEADER"
+        ],
+        "risk": "有色金属冶炼行业状态为DIVERGING，白银有色之外的有研新材大幅走弱，内部并不同步。"
+      },
+      {
+        "rank": 2,
+        "name": "通信设备局部强势",
+        "confidence": 55,
+        "thesis": "星网锐捷涨停、麦捷科技和德科立大涨，局部通信电子个股强度突出，但无法抵消CPO、光模块和光纤光缆高成交核心的集体走弱。",
+        "evidence": [
+          "星网锐捷涨停收于日内高位，风向标评分9",
+          "麦捷科技上涨10.11%，德科立上涨10.42%",
+          "电子设备制造业有3只确认个股和1只领导个股"
+        ],
+        "risk": "电子设备制造业状态为DIVERGING，22只信号样本中趋势下行比例54.55%，高成交核心存在较强兑现压力。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "CPO与光模块",
+        "confidence": 91,
+        "thesis": "CPO和光模块高成交核心全线走弱，早盘冲高后多数收于日内低位，属于明确的高位兑现与趋势转弱结构。",
+        "evidence": [
+          "CPO样本上涨比例为0，趋势下行比例80%，状态为FADING",
+          "光模块样本上涨比例为0，趋势下行比例75%，状态为FADING",
+          "中际旭创、新易盛、天孚通信、剑桥科技均出现SPIKE_FADE，多个个股收盘接近日内低位",
+          "中际旭创、新易盛均出现TREND_DOWN和LATE_WEAKNESS"
+        ],
+        "risk": "若次日出现高成交核心重新站回昨日收盘并形成前30分钟相对强势，弱势判断需重新评估。"
+      },
+      {
+        "rank": 2,
+        "name": "AI硬件、PCB与存储",
+        "confidence": 88,
+        "thesis": "AI硬件、PCB和存储方向均由高成交核心领跌或走弱，板块同步性差，暂不具备低吸交易条件。",
+        "evidence": [
+          "AI硬件上涨比例为0，趋势下行比例100%，状态为FADING",
+          "PCB上涨比例为0，平均跌幅3.63%，状态为FADING",
+          "存储上涨比例为0，趋势下行比例66.67%，状态为FADING",
+          "胜宏科技下跌8.15%并收于日内低位，中际旭创、新易盛、德明利、兆易创新均为弱风向标"
+        ],
+        "risk": "局部覆铜板与个别电子材料股逆势走强，但尚不足以扭转AI硬件大方向的高成交弱势。"
+      },
+      {
+        "rank": 3,
+        "name": "光纤光缆与电网设备",
+        "confidence": 84,
+        "thesis": "光纤光缆高成交核心午后承接弱，电气设备板块亦呈现高成交样本多数下跌和趋势走弱。",
+        "evidence": [
+          "光纤光缆上涨比例为0，趋势下行比例100%，平均风向标评分-7.33",
+          "亨通光电、中天科技、长飞光纤均为弱风向标或趋势下行结构",
+          "电气机械和器材制造业上涨比例仅20%，趋势下行比例60%，状态为FADING"
+        ],
+        "risk": "电网设备存在3家涨停的短线扩散，若涨停梯队继续加强并带动高成交核心止跌，需与光纤光缆弱势区分观察。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "002396",
+      "name": "星网锐捷",
+      "role": "通信设备强势风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002437",
+      "name": "誉衡药业",
+      "role": "医药午后情绪风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "601212",
+      "name": "白银有色",
+      "role": "有色贵金属风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "role": "CPO高成交弱势风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "600487",
+      "name": "亨通光电",
+      "role": "光纤光缆弱势风向标",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "观察主要指数开盘后能否修复午后回落结构，尤其是深成指、创业板指和科创50是否继续运行于日内低位区域。",
+    "观察CPO、光模块、PCB、存储等高成交弱势核心是否止跌并重新站回昨日收盘；未修复前不将局部电子强势视为主线回归。",
+    "观察医药、化工、贵金属三个轮动方向是否出现至少两个高辨识度核心同步走强，避免仅凭单一涨停股追逐。",
+    "重点核验星网锐捷、誉衡药业、白银有色的竞价反馈、第一次回踩承接和前30分钟相对强弱。",
+    "若涨停梯队明显降温、炸板数量上升且指数继续午后走弱，仓位应维持在上限以下并优先等待确认。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "002396",
+        "name": "星网锐捷",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "002437",
+        "name": "誉衡药业",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "601212",
+        "name": "白银有色",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "002155",
+        "name": "湖南黄金",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "600183",
+        "name": "生益科技",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "market_regime",
+        "rule": "RISK_ON",
+        "researcher": "RISK_ON_ROTATION",
+        "reviewer": "TOO_BEARISH"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

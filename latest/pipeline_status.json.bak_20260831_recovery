@@ -1,7 +1,7 @@
 {
-  "status": "SUCCESS",
+  "status": "FAILED",
   "trade_date": "20260831",
-  "generated_at": "2026-08-31 19:56:10",
+  "generated_at": "2026-08-31 18:10:40",
   "review": "SUCCESS",
   "candidate_pool": "SUCCESS",
   "intraday": "SUCCESS",
@@ -9,9 +9,9 @@
   "windvane": "SUCCESS",
   "sector_strength": "SUCCESS",
   "decision": "SUCCESS",
-  "final_decision": "SUCCESS",
+  "final_decision": "FAILED",
   "oos_logger": "SUCCESS",
   "oos_evaluator": "SUCCESS",
-  "failed_step": "",
-  "error_message": ""
+  "failed_step": "final_decision",
+  "error_message": "run_decision_pipeline.sh failed"
 }

@@ -1,76 +1,52 @@
 {
   "status": "ok",
   "source": "a-stock-agent",
-  "trade_date": "20260901",
-  "generated_at": "2026-09-01 18:01:31",
+  "trade_date": "20260902",
+  "generated_at": "2026-09-02 18:01:24",
   "timezone": "Asia/Shanghai",
   "market": {
     "top100_count": 100,
-    "limit_up_count": 83,
-    "broken_limit_count": 6,
-    "limit_down_count": 0
+    "limit_up_count": 52,
+    "broken_limit_count": 15,
+    "limit_down_count": 8
   },
   "lhb": {
-    "raw_records": 79,
-    "unique_stocks": 64,
-    "top100_intersection_count": 7
+    "raw_records": 78,
+    "unique_stocks": 66,
+    "top100_intersection_count": 4
   },
   "core_pool": [
     {
-      "股票代码": "300364",
-      "名称": "中文在线",
-      "最新价": 28.31,
-      "涨跌幅": 3.776,
-      "成交额": 6332646675.0,
-      "龙虎榜原因": ""
-    },
-    {
-      "股票代码": "600378",
-      "名称": "昊华科技",
-      "最新价": 48.86,
-      "涨跌幅": -7.829,
-      "成交额": 4960124192.0,
-      "龙虎榜原因": "跌幅偏离值达7%的证券"
-    },
-    {
-      "股票代码": "002354",
-      "名称": "天娱数科",
-      "最新价": 8.36,
-      "涨跌幅": 4.11,
-      "成交额": 4687609604.0,
+      "股票代码": "600127",
+      "名称": "金健米业",
+      "最新价": 12.4,
+      "涨跌幅": -6.344,
+      "成交额": 3664417348.0,
       "龙虎榜原因": "换手率达20%的证券"
     },
     {
-      "股票代码": "002484",
-      "名称": "江海股份",
-      "最新价": 59.46,
-      "涨跌幅": -6.215,
-      "成交额": 4273902626.0,
-      "龙虎榜原因": "振幅值达15%的证券"
+      "股票代码": "002536",
+      "名称": "飞龙股份",
+      "最新价": 58.07,
+      "涨跌幅": 10.002,
+      "成交额": 3259697785.0,
+      "龙虎榜原因": "涨幅偏离值达7%的证券"
     },
     {
-      "股票代码": "603228",
-      "名称": "景旺电子",
-      "最新价": 89.3,
-      "涨跌幅": -7.452,
-      "成交额": 3673579379.0,
-      "龙虎榜原因": "跌幅偏离值达7%的证券"
-    },
-    {
-      "股票代码": "601208",
-      "名称": "东材科技",
-      "最新价": 48.28,
-      "涨跌幅": -7.492,
-      "成交额": 3414872028.0,
-      "龙虎榜原因": "跌幅偏离值达7%的证券"
-    },
-    {
-      "股票代码": "600103",
-      "名称": "青山纸业",
-      "最新价": 4.19,
-      "涨跌幅": 9.974,
-      "成交额": 3039426944.0,
+      "股票代码": "002437",
+      "名称": "誉衡药业",
+      "最新价": 4.53,
+      "涨跌幅": 4.138,
+      "成交额": 3115965215.0,
       "龙虎榜原因": "换手率达20%的证券"
+    },
+    {
+      "股票代码": "003040",
+      "名称": "楚天龙",
+      "最新价": 21.12,
+      "涨跌幅": 7.865,
+      "成交额": 3051835571.0,
+      "龙虎榜原因": "换手率达20%的证券 | 连续三个交易日内，涨幅偏离值累计达20%的证券"
     }
   ],
   "files": {
@@ -96,16 +72,16 @@
     "triggers": "/latest/triggers.json"
   },
   "candidate_pool": {
-    "count": 39,
+    "count": 37,
     "max_pool": 40,
-    "generated_at": "2026-09-01 18:01:32"
+    "generated_at": "2026-09-02 18:01:25"
   },
   "intraday": {
     "period": "5m",
-    "requested_stocks": 39,
-    "success_stocks": 39,
+    "requested_stocks": 37,
+    "success_stocks": 37,
     "failed_stocks": 0,
-    "generated_at": "2026-09-01 18:04:34"
+    "generated_at": "2026-09-02 18:04:13"
   },
   "relative_strength": {
     "benchmarks": [
@@ -114,31 +90,31 @@
       "创业板指",
       "科创50"
     ],
-    "stocks": 39,
-    "generated_at": "2026-09-01 18:04:55"
+    "stocks": 37,
+    "generated_at": "2026-09-02 18:04:33"
   },
   "windvane": {
-    "count": 33,
-    "leaders": 4,
-    "confirms": 4,
-    "weak_anchors": 24,
-    "generated_at": "2026-09-01 18:04:56"
+    "count": 26,
+    "leaders": 8,
+    "confirms": 5,
+    "weak_anchors": 13,
+    "generated_at": "2026-09-02 18:04:34"
   },
   "sector_strength": {
     "version": "1.2",
     "breadth_universe": 100,
-    "signal_universe": 37,
-    "industry_count": 22,
+    "signal_universe": 35,
+    "industry_count": 24,
     "theme_count": 11,
-    "generated_at": "2026-09-01 18:04:57"
+    "generated_at": "2026-09-02 18:04:36"
   },
   "decision": {
-    "market_regime": "RISK_ON",
-    "market_regime_cn": "强势",
-    "max_total_position": 0.8,
-    "decision_universe": 20,
+    "market_regime": "NEUTRAL",
+    "market_regime_cn": "中性震荡",
+    "max_total_position": 0.5,
+    "decision_universe": 24,
     "a1_count": 5,
-    "a2_count": 4,
-    "generated_at": "2026-09-01 18:04:58"
+    "a2_count": 3,
+    "generated_at": "2026-09-02 18:04:37"
   }
 }

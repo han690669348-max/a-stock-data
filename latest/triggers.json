@@ -1,34 +1,15 @@
 {
-  "trade_date": "20260902",
+  "trade_date": "20260903",
   "market_regime": "NEUTRAL",
   "max_total_position": 0.5,
   "A1": [
     {
-      "股票代码": "603618",
-      "名称": "杭电股份",
-      "reference_close": 37.22,
-      "reference_high": 37.22,
-      "reference_low": 33.0,
-      "score": 11,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "003040",
-      "名称": "楚天龙",
-      "reference_close": 21.12,
-      "reference_high": 21.54,
-      "reference_low": 19.18,
-      "score": 11,
+      "股票代码": "601212",
+      "名称": "白银有色",
+      "reference_close": 7.33,
+      "reference_high": 7.33,
+      "reference_low": 6.67,
+      "score": 12,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -44,29 +25,10 @@
     {
       "股票代码": "002536",
       "名称": "飞龙股份",
-      "reference_close": 58.07,
-      "reference_high": 58.07,
-      "reference_low": 51.51,
-      "score": 9,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "603186",
-      "名称": "华正新材",
-      "reference_close": 181.31,
-      "reference_high": 184.49,
-      "reference_low": 169.46,
-      "score": 9,
+      "reference_close": 63.03,
+      "reference_high": 63.88,
+      "reference_low": 57.42,
+      "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -82,10 +44,48 @@
     {
       "股票代码": "600869",
       "名称": "远东股份",
-      "reference_close": 19.5,
-      "reference_high": 19.5,
-      "reference_low": 17.75,
-      "score": 8,
+      "reference_close": 21.05,
+      "reference_high": 21.44,
+      "reference_low": 19.35,
+      "score": 11,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "002297",
+      "名称": "博云新材",
+      "reference_close": 22.0,
+      "reference_high": 22.0,
+      "reference_low": 19.92,
+      "score": 9,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "600172",
+      "名称": "黄河旋风",
+      "reference_close": 15.92,
+      "reference_high": 16.23,
+      "reference_low": 14.76,
+      "score": 9,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,12 +101,12 @@
   ],
   "A2": [
     {
-      "股票代码": "601899",
-      "名称": "紫金矿业",
-      "reference_close": 32.95,
-      "reference_high": 33.23,
-      "reference_low": 32.19,
-      "score": 6,
+      "股票代码": "600183",
+      "名称": "生益科技",
+      "reference_close": 143.19,
+      "reference_high": 149.38,
+      "reference_low": 139.01,
+      "score": 5,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",
@@ -120,30 +120,11 @@
       ]
     },
     {
-      "股票代码": "001309",
-      "名称": "德明利",
-      "reference_close": 412.93,
-      "reference_high": 420.8,
-      "reference_low": 408.5,
-      "score": 4,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "000977",
-      "名称": "浪潮信息",
-      "reference_close": 85.69,
-      "reference_high": 87.5,
-      "reference_low": 84.8,
+      "股票代码": "600664",
+      "名称": "哈药股份",
+      "reference_close": 8.55,
+      "reference_high": 9.15,
+      "reference_low": 8.32,
       "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",

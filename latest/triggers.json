@@ -1,33 +1,14 @@
 {
-  "trade_date": "20260903",
+  "trade_date": "20260904",
   "market_regime": "NEUTRAL",
   "max_total_position": 0.5,
   "A1": [
     {
-      "股票代码": "601212",
-      "名称": "白银有色",
-      "reference_close": 7.33,
-      "reference_high": 7.33,
-      "reference_low": 6.67,
-      "score": 12,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "002536",
-      "名称": "飞龙股份",
-      "reference_close": 63.03,
-      "reference_high": 63.88,
-      "reference_low": 57.42,
+      "股票代码": "600150",
+      "名称": "中国船舶",
+      "reference_close": 37.47,
+      "reference_high": 37.75,
+      "reference_low": 34.5,
       "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -42,11 +23,11 @@
       ]
     },
     {
-      "股票代码": "600869",
-      "名称": "远东股份",
-      "reference_close": 21.05,
-      "reference_high": 21.44,
-      "reference_low": 19.35,
+      "股票代码": "002602",
+      "名称": "世纪华通",
+      "reference_close": 15.73,
+      "reference_high": 16.0,
+      "reference_low": 14.59,
       "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -61,12 +42,12 @@
       ]
     },
     {
-      "股票代码": "002297",
-      "名称": "博云新材",
-      "reference_close": 22.0,
-      "reference_high": 22.0,
-      "reference_low": 19.92,
-      "score": 9,
+      "股票代码": "603228",
+      "名称": "景旺电子",
+      "reference_close": 96.34,
+      "reference_high": 97.26,
+      "reference_low": 90.8,
+      "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -80,11 +61,11 @@
       ]
     },
     {
-      "股票代码": "600172",
-      "名称": "黄河旋风",
-      "reference_close": 15.92,
-      "reference_high": 16.23,
-      "reference_low": 14.76,
+      "股票代码": "002354",
+      "名称": "天娱数科",
+      "reference_close": 8.45,
+      "reference_high": 8.55,
+      "reference_low": 7.83,
       "score": 9,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -101,11 +82,11 @@
   ],
   "A2": [
     {
-      "股票代码": "600183",
-      "名称": "生益科技",
-      "reference_close": 143.19,
-      "reference_high": 149.38,
-      "reference_low": 139.01,
+      "股票代码": "600869",
+      "名称": "远东股份",
+      "reference_close": 21.2,
+      "reference_high": 21.97,
+      "reference_low": 20.51,
       "score": 5,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
@@ -120,11 +101,11 @@
       ]
     },
     {
-      "股票代码": "600664",
-      "名称": "哈药股份",
-      "reference_close": 8.55,
-      "reference_high": 9.15,
-      "reference_low": 8.32,
+      "股票代码": "603083",
+      "名称": "剑桥科技",
+      "reference_close": 188.37,
+      "reference_high": 195.88,
+      "reference_low": 185.18,
       "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",

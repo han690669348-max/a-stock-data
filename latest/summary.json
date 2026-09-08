@@ -1,76 +1,52 @@
 {
   "status": "ok",
   "source": "a-stock-agent",
-  "trade_date": "20260907",
-  "generated_at": "2026-09-07 18:01:23",
+  "trade_date": "20260908",
+  "generated_at": "2026-09-08 18:01:24",
   "timezone": "Asia/Shanghai",
   "market": {
     "top100_count": 100,
-    "limit_up_count": 93,
-    "broken_limit_count": 19,
-    "limit_down_count": 2
+    "limit_up_count": 73,
+    "broken_limit_count": 37,
+    "limit_down_count": 0
   },
   "lhb": {
-    "raw_records": 41,
-    "unique_stocks": 38,
-    "top100_intersection_count": 7
+    "raw_records": 59,
+    "unique_stocks": 55,
+    "top100_intersection_count": 4
   },
   "core_pool": [
     {
-      "股票代码": "002463",
-      "名称": "沪电股份",
-      "最新价": 122.65,
-      "涨跌幅": 10.0,
-      "成交额": 9613926292.0,
-      "龙虎榜原因": "涨幅偏离值达7%的证券"
-    },
-    {
-      "股票代码": "002281",
-      "名称": "光迅科技",
-      "最新价": 184.47,
-      "涨跌幅": 10.0,
-      "成交额": 7691316761.0,
-      "龙虎榜原因": "涨幅偏离值达7%的证券"
+      "股票代码": "600127",
+      "名称": "金健米业",
+      "最新价": 14.79,
+      "涨跌幅": 9.313,
+      "成交额": 4347812635.0,
+      "龙虎榜原因": "换手率达20%的证券"
     },
     {
       "股票代码": "300684",
       "名称": "中石科技",
-      "最新价": 104.36,
-      "涨跌幅": 17.39,
-      "成交额": 4516204895.0,
+      "最新价": 88.23,
+      "涨跌幅": -15.456,
+      "成交额": 3711768176.0,
       "龙虎榜原因": ""
     },
     {
-      "股票代码": "002354",
-      "名称": "天娱数科",
-      "最新价": 8.43,
-      "涨跌幅": -0.237,
-      "成交额": 4321883754.0,
+      "股票代码": "002297",
+      "名称": "博云新材",
+      "最新价": 22.32,
+      "涨跌幅": 7.102,
+      "成交额": 3526353871.0,
       "龙虎榜原因": "换手率达20%的证券"
     },
     {
-      "股票代码": "002436",
-      "名称": "兴森科技",
-      "最新价": 36.75,
-      "涨跌幅": 9.997,
-      "成交额": 3954318618.0,
-      "龙虎榜原因": "涨幅偏离值达7%的证券"
-    },
-    {
-      "股票代码": "002484",
-      "名称": "江海股份",
-      "最新价": 61.95,
-      "涨跌幅": 9.996,
-      "成交额": 3662851549.0,
-      "龙虎榜原因": "涨幅偏离值达7%的证券"
-    },
-    {
-      "股票代码": "002916",
-      "名称": "深南电路",
-      "最新价": 364.98,
-      "涨跌幅": 10.0,
-      "成交额": 3314184036.0,
-      "龙虎榜原因": "涨幅偏离值达7%的证券"
+      "股票代码": "300189",
+      "名称": "神农种业",
+      "最新价": 7.68,
+      "涨跌幅": -0.518,
+      "成交额": 3139410075.0,
+      "龙虎榜原因": ""
     }
   ],
   "files": {
@@ -96,16 +72,16 @@
     "triggers": "/latest/triggers.json"
   },
   "candidate_pool": {
-    "count": 37,
+    "count": 34,
     "max_pool": 40,
-    "generated_at": "2026-09-07 18:01:25"
+    "generated_at": "2026-09-08 18:01:26"
   },
   "intraday": {
     "period": "5m",
-    "requested_stocks": 37,
-    "success_stocks": 37,
+    "requested_stocks": 34,
+    "success_stocks": 34,
     "failed_stocks": 0,
-    "generated_at": "2026-09-07 18:03:59"
+    "generated_at": "2026-09-08 18:03:53"
   },
   "relative_strength": {
     "benchmarks": [
@@ -114,31 +90,31 @@
       "创业板指",
       "科创50"
     ],
-    "stocks": 37,
-    "generated_at": "2026-09-07 18:04:17"
+    "stocks": 34,
+    "generated_at": "2026-09-08 18:04:14"
   },
   "windvane": {
-    "count": 34,
-    "leaders": 24,
+    "count": 31,
+    "leaders": 8,
     "confirms": 3,
-    "weak_anchors": 7,
-    "generated_at": "2026-09-07 18:04:19"
+    "weak_anchors": 19,
+    "generated_at": "2026-09-08 18:04:15"
   },
   "sector_strength": {
     "version": "1.2",
     "breadth_universe": 100,
-    "signal_universe": 37,
-    "industry_count": 24,
+    "signal_universe": 34,
+    "industry_count": 22,
     "theme_count": 11,
-    "generated_at": "2026-09-07 18:04:20"
+    "generated_at": "2026-09-08 18:04:17"
   },
   "decision": {
-    "market_regime": "RISK_ON",
-    "market_regime_cn": "强势",
-    "max_total_position": 0.8,
-    "decision_universe": 21,
+    "market_regime": "RISK_ON_ROTATION",
+    "market_regime_cn": "偏强但高分歧轮动",
+    "max_total_position": 0.7,
+    "decision_universe": 19,
     "a1_count": 5,
-    "a2_count": 4,
-    "generated_at": "2026-09-07 18:04:21"
+    "a2_count": 1,
+    "generated_at": "2026-09-08 18:04:18"
   }
 }

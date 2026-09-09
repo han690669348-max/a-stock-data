@@ -1,53 +1,15 @@
 {
-  "trade_date": "20260908",
-  "market_regime": "RISK_ON_ROTATION",
-  "max_total_position": 0.7,
+  "trade_date": "20260909",
+  "market_regime": "NEUTRAL",
+  "max_total_position": 0.5,
   "A1": [
     {
-      "股票代码": "002297",
-      "名称": "博云新材",
-      "reference_close": 22.32,
-      "reference_high": 22.32,
-      "reference_low": 20.31,
+      "股票代码": "600737",
+      "名称": "中粮糖业",
+      "reference_close": 19.8,
+      "reference_high": 19.89,
+      "reference_low": 18.1,
       "score": 14,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "600722",
-      "名称": "金牛化工",
-      "reference_close": 19.77,
-      "reference_high": 19.77,
-      "reference_low": 17.65,
-      "score": 13,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "600127",
-      "名称": "金健米业",
-      "reference_close": 14.79,
-      "reference_high": 14.88,
-      "reference_low": 14.01,
-      "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -63,10 +25,10 @@
     {
       "股票代码": "600869",
       "名称": "远东股份",
-      "reference_close": 22.66,
-      "reference_high": 22.86,
-      "reference_low": 20.47,
-      "score": 10,
+      "reference_close": 24.93,
+      "reference_high": 24.93,
+      "reference_low": 22.08,
+      "score": 13,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -80,12 +42,50 @@
       ]
     },
     {
-      "股票代码": "603618",
-      "名称": "杭电股份",
-      "reference_close": 40.11,
-      "reference_high": 40.66,
-      "reference_low": 36.7,
-      "score": 8,
+      "股票代码": "002155",
+      "名称": "湖南黄金",
+      "reference_close": 28.45,
+      "reference_high": 28.45,
+      "reference_low": 25.6,
+      "score": 12,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "601872",
+      "名称": "招商轮船",
+      "reference_close": 20.99,
+      "reference_high": 20.99,
+      "reference_low": 19.0,
+      "score": 11,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "603186",
+      "名称": "华正新材",
+      "reference_close": 212.06,
+      "reference_high": 212.06,
+      "reference_low": 193.5,
+      "score": 9,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,12 +101,31 @@
   ],
   "A2": [
     {
-      "股票代码": "001309",
-      "名称": "德明利",
-      "reference_close": 416.82,
-      "reference_high": 431.0,
-      "reference_low": 401.03,
-      "score": 6,
+      "股票代码": "002463",
+      "名称": "沪电股份",
+      "reference_close": 127.55,
+      "reference_high": 130.86,
+      "reference_low": 125.6,
+      "score": 4,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "603228",
+      "名称": "景旺电子",
+      "reference_close": 109.59,
+      "reference_high": 113.56,
+      "reference_low": 107.0,
+      "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",

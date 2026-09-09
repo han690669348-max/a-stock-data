@@ -1,52 +1,76 @@
 {
   "status": "ok",
   "source": "a-stock-agent",
-  "trade_date": "20260908",
-  "generated_at": "2026-09-08 18:01:24",
+  "trade_date": "20260909",
+  "generated_at": "2026-09-09 18:01:31",
   "timezone": "Asia/Shanghai",
   "market": {
     "top100_count": 100,
-    "limit_up_count": 73,
-    "broken_limit_count": 37,
-    "limit_down_count": 0
+    "limit_up_count": 48,
+    "broken_limit_count": 27,
+    "limit_down_count": 7
   },
   "lhb": {
-    "raw_records": 59,
-    "unique_stocks": 55,
-    "top100_intersection_count": 4
+    "raw_records": 65,
+    "unique_stocks": 59,
+    "top100_intersection_count": 7
   },
   "core_pool": [
     {
-      "股票代码": "600127",
-      "名称": "金健米业",
-      "最新价": 14.79,
-      "涨跌幅": 9.313,
-      "成交额": 4347812635.0,
+      "股票代码": "600737",
+      "名称": "中粮糖业",
+      "最新价": 19.8,
+      "涨跌幅": 9.031,
+      "成交额": 5479681336.0,
+      "龙虎榜原因": "连续三个交易日内，涨幅偏离值累计达20%的证券"
+    },
+    {
+      "股票代码": "603186",
+      "名称": "华正新材",
+      "最新价": 212.06,
+      "涨跌幅": 10.001,
+      "成交额": 4658624546.0,
+      "龙虎榜原因": "连续三个交易日内，涨幅偏离值累计达20%的证券"
+    },
+    {
+      "股票代码": "600108",
+      "名称": "亚盛集团",
+      "最新价": 5.71,
+      "涨跌幅": 8.144,
+      "成交额": 4525026596.0,
       "龙虎榜原因": "换手率达20%的证券"
     },
     {
-      "股票代码": "300684",
-      "名称": "中石科技",
-      "最新价": 88.23,
-      "涨跌幅": -15.456,
-      "成交额": 3711768176.0,
-      "龙虎榜原因": ""
+      "股票代码": "002155",
+      "名称": "湖南黄金",
+      "最新价": 28.45,
+      "涨跌幅": 10.015,
+      "成交额": 4053062628.0,
+      "龙虎榜原因": "涨幅偏离值达7%的证券"
     },
     {
       "股票代码": "002297",
       "名称": "博云新材",
-      "最新价": 22.32,
-      "涨跌幅": 7.102,
-      "成交额": 3526353871.0,
+      "最新价": 22.5,
+      "涨跌幅": 0.806,
+      "成交额": 4043670228.0,
       "龙虎榜原因": "换手率达20%的证券"
     },
     {
-      "股票代码": "300189",
-      "名称": "神农种业",
-      "最新价": 7.68,
-      "涨跌幅": -0.518,
-      "成交额": 3139410075.0,
-      "龙虎榜原因": ""
+      "股票代码": "600127",
+      "名称": "金健米业",
+      "最新价": 14.33,
+      "涨跌幅": -3.11,
+      "成交额": 3614297526.0,
+      "龙虎榜原因": "换手率达20%的证券"
+    },
+    {
+      "股票代码": "002579",
+      "名称": "中京电子",
+      "最新价": 16.81,
+      "涨跌幅": -1.465,
+      "成交额": 3137493829.0,
+      "龙虎榜原因": "换手率达20%的证券"
     }
   ],
   "files": {
@@ -72,16 +96,16 @@
     "triggers": "/latest/triggers.json"
   },
   "candidate_pool": {
-    "count": 34,
+    "count": 38,
     "max_pool": 40,
-    "generated_at": "2026-09-08 18:01:26"
+    "generated_at": "2026-09-09 18:01:33"
   },
   "intraday": {
     "period": "5m",
-    "requested_stocks": 34,
-    "success_stocks": 34,
+    "requested_stocks": 38,
+    "success_stocks": 38,
     "failed_stocks": 0,
-    "generated_at": "2026-09-08 18:03:53"
+    "generated_at": "2026-09-09 18:04:23"
   },
   "relative_strength": {
     "benchmarks": [
@@ -90,31 +114,31 @@
       "创业板指",
       "科创50"
     ],
-    "stocks": 34,
-    "generated_at": "2026-09-08 18:04:14"
+    "stocks": 38,
+    "generated_at": "2026-09-09 18:04:41"
   },
   "windvane": {
-    "count": 31,
-    "leaders": 8,
+    "count": 32,
+    "leaders": 7,
     "confirms": 3,
-    "weak_anchors": 19,
-    "generated_at": "2026-09-08 18:04:15"
+    "weak_anchors": 22,
+    "generated_at": "2026-09-09 18:04:43"
   },
   "sector_strength": {
     "version": "1.2",
     "breadth_universe": 100,
-    "signal_universe": 34,
-    "industry_count": 22,
+    "signal_universe": 37,
+    "industry_count": 26,
     "theme_count": 11,
-    "generated_at": "2026-09-08 18:04:17"
+    "generated_at": "2026-09-09 18:04:44"
   },
   "decision": {
-    "market_regime": "RISK_ON_ROTATION",
-    "market_regime_cn": "偏强但高分歧轮动",
-    "max_total_position": 0.7,
-    "decision_universe": 19,
+    "market_regime": "NEUTRAL",
+    "market_regime_cn": "中性震荡",
+    "max_total_position": 0.5,
+    "decision_universe": 24,
     "a1_count": 5,
-    "a2_count": 1,
-    "generated_at": "2026-09-08 18:04:18"
+    "a2_count": 2,
+    "generated_at": "2026-09-09 18:04:45"
   }
 }

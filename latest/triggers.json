@@ -1,15 +1,15 @@
 {
-  "trade_date": "20260910",
-  "market_regime": "NEUTRAL",
-  "max_total_position": 0.5,
+  "trade_date": "20260911",
+  "market_regime": "RISK_OFF",
+  "max_total_position": 0.3,
   "A1": [
     {
-      "股票代码": "603083",
-      "名称": "剑桥科技",
-      "reference_close": 234.43,
-      "reference_high": 237.87,
-      "reference_low": 215.0,
-      "score": 10,
+      "股票代码": "002636",
+      "名称": "金安国纪",
+      "reference_close": 82.46,
+      "reference_high": 84.0,
+      "reference_low": 73.0,
+      "score": 14,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -23,12 +23,12 @@
       ]
     },
     {
-      "股票代码": "002636",
-      "名称": "金安国纪",
-      "reference_close": 76.45,
-      "reference_high": 76.45,
-      "reference_low": 68.31,
-      "score": 9,
+      "股票代码": "601869",
+      "名称": "长飞光纤",
+      "reference_close": 473.99,
+      "reference_high": 475.52,
+      "reference_low": 428.0,
+      "score": 13,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -44,10 +44,10 @@
     {
       "股票代码": "000823",
       "名称": "超声电子",
-      "reference_close": 18.7,
-      "reference_high": 18.7,
-      "reference_low": 16.67,
-      "score": 9,
+      "reference_close": 20.57,
+      "reference_high": 20.57,
+      "reference_low": 18.2,
+      "score": 12,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -61,12 +61,12 @@
       ]
     },
     {
-      "股票代码": "600667",
-      "名称": "太极实业",
-      "reference_close": 19.98,
-      "reference_high": 19.98,
-      "reference_low": 18.27,
-      "score": 8,
+      "股票代码": "000636",
+      "名称": "风华高科",
+      "reference_close": 55.99,
+      "reference_high": 55.99,
+      "reference_low": 51.09,
+      "score": 12,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -80,12 +80,12 @@
       ]
     },
     {
-      "股票代码": "600396",
-      "名称": "华电辽能",
-      "reference_close": 15.51,
-      "reference_high": 16.0,
-      "reference_low": 14.0,
-      "score": 8,
+      "股票代码": "600176",
+      "名称": "中国巨石",
+      "reference_close": 44.66,
+      "reference_high": 44.97,
+      "reference_low": 41.5,
+      "score": 12,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,11 +101,68 @@
   ],
   "A2": [
     {
-      "股票代码": "000523",
-      "名称": "红棉股份",
-      "reference_close": 4.46,
-      "reference_high": 4.8,
-      "reference_low": 4.3,
+      "股票代码": "601899",
+      "名称": "紫金矿业",
+      "reference_close": 32.26,
+      "reference_high": 32.68,
+      "reference_low": 31.45,
+      "score": 7,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "600127",
+      "名称": "金健米业",
+      "reference_close": 13.55,
+      "reference_high": 14.42,
+      "reference_low": 13.17,
+      "score": 6,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "603986",
+      "名称": "兆易创新",
+      "reference_close": 371.32,
+      "reference_high": 373.99,
+      "reference_low": 363.0,
+      "score": 6,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "000426",
+      "名称": "兴业银锡",
+      "reference_close": 35.97,
+      "reference_high": 36.72,
+      "reference_low": 34.81,
       "score": 5,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
@@ -120,12 +177,12 @@
       ]
     },
     {
-      "股票代码": "603228",
-      "名称": "景旺电子",
-      "reference_close": 110.01,
-      "reference_high": 113.0,
-      "reference_low": 108.0,
-      "score": 4,
+      "股票代码": "001309",
+      "名称": "德明利",
+      "reference_close": 402.73,
+      "reference_high": 407.61,
+      "reference_low": 391.33,
+      "score": 5,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",

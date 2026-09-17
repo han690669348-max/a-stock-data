@@ -1,84 +1,44 @@
 {
   "status": "ok",
   "source": "a-stock-agent",
-  "trade_date": "20260916",
-  "generated_at": "2026-09-16 18:01:25",
+  "trade_date": "20260917",
+  "generated_at": "2026-09-17 18:01:23",
   "timezone": "Asia/Shanghai",
   "market": {
     "top100_count": 100,
-    "limit_up_count": 89,
-    "broken_limit_count": 11,
-    "limit_down_count": 4
+    "limit_up_count": 47,
+    "broken_limit_count": 20,
+    "limit_down_count": 1
   },
   "lhb": {
-    "raw_records": 71,
-    "unique_stocks": 62,
-    "top100_intersection_count": 8
+    "raw_records": 62,
+    "unique_stocks": 53,
+    "top100_intersection_count": 3
   },
   "core_pool": [
     {
-      "股票代码": "002281",
-      "名称": "光迅科技",
-      "最新价": 185.21,
-      "涨跌幅": 10.002,
-      "成交额": 7404579914.0,
-      "龙虎榜原因": "涨幅偏离值达7%的证券"
-    },
-    {
-      "股票代码": "002491",
-      "名称": "通鼎互联",
-      "最新价": 24.45,
-      "涨跌幅": 9.987,
-      "成交额": 6719072804.0,
-      "龙虎榜原因": "涨幅偏离值达7%的证券 | 连续三个交易日内，涨幅偏离值累计达20%的证券"
-    },
-    {
-      "股票代码": "002396",
-      "名称": "星网锐捷",
-      "最新价": 38.83,
-      "涨跌幅": 10.0,
-      "成交额": 5194746709.0,
-      "龙虎榜原因": "涨幅偏离值达7%的证券"
-    },
-    {
-      "股票代码": "000823",
-      "名称": "超声电子",
-      "最新价": 25.12,
-      "涨跌幅": 5.105,
-      "成交额": 4925630793.0,
-      "龙虎榜原因": "换手率达20%的证券 | 连续三个交易日内，涨幅偏离值累计达20%的证券"
-    },
-    {
-      "股票代码": "688432",
-      "名称": "有研硅",
-      "最新价": 54.06,
-      "涨跌幅": 20.0,
-      "成交额": 3913865959.0,
+      "股票代码": "688802",
+      "名称": "沐曦股份",
+      "最新价": 546.5,
+      "涨跌幅": 14.436,
+      "成交额": 7175028567.0,
       "龙虎榜原因": ""
     },
     {
-      "股票代码": "002585",
-      "名称": "双星新材",
-      "最新价": 12.17,
-      "涨跌幅": 0.912,
-      "成交额": 3731112832.0,
-      "龙虎榜原因": "换手率达20%的证券"
+      "股票代码": "603186",
+      "名称": "华正新材",
+      "最新价": 230.0,
+      "涨跌幅": -9.445,
+      "成交额": 5935779870.0,
+      "龙虎榜原因": "跌幅偏离值达7%的证券"
     },
     {
       "股票代码": "002579",
       "名称": "中京电子",
-      "最新价": 19.65,
-      "涨跌幅": 5.645,
-      "成交额": 3577664911.0,
+      "最新价": 20.48,
+      "涨跌幅": 4.224,
+      "成交额": 3648834804.0,
       "龙虎榜原因": "换手率达20%的证券"
-    },
-    {
-      "股票代码": "000981",
-      "名称": "山子高科",
-      "最新价": 2.74,
-      "涨跌幅": -9.272,
-      "成交额": 2988468860.0,
-      "龙虎榜原因": "跌幅偏离值达7%的证券"
     }
   ],
   "files": {
@@ -104,16 +64,16 @@
     "triggers": "/latest/triggers.json"
   },
   "candidate_pool": {
-    "count": 40,
+    "count": 38,
     "max_pool": 40,
-    "generated_at": "2026-09-16 18:01:27"
+    "generated_at": "2026-09-17 18:01:24"
   },
   "intraday": {
     "period": "5m",
-    "requested_stocks": 40,
-    "success_stocks": 40,
+    "requested_stocks": 38,
+    "success_stocks": 38,
     "failed_stocks": 0,
-    "generated_at": "2026-09-16 18:04:33"
+    "generated_at": "2026-09-17 18:04:03"
   },
   "relative_strength": {
     "benchmarks": [
@@ -122,31 +82,31 @@
       "创业板指",
       "科创50"
     ],
-    "stocks": 40,
-    "generated_at": "2026-09-16 18:04:54"
+    "stocks": 38,
+    "generated_at": "2026-09-17 18:04:21"
   },
   "windvane": {
-    "count": 32,
-    "leaders": 21,
-    "confirms": 4,
-    "weak_anchors": 7,
-    "generated_at": "2026-09-16 18:04:55"
+    "count": 33,
+    "leaders": 9,
+    "confirms": 3,
+    "weak_anchors": 20,
+    "generated_at": "2026-09-17 18:04:23"
   },
   "sector_strength": {
     "version": "1.2",
     "breadth_universe": 100,
-    "signal_universe": 39,
+    "signal_universe": 36,
     "industry_count": 19,
     "theme_count": 11,
-    "generated_at": "2026-09-16 18:04:56"
+    "generated_at": "2026-09-17 18:04:24"
   },
   "decision": {
-    "market_regime": "RISK_ON",
-    "market_regime_cn": "强势",
-    "max_total_position": 0.8,
-    "decision_universe": 27,
+    "market_regime": "NEUTRAL",
+    "market_regime_cn": "中性震荡",
+    "max_total_position": 0.5,
+    "decision_universe": 20,
     "a1_count": 5,
-    "a2_count": 3,
-    "generated_at": "2026-09-16 18:04:58"
+    "a2_count": 2,
+    "generated_at": "2026-09-17 18:04:25"
   }
 }

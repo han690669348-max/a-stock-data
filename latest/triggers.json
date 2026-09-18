@@ -1,53 +1,15 @@
 {
-  "trade_date": "20260917",
-  "market_regime": "NEUTRAL",
-  "max_total_position": 0.5,
+  "trade_date": "20260918",
+  "market_regime": "RISK_ON_ROTATION",
+  "max_total_position": 0.7,
   "A1": [
     {
-      "股票代码": "600641",
-      "名称": "先导基电",
-      "reference_close": 36.8,
-      "reference_high": 36.8,
-      "reference_low": 32.9,
+      "股票代码": "600584",
+      "名称": "长电科技",
+      "reference_close": 73.0,
+      "reference_high": 74.0,
+      "reference_low": 68.54,
       "score": 11,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "601872",
-      "名称": "招商轮船",
-      "reference_close": 21.85,
-      "reference_high": 21.85,
-      "reference_low": 19.9,
-      "score": 11,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "600522",
-      "名称": "中天科技",
-      "reference_close": 36.39,
-      "reference_high": 36.47,
-      "reference_low": 34.9,
-      "score": 10,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -63,9 +25,47 @@
     {
       "股票代码": "000725",
       "名称": "京东方Ａ",
-      "reference_close": 5.75,
-      "reference_high": 5.81,
-      "reference_low": 5.42,
+      "reference_close": 5.92,
+      "reference_high": 5.95,
+      "reference_low": 5.75,
+      "score": 10,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "002185",
+      "名称": "华天科技",
+      "reference_close": 18.03,
+      "reference_high": 18.03,
+      "reference_low": 16.61,
+      "score": 9,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "600127",
+      "名称": "金健米业",
+      "reference_close": 14.32,
+      "reference_high": 14.32,
+      "reference_low": 12.6,
       "score": 8,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -80,12 +80,12 @@
       ]
     },
     {
-      "股票代码": "600487",
-      "名称": "亨通光电",
-      "reference_close": 68.49,
-      "reference_high": 69.7,
-      "reference_low": 65.39,
-      "score": 6,
+      "股票代码": "603986",
+      "名称": "兆易创新",
+      "reference_close": 388.18,
+      "reference_high": 390.66,
+      "reference_low": 378.0,
+      "score": 8,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,11 +101,11 @@
   ],
   "A2": [
     {
-      "股票代码": "002281",
-      "名称": "光迅科技",
-      "reference_close": 191.22,
-      "reference_high": 196.9,
-      "reference_low": 188.0,
+      "股票代码": "600487",
+      "名称": "亨通光电",
+      "reference_close": 69.49,
+      "reference_high": 70.94,
+      "reference_low": 67.45,
       "score": 6,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
@@ -120,12 +120,69 @@
       ]
     },
     {
-      "股票代码": "600988",
-      "名称": "赤峰黄金",
-      "reference_close": 43.44,
-      "reference_high": 45.3,
-      "reference_low": 42.1,
-      "score": 4,
+      "股票代码": "600105",
+      "名称": "永鼎股份",
+      "reference_close": 46.47,
+      "reference_high": 47.5,
+      "reference_low": 45.61,
+      "score": 6,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "002463",
+      "名称": "沪电股份",
+      "reference_close": 123.5,
+      "reference_high": 126.66,
+      "reference_low": 119.3,
+      "score": 6,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "600183",
+      "名称": "生益科技",
+      "reference_close": 143.93,
+      "reference_high": 149.6,
+      "reference_low": 139.4,
+      "score": 5,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "600522",
+      "名称": "中天科技",
+      "reference_close": 35.98,
+      "reference_high": 36.9,
+      "reference_low": 35.32,
+      "score": 5,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",

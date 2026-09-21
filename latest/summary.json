@@ -1,28 +1,36 @@
 {
   "status": "ok",
   "source": "a-stock-agent",
-  "trade_date": "20260918",
-  "generated_at": "2026-09-18 18:01:43",
+  "trade_date": "20260921",
+  "generated_at": "2026-09-21 18:02:04",
   "timezone": "Asia/Shanghai",
   "market": {
     "top100_count": 100,
-    "limit_up_count": 78,
+    "limit_up_count": 103,
     "broken_limit_count": 25,
-    "limit_down_count": 0
+    "limit_down_count": 2
   },
   "lhb": {
-    "raw_records": 28,
-    "unique_stocks": 24,
-    "top100_intersection_count": 1
+    "raw_records": 42,
+    "unique_stocks": 39,
+    "top100_intersection_count": 2
   },
   "core_pool": [
     {
-      "股票代码": "002185",
-      "名称": "华天科技",
-      "最新价": 18.03,
-      "涨跌幅": 10.006,
-      "成交额": 6386880067.0,
+      "股票代码": "002080",
+      "名称": "中材科技",
+      "最新价": 66.24,
+      "涨跌幅": 9.997,
+      "成交额": 8542074346.0,
       "龙虎榜原因": "涨幅偏离值达7%的证券"
+    },
+    {
+      "股票代码": "000823",
+      "名称": "超声电子",
+      "最新价": 25.2,
+      "涨跌幅": 7.784,
+      "成交额": 4382095039.0,
+      "龙虎榜原因": "换手率达20%的证券"
     }
   ],
   "files": {
@@ -48,16 +56,16 @@
     "triggers": "/latest/triggers.json"
   },
   "candidate_pool": {
-    "count": 35,
+    "count": 34,
     "max_pool": 40,
-    "generated_at": "2026-09-18 18:01:45"
+    "generated_at": "2026-09-21 18:02:06"
   },
   "intraday": {
     "period": "5m",
-    "requested_stocks": 35,
-    "success_stocks": 35,
+    "requested_stocks": 34,
+    "success_stocks": 34,
     "failed_stocks": 0,
-    "generated_at": "2026-09-18 18:04:10"
+    "generated_at": "2026-09-21 21:21:57"
   },
   "relative_strength": {
     "benchmarks": [
@@ -66,31 +74,31 @@
       "创业板指",
       "科创50"
     ],
-    "stocks": 35,
-    "generated_at": "2026-09-18 18:04:28"
+    "stocks": 34,
+    "generated_at": "2026-09-21 21:29:15"
   },
   "windvane": {
-    "count": 29,
-    "leaders": 9,
-    "confirms": 6,
+    "count": 26,
+    "leaders": 7,
+    "confirms": 4,
     "weak_anchors": 14,
-    "generated_at": "2026-09-18 18:04:29"
+    "generated_at": "2026-09-21 21:29:16"
   },
   "sector_strength": {
     "version": "1.2",
     "breadth_universe": 100,
     "signal_universe": 33,
-    "industry_count": 18,
+    "industry_count": 21,
     "theme_count": 11,
-    "generated_at": "2026-09-18 18:04:31"
+    "generated_at": "2026-09-21 21:29:17"
   },
   "decision": {
     "market_regime": "RISK_ON_ROTATION",
     "market_regime_cn": "偏强但高分歧轮动",
     "max_total_position": 0.7,
-    "decision_universe": 20,
+    "decision_universe": 22,
     "a1_count": 5,
-    "a2_count": 5,
-    "generated_at": "2026-09-18 18:04:32"
+    "a2_count": 3,
+    "generated_at": "2026-09-21 21:34:47"
   }
 }

@@ -1,7 +1,7 @@
 {
   "status": "SUCCESS",
   "trade_date": "20260921",
-  "generated_at": "2026-09-21 18:17:06",
+  "generated_at": "2026-09-21 22:14:51",
   "review": "SUCCESS",
   "candidate_pool": "SUCCESS",
   "intraday": "SUCCESS",
@@ -16,7 +16,7 @@
   "error_message": "intraday.py failed",
   "run_id": "20260921-normal-180001-863290",
   "original_run_id": "20260921-normal-180001-863290",
-  "pipeline_state": "NORMAL_RUNNING",
+  "pipeline_state": "SUCCESS",
   "failure_class": "",
   "recoverable": false,
   "recovery_scheduled_at": null,
@@ -24,8 +24,8 @@
   "recovery_attempt": 0,
   "recovery_result": "MANUAL_REQUIRED",
   "publish_gate": "SUCCESS",
-  "github_sync": "PENDING",
-  "last_updated_at": "2026-09-21T21:51:16+08:00",
+  "github_sync": "SUCCESS",
+  "last_updated_at": "2026-09-21T22:14:51+08:00",
   "effective_state": "PUBLISHED_SUCCESS",
   "manual_resume": {
     "active": true,

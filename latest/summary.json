@@ -1,28 +1,68 @@
 {
   "status": "ok",
   "source": "a-stock-agent",
-  "trade_date": "20260922",
-  "generated_at": "2026-09-22 18:01:40",
+  "trade_date": "20260923",
+  "generated_at": "2026-09-23 22:09:30",
   "timezone": "Asia/Shanghai",
   "market": {
     "top100_count": 100,
-    "limit_up_count": 63,
-    "broken_limit_count": 18,
-    "limit_down_count": 3
+    "limit_up_count": 51,
+    "broken_limit_count": 26,
+    "limit_down_count": 13
   },
   "lhb": {
-    "raw_records": 44,
-    "unique_stocks": 37,
-    "top100_intersection_count": 1
+    "raw_records": 71,
+    "unique_stocks": 67,
+    "top100_intersection_count": 6
   },
   "core_pool": [
     {
+      "股票代码": "600641",
+      "名称": "先导基电",
+      "最新价": 47.8,
+      "涨跌幅": 9.282,
+      "成交额": 7955826713.0,
+      "龙虎榜原因": "连续三个交易日内，涨幅偏离值累计达20%的证券"
+    },
+    {
       "股票代码": "000823",
       "名称": "超声电子",
-      "最新价": 25.22,
-      "涨跌幅": 0.079,
-      "成交额": 5152772565.0,
+      "最新价": 27.2,
+      "涨跌幅": 7.851,
+      "成交额": 5853080479.0,
       "龙虎榜原因": "换手率达20%的证券"
+    },
+    {
+      "股票代码": "600418",
+      "名称": "江淮汽车",
+      "最新价": 23.45,
+      "涨跌幅": 9.991,
+      "成交额": 4935453759.0,
+      "龙虎榜原因": "连续三个交易日内，涨幅偏离值累计达20%的证券"
+    },
+    {
+      "股票代码": "600127",
+      "名称": "金健米业",
+      "最新价": 16.75,
+      "涨跌幅": 1.7,
+      "成交额": 3436627074.0,
+      "龙虎榜原因": "换手率达20%的证券"
+    },
+    {
+      "股票代码": "601579",
+      "名称": "会稽山",
+      "最新价": 36.75,
+      "涨跌幅": -1.895,
+      "成交额": 2679425095.0,
+      "龙虎榜原因": "振幅值达15%的证券"
+    },
+    {
+      "股票代码": "688662",
+      "名称": "广东富信科技",
+      "最新价": 130.61,
+      "涨跌幅": 16.211,
+      "成交额": 2599490321.0,
+      "龙虎榜原因": ""
     }
   ],
   "files": {
@@ -48,16 +88,16 @@
     "triggers": "/latest/triggers.json"
   },
   "candidate_pool": {
-    "count": 39,
+    "count": 37,
     "max_pool": 40,
-    "generated_at": "2026-09-22 18:01:41"
+    "generated_at": "2026-09-23 22:09:31"
   },
   "intraday": {
     "period": "5m",
-    "requested_stocks": 39,
-    "success_stocks": 39,
+    "requested_stocks": 37,
+    "success_stocks": 37,
     "failed_stocks": 0,
-    "generated_at": "2026-09-22 18:06:15"
+    "generated_at": "2026-09-23 22:12:47"
   },
   "relative_strength": {
     "benchmarks": [
@@ -66,31 +106,31 @@
       "创业板指",
       "科创50"
     ],
-    "stocks": 39,
-    "generated_at": "2026-09-22 18:06:38"
+    "stocks": 37,
+    "generated_at": "2026-09-23 22:13:10"
   },
   "windvane": {
-    "count": 37,
-    "leaders": 2,
-    "confirms": 4,
-    "weak_anchors": 31,
-    "generated_at": "2026-09-22 18:06:39"
+    "count": 31,
+    "leaders": 8,
+    "confirms": 2,
+    "weak_anchors": 17,
+    "generated_at": "2026-09-23 22:13:11"
   },
   "sector_strength": {
     "version": "1.2",
     "breadth_universe": 100,
-    "signal_universe": 39,
-    "industry_count": 20,
+    "signal_universe": 37,
+    "industry_count": 22,
     "theme_count": 11,
-    "generated_at": "2026-09-22 18:06:41"
+    "generated_at": "2026-09-23 22:13:13"
   },
   "decision": {
-    "market_regime": "RISK_ON_ROTATION",
-    "market_regime_cn": "偏强但高分歧轮动",
-    "max_total_position": 0.7,
-    "decision_universe": 21,
-    "a1_count": 1,
-    "a2_count": 4,
-    "generated_at": "2026-09-22 18:06:42"
+    "market_regime": "NEUTRAL",
+    "market_regime_cn": "中性震荡",
+    "max_total_position": 0.5,
+    "decision_universe": 23,
+    "a1_count": 5,
+    "a2_count": 3,
+    "generated_at": "2026-09-23 22:13:14"
   }
 }

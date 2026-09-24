@@ -1,33 +1,14 @@
 {
-  "trade_date": "20260923",
+  "trade_date": "20260924",
   "market_regime": "NEUTRAL",
   "max_total_position": 0.5,
   "A1": [
     {
-      "股票代码": "600418",
-      "名称": "江淮汽车",
-      "reference_close": 23.45,
-      "reference_high": 23.45,
-      "reference_low": 21.89,
-      "score": 14,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "000823",
-      "名称": "超声电子",
-      "reference_close": 27.2,
-      "reference_high": 27.74,
-      "reference_low": 24.66,
+      "股票代码": "002487",
+      "名称": "大金重工",
+      "reference_close": 39.77,
+      "reference_high": 40.5,
+      "reference_low": 37.6,
       "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -42,12 +23,31 @@
       ]
     },
     {
-      "股票代码": "600127",
-      "名称": "金健米业",
-      "reference_close": 16.75,
-      "reference_high": 16.88,
-      "reference_low": 16.11,
-      "score": 11,
+      "股票代码": "002119",
+      "名称": "康强电子",
+      "reference_close": 29.61,
+      "reference_high": 29.61,
+      "reference_low": 28.01,
+      "score": 9,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "000592",
+      "名称": "平潭发展",
+      "reference_close": 8.78,
+      "reference_high": 8.78,
+      "reference_low": 7.8,
+      "score": 7,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -63,10 +63,10 @@
     {
       "股票代码": "600641",
       "名称": "先导基电",
-      "reference_close": 47.8,
-      "reference_high": 48.11,
-      "reference_low": 43.74,
-      "score": 9,
+      "reference_close": 51.56,
+      "reference_high": 52.58,
+      "reference_low": 47.68,
+      "score": 6,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -80,12 +80,12 @@
       ]
     },
     {
-      "股票代码": "603773",
-      "名称": "沃格光电",
-      "reference_close": 102.5,
-      "reference_high": 102.5,
-      "reference_low": 96.0,
-      "score": 8,
+      "股票代码": "002297",
+      "名称": "博云新材",
+      "reference_close": 22.47,
+      "reference_high": 23.2,
+      "reference_low": 21.0,
+      "score": 6,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,12 +101,12 @@
   ],
   "A2": [
     {
-      "股票代码": "002436",
-      "名称": "兴森科技",
-      "reference_close": 45.9,
-      "reference_high": 47.66,
-      "reference_low": 44.47,
-      "score": 4,
+      "股票代码": "600127",
+      "名称": "金健米业",
+      "reference_close": 16.49,
+      "reference_high": 17.05,
+      "reference_low": 15.29,
+      "score": 9,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",
@@ -120,31 +120,12 @@
       ]
     },
     {
-      "股票代码": "603228",
-      "名称": "景旺电子",
-      "reference_close": 107.45,
-      "reference_high": 110.78,
-      "reference_low": 105.3,
-      "score": 4,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "603083",
-      "名称": "剑桥科技",
-      "reference_close": 218.17,
-      "reference_high": 222.0,
-      "reference_low": 214.56,
-      "score": 4,
+      "股票代码": "002579",
+      "名称": "中京电子",
+      "reference_close": 19.22,
+      "reference_high": 20.0,
+      "reference_low": 18.68,
+      "score": 7,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",

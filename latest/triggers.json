@@ -1,14 +1,14 @@
 {
-  "trade_date": "20260928",
-  "market_regime": "RISK_OFF",
-  "max_total_position": 0.3,
+  "trade_date": "20260929",
+  "market_regime": "NEUTRAL",
+  "max_total_position": 0.5,
   "A1": [
     {
-      "股票代码": "002487",
-      "名称": "大金重工",
-      "reference_close": 41.38,
-      "reference_high": 41.7,
-      "reference_low": 38.0,
+      "股票代码": "600601",
+      "名称": "方正科技",
+      "reference_close": 13.72,
+      "reference_high": 13.85,
+      "reference_low": 12.65,
       "score": 13,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -23,11 +23,49 @@
       ]
     },
     {
-      "股票代码": "002119",
-      "名称": "康强电子",
-      "reference_close": 29.71,
-      "reference_high": 30.65,
-      "reference_low": 27.37,
+      "股票代码": "603228",
+      "名称": "景旺电子",
+      "reference_close": 100.53,
+      "reference_high": 101.32,
+      "reference_low": 92.61,
+      "score": 11,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "001389",
+      "名称": "广合科技",
+      "reference_close": 191.84,
+      "reference_high": 194.9,
+      "reference_low": 175.58,
+      "score": 11,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "603986",
+      "名称": "兆易创新",
+      "reference_close": 367.57,
+      "reference_high": 369.0,
+      "reference_low": 358.0,
       "score": 10,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -42,50 +80,12 @@
       ]
     },
     {
-      "股票代码": "600418",
-      "名称": "江淮汽车",
-      "reference_close": 25.22,
-      "reference_high": 25.22,
-      "reference_low": 22.99,
-      "score": 8,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "600707",
-      "名称": "彩虹股份",
-      "reference_close": 10.38,
-      "reference_high": 10.44,
-      "reference_low": 9.85,
-      "score": 8,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "600699",
-      "名称": "均胜电子",
-      "reference_close": 24.02,
-      "reference_high": 24.5,
-      "reference_low": 23.1,
-      "score": 8,
+      "股票代码": "000823",
+      "名称": "超声电子",
+      "reference_close": 24.4,
+      "reference_high": 24.4,
+      "reference_low": 22.32,
+      "score": 9,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -99,5 +99,63 @@
       ]
     }
   ],
-  "A2": []
+  "A2": [
+    {
+      "股票代码": "600699",
+      "名称": "均胜电子",
+      "reference_close": 22.75,
+      "reference_high": 23.0,
+      "reference_low": 21.7,
+      "score": 7,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "600487",
+      "名称": "亨通光电",
+      "reference_close": 57.11,
+      "reference_high": 58.12,
+      "reference_low": 55.3,
+      "score": 5,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "000725",
+      "名称": "京东方Ａ",
+      "reference_close": 5.71,
+      "reference_high": 5.8,
+      "reference_low": 5.62,
+      "score": 4,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    }
+  ]
 }

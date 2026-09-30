@@ -1,52 +1,68 @@
 {
   "status": "ok",
   "source": "a-stock-agent",
-  "trade_date": "20260929",
-  "generated_at": "2026-09-29 18:01:26",
+  "trade_date": "20260930",
+  "generated_at": "2026-09-30 18:04:11",
   "timezone": "Asia/Shanghai",
   "market": {
     "top100_count": 100,
-    "limit_up_count": 57,
-    "broken_limit_count": 8,
-    "limit_down_count": 10
+    "limit_up_count": 52,
+    "broken_limit_count": 12,
+    "limit_down_count": 9
   },
   "lhb": {
-    "raw_records": 41,
-    "unique_stocks": 38,
-    "top100_intersection_count": 4
+    "raw_records": 83,
+    "unique_stocks": 66,
+    "top100_intersection_count": 6
   },
   "core_pool": [
     {
-      "股票代码": "301716",
-      "名称": "N鸿富诚",
-      "最新价": 578.88,
-      "涨跌幅": 653.162,
-      "成交额": 6231355537.0,
+      "股票代码": "001246",
+      "名称": "N力勤",
+      "最新价": 65.09,
+      "涨跌幅": 206.594,
+      "成交额": 8345390509.0,
       "龙虎榜原因": "无价格涨跌幅限制的证券"
+    },
+    {
+      "股票代码": "600418",
+      "名称": "江淮汽车",
+      "最新价": 27.47,
+      "涨跌幅": 5.492,
+      "成交额": 7492598087.0,
+      "龙虎榜原因": "连续三个交易日内，涨幅偏离值累计达20%的证券"
     },
     {
       "股票代码": "000002",
       "名称": "万 科Ａ",
-      "最新价": 4.08,
-      "涨跌幅": 9.973,
-      "成交额": 3176619108.0,
-      "龙虎榜原因": "涨幅偏离值达7%的证券"
+      "最新价": 4.26,
+      "涨跌幅": 4.412,
+      "成交额": 5158052404.0,
+      "龙虎榜原因": "振幅值达15%的证券"
+    },
+    {
+      "股票代码": "600127",
+      "名称": "金健米业",
+      "最新价": 13.14,
+      "涨跌幅": -1.647,
+      "成交额": 2960624365.0,
+      "龙虎榜原因": "换手率达20%的证券"
     },
     {
       "股票代码": "000560",
       "名称": "我爱我家",
-      "最新价": 3.76,
-      "涨跌幅": 1.348,
-      "成交额": 3044448538.0,
+      "最新价": 3.7,
+      "涨跌幅": -1.596,
+      "成交额": 2736655375.0,
       "龙虎榜原因": "换手率达20%的证券"
     },
     {
-      "股票代码": "000823",
-      "名称": "超声电子",
-      "最新价": 24.4,
-      "涨跌幅": 10.009,
-      "成交额": 2748775889.0,
-      "龙虎榜原因": "涨幅偏离值达7%的证券"
+      "股票代码": "002119",
+      "名称": "康强电子",
+      "最新价": 25.8,
+      "涨跌幅": -8.737,
+      "成交额": 2339128122.0,
+      "龙虎榜原因": "换手率达20%的证券 | 跌幅偏离值达7%的证券"
     }
   ],
   "files": {
@@ -72,16 +88,16 @@
     "triggers": "/latest/triggers.json"
   },
   "candidate_pool": {
-    "count": 37,
+    "count": 40,
     "max_pool": 40,
-    "generated_at": "2026-09-29 18:01:27"
+    "generated_at": "2026-09-30 18:04:12"
   },
   "intraday": {
     "period": "5m",
-    "requested_stocks": 37,
-    "success_stocks": 37,
+    "requested_stocks": 40,
+    "success_stocks": 40,
     "failed_stocks": 0,
-    "generated_at": "2026-09-29 18:04:18"
+    "generated_at": "2026-09-30 18:07:16"
   },
   "relative_strength": {
     "benchmarks": [
@@ -90,23 +106,23 @@
       "创业板指",
       "科创50"
     ],
-    "stocks": 37,
-    "generated_at": "2026-09-29 18:04:36"
+    "stocks": 40,
+    "generated_at": "2026-09-30 18:07:34"
   },
   "windvane": {
-    "count": 34,
-    "leaders": 14,
-    "confirms": 8,
-    "weak_anchors": 11,
-    "generated_at": "2026-09-29 18:04:37"
+    "count": 38,
+    "leaders": 10,
+    "confirms": 5,
+    "weak_anchors": 23,
+    "generated_at": "2026-09-30 18:07:35"
   },
   "sector_strength": {
     "version": "1.2",
     "breadth_universe": 100,
-    "signal_universe": 36,
-    "industry_count": 21,
+    "signal_universe": 40,
+    "industry_count": 22,
     "theme_count": 11,
-    "generated_at": "2026-09-29 18:04:39"
+    "generated_at": "2026-09-30 18:07:36"
   },
   "decision": {
     "market_regime": "NEUTRAL",
@@ -115,6 +131,6 @@
     "decision_universe": 22,
     "a1_count": 5,
     "a2_count": 3,
-    "generated_at": "2026-09-29 18:04:40"
+    "generated_at": "2026-09-30 18:07:38"
   }
 }

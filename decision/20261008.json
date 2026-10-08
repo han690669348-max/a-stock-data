@@ -1,0 +1,300 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261008",
+  "published_at": "2026-10-08T18:10:21.676629+08:00",
+  "market": {
+    "regime": "RISK_OFF",
+    "position_cap_pct": 0,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "002074",
+      "name": "国轩高科",
+      "tier": "TIER_A",
+      "score": 72,
+      "confidence": 67,
+      "theme": "电池",
+      "trigger": "观察开盘后前30分钟能否维持相对强势；若出现第一次回踩，需见承接且不迅速转为持续走弱，并关注电池方向是否有其他高成交个股同步跟随后再评估。",
+      "invalidation": "前30分钟持续弱于深证成指，或第一次回踩后承接失败、重新转为明显弱势，则观察逻辑失效。",
+      "forbidden": "不因前一日涨幅追逐开盘急拉；不在板块无跟随、个股回踩无承接时加仓；不将观察池资格视为买入指令。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 31.3,
+          "source": "intraday_structure.csv"
+        },
+        "day_high": {
+          "value": 32.14,
+          "source": "intraday_structure.csv"
+        },
+        "day_low": {
+          "value": 29.47,
+          "source": "intraday_structure.csv"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "002580",
+      "name": "圣阳股份",
+      "tier": "TIER_A",
+      "score": 67,
+      "confidence": 61,
+      "theme": "电池",
+      "trigger": "观察开盘后是否能保持前30分钟相对强势；若出现第一次回踩，需确认承接并观察同方向强势股是否同步，而非只看个股冲高。",
+      "invalidation": "开盘后相对强势迅速消失，或第一次回踩失去承接并转为持续走弱，则不再按强势延续观察。",
+      "forbidden": "禁止竞价或开盘急拉时追高；禁止忽视盘中炸板和高换手风险；不在板块缺少同步性时仅凭个股涨幅交易。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 21.36,
+          "source": "intraday_structure.csv"
+        },
+        "day_high": {
+          "value": 21.47,
+          "source": "intraday_structure.csv"
+        },
+        "day_low": {
+          "value": 19.06,
+          "source": "intraday_structure.csv"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "601872",
+      "name": "招商轮船",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    },
+    {
+      "code": "603002",
+      "name": "宏昌电子",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    },
+    {
+      "code": "603127",
+      "name": "昭衍新药",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "电池",
+        "confidence": 78,
+        "thesis": "电池方向涨停数量领先，短线情绪扩散较明显；但高成交与结构样本呈现分化，强势个股的持续性仍需次日验证。",
+        "evidence": [
+          "行业涨停数量8家，为所列行业中最多",
+          "圣阳股份涨9.426%，收盘接近当日高位，盘中有2次炸板",
+          "国轩高科涨6.102%，呈现回落后修复及尾盘走强",
+          "宁德时代跌1.498%，高成交核心并未同步走强"
+        ],
+        "risk": "板块高成交核心不同步，且涨停情绪伴随炸板，可能是局部扩散而非稳定主线。"
+      },
+      {
+        "rank": 2,
+        "name": "航运港口",
+        "confidence": 64,
+        "thesis": "涨停扩散与高成交个股表现带来局部情绪关注，但高换手及反复开板提示分歧很大。",
+        "evidence": [
+          "航运港口行业有2家涨停",
+          "招商轮船涨9.33%，服务器结构标记为收盘接近高位、回落修复",
+          "招商轮船盘中炸板36次；中远海能涨停且记录为未炸板"
+        ],
+        "risk": "招商轮船反复开板次数极高，板块高成交样本有限，追涨承接风险大。"
+      },
+      {
+        "rank": 3,
+        "name": "环境治理",
+        "confidence": 54,
+        "thesis": "有高换手连板个股带动局部短线情绪，但板块广度和高成交核心同步性不足。",
+        "evidence": [
+          "上海洗霸收涨停，数据记录为3连板、换手率18.32%、盘中炸板7次"
+        ],
+        "risk": "单一个股情绪突出且反复开板，不能据此确认板块级交易主线。"
+      }
+    ],
+    "trading": [],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "电池",
+        "confidence": 66,
+        "thesis": "涨停扩散和少数高成交样本的相对强势值得跟踪，但板块同步性和高成交核心确认不足，暂列观察而非交易主线。",
+        "evidence": [
+          "电池行业涨停8家",
+          "国轩高科涨6.102%，日内及尾盘相对深证成指走强",
+          "圣阳股份涨9.426%，收盘位置较高，但盘中有炸板记录",
+          "电气机械和器材制造业状态为DIVERGING，确认成员为0"
+        ],
+        "risk": "若强势股次日不能维持前30分钟相对强势、回踩承接和板块跟随，局部强度可能快速衰减。"
+      },
+      {
+        "rank": 2,
+        "name": "航运港口",
+        "confidence": 55,
+        "thesis": "涨停股与高成交个股表现提供观察价值，但目前主要是个股情绪，尚无足够板块广度证据。",
+        "evidence": [
+          "航运港口行业有2家涨停",
+          "招商轮船收涨9.33%，结构记录显示收盘接近高位",
+          "招商南油涨停，但盘中炸板15次；招商轮船盘中炸板36次"
+        ],
+        "risk": "高分歧和反复开板可能导致次日承接不稳，且板块样本不足。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "电子设备制造及AI硬件",
+        "confidence": 91,
+        "thesis": "这是当日成交占比最大的方向之一，但高成交核心普遍走弱，板块内部同步性差，不能因个别逆势股而忽略整体兑现压力。",
+        "evidence": [
+          "电子设备制造业成交额占比55.96%，上涨比例16.33%，平均跌幅4.54%",
+          "该行业趋势向下比例76.19%，弱势锚点19个，状态为DIVERGING",
+          "东山精密跌停并收于当日低位；中际旭创、天孚通信、长鑫科技等收盘接近低位",
+          "PCB方向4个高成交样本上涨比例为0，状态为BREADTH_WEAK"
+        ],
+        "risk": "若次日仅少数个股反弹而高成交核心未修复，板块反弹的持续性和可交易性有限。"
+      },
+      {
+        "rank": 2,
+        "name": "CPO与光模块",
+        "confidence": 88,
+        "thesis": "高成交样本普遍收跌并呈趋势走弱，午后局部回升尚未扭转日内结构。",
+        "evidence": [
+          "CPO样本平均跌幅5.60%，趋势向下比例100%，状态为FADING",
+          "光模块样本平均跌幅5.43%，趋势向下比例100%，状态为FADING",
+          "新易盛、中际旭创、天孚通信等均收跌且结构包含TREND_DOWN",
+          "源杰科技跌20%，长光华芯跌20%"
+        ],
+        "risk": "高位兑现和大幅波动风险显著，不宜仅凭尾盘回升判断企稳。"
+      },
+      {
+        "rank": 3,
+        "name": "存储",
+        "confidence": 84,
+        "thesis": "高成交存储样本同步下跌，相对强度和趋势结构偏弱。",
+        "evidence": [
+          "存储样本平均跌幅6.01%，相对强度为负的比例100%",
+          "存储方向趋势向下比例100%，状态为FADING",
+          "长鑫科技、兆易创新、德明利均收跌并呈收盘接近低位或趋势走弱特征"
+        ],
+        "risk": "若次日不能出现高成交样本同步修复，反弹可能仍属于弱势中的技术性回抽。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "002074",
+      "name": "国轩高科",
+      "role": "国内相对强势观察",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002580",
+      "name": "圣阳股份",
+      "role": "国内短线情绪观察",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "role": "国内高成交弱势锚点",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "观察上证指数、深证成指及成长指数前30分钟结构，确认低位回升是否延续，而不是仅有尾盘修复。",
+    "观察涨停、炸板和跌停反馈是否改善，尤其留意高分歧个股的开板与承接。",
+    "检查电池方向是否从少数强势股扩展至更多高成交样本，并验证第一次回踩承接。",
+    "检查电子设备、CPO、光模块和存储的高成交核心是否止跌并出现同步修复；若仍普遍走弱，维持防守。",
+    "避免仅因涨停数量或个别高位股强势而提高总仓位；执行机会不足时可继续空仓或低仓位观察。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "002074",
+        "name": "国轩高科",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "002580",
+        "name": "圣阳股份",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "601872",
+        "name": "招商轮船",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "stock",
+        "code": "603002",
+        "name": "宏昌电子",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "stock",
+        "code": "603127",
+        "name": "昭衍新药",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "market_regime",
+        "rule": "NEUTRAL",
+        "researcher": "RISK_OFF",
+        "reviewer": "TOO_BEARISH"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

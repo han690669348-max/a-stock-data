@@ -1,33 +1,14 @@
 {
-  "trade_date": "20260930",
+  "trade_date": "20261008",
   "market_regime": "NEUTRAL",
   "max_total_position": 0.5,
   "A1": [
     {
-      "股票代码": "000002",
-      "名称": "万 科Ａ",
-      "reference_close": 4.26,
-      "reference_high": 4.4,
-      "reference_low": 3.67,
-      "score": 12,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "603259",
-      "名称": "药明康德",
-      "reference_close": 167.34,
-      "reference_high": 169.2,
-      "reference_low": 159.4,
+      "股票代码": "002580",
+      "名称": "圣阳股份",
+      "reference_close": 21.36,
+      "reference_high": 21.47,
+      "reference_low": 19.06,
       "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -42,12 +23,12 @@
       ]
     },
     {
-      "股票代码": "600276",
-      "名称": "恒瑞医药",
-      "reference_close": 47.2,
-      "reference_high": 47.39,
-      "reference_low": 45.25,
-      "score": 11,
+      "股票代码": "002074",
+      "名称": "国轩高科",
+      "reference_close": 31.3,
+      "reference_high": 32.14,
+      "reference_low": 29.47,
+      "score": 9,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -61,12 +42,31 @@
       ]
     },
     {
-      "股票代码": "002487",
-      "名称": "大金重工",
-      "reference_close": 46.29,
-      "reference_high": 47.0,
-      "reference_low": 42.23,
-      "score": 10,
+      "股票代码": "603002",
+      "名称": "宏昌电子",
+      "reference_close": 18.69,
+      "reference_high": 19.07,
+      "reference_low": 17.6,
+      "score": 8,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "601872",
+      "名称": "招商轮船",
+      "reference_close": 22.03,
+      "reference_high": 22.17,
+      "reference_low": 21.15,
+      "score": 8,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -82,10 +82,10 @@
     {
       "股票代码": "603127",
       "名称": "昭衍新药",
-      "reference_close": 49.3,
-      "reference_high": 49.3,
-      "reference_low": 44.24,
-      "score": 8,
+      "reference_close": 52.06,
+      "reference_high": 53.46,
+      "reference_low": 49.0,
+      "score": 6,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,49 +101,11 @@
   ],
   "A2": [
     {
-      "股票代码": "600127",
-      "名称": "金健米业",
-      "reference_close": 13.14,
-      "reference_high": 13.63,
-      "reference_low": 12.68,
-      "score": 5,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "000560",
-      "名称": "我爱我家",
-      "reference_close": 3.7,
-      "reference_high": 3.83,
-      "reference_low": 3.38,
-      "score": 5,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "603083",
-      "名称": "剑桥科技",
-      "reference_close": 205.45,
-      "reference_high": 209.8,
-      "reference_low": 201.19,
+      "股票代码": "601208",
+      "名称": "东材科技",
+      "reference_close": 50.92,
+      "reference_high": 53.04,
+      "reference_low": 49.67,
       "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",

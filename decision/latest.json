@@ -2,35 +2,35 @@
   "status": "SUCCESS",
   "schema_version": "public-morning-baseline-1.0",
   "morning_contract_version": "1.0",
-  "trade_date": "20261008",
-  "published_at": "2026-10-08T18:10:21.676629+08:00",
+  "trade_date": "20261009",
+  "published_at": "2026-10-09T18:29:26.867915+08:00",
   "market": {
-    "regime": "RISK_OFF",
-    "position_cap_pct": 0,
+    "regime": "RISK_ON_ROTATION",
+    "position_cap_pct": 45,
     "source": "FINAL_ARBITER_V1_1"
   },
   "A1": [
     {
-      "code": "002074",
-      "name": "国轩高科",
+      "code": "601899",
+      "name": "紫金矿业",
       "tier": "TIER_A",
-      "score": 72,
-      "confidence": 67,
-      "theme": "电池",
-      "trigger": "观察开盘后前30分钟能否维持相对强势；若出现第一次回踩，需见承接且不迅速转为持续走弱，并关注电池方向是否有其他高成交个股同步跟随后再评估。",
-      "invalidation": "前30分钟持续弱于深证成指，或第一次回踩后承接失败、重新转为明显弱势，则观察逻辑失效。",
-      "forbidden": "不因前一日涨幅追逐开盘急拉；不在板块无跟随、个股回踩无承接时加仓；不将观察池资格视为买入指令。",
+      "score": 79,
+      "confidence": 76,
+      "theme": "贵金属与有色资源",
+      "trigger": "次日观察开盘后是否维持相对指数强势，第一次回踩能否获得承接，并在前30分钟保持相对强势；若板块内其他高成交资源标的同步改善，观察价值提高。",
+      "invalidation": "相对指数转弱且第一次回踩持续失守、或资源方向核心普遍走弱，则取消观察优先级。",
+      "forbidden": "不得因当日涨幅直接追高；不得将窄样本资源强势视作已确认的全面主线。",
       "reference_prices": {
         "previous_close": {
-          "value": 31.3,
+          "value": 30.8,
           "source": "intraday_structure.csv"
         },
         "day_high": {
-          "value": 32.14,
+          "value": 31.06,
           "source": "intraday_structure.csv"
         },
         "day_low": {
-          "value": 29.47,
+          "value": 29.51,
           "source": "intraday_structure.csv"
         }
       },
@@ -42,26 +42,119 @@
       }
     },
     {
-      "code": "002580",
-      "name": "圣阳股份",
+      "code": "002709",
+      "name": "天赐材料",
       "tier": "TIER_A",
-      "score": 67,
-      "confidence": 61,
-      "theme": "电池",
-      "trigger": "观察开盘后是否能保持前30分钟相对强势；若出现第一次回踩，需确认承接并观察同方向强势股是否同步，而非只看个股冲高。",
-      "invalidation": "开盘后相对强势迅速消失，或第一次回踩失去承接并转为持续走弱，则不再按强势延续观察。",
-      "forbidden": "禁止竞价或开盘急拉时追高；禁止忽视盘中炸板和高换手风险；不在板块缺少同步性时仅凭个股涨幅交易。",
+      "score": 76,
+      "confidence": 71,
+      "theme": "电池材料",
+      "trigger": "观察次日开盘后能否在第一次回踩中获得承接，且前30分钟相对强于指数；同时观察电池方向其他高成交标的是否同步企稳。",
+      "invalidation": "开盘后相对强度明显转弱、第一次回踩无承接，或高成交同方向标的继续分化走弱。",
+      "forbidden": "当日有炸板记录，不以涨停预期追价；不因单一个股强势推定电池板块已形成主线。",
       "reference_prices": {
         "previous_close": {
-          "value": 21.36,
+          "value": 35.68,
           "source": "intraday_structure.csv"
         },
         "day_high": {
-          "value": 21.47,
+          "value": 35.96,
           "source": "intraday_structure.csv"
         },
         "day_low": {
-          "value": 19.06,
+          "value": 32.22,
+          "source": "intraday_structure.csv"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "002407",
+      "name": "多氟多",
+      "tier": "TIER_A",
+      "score": 70,
+      "confidence": 66,
+      "theme": "电池材料",
+      "trigger": "观察次日是否在零轴附近或第一次回踩获得承接，并在前30分钟维持相对指数强势；同步观察电池方向高成交标的反馈。",
+      "invalidation": "开盘后持续弱于指数、第一次回踩无承接，或板块同步性进一步下降。",
+      "forbidden": "不得仅凭收盘靠近高位判断次日必然延续；不在缺少同方向确认时追涨。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 31.89,
+          "source": "intraday_structure.csv"
+        },
+        "day_high": {
+          "value": 31.9,
+          "source": "intraday_structure.csv"
+        },
+        "day_low": {
+          "value": 29.5,
+          "source": "intraday_structure.csv"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "600206",
+      "name": "有研新材",
+      "tier": "TIER_A",
+      "score": 68,
+      "confidence": 62,
+      "theme": "有色资源及材料轮动",
+      "trigger": "观察次日第一次回踩是否有承接、前30分钟相对强度是否保持为正，并关注贵金属及有色资源核心是否同步。",
+      "invalidation": "回踩承接失败或相对指数迅速转弱，尤其是资源方向未能同步延续时。",
+      "forbidden": "当日振幅较大，不把强势收盘当作低风险买点；不追逐快速拉升。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 47.95,
+          "source": "intraday_structure.csv"
+        },
+        "day_high": {
+          "value": 49.0,
+          "source": "intraday_structure.csv"
+        },
+        "day_low": {
+          "value": 42.4,
+          "source": "intraday_structure.csv"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "600988",
+      "name": "赤峰黄金",
+      "tier": "TIER_B",
+      "score": 73,
+      "confidence": 69,
+      "theme": "贵金属与有色资源",
+      "trigger": "观察次日能否维持相对指数强势，第一次回踩出现承接，并与紫金矿业或其他资源高成交标的保持同向。",
+      "invalidation": "前30分钟相对强度转负且回踩承接失败，或资源核心同步走弱。",
+      "forbidden": "不得将单日上涨外推为持续趋势；避免在开盘快速冲高时无结构追入。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 41.38,
+          "source": "intraday_structure.csv"
+        },
+        "day_high": {
+          "value": 42.0,
+          "source": "intraday_structure.csv"
+        },
+        "day_low": {
+          "value": 39.5,
           "source": "intraday_structure.csv"
         }
       },
@@ -76,150 +169,158 @@
   "A2": [],
   "observe": [
     {
-      "code": "601872",
-      "name": "招商轮船",
+      "code": "600487",
+      "name": "亨通光电",
       "tier": "OBSERVE",
-      "reviewer_verdict": null
-    },
-    {
-      "code": "603002",
-      "name": "宏昌电子",
-      "tier": "OBSERVE",
-      "reviewer_verdict": null
-    },
-    {
-      "code": "603127",
-      "name": "昭衍新药",
-      "tier": "OBSERVE",
-      "reviewer_verdict": null
+      "reviewer_verdict": "DOWNGRADE"
     }
   ],
   "themes": {
     "emotion": [
       {
         "rank": 1,
-        "name": "电池",
-        "confidence": 78,
-        "thesis": "电池方向涨停数量领先，短线情绪扩散较明显；但高成交与结构样本呈现分化，强势个股的持续性仍需次日验证。",
+        "name": "电池及电池材料",
+        "confidence": 74,
+        "thesis": "电池方向涨停扩散较多，且部分高成交个股强势收盘，短线情绪活跃；不过炸板和个股分化提示一致性仍需验证。",
         "evidence": [
-          "行业涨停数量8家，为所列行业中最多",
-          "圣阳股份涨9.426%，收盘接近当日高位，盘中有2次炸板",
-          "国轩高科涨6.102%，呈现回落后修复及尾盘走强",
-          "宁德时代跌1.498%，高成交核心并未同步走强"
+          "电池行业涨停6家，为所列行业中最多",
+          "天赐材料涨9.147%，收盘接近当日高位，但当日有2次炸板记录",
+          "多氟多涨6.123%，收盘接近当日高位",
+          "宁德时代涨3.836%，但有LATE_WEAKNESS标签"
         ],
-        "risk": "板块高成交核心不同步，且涨停情绪伴随炸板，可能是局部扩散而非稳定主线。"
+        "risk": "高换手和炸板提示分歧；高成交板块总体并未呈现全面同步走强。"
       },
       {
         "rank": 2,
-        "name": "航运港口",
-        "confidence": 64,
-        "thesis": "涨停扩散与高成交个股表现带来局部情绪关注，但高换手及反复开板提示分歧很大。",
+        "name": "出版、影视与数字媒体",
+        "confidence": 68,
+        "thesis": "出版、影视院线和数字媒体出现多只涨停，短线情绪扩散明显，但高成交核心的同步性证据不足。",
         "evidence": [
-          "航运港口行业有2家涨停",
-          "招商轮船涨9.33%，服务器结构标记为收盘接近高位、回落修复",
-          "招商轮船盘中炸板36次；中远海能涨停且记录为未炸板"
+          "出版行业涨停5家",
+          "影视院线涨停4家",
+          "数字媒体涨停3家",
+          "中文在线、芒果超媒、新华文轩等出现在高成交涨停名单"
         ],
-        "risk": "招商轮船反复开板次数极高，板块高成交样本有限，追涨承接风险大。"
+        "risk": "涨停扩散不等同于高成交核心形成交易主线，次日持续性待观察。"
       },
       {
         "rank": 3,
-        "name": "环境治理",
-        "confidence": 54,
-        "thesis": "有高换手连板个股带动局部短线情绪，但板块广度和高成交核心同步性不足。",
+        "name": "软件开发",
+        "confidence": 61,
+        "thesis": "软件开发有一定涨停扩散，但高成交代表性不足，更多体现局部情绪活跃。",
         "evidence": [
-          "上海洗霸收涨停，数据记录为3连板、换手率18.32%、盘中炸板7次"
+          "软件开发行业涨停5家",
+          "天融信、大智慧、绿盟科技出现在高成交涨停名单"
         ],
-        "risk": "单一个股情绪突出且反复开板，不能据此确认板块级交易主线。"
+        "risk": "缺少高成交板块同步、相对强度及完整结构层面的主线确认。"
       }
     ],
-    "trading": [],
+    "trading": [
+      {
+        "rank": 1,
+        "name": "贵金属与有色资源",
+        "confidence": 66,
+        "thesis": "相较于高成交电子方向的分化，资源方向的高成交核心表现更一致，具备有限的次日结构验证价值；但板块样本和信号覆盖不广，仍按轮动交易看待。",
+        "evidence": [
+          "有色金属矿采选业状态为STRONG，样本上涨比例100%，正相对强度比例100%，趋势向上比例100%",
+          "紫金矿业涨4.869%，日相对强度为正，标记为LEADER，收盘位置偏高",
+          "赤峰黄金涨5.912%，日相对强度为正，标记为LEADER",
+          "指数收涨且收盘位置偏高，资源核心当日相对表现突出"
+        ],
+        "risk": "板块样本数有限，晚间数据不足以确认扩散广度；两只核心的尾盘相对强度均未显示显著增强。"
+      }
+    ],
     "watch": [
       {
         "rank": 1,
-        "name": "电池",
-        "confidence": 66,
-        "thesis": "涨停扩散和少数高成交样本的相对强势值得跟踪，但板块同步性和高成交核心确认不足，暂列观察而非交易主线。",
+        "name": "电池材料",
+        "confidence": 63,
+        "thesis": "天赐材料、多氟多等个股强势，但产业链内部和高成交核心表现并不完全同步，等待次日确认强势能否扩散。",
         "evidence": [
-          "电池行业涨停8家",
-          "国轩高科涨6.102%，日内及尾盘相对深证成指走强",
-          "圣阳股份涨9.426%，收盘位置较高，但盘中有炸板记录",
-          "电气机械和器材制造业状态为DIVERGING，确认成员为0"
+          "天赐材料涨9.147%，日内及尾盘相对强度为正",
+          "多氟多涨6.123%，收盘接近当日高位",
+          "宁德时代涨3.836%，但尾盘结构标注LATE_WEAKNESS",
+          "电气机械行业状态为DIVERGING"
         ],
-        "risk": "若强势股次日不能维持前30分钟相对强势、回踩承接和板块跟随，局部强度可能快速衰减。"
+        "risk": "个股强势与板块同步性有差异，隔日追高风险较高。"
       },
       {
         "rank": 2,
-        "name": "航运港口",
-        "confidence": 55,
-        "thesis": "涨停股与高成交个股表现提供观察价值，但目前主要是个股情绪，尚无足够板块广度证据。",
+        "name": "光纤光缆",
+        "confidence": 54,
+        "thesis": "亨通光电表现较强并具备相对强度，但现有样本主要由单一高成交核心支撑，尚不足以确认板块主线。",
         "evidence": [
-          "航运港口行业有2家涨停",
-          "招商轮船收涨9.33%，结构记录显示收盘接近高位",
-          "招商南油涨停，但盘中炸板15次；招商轮船盘中炸板36次"
+          "亨通光电涨0.474%，日内及尾盘相对强度为正",
+          "亨通光电标记为LEADER、TREND_UP，收盘接近当日高位",
+          "光纤光缆方向信号样本有限"
         ],
-        "risk": "高分歧和反复开板可能导致次日承接不稳，且板块样本不足。"
+        "risk": "板块同步性和可交易广度证据不足，关注强势能否由个股扩展至同方向其他标的。"
       }
     ],
     "weak": [
       {
         "rank": 1,
-        "name": "电子设备制造及AI硬件",
-        "confidence": 91,
-        "thesis": "这是当日成交占比最大的方向之一，但高成交核心普遍走弱，板块内部同步性差，不能因个别逆势股而忽略整体兑现压力。",
+        "name": "CPO与光模块",
+        "confidence": 84,
+        "thesis": "高成交核心普遍收跌，方向状态偏弱或FADING；虽有部分个股午后修复，但目前不构成可确认的同步交易主线。",
         "evidence": [
-          "电子设备制造业成交额占比55.96%，上涨比例16.33%，平均跌幅4.54%",
-          "该行业趋势向下比例76.19%，弱势锚点19个，状态为DIVERGING",
-          "东山精密跌停并收于当日低位；中际旭创、天孚通信、长鑫科技等收盘接近低位",
-          "PCB方向4个高成交样本上涨比例为0，状态为BREADTH_WEAK"
+          "CPO状态为FADING，样本上涨比例为0，趋势向上比例为0",
+          "光模块状态为BREADTH_WEAK，样本上涨比例为0",
+          "中际旭创、新易盛、源杰科技等高成交标的收跌",
+          "源杰科技标记LATE_WEAKNESS、SPIKE_FADE，尾盘相对表现弱于基准",
+          "太辰光标记SPIKE_FADE且尾盘相对弱于基准"
         ],
-        "risk": "若次日仅少数个股反弹而高成交核心未修复，板块反弹的持续性和可交易性有限。"
+        "risk": "高成交和高关注度放大了板块兑现影响；若核心不能先修复，不宜仅凭指数反弹推断板块转强。"
       },
       {
         "rank": 2,
-        "name": "CPO与光模块",
-        "confidence": 88,
-        "thesis": "高成交样本普遍收跌并呈趋势走弱，午后局部回升尚未扭转日内结构。",
+        "name": "PCB及相关电子材料",
+        "confidence": 78,
+        "thesis": "板块高成交成员普遍走弱，部分个股出现明显兑现，暂列弱势观察方向。",
         "evidence": [
-          "CPO样本平均跌幅5.60%，趋势向下比例100%，状态为FADING",
-          "光模块样本平均跌幅5.43%，趋势向下比例100%，状态为FADING",
-          "新易盛、中际旭创、天孚通信等均收跌且结构包含TREND_DOWN",
-          "源杰科技跌20%，长光华芯跌20%"
+          "PCB样本上涨比例为0，正相对强度比例为0，平均日收益为负",
+          "金安国纪跌停，标记CLOSE_NEAR_LOW、SPIKE_FADE",
+          "生益科技跌5.855%，日相对强度为负",
+          "华正新材跌7.933%，标记SPIKE_FADE",
+          "大金重工跌停并标记CLOSE_NEAR_LOW、TREND_DOWN"
         ],
-        "risk": "高位兑现和大幅波动风险显著，不宜仅凭尾盘回升判断企稳。"
-      },
-      {
-        "rank": 3,
-        "name": "存储",
-        "confidence": 84,
-        "thesis": "高成交存储样本同步下跌，相对强度和趋势结构偏弱。",
-        "evidence": [
-          "存储样本平均跌幅6.01%，相对强度为负的比例100%",
-          "存储方向趋势向下比例100%，状态为FADING",
-          "长鑫科技、兆易创新、德明利均收跌并呈收盘接近低位或趋势走弱特征"
-        ],
-        "risk": "若次日不能出现高成交样本同步修复，反弹可能仍属于弱势中的技术性回抽。"
+        "risk": "个别修复不改变高成交样本整体偏弱的事实，留意跌停及大幅回撤标的的隔日反馈。"
       }
     ]
   },
   "B": [
     {
-      "code": "002074",
-      "name": "国轩高科",
-      "role": "国内相对强势观察",
+      "code": "601899",
+      "name": "紫金矿业",
+      "role": "LEADER",
       "windvane_score": null,
       "source": null
     },
     {
-      "code": "002580",
-      "name": "圣阳股份",
-      "role": "国内短线情绪观察",
+      "code": "002709",
+      "name": "天赐材料",
+      "role": "LEADER",
       "windvane_score": null,
       "source": null
     },
     {
-      "code": "002384",
-      "name": "东山精密",
-      "role": "国内高成交弱势锚点",
+      "code": "300750",
+      "name": "宁德时代",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002487",
+      "name": "大金重工",
+      "role": "WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002636",
+      "name": "金安国纪",
+      "role": "WEAK_ANCHOR",
       "windvane_score": null,
       "source": null
     }
@@ -231,25 +332,39 @@
     "source": "PRIVATE_SERVER_ONLY"
   },
   "next_day_checks": [
-    "观察上证指数、深证成指及成长指数前30分钟结构，确认低位回升是否延续，而不是仅有尾盘修复。",
-    "观察涨停、炸板和跌停反馈是否改善，尤其留意高分歧个股的开板与承接。",
-    "检查电池方向是否从少数强势股扩展至更多高成交样本，并验证第一次回踩承接。",
-    "检查电子设备、CPO、光模块和存储的高成交核心是否止跌并出现同步修复；若仍普遍走弱，维持防守。",
-    "避免仅因涨停数量或个别高位股强势而提高总仓位；执行机会不足时可继续空仓或低仓位观察。"
+    "观察上证、深证、创业板及科创50开盘后是否延续收盘偏强结构，特别是前30分钟能否维持相对强度。",
+    "观察紫金矿业、赤峰黄金等资源核心是否保持相对指数强势，并确认资源方向是否有更多高成交标的同步。",
+    "观察天赐材料、多氟多及宁德时代的第一次回踩承接，结合电池方向炸板和高成交成员同步性判断轮动能否延续。",
+    "观察CPO、光模块及PCB高成交核心能否止跌；若弱势延续，避免将指数反弹误判为电子主线修复。",
+    "跟踪涨停、炸板、跌停反馈及高位兑现压力；出现核心走弱扩散时下调总仓位上限。"
   ],
   "decision_state": {
     "consensus": [
       {
         "type": "stock",
-        "code": "002074",
-        "name": "国轩高科",
+        "code": "601899",
+        "name": "紫金矿业",
         "tier": "TIER_A",
         "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
       },
       {
         "type": "stock",
-        "code": "002580",
-        "name": "圣阳股份",
+        "code": "002709",
+        "name": "天赐材料",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "002407",
+        "name": "多氟多",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "600206",
+        "name": "有研新材",
         "tier": "TIER_A",
         "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
       }
@@ -257,27 +372,15 @@
     "disagreement": [
       {
         "type": "stock",
-        "code": "601872",
-        "name": "招商轮船",
-        "summary": "多系统存在明显分歧，Reviewer=None"
-      },
-      {
-        "type": "stock",
-        "code": "603002",
-        "name": "宏昌电子",
-        "summary": "多系统存在明显分歧，Reviewer=None"
-      },
-      {
-        "type": "stock",
-        "code": "603127",
-        "name": "昭衍新药",
-        "summary": "多系统存在明显分歧，Reviewer=None"
+        "code": "600487",
+        "name": "亨通光电",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
       },
       {
         "type": "market_regime",
-        "rule": "NEUTRAL",
-        "researcher": "RISK_OFF",
-        "reviewer": "TOO_BEARISH"
+        "rule": "RISK_ON",
+        "researcher": "RISK_ON_ROTATION",
+        "reviewer": "UNCERTAIN"
       }
     ],
     "uncertainty": []

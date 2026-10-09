@@ -1,14 +1,52 @@
 {
-  "trade_date": "20261008",
-  "market_regime": "NEUTRAL",
-  "max_total_position": 0.5,
+  "trade_date": "20261009",
+  "market_regime": "RISK_ON",
+  "max_total_position": 0.8,
   "A1": [
     {
-      "股票代码": "002580",
-      "名称": "圣阳股份",
-      "reference_close": 21.36,
-      "reference_high": 21.47,
-      "reference_low": 19.06,
+      "股票代码": "600206",
+      "名称": "有研新材",
+      "reference_close": 47.95,
+      "reference_high": 49.0,
+      "reference_low": 42.4,
+      "score": 13,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "002407",
+      "名称": "多氟多",
+      "reference_close": 31.89,
+      "reference_high": 31.9,
+      "reference_low": 29.5,
+      "score": 13,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "601899",
+      "名称": "紫金矿业",
+      "reference_close": 30.8,
+      "reference_high": 31.06,
+      "reference_low": 29.51,
       "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -23,12 +61,12 @@
       ]
     },
     {
-      "股票代码": "002074",
-      "名称": "国轩高科",
-      "reference_close": 31.3,
-      "reference_high": 32.14,
-      "reference_low": 29.47,
-      "score": 9,
+      "股票代码": "600487",
+      "名称": "亨通光电",
+      "reference_close": 52.95,
+      "reference_high": 53.25,
+      "reference_low": 49.63,
+      "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -42,50 +80,12 @@
       ]
     },
     {
-      "股票代码": "603002",
-      "名称": "宏昌电子",
-      "reference_close": 18.69,
-      "reference_high": 19.07,
-      "reference_low": 17.6,
-      "score": 8,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "601872",
-      "名称": "招商轮船",
-      "reference_close": 22.03,
-      "reference_high": 22.17,
-      "reference_low": 21.15,
-      "score": 8,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "603127",
-      "名称": "昭衍新药",
-      "reference_close": 52.06,
-      "reference_high": 53.46,
-      "reference_low": 49.0,
-      "score": 6,
+      "股票代码": "002709",
+      "名称": "天赐材料",
+      "reference_close": 35.68,
+      "reference_high": 35.96,
+      "reference_low": 32.22,
+      "score": 10,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,12 +101,88 @@
   ],
   "A2": [
     {
-      "股票代码": "601208",
-      "名称": "东材科技",
-      "reference_close": 50.92,
-      "reference_high": 53.04,
-      "reference_low": 49.67,
-      "score": 4,
+      "股票代码": "002384",
+      "名称": "东山精密",
+      "reference_close": 145.49,
+      "reference_high": 147.63,
+      "reference_low": 139.0,
+      "score": 7,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "603083",
+      "名称": "剑桥科技",
+      "reference_close": 193.0,
+      "reference_high": 198.74,
+      "reference_low": 184.54,
+      "score": 6,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "603986",
+      "名称": "兆易创新",
+      "reference_close": 326.46,
+      "reference_high": 329.5,
+      "reference_low": 311.42,
+      "score": 6,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "600176",
+      "名称": "中国巨石",
+      "reference_close": 38.57,
+      "reference_high": 39.28,
+      "reference_low": 36.01,
+      "score": 6,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "001309",
+      "名称": "德明利",
+      "reference_close": 336.91,
+      "reference_high": 339.46,
+      "reference_low": 319.62,
+      "score": 6,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",

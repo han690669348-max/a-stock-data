@@ -1,0 +1,327 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261012",
+  "published_at": "2026-10-12T18:10:40.109782+08:00",
+  "market": {
+    "regime": "RISK_OFF",
+    "position_cap_pct": 0,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "601127",
+      "name": "赛力斯",
+      "tier": "TIER_A",
+      "score": 72,
+      "confidence": 70,
+      "theme": "汽车与尾盘强势修复",
+      "trigger": "次日开盘后观察能否在前30分钟维持相对指数强势；若冲高回落，需出现第一次回踩承接，并重新站回昨日收盘后再评估，不追逐无承接的直线拉升。",
+      "invalidation": "开盘后持续弱于上证指数，第一次回踩无承接，或失守昨日收盘后不能及时收复，则次日强势结构未获确认。",
+      "forbidden": "不因昨日涨停直接追高；不在指数与汽车方向同步走弱时放宽止损；不将单一个股强势当作板块主线确认。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 51.24,
+          "source": "intraday_structure.csv"
+        },
+        "day_high": {
+          "value": 51.24,
+          "source": "intraday_structure.csv"
+        },
+        "day_low": {
+          "value": 45.56,
+          "source": "intraday_structure.csv"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "002487",
+      "name": "大金重工",
+      "tier": "TIER_A",
+      "score": 69,
+      "confidence": 66,
+      "theme": "风电",
+      "trigger": "次日需观察前30分钟相对深证成指保持强势，且第一次回踩有承接；若重新站回昨日收盘并能维持，才视为结构延续信号。",
+      "invalidation": "次日相对指数转弱、回踩承接失败，或跌破昨日收盘后无法收复，则昨日修复结构不具备延续确认。",
+      "forbidden": "不追高开后无换手承接的拉升；不忽略昨日炸板事实；不因个股强势推定风电板块已形成主线。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 47.1,
+          "source": "intraday_structure.csv"
+        },
+        "day_high": {
+          "value": 48.13,
+          "source": "intraday_structure.csv"
+        },
+        "day_low": {
+          "value": 42.06,
+          "source": "intraday_structure.csv"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "603533",
+      "name": "掌阅科技",
+      "tier": "TIER_A",
+      "score": 66,
+      "confidence": 63,
+      "theme": "出版与数字媒体",
+      "trigger": "次日观察开盘后是否维持相对强势，第一次回踩能否获得承接；若回落后重新站回昨日收盘并保持强度，才考虑结构有效。",
+      "invalidation": "开盘后持续弱于市场，回踩失去承接，或跌破昨日收盘后不能收复，则连板情绪延续条件不成立。",
+      "forbidden": "不在高开快速冲顶且缺少换手承接时追买；不忽略昨日开板记录和整体高炸板环境。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 27.98,
+          "source": "intraday_structure.csv"
+        },
+        "day_high": {
+          "value": 27.98,
+          "source": "intraday_structure.csv"
+        },
+        "day_low": {
+          "value": 25.22,
+          "source": "intraday_structure.csv"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "出版与影视传媒",
+        "confidence": 82,
+        "thesis": "涨停扩散数量居前，出版、影视院线及电视广播均有涨停；高成交传媒个股中也出现尾盘走强样本，短线情绪扩散较明显。",
+        "evidence": [
+          "出版涨停6只，影视院线涨停4只，电视广播涨停2只",
+          "掌阅科技2连板，盘中开板后回封；华策影视、芒果超媒显示尾盘走强及反转标签",
+          "全市场炸板25只，传媒涨停样本仍需关注封板稳定性"
+        ],
+        "risk": "情绪扩散不等于稳定主线；大盘及多数高成交核心偏弱，次日若高标分歧或回封失败，容易快速退潮。"
+      },
+      {
+        "rank": 2,
+        "name": "电网设备与风电",
+        "confidence": 63,
+        "thesis": "电网设备有涨停扩散，风电方向出现大金重工等高成交强势样本，但内部一致性和持续性证据有限。",
+        "evidence": [
+          "电网设备涨停4只",
+          "大金重工收涨7.657%，盘中回落后修复，尾盘相对强于指数",
+          "大金重工当日曾炸板；风电方向另有炸板个股"
+        ],
+        "risk": "高成交板块同步性不足，强势样本存在个股独立性，不能据此确认板块主线。"
+      },
+      {
+        "rank": 3,
+        "name": "化学制药与化学制品",
+        "confidence": 56,
+        "thesis": "化学制药、化学制品有一定涨停扩散，但高成交化工样本表现分化，暂以情绪观察为主。",
+        "evidence": [
+          "化学制药涨停3只，化学制品涨停3只",
+          "部分涨停股存在多次开板",
+          "高成交多氟多收跌且尾盘偏弱，化学原料和化学制品板块状态为DIVERGING"
+        ],
+        "risk": "涨停扩散与高成交核心结构不一致，炸板及跌停风险仍在。"
+      }
+    ],
+    "trading": [],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "出版与影视传媒",
+        "confidence": 67,
+        "thesis": "情绪扩散较强，掌阅科技、芒果超媒、华策影视等高成交样本显示不同程度的日内修复或尾盘强势；但市场环境偏弱，板块承接与次日延续尚待验证。",
+        "evidence": [
+          "出版、影视院线、电视广播合计有多只涨停",
+          "掌阅科技、芒果超媒、华策影视均有结构数据，且存在回升或尾盘走强特征",
+          "掌阅科技盘中曾开板；全市场炸板25只"
+        ],
+        "risk": "若核心个股次日不能保持相对强势，情绪扩散可能转为快速兑现；目前不确认其为稳定交易主线。"
+      },
+      {
+        "rank": 2,
+        "name": "风电与电网设备",
+        "confidence": 55,
+        "thesis": "大金重工相对强势且尾盘结构较好，电网设备亦有涨停扩散，但高成交板块同步确认不足。",
+        "evidence": [
+          "大金重工收涨7.657%，收盘位置偏高，日内及尾盘相对强于深证成指",
+          "电网设备涨停4只",
+          "大金重工及其他风电样本出现炸板记录"
+        ],
+        "risk": "若强势仅由少数个股贡献，板块跟随不足，次日容易出现高开兑现。"
+      },
+      {
+        "rank": 3,
+        "name": "银行权重",
+        "confidence": 52,
+        "thesis": "银行高成交样本涨幅普遍为正，具备相对防御特征，但缺少可用于确认交易主线的完整盘中结构证据。",
+        "evidence": [
+          "货币金融服务板块Top100样本上涨比例为1.0",
+          "招商银行、工商银行、农业银行、中国银行当日均上涨",
+          "该方向信号成员为0，5分钟承接与相对强度确认不足"
+        ],
+        "risk": "可能只是弱市中的防御性表现，不能据此推断增量进攻主线。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "电子及AI硬件",
+        "confidence": 94,
+        "thesis": "高成交权重集中但整体同步走弱，日内相对强度偏差，多数样本呈趋势下行或收于低位附近。",
+        "evidence": [
+          "计算机、通信和其他电子设备制造业Top100成员39只，平均涨幅-4.997%，上涨比例约5.1%，状态为FADING",
+          "CPO与光模块样本普遍下跌，均有较多弱锚及趋势下行标记",
+          "PCB状态为BREADTH_WEAK；星网锐捷跌停，华正新材、金安国纪跌停",
+          "中际旭创、新易盛、源杰科技等高成交样本收盘接近日内低位"
+        ],
+        "risk": "板块高成交集中意味着其继续走弱时可能放大指数及市场风险偏好压力；不宜仅凭局部反弹信号抄底。"
+      },
+      {
+        "rank": 2,
+        "name": "存储与半导体高成交核心",
+        "confidence": 87,
+        "thesis": "存储样本同步下跌、趋势向下；半导体内部虽有个别相对抗跌个股，但整体缺少强势同步确认。",
+        "evidence": [
+          "存储板块样本平均跌幅约5.0%，趋势下行比例为1.0",
+          "兆易创新收跌4.785%，长鑫科技收跌5.216%，均有收盘接近日内低位及趋势下行特征",
+          "半导体相关高成交样本表现分化，整体未形成明确强势承接"
+        ],
+        "risk": "次日若核心不能止跌并改善相对强度，反弹持续性和可交易性有限。"
+      },
+      {
+        "rank": 3,
+        "name": "航运与部分周期高成交方向",
+        "confidence": 79,
+        "thesis": "航运样本明显走弱，部分化工及农产品高成交个股尾盘兑现显著，呈现较高的持仓风险。",
+        "evidence": [
+          "水上运输业Top100样本平均跌幅约8.606%，状态为BREADTH_WEAK",
+          "招商轮船收跌9.379%，中远海能收跌7.833%",
+          "金健米业收跌8.432%，尾盘相对上证指数明显走弱；多氟多收跌9.345%且尾盘继续走弱"
+        ],
+        "risk": "弱势延续可能伴随低开和流动性折价，避免将日内局部回抽视为趋势反转。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "300821",
+      "name": "东岳硅材",
+      "role": "风向标-LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002487",
+      "name": "大金重工",
+      "role": "风向标-LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "601127",
+      "name": "赛力斯",
+      "role": "风向标-LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "603533",
+      "name": "掌阅科技",
+      "role": "风向标-LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "role": "风向标-WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "开盘后观察上证、深成指、创业板指及科创50的前30分钟结构，尤其关注弱势指数能否止跌并改善收盘位置。",
+    "跟踪跌停数量、炸板率及昨日强势股的开板回封情况，确认情绪亏钱效应是否缓和。",
+    "重点观察电子与AI硬件高成交核心是否止跌、相对指数强弱是否改善；未见板块同步承接前不视为反转。",
+    "观察出版与影视传媒的涨停梯队及掌阅科技等情绪样本承接，避免把单只强势股等同于稳定主线。",
+    "观察赛力斯、大金重工等强势样本的第一次回踩承接和相对指数表现；若高开后无承接，避免追高。",
+    "在指数结构、交易主线和高成交核心同步性未改善前，下一交易日总仓位不超过10%。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "601127",
+        "name": "赛力斯",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "002487",
+        "name": "大金重工",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "603533",
+        "name": "掌阅科技",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "market_regime",
+        "rule": "NEUTRAL",
+        "researcher": "RISK_OFF",
+        "reviewer": "TOO_BEARISH"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

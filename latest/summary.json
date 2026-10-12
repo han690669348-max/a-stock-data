@@ -1,35 +1,43 @@
 {
   "status": "ok",
   "source": "a-stock-agent",
-  "trade_date": "20261009",
-  "generated_at": "2026-10-09 18:01:22",
+  "trade_date": "20261012",
+  "generated_at": "2026-10-12 18:01:18",
   "timezone": "Asia/Shanghai",
   "market": {
     "top100_count": 100,
-    "limit_up_count": 69,
-    "broken_limit_count": 14,
-    "limit_down_count": 8
+    "limit_up_count": 46,
+    "broken_limit_count": 25,
+    "limit_down_count": 19
   },
   "lhb": {
-    "raw_records": 48,
-    "unique_stocks": 42,
-    "top100_intersection_count": 2
+    "raw_records": 46,
+    "unique_stocks": 38,
+    "top100_intersection_count": 3
   },
   "core_pool": [
     {
-      "股票代码": "002487",
-      "名称": "大金重工",
-      "最新价": 43.75,
-      "涨跌幅": -9.998,
-      "成交额": 4957547922.0,
-      "龙虎榜原因": "振幅值达15%的证券 | 跌幅偏离值达7%的证券"
+      "股票代码": "300821",
+      "名称": "东岳硅材",
+      "最新价": 17.99,
+      "涨跌幅": 4.898,
+      "成交额": 4008538878.0,
+      "龙虎榜原因": ""
     },
     {
       "股票代码": "002636",
       "名称": "金安国纪",
-      "最新价": 71.67,
-      "涨跌幅": -9.996,
-      "成交额": 2807666916.0,
+      "最新价": 64.5,
+      "涨跌幅": -10.004,
+      "成交额": 2519216770.0,
+      "龙虎榜原因": "跌幅偏离值达7%的证券"
+    },
+    {
+      "股票代码": "002396",
+      "名称": "星网锐捷",
+      "最新价": 28.11,
+      "涨跌幅": -9.99,
+      "成交额": 2138321909.0,
       "龙虎榜原因": "跌幅偏离值达7%的证券"
     }
   ],
@@ -58,14 +66,14 @@
   "candidate_pool": {
     "count": 37,
     "max_pool": 40,
-    "generated_at": "2026-10-09 18:01:24"
+    "generated_at": "2026-10-12 18:01:20"
   },
   "intraday": {
     "period": "5m",
     "requested_stocks": 37,
     "success_stocks": 37,
     "failed_stocks": 0,
-    "generated_at": "2026-10-09 18:07:37"
+    "generated_at": "2026-10-12 18:03:43"
   },
   "relative_strength": {
     "benchmarks": [
@@ -75,30 +83,30 @@
       "科创50"
     ],
     "stocks": 37,
-    "generated_at": "2026-10-09 18:07:55"
+    "generated_at": "2026-10-12 18:03:59"
   },
   "windvane": {
-    "count": 31,
-    "leaders": 15,
-    "confirms": 7,
-    "weak_anchors": 9,
-    "generated_at": "2026-10-09 18:07:57"
+    "count": 33,
+    "leaders": 6,
+    "confirms": 1,
+    "weak_anchors": 26,
+    "generated_at": "2026-10-12 18:04:01"
   },
   "sector_strength": {
     "version": "1.2",
     "breadth_universe": 100,
-    "signal_universe": 37,
-    "industry_count": 23,
+    "signal_universe": 35,
+    "industry_count": 28,
     "theme_count": 11,
-    "generated_at": "2026-10-09 18:07:58"
+    "generated_at": "2026-10-12 18:04:03"
   },
   "decision": {
-    "market_regime": "RISK_ON",
-    "market_regime_cn": "强势",
-    "max_total_position": 0.8,
-    "decision_universe": 21,
-    "a1_count": 5,
-    "a2_count": 5,
-    "generated_at": "2026-10-09 18:08:00"
+    "market_regime": "NEUTRAL",
+    "market_regime_cn": "中性震荡",
+    "max_total_position": 0.5,
+    "decision_universe": 23,
+    "a1_count": 3,
+    "a2_count": 0,
+    "generated_at": "2026-10-12 18:04:04"
   }
 }

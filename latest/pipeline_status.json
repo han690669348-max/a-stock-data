@@ -1,7 +1,15 @@
 {
+  "effective_state": "NOT_PUBLISHED",
+  "current_step": "final_decision",
+  "run_mode": "LATE_RUN",
+  "late_run_evidence_path": "/root/Documents/Codex/2026-10-14/a-final-oos-v1-opt-a/audit/late-final-recovery-20261014/actual_run/model_budget.json",
+  "actual_run_started_at": "2026-10-14T19:43:03.488881+08:00",
   "status": "SUCCESS",
-  "trade_date": "20261013",
-  "generated_at": "2026-10-13 18:13:12",
+  "trade_date": "20261014",
+  "generated_at": "2026-10-14 20:00:57",
+  "run_id": "20261014-late-194303-1225544",
+  "original_run_id": "20261014-late-194303-1225544",
+  "pipeline_state": "NORMAL_RUNNING",
   "review": "SUCCESS",
   "candidate_pool": "SUCCESS",
   "intraday": "SUCCESS",
@@ -14,9 +22,6 @@
   "oos_evaluator": "FAILED_NON_BLOCKING",
   "failed_step": "",
   "error_message": "",
-  "run_id": "20261013-normal-180001-1197545",
-  "original_run_id": "20261013-normal-180001-1197545",
-  "pipeline_state": "SUCCESS",
   "failure_class": "",
   "recoverable": false,
   "recovery_scheduled_at": null,
@@ -24,17 +29,6 @@
   "recovery_attempt": 0,
   "recovery_result": null,
   "publish_gate": "SUCCESS",
-  "github_sync": "SUCCESS",
-  "last_updated_at": "2026-10-13T18:13:12+08:00",
-  "effective_state": "PUBLISHED_SUCCESS",
-  "manual_resume": {
-    "active": true,
-    "reason": "intraday stage-level timeout; manually resumed from frozen market baseline",
-    "original_run_id": "20260921-normal-180001-863290",
-    "trade_date": "20260921",
-    "rule_v1_success_checkpoint": "state/checkpoints/20260921/20260921-normal-180001-863290/20260921.rule_v1.20260921-normal-180001-863290.attempt-01.success.20260921T214706+0800.json",
-    "resumed_through": "rule_v1",
-    "updated_at": "2026-09-21T21:51:16+08:00"
-  },
-  "current_step": "github_sync"
+  "github_sync": "PENDING",
+  "last_updated_at": "2026-10-14T20:00:57+08:00"
 }

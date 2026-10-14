@@ -1,15 +1,15 @@
 {
-  "effective_state": "NOT_PUBLISHED",
+  "effective_state": "PUBLISHED_SUCCESS",
   "current_step": "final_decision",
   "run_mode": "LATE_RUN",
   "late_run_evidence_path": "/root/Documents/Codex/2026-10-14/a-final-oos-v1-opt-a/audit/late-final-recovery-20261014/actual_run/model_budget.json",
   "actual_run_started_at": "2026-10-14T19:43:03.488881+08:00",
   "status": "SUCCESS",
   "trade_date": "20261014",
-  "generated_at": "2026-10-14 20:00:57",
+  "generated_at": "2026-10-14 20:01:08",
   "run_id": "20261014-late-194303-1225544",
   "original_run_id": "20261014-late-194303-1225544",
-  "pipeline_state": "NORMAL_RUNNING",
+  "pipeline_state": "SUCCESS",
   "review": "SUCCESS",
   "candidate_pool": "SUCCESS",
   "intraday": "SUCCESS",
@@ -29,6 +29,6 @@
   "recovery_attempt": 0,
   "recovery_result": null,
   "publish_gate": "SUCCESS",
-  "github_sync": "PENDING",
-  "last_updated_at": "2026-10-14T20:00:57+08:00"
+  "github_sync": "SUCCESS",
+  "last_updated_at": "2026-10-14T20:01:08+08:00"
 }

@@ -1,15 +1,15 @@
 {
-  "trade_date": "20261014",
-  "market_regime": "NEUTRAL",
-  "max_total_position": 0.5,
+  "trade_date": "20261015",
+  "market_regime": "RISK_OFF",
+  "max_total_position": 0.3,
   "A1": [
     {
-      "股票代码": "600938",
-      "名称": "中国海油",
-      "reference_close": 35.75,
-      "reference_high": 36.14,
-      "reference_low": 34.55,
-      "score": 6,
+      "股票代码": "002371",
+      "名称": "北方华创",
+      "reference_close": 610.0,
+      "reference_high": 614.96,
+      "reference_low": 566.0,
+      "score": 13,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -23,12 +23,69 @@
       ]
     },
     {
-      "股票代码": "001330",
-      "名称": "博纳影业",
-      "reference_close": 7.52,
-      "reference_high": 7.91,
-      "reference_low": 6.9,
-      "score": 5,
+      "股票代码": "600869",
+      "名称": "远东股份",
+      "reference_close": 18.08,
+      "reference_high": 18.3,
+      "reference_low": 15.83,
+      "score": 11,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "002636",
+      "名称": "金安国纪",
+      "reference_close": 71.09,
+      "reference_high": 72.8,
+      "reference_low": 64.6,
+      "score": 11,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "000823",
+      "名称": "超声电子",
+      "reference_close": 25.87,
+      "reference_high": 26.88,
+      "reference_low": 24.17,
+      "score": 9,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "002812",
+      "名称": "恩捷股份",
+      "reference_close": 48.39,
+      "reference_high": 49.0,
+      "reference_low": 45.05,
+      "score": 8,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -44,12 +101,31 @@
   ],
   "A2": [
     {
-      "股票代码": "601318",
-      "名称": "中国平安",
-      "reference_close": 51.23,
-      "reference_high": 51.77,
-      "reference_low": 50.82,
-      "score": 4,
+      "股票代码": "002463",
+      "名称": "沪电股份",
+      "reference_close": 116.18,
+      "reference_high": 118.89,
+      "reference_low": 113.07,
+      "score": 6,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "603986",
+      "名称": "兆易创新",
+      "reference_close": 278.22,
+      "reference_high": 283.8,
+      "reference_low": 271.3,
+      "score": 5,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",

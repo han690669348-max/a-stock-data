@@ -1,11 +1,11 @@
 {
-  "trade_date": "20261014",
-  "generated_at": "2026-10-14 19:47:52",
-  "regime": "NEUTRAL",
-  "regime_cn": "中性震荡",
+  "trade_date": "20261015",
+  "generated_at": "2026-10-15 18:05:12",
+  "regime": "RISK_OFF",
+  "regime_cn": "弱势",
   "limit_up": 36,
-  "broken_limit": 24,
-  "limit_down": 11,
-  "broken_ratio": 0.4,
-  "max_total_position": 0.5
+  "broken_limit": 7,
+  "limit_down": 26,
+  "broken_ratio": 0.16279069767441862,
+  "max_total_position": 0.3
 }

@@ -1,0 +1,334 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261015",
+  "published_at": "2026-10-15T18:13:48.628110+08:00",
+  "market": {
+    "regime": "RISK_OFF",
+    "position_cap_pct": 5,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "tier": "TIER_A",
+      "score": 84,
+      "confidence": 78,
+      "theme": "半导体设备",
+      "trigger": "次日观察第一次回踩是否有承接，且相对强于指数及半导体设备同类；若回踩后重新转强并维持尾盘结构，才具备进一步观察价值。",
+      "invalidation": "回踩承接失败、相对强度转弱，或同方向核心同步走弱。",
+      "forbidden": "不因前一日强势而竞价追高；板块未能同步时，不将单股强势外推为主线。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 610.0,
+          "source": "TUSHARE_DAILY_CLOSE@20261015"
+        },
+        "day_high": {
+          "value": 614.96,
+          "source": "intraday_structure.csv@20261015"
+        },
+        "day_low": {
+          "value": 566.0,
+          "source": "intraday_structure.csv@20261015"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "600869",
+      "name": "远东股份",
+      "tier": "TIER_A",
+      "score": 77,
+      "confidence": 66,
+      "theme": "局部强势股观察",
+      "trigger": "观察次日第一次回踩是否缩量并获得承接，且能否在前30分钟维持相对强势；若回落后重新站回昨日收盘附近并保持强度，再评估延续性。",
+      "invalidation": "高开后快速转弱、回踩无承接，或相对强度明显衰减。",
+      "forbidden": "不追大幅高开，不在急拉时加速买入；若板块无跟随，按单一个股高波动处理。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 18.08,
+          "source": "TUSHARE_DAILY_CLOSE@20261015"
+        },
+        "day_high": {
+          "value": 18.3,
+          "source": "intraday_structure.csv@20261015"
+        },
+        "day_low": {
+          "value": 15.83,
+          "source": "intraday_structure.csv@20261015"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "603986",
+      "name": "兆易创新",
+      "tier": "TIER_B",
+      "score": 68,
+      "confidence": 57,
+      "theme": "半导体存储观察",
+      "trigger": "次日观察零轴附近的承接和前30分钟相对强度；需要个股保持强于指数，并看到存储方向其他高成交个股同步改善，才提升观察级别。",
+      "invalidation": "尾盘修复不能延续、相对指数转弱，或主题内弱势扩散。",
+      "forbidden": "不把个股相对强势等同于板块反转；不在弱势开盘中盲目抄底。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 278.22,
+          "source": "TUSHARE_DAILY_CLOSE@20261015"
+        },
+        "day_high": {
+          "value": 283.8,
+          "source": "intraday_structure.csv@20261015"
+        },
+        "day_low": {
+          "value": 271.3,
+          "source": "intraday_structure.csv@20261015"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "000823",
+      "name": "超声电子",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "002636",
+      "name": "金安国纪",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    },
+    {
+      "code": "002812",
+      "name": "恩捷股份",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "元件",
+        "confidence": 70,
+        "thesis": "涨停扩散数量居前，是当日较明显的短线情绪方向，但高成交相关核心整体偏弱，暂不能据此认定为交易主线。",
+        "evidence": [
+          "元件行业涨停5家，为提供数据中涨停数量最多的行业",
+          "涨停总数36家，同时跌停26家，情绪扩散伴随较强亏钱效应"
+        ],
+        "risk": "高成交PCB及相关核心多数走弱，涨停扩散与大成交资金表现不一致。"
+      },
+      {
+        "rank": 2,
+        "name": "物流",
+        "confidence": 62,
+        "thesis": "涨停数量有一定集中度，具备局部短线情绪，但高成交风向标表现较弱。",
+        "evidence": [
+          "物流行业涨停4家",
+          "涨停行业分布较分散，未见足以确认板块同步交易主线的高成交核心证据"
+        ],
+        "risk": "航运方向出现多只跌停，招商轮船跌停并收于日内低位，板块内部表现分化明显。"
+      },
+      {
+        "rank": 3,
+        "name": "出版",
+        "confidence": 59,
+        "thesis": "出版方向有涨停及连板个股，短线情绪较活跃，但高换手标的炸板和回落风险仍在。",
+        "evidence": [
+          "出版行业涨停3家",
+          "新华文轩2板，内蒙新华涨停",
+          "读客文化为炸板股，掌阅科技冲高后收于日内低位"
+        ],
+        "risk": "板块高位兑现迹象明显，次日需观察连板承接和高换手股表现。"
+      }
+    ],
+    "trading": [
+      {
+        "rank": 1,
+        "name": "半导体设备",
+        "confidence": 72,
+        "thesis": "当日高成交科技方向中结构相对完整的局部强势板块，具备较好的相对强度和尾盘承接；但指数及高成交电子整体分化，暂不宜外推为全面科技主线。",
+        "evidence": [
+          "专用设备制造业在Top100中有9只，板块状态为STRONG",
+          "该行业信号成员上涨比例约67%，正相对强度比例为100%，趋势向上比例为100%",
+          "北方华创收涨并呈现尾盘走强、V形修复、趋势向上结构",
+          "华海清科与中微公司均收涨，结构数据亦显示尾盘走强和趋势向上"
+        ],
+        "risk": "板块确认成员数为0，行业内强势股数量有限；若核心股次日不能维持相对强度，板块同步性需重新评估。"
+      }
+    ],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "半导体存储",
+        "confidence": 48,
+        "thesis": "整体仍偏弱，但少数高成交个股尾盘相对强势，可观察是否形成延续修复。",
+        "evidence": [
+          "存储主题Top100成员当日平均跌幅约5.52%，状态为FADING",
+          "兆易创新日内及尾盘相对上证指数走强，尾盘结构改善"
+        ],
+        "risk": "主题整体下跌且弱锚较多，单一个股修复尚不足以确认板块反转。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "CPO与光模块",
+        "confidence": 88,
+        "thesis": "高成交核心同步下跌，日内表现偏弱，尾盘回升尚未扭转整体结构。",
+        "evidence": [
+          "CPO主题Top100成员平均跌幅约5.08%，状态为FADING，5只均为下跌",
+          "光模块主题Top100成员平均跌幅约5.79%，状态为FADING，4只均为下跌",
+          "中际旭创、新易盛、天孚通信等核心股收跌"
+        ],
+        "risk": "尾盘有局部修复，但核心股仍有冲高回落或继续走弱风险。"
+      },
+      {
+        "rank": 2,
+        "name": "PCB与AI硬件",
+        "confidence": 86,
+        "thesis": "高成交权重较大但内部广泛走弱，暂不具备稳健的板块同步交易条件。",
+        "evidence": [
+          "电子设备制造业Top100成员平均跌幅约3.90%，上涨比例不足10%，状态为DIVERGING",
+          "PCB主题状态为FADING，4只成员中3只趋势向下",
+          "AI硬件主题平均跌幅约6.06%，上涨比例为0，弱锚较多"
+        ],
+        "risk": "部分个股尾盘反弹，若仅据尾盘修复追入，可能面临弱势延续和反抽兑现。"
+      },
+      {
+        "rank": 3,
+        "name": "光纤光缆",
+        "confidence": 77,
+        "thesis": "高成交成员普遍下跌，当前呈现板块性偏弱。",
+        "evidence": [
+          "光纤光缆Top100成员3只均下跌",
+          "板块平均跌幅约5.75%，状态为BREADTH_WEAK"
+        ],
+        "risk": "需要观察次日是否出现高成交核心止跌及板块同步修复。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "role": "国内风向标-半导体设备强势核心",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "000823",
+      "name": "超声电子",
+      "role": "国内风向标-元件情绪核心",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002463",
+      "name": "沪电股份",
+      "role": "国内风向标-PCB高成交核心",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "role": "国内风向标-光模块高成交核心",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "先观察指数早盘能否延续尾盘修复，重点看上证、深证与科创50的相对强弱是否继续分化。",
+    "观察跌停及高换手炸板方向的次日承接，避免只根据涨停数量判断情绪改善。",
+    "半导体设备重点核验北方华创及同方向高成交个股的回踩承接和同步性。",
+    "CPO、光模块、PCB需看到高成交核心止跌并出现板块同步改善后，才考虑从弱势观察转为交易候选。",
+    "总仓位不得超过 Final 正式仓位上限5%。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "002371",
+        "name": "北方华创",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "600869",
+        "name": "远东股份",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "000823",
+        "name": "超声电子",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "stock",
+        "code": "002636",
+        "name": "金安国纪",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "stock",
+        "code": "002812",
+        "name": "恩捷股份",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "market_regime",
+        "rule": "RISK_OFF",
+        "researcher": "NEUTRAL",
+        "reviewer": "TOO_BULLISH"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

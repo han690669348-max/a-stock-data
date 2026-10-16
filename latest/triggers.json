@@ -1,14 +1,14 @@
 {
-  "trade_date": "20261015",
-  "market_regime": "RISK_OFF",
-  "max_total_position": 0.3,
+  "trade_date": "20261016",
+  "market_regime": "RISK_ON_ROTATION",
+  "max_total_position": 0.7,
   "A1": [
     {
-      "股票代码": "002371",
-      "名称": "北方华创",
-      "reference_close": 610.0,
-      "reference_high": 614.96,
-      "reference_low": 566.0,
+      "股票代码": "600869",
+      "名称": "远东股份",
+      "reference_close": 19.24,
+      "reference_high": 19.24,
+      "reference_low": 17.8,
       "score": 13,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -23,11 +23,11 @@
       ]
     },
     {
-      "股票代码": "600869",
-      "名称": "远东股份",
-      "reference_close": 18.08,
-      "reference_high": 18.3,
-      "reference_low": 15.83,
+      "股票代码": "600127",
+      "名称": "金健米业",
+      "reference_close": 14.62,
+      "reference_high": 14.76,
+      "reference_low": 13.75,
       "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -42,50 +42,12 @@
       ]
     },
     {
-      "股票代码": "002636",
-      "名称": "金安国纪",
-      "reference_close": 71.09,
-      "reference_high": 72.8,
-      "reference_low": 64.6,
-      "score": 11,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "000823",
-      "名称": "超声电子",
-      "reference_close": 25.87,
-      "reference_high": 26.88,
-      "reference_low": 24.17,
-      "score": 9,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "002812",
-      "名称": "恩捷股份",
-      "reference_close": 48.39,
-      "reference_high": 49.0,
-      "reference_low": 45.05,
-      "score": 8,
+      "股票代码": "603618",
+      "名称": "杭电股份",
+      "reference_close": 32.39,
+      "reference_high": 33.15,
+      "reference_low": 30.22,
+      "score": 6,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,12 +63,12 @@
   ],
   "A2": [
     {
-      "股票代码": "002463",
-      "名称": "沪电股份",
-      "reference_close": 116.18,
-      "reference_high": 118.89,
-      "reference_low": 113.07,
-      "score": 6,
+      "股票代码": "600183",
+      "名称": "生益科技",
+      "reference_close": 114.6,
+      "reference_high": 118.77,
+      "reference_low": 112.66,
+      "score": 5,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",
@@ -120,11 +82,11 @@
       ]
     },
     {
-      "股票代码": "603986",
-      "名称": "兆易创新",
-      "reference_close": 278.22,
-      "reference_high": 283.8,
-      "reference_low": 271.3,
+      "股票代码": "002463",
+      "名称": "沪电股份",
+      "reference_close": 113.38,
+      "reference_high": 117.77,
+      "reference_low": 110.1,
       "score": 5,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",

@@ -1,0 +1,356 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261016",
+  "published_at": "2026-10-16T18:11:28.200823+08:00",
+  "market": {
+    "regime": "RISK_ON_ROTATION",
+    "position_cap_pct": 45,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "600869",
+      "name": "远东股份",
+      "tier": "TIER_S",
+      "score": 76,
+      "confidence": 72,
+      "theme": "电气机械与电网设备",
+      "trigger": "次日观察开盘后能否保持相对上证指数强势；第一次回踩有承接、未出现放量走弱，并能在前30分钟维持相对强势时，才进入进一步评估。",
+      "invalidation": "开盘后相对强度快速转弱，或第一次回踩承接失败并持续走低。",
+      "forbidden": "高开后无承接追涨；仅因前一日强势或题材联想而买入；指数与电气机械方向同步走弱时继续加仓。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 19.24,
+          "source": "TUSHARE_DAILY_CLOSE@20261016"
+        },
+        "day_high": {
+          "value": 19.24,
+          "source": "intraday_structure.csv@20261016"
+        },
+        "day_low": {
+          "value": 17.8,
+          "source": "intraday_structure.csv@20261016"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "600127",
+      "name": "金健米业",
+      "tier": "TIER_A",
+      "score": 72,
+      "confidence": 65,
+      "theme": "农业食品",
+      "trigger": "次日观察开盘后能否延续相对强势，第一次回踩是否有承接，并关注前30分钟是否出现其他相关个股同步走强。",
+      "invalidation": "相对强度转负且回踩缺少承接，或开盘冲高后持续走弱。",
+      "forbidden": "把单一个股强势当作板块主线；高开无承接时追入；在兑现压力扩大的情况下因前一日涨幅而加仓。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 14.62,
+          "source": "TUSHARE_DAILY_CLOSE@20261016"
+        },
+        "day_high": {
+          "value": 14.76,
+          "source": "intraday_structure.csv@20261016"
+        },
+        "day_low": {
+          "value": 13.75,
+          "source": "intraday_structure.csv@20261016"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "603618",
+      "name": "杭电股份",
+      "tier": "TIER_A",
+      "score": 67,
+      "confidence": 62,
+      "theme": "电气机械与电网设备",
+      "trigger": "次日观察开盘后能否维持对上证指数的相对强势；第一次回踩不破坏日内修复结构，并在前30分钟出现主动承接时再评估。",
+      "invalidation": "开盘后相对强度持续转弱，或冲高后回落且第一次回踩承接失败。",
+      "forbidden": "忽略前一日炸板与尾盘相对强度转弱；高开后在缺少承接时追涨。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 32.39,
+          "source": "TUSHARE_DAILY_CLOSE@20261016"
+        },
+        "day_high": {
+          "value": 33.15,
+          "source": "intraday_structure.csv@20261016"
+        },
+        "day_low": {
+          "value": 30.22,
+          "source": "intraday_structure.csv@20261016"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "603019",
+      "name": "中科曙光",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "汽车零部件",
+        "confidence": 76,
+        "thesis": "短线涨停扩散数量居前，情绪热度突出，但当前缺少高成交核心及板块同步走强的充分证据。",
+        "evidence": [
+          "汽车零部件行业涨停14家，为所列行业中最多",
+          "相关涨停股中存在反复开板个股，汽车零部件个股英搏尔日内开板6次"
+        ],
+        "risk": "高炸板环境下，涨停扩散不等同于次日持续性；需验证核心个股承接和板块同步。"
+      },
+      {
+        "rank": 2,
+        "name": "设备与航空装备",
+        "confidence": 63,
+        "thesis": "通用设备、专用设备及航空装备均有涨停扩散，局部情绪活跃，但方向较分散。",
+        "evidence": [
+          "通用设备涨停5家、专用设备涨停5家、航空装备涨停4家",
+          "冰山冷热为4连板，且无开板记录"
+        ],
+        "risk": "涨停分布横跨多个细分方向，未见足以确认统一交易主线的高成交核心同步证据。"
+      },
+      {
+        "rank": 3,
+        "name": "出版",
+        "confidence": 52,
+        "thesis": "出版行业有一定涨停扩散和高连板个股，偏情绪观察。",
+        "evidence": [
+          "出版行业涨停4家",
+          "新华传媒为11连板；新华文轩涨停过程中开板5次"
+        ],
+        "risk": "高连板与多次开板并存，接力兑现和波动风险较高。"
+      },
+      {
+        "rank": 4,
+        "name": "医药及医疗服务",
+        "confidence": 48,
+        "thesis": "个别医药股出现大幅上涨和高换手，但板块内部表现分化，属于局部情绪而非确认主线。",
+        "evidence": [
+          "莱美药业涨幅19.926%，收盘接近当日高位，但日内开板5次",
+          "医药相关多只个股出现在炸板名单"
+        ],
+        "risk": "局部强势与炸板、兑现并存，行业同步性及次日承接尚未确认。"
+      }
+    ],
+    "trading": [
+      {
+        "rank": 1,
+        "name": "电气机械与电网设备",
+        "confidence": 66,
+        "thesis": "当前少数具备板块广度、相对强度与个股结构支持的方向，但样本和核心同步性仍有限，宜等待次日验证。",
+        "evidence": [
+          "电气机械和器材制造业Top100成员7只，上涨占比约85.7%，平均涨幅约2.62%",
+          "该行业Top100成员日内正相对强度占比为100%",
+          "远东股份收涨6.416%，收盘接近当日高位，具备日内修复与相对强势特征",
+          "杭电股份收涨7.465%，日内相对上证指数走强"
+        ],
+        "risk": "板块信号成员仅3只，行业强度样本有限；杭电股份有炸板记录，尾盘相对强度转弱，不能据此扩大风险预算。"
+      }
+    ],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "农业食品",
+        "confidence": 43,
+        "thesis": "金健米业表现突出并具备尾盘走强结构，但现有数据只显示单一高成交代表，无法确认板块同步。",
+        "evidence": [
+          "金健米业收涨8.861%，日内相对强度与尾盘相对强度均为正",
+          "金健米业收盘位置接近当日高位，并有回落后修复特征"
+        ],
+        "risk": "当前更像个股强势，缺少板块广度和多个高成交成员确认。"
+      },
+      {
+        "rank": 2,
+        "name": "AI硬件与存储",
+        "confidence": 35,
+        "thesis": "部分个股日内或尾盘修复，但高成交相关方向整体相对强度偏弱，暂列观察而非交易主线。",
+        "evidence": [
+          "寒武纪收涨1.987%，并有回落后修复特征",
+          "长鑫科技收涨3.281%，结构标签显示尾盘走强",
+          "AI硬件主题Top100成员日内正相对强度占比约33.3%，趋势向上占比为0"
+        ],
+        "risk": "电子行业成交额占比高但整体分化，相关主题弱锚和趋势走弱成员较多。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "电子高成交核心",
+        "confidence": 86,
+        "thesis": "成交额权重最大的行业内部同步性偏弱，高成交核心中多只出现趋势走弱、冲高回落或收盘偏低结构。",
+        "evidence": [
+          "计算机、通信和其他电子设备制造业Top100成员48只，平均涨幅约-0.73%，日内正相对强度占比约27.3%",
+          "该行业弱锚17只，趋势向上占比约4.5%，趋势向下占比50%",
+          "瑞芯微收跌9.995%并接近当日低位；天孚通信、太辰光、星宸科技等收盘位置偏低",
+          "电子相关板块成交额占比高，但CPO、PCB及光模块方向整体相对强度偏弱"
+        ],
+        "risk": "少数个股仍有日内修复，不宜将行业走弱外推为所有成分股同步走弱；观察高成交核心能否止跌并形成承接。"
+      },
+      {
+        "rank": 2,
+        "name": "CPO、光模块与PCB",
+        "confidence": 81,
+        "thesis": "高成交成员普遍缺少趋势向上结构，多个核心日内相对弱势，当前不构成可确认的交易主线。",
+        "evidence": [
+          "光模块主题4只Top100成员中有3只弱锚，趋势向上占比为0",
+          "CPO主题5只Top100成员中有4只弱锚，日内负相对强度占比约80%",
+          "PCB主题Top100成员日内正相对强度占比为0，且趋势向上占比为0"
+        ],
+        "risk": "局部尾盘修复不代表趋势反转，次日需观察核心个股回踩承接和板块同步改善。"
+      },
+      {
+        "rank": 3,
+        "name": "研究和试验发展",
+        "confidence": 79,
+        "thesis": "高成交医药研发服务个股同步走弱，呈现明显兑现压力。",
+        "evidence": [
+          "药明康德收跌6.602%，康龙化成收跌6.812%",
+          "两只高成交成员均标记趋势走弱、冲高回落及收盘偏低相关特征",
+          "该行业状态为FADING，趋势向下占比100%"
+        ],
+        "risk": "单日走弱不代表中期趋势，但短线需先观察抛压缓和和结构修复。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "600869",
+      "name": "远东股份",
+      "role": "电气机械风向标；LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "603618",
+      "name": "杭电股份",
+      "role": "电气机械确认标的；CONFIRM",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "600127",
+      "name": "金健米业",
+      "role": "农业食品个股风向标；LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "role": "高成交电子核心确认标的；CONFIRM",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "603259",
+      "name": "药明康德",
+      "role": "研究服务方向弱锚；WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "603893",
+      "name": "瑞芯微",
+      "role": "电子方向弱锚；WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "观察上证指数尾盘修复能否延续，同时留意深证成指、创业板指和科创50是否摆脱偏弱结构。",
+    "重点评估涨停与炸板情绪变化；若炸板压力继续偏高或跌停扩散，维持低仓位上限。",
+    "观察电气机械方向是否出现多只高成交成员同步走强，避免将少数个股强势误判为主线。",
+    "检查电子高成交核心是否止跌并改善相对强度，尤其关注高成交弱锚的回踩承接。",
+    "农业食品方向需等待个股强势获得板块同步确认，不因金健米业单一个股表现追高。",
+    "A1标的均须满足盘中结构条件；若缺少承接或市场风险继续上升，不必强行参与。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "600869",
+        "name": "远东股份",
+        "tier": "TIER_S",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP"
+      },
+      {
+        "type": "stock",
+        "code": "600127",
+        "name": "金健米业",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "603618",
+        "name": "杭电股份",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "603019",
+        "name": "中科曙光",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "market_regime",
+        "rule": "RISK_ON_ROTATION",
+        "researcher": "RISK_OFF",
+        "reviewer": "TOO_BEARISH"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

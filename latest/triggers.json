@@ -1,15 +1,15 @@
 {
-  "trade_date": "20261016",
-  "market_regime": "RISK_ON_ROTATION",
-  "max_total_position": 0.7,
+  "trade_date": "20261019",
+  "market_regime": "RISK_OFF",
+  "max_total_position": 0.3,
   "A1": [
     {
-      "股票代码": "600869",
-      "名称": "远东股份",
-      "reference_close": 19.24,
-      "reference_high": 19.24,
-      "reference_low": 17.8,
-      "score": 13,
+      "股票代码": "002343",
+      "名称": "慈文传媒",
+      "reference_close": 10.26,
+      "reference_high": 10.26,
+      "reference_low": 8.4,
+      "score": 14,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -23,12 +23,12 @@
       ]
     },
     {
-      "股票代码": "600127",
-      "名称": "金健米业",
-      "reference_close": 14.62,
-      "reference_high": 14.76,
-      "reference_low": 13.75,
-      "score": 11,
+      "股票代码": "600825",
+      "名称": "新华传媒",
+      "reference_close": 15.58,
+      "reference_high": 15.78,
+      "reference_low": 14.13,
+      "score": 10,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -42,12 +42,50 @@
       ]
     },
     {
-      "股票代码": "603618",
-      "名称": "杭电股份",
-      "reference_close": 32.39,
-      "reference_high": 33.15,
-      "reference_low": 30.22,
-      "score": 6,
+      "股票代码": "600487",
+      "名称": "亨通光电",
+      "reference_close": 50.25,
+      "reference_high": 50.25,
+      "reference_low": 46.77,
+      "score": 8,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "600522",
+      "名称": "中天科技",
+      "reference_close": 28.06,
+      "reference_high": 28.35,
+      "reference_low": 26.51,
+      "score": 8,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "002242",
+      "名称": "九阳股份",
+      "reference_close": 18.69,
+      "reference_high": 19.57,
+      "reference_low": 16.1,
+      "score": 7,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -63,12 +101,50 @@
   ],
   "A2": [
     {
-      "股票代码": "600183",
-      "名称": "生益科技",
-      "reference_close": 114.6,
-      "reference_high": 118.77,
-      "reference_low": 112.66,
+      "股票代码": "002384",
+      "名称": "东山精密",
+      "reference_close": 122.15,
+      "reference_high": 124.49,
+      "reference_low": 117.2,
+      "score": 6,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "000823",
+      "名称": "超声电子",
+      "reference_close": 24.71,
+      "reference_high": 25.87,
+      "reference_low": 23.36,
       "score": 5,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "601606",
+      "名称": "长城军工",
+      "reference_close": 33.52,
+      "reference_high": 35.0,
+      "reference_low": 32.76,
+      "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",
@@ -84,10 +160,29 @@
     {
       "股票代码": "002463",
       "名称": "沪电股份",
-      "reference_close": 113.38,
-      "reference_high": 117.77,
-      "reference_low": 110.1,
-      "score": 5,
+      "reference_close": 111.75,
+      "reference_high": 114.2,
+      "reference_low": 106.06,
+      "score": 4,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "603083",
+      "名称": "剑桥科技",
+      "reference_close": 163.81,
+      "reference_high": 167.79,
+      "reference_low": 156.74,
+      "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",

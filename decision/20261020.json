@@ -1,0 +1,371 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261020",
+  "published_at": "2026-10-20T18:11:44.665900+08:00",
+  "market": {
+    "regime": "RISK_ON_ROTATION",
+    "position_cap_pct": 45,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "600487",
+      "name": "亨通光电",
+      "tier": "TIER_A",
+      "score": 77,
+      "confidence": 72,
+      "theme": "光纤光缆",
+      "trigger": "观察开盘后第一次回踩是否有承接；若零轴附近维持相对强势，并能重新站回昨日收盘且板块跟随改善，再评估结构延续性。",
+      "invalidation": "回踩失去承接、持续弱于上证指数，或板块跟随转弱。",
+      "forbidden": "不得因单只核心走强而追高；若高开后快速走弱或板块无跟随，不追涨。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 52.07,
+          "source": "TUSHARE_DAILY_CLOSE@20261020"
+        },
+        "day_high": {
+          "value": 52.88,
+          "source": "intraday_structure.csv@20261020"
+        },
+        "day_low": {
+          "value": 50.0,
+          "source": "intraday_structure.csv@20261020"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "600176",
+      "name": "中国巨石",
+      "tier": "TIER_A",
+      "score": 68,
+      "confidence": 63,
+      "theme": "玻璃纤维及材料",
+      "trigger": "观察前30分钟能否保持相对强势，第一次回踩是否获得承接，并确认同方向高成交个股不出现同步走弱。",
+      "invalidation": "跌破日内回踩结构后不能修复，或相对上证指数转弱。",
+      "forbidden": "不因单日上涨直接推定板块主线；高开冲高但承接不足时不追。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 34.66,
+          "source": "TUSHARE_DAILY_CLOSE@20261020"
+        },
+        "day_high": {
+          "value": 35.21,
+          "source": "intraday_structure.csv@20261020"
+        },
+        "day_low": {
+          "value": 33.4,
+          "source": "intraday_structure.csv@20261020"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "603893",
+      "name": "瑞芯微",
+      "tier": "TIER_A",
+      "score": 67,
+      "confidence": 59,
+      "theme": "半导体及智能终端",
+      "trigger": "观察开盘后分歧承接；若回落后能稳定并重新站回昨日收盘，且半导体及智能终端方向有同步强势，再评估延续性。",
+      "invalidation": "开盘后持续走弱、回落失去承接，或同方向高成交核心继续分化。",
+      "forbidden": "不得把涨停本身视为次日买入信号；不追高开后无承接的加速。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 189.04,
+          "source": "TUSHARE_DAILY_CLOSE@20261020"
+        },
+        "day_high": {
+          "value": 189.04,
+          "source": "intraday_structure.csv@20261020"
+        },
+        "day_low": {
+          "value": 166.0,
+          "source": "intraday_structure.csv@20261020"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    },
+    {
+      "code": "603236",
+      "name": "移远通信",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "通用设备及机器人相关",
+        "confidence": 66,
+        "thesis": "通用设备涨停数量居前，相关高弹性个股表现突出，短线情绪扩散明显；但行业样本有限，尚不足以证明板块级持续承接。",
+        "evidence": [
+          "通用设备涨停6家，为所列行业中最多",
+          "宇树科技涨6.072%，绿的谐波涨7.086%",
+          "通用设备高成交样本较少，板块状态置信度不足"
+        ],
+        "risk": "情绪强于板块同步性，次日需观察高成交核心和涨停梯队是否延续。"
+      },
+      {
+        "rank": 2,
+        "name": "消费电子及智能终端",
+        "confidence": 62,
+        "thesis": "消费电子有涨停扩散，长盈精密、奥比中光等高弹性个股显著走强，但强势个股集中且部分收盘表现缺少午后持续验证。",
+        "evidence": [
+          "消费电子涨停3家",
+          "长盈精密涨19.99%，收于当日高位",
+          "奥比中光涨15.857%，收盘位置较高"
+        ],
+        "risk": "高弹性个股涨幅较大，次日存在分歧和兑现压力。"
+      },
+      {
+        "rank": 3,
+        "name": "半导体及软件信息",
+        "confidence": 60,
+        "thesis": "半导体、软件信息方向有局部强势与涨停扩散，乐鑫科技、瑞芯微、索辰科技等表现突出；但高成交半导体核心分化明显。",
+        "evidence": [
+          "半导体涨停3家，软件开发及IT服务方向亦有涨停",
+          "软件和信息技术服务业高成交样本平均涨幅8.473%",
+          "乐鑫科技、瑞芯微、索辰科技涨幅居前"
+        ],
+        "risk": "强势集中于少数个股，半导体高成交样本存在明显走弱者，板块持续性未确认。"
+      }
+    ],
+    "trading": [
+      {
+        "rank": 1,
+        "name": "光纤光缆",
+        "confidence": 59,
+        "thesis": "亨通光电具备高成交核心、相对强度和午后承接，相关高成交样本整体偏正向；但样本数量有限，尚不能视为高确定性主线。",
+        "evidence": [
+          "亨通光电成交额约1096亿元，涨3.622%",
+          "亨通光电日内及午后相对强度均为正，结构标签含LATE_STRENGTH、DIP_RECOVERY",
+          "光纤光缆高成交样本上涨比例为2/3，正相对强度比例为1.0"
+        ],
+        "risk": "板块样本少且成员表现并非完全一致；次日需确认核心回踩承接及板块跟随。"
+      }
+    ],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "软件和信息技术服务",
+        "confidence": 61,
+        "thesis": "高成交样本表现强、局部领涨突出，但午后相对强度略弱，且确认成员不足，暂列观察方向。",
+        "evidence": [
+          "行业状态为STRONG，4个高成交样本中3个上涨",
+          "行业平均涨幅8.473%，但午后平均相对强度为负",
+          "乐鑫科技收盘位置较高并标记为LEADER"
+        ],
+        "risk": "涨幅集中于少数个股，若次日领涨股不能维持强度，板块可能快速退潮。"
+      },
+      {
+        "rank": 2,
+        "name": "消费电子及智能终端",
+        "confidence": 56,
+        "thesis": "涨停与高弹性个股表现提供局部强度，但尚缺少充分的高成交板块同步和午后持续性确认。",
+        "evidence": [
+          "消费电子涨停3家",
+          "长盈精密收于当日高位，移远通信涨停",
+          "部分强势股午后相对强度转弱"
+        ],
+        "risk": "短线涨幅和高换手可能带来较大次日分歧。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "CPO及光模块",
+        "confidence": 78,
+        "thesis": "高成交核心整体偏弱，板块上涨比例低，日内相对强度为负，属于明显退潮风险方向。",
+        "evidence": [
+          "高成交样本上涨比例为1/4",
+          "中际旭创、新易盛收跌，均出现SPIKE_FADE相关结构",
+          "板块状态为FADING，弱锚点数量为2"
+        ],
+        "risk": "个别午后反弹不等同于板块反转，需等待核心止跌和同步改善。"
+      },
+      {
+        "rank": 2,
+        "name": "存储",
+        "confidence": 73,
+        "thesis": "高成交样本涨少跌多，整体相对强度和午后表现偏弱，尚无清晰修复信号。",
+        "evidence": [
+          "高成交样本上涨比例为1/3",
+          "板块状态为FADING",
+          "长鑫科技收盘位置偏低并标记SPIKE_FADE、TREND_DOWN"
+        ],
+        "risk": "弱势核心若继续下探，可能加大同类高位股兑现压力。"
+      },
+      {
+        "rank": 3,
+        "name": "电气设备及电力设备",
+        "confidence": 76,
+        "thesis": "高成交板块整体偏弱，多个核心大幅下跌，跌停个股亦有出现，资金兑现压力显著。",
+        "evidence": [
+          "电气机械和器材制造业高成交样本平均跌1.261%",
+          "思源电气跌停且收于当日低位，宁德时代跌2.974%",
+          "远东股份跌7.837%，行业趋势向上比例为0"
+        ],
+        "risk": "次日若弱势核心未能止跌，板块反抽的可持续性仍需谨慎评估。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "600487",
+      "name": "亨通光电",
+      "role": "国内风向标_LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "688018",
+      "name": "乐鑫科技",
+      "role": "国内风向标_LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "603893",
+      "name": "瑞芯微",
+      "role": "国内风向标_LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "role": "国内风向标_WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002028",
+      "name": "思源电气",
+      "role": "国内风向标_WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "688825",
+      "name": "长鑫科技",
+      "role": "国内风向标_WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "观察上证指数及创业板指开盘后前30分钟结构，确认反弹是否有持续承接。",
+    "跟踪涨停、炸板及跌停情绪变化，特别留意高换手涨停股的开板和回封质量。",
+    "验证亨通光电及光纤光缆相关高成交样本是否同步保持相对强势。",
+    "观察软件信息及智能终端强势股能否从个股扩散为板块同步，避免只依据单只领涨股判断主线。",
+    "关注CPO、存储及电气设备高成交弱势核心是否止跌；若继续走弱，降低风险敞口。",
+    "所有A1标的均需等待盘中结构触发，不因前一日涨幅或涨停直接追高。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "600487",
+        "name": "亨通光电",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "600176",
+        "name": "中国巨石",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "603893",
+        "name": "瑞芯微",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "002384",
+        "name": "东山精密",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "stock",
+        "code": "002242",
+        "name": "九阳股份",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "stock",
+        "code": "603236",
+        "name": "移远通信",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "market_regime",
+        "rule": "NEUTRAL",
+        "researcher": "RISK_ON_ROTATION",
+        "reviewer": "TOO_BULLISH"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

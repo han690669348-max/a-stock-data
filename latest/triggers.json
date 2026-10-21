@@ -1,34 +1,15 @@
 {
-  "trade_date": "20261020",
+  "trade_date": "20261021",
   "market_regime": "NEUTRAL",
   "max_total_position": 0.5,
   "A1": [
     {
-      "股票代码": "603893",
-      "名称": "瑞芯微",
-      "reference_close": 189.04,
-      "reference_high": 189.04,
-      "reference_low": 166.0,
-      "score": 8,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
       "股票代码": "002242",
       "名称": "九阳股份",
-      "reference_close": 20.56,
-      "reference_high": 20.56,
-      "reference_low": 19.32,
-      "score": 8,
+      "reference_close": 22.62,
+      "reference_high": 22.62,
+      "reference_low": 20.0,
+      "score": 12,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -42,12 +23,12 @@
       ]
     },
     {
-      "股票代码": "600487",
-      "名称": "亨通光电",
-      "reference_close": 52.07,
-      "reference_high": 52.88,
-      "reference_low": 50.0,
-      "score": 8,
+      "股票代码": "000530",
+      "名称": "冰山冷热",
+      "reference_close": 8.63,
+      "reference_high": 8.87,
+      "reference_low": 7.45,
+      "score": 9,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -63,10 +44,10 @@
     {
       "股票代码": "603236",
       "名称": "移远通信",
-      "reference_close": 76.11,
-      "reference_high": 76.11,
-      "reference_low": 69.5,
-      "score": 7,
+      "reference_close": 83.72,
+      "reference_high": 83.72,
+      "reference_low": 77.77,
+      "score": 9,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -80,11 +61,30 @@
       ]
     },
     {
-      "股票代码": "600176",
-      "名称": "中国巨石",
-      "reference_close": 34.66,
-      "reference_high": 35.21,
-      "reference_low": 33.4,
+      "股票代码": "603629",
+      "名称": "利通电子",
+      "reference_close": 92.03,
+      "reference_high": 92.03,
+      "reference_low": 84.99,
+      "score": 8,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "000592",
+      "名称": "平潭发展",
+      "reference_close": 7.19,
+      "reference_high": 7.36,
+      "reference_low": 6.7,
       "score": 5,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -101,12 +101,69 @@
   ],
   "A2": [
     {
-      "股票代码": "601899",
-      "名称": "紫金矿业",
-      "reference_close": 29.06,
-      "reference_high": 29.39,
-      "reference_low": 28.55,
+      "股票代码": "600127",
+      "名称": "金健米业",
+      "reference_close": 13.61,
+      "reference_high": 14.15,
+      "reference_low": 13.1,
+      "score": 7,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "603228",
+      "名称": "景旺电子",
+      "reference_close": 90.0,
+      "reference_high": 93.2,
+      "reference_low": 88.5,
       "score": 6,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "002463",
+      "名称": "沪电股份",
+      "reference_close": 114.97,
+      "reference_high": 118.5,
+      "reference_low": 113.63,
+      "score": 4,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "002428",
+      "名称": "云南锗业",
+      "reference_close": 84.06,
+      "reference_high": 86.5,
+      "reference_low": 82.58,
+      "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",
@@ -122,67 +179,10 @@
     {
       "股票代码": "603083",
       "名称": "剑桥科技",
-      "reference_close": 162.98,
-      "reference_high": 166.61,
-      "reference_low": 158.48,
-      "score": 6,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "002384",
-      "名称": "东山精密",
-      "reference_close": 122.15,
-      "reference_high": 126.23,
-      "reference_low": 120.0,
-      "score": 6,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "603986",
-      "名称": "兆易创新",
-      "reference_close": 282.43,
-      "reference_high": 288.5,
-      "reference_low": 275.67,
-      "score": 6,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "600183",
-      "名称": "生益科技",
-      "reference_close": 117.23,
-      "reference_high": 121.0,
-      "reference_low": 113.63,
-      "score": 6,
+      "reference_close": 173.61,
+      "reference_high": 179.25,
+      "reference_low": 167.02,
+      "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",

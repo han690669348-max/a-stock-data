@@ -1,0 +1,396 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261021",
+  "published_at": "2026-10-21T18:12:06.975109+08:00",
+  "market": {
+    "regime": "RISK_ON_ROTATION",
+    "position_cap_pct": 40,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "tier": "TIER_A",
+      "score": 75,
+      "confidence": 68,
+      "theme": "消费电子/情绪高标",
+      "trigger": "观察开盘后能否维持相对强势，首次回踩有承接且重新走强；若出现放量开板后持续回落，不满足触发条件。",
+      "invalidation": "开盘后涨停状态快速失守且反抽无力，或相对市场明显转弱。",
+      "forbidden": "不得将涨停收盘等同于次日买入信号；不追高开后无承接的快速拉升。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 92.03,
+          "source": "TUSHARE_DAILY_CLOSE@20261021"
+        },
+        "day_high": {
+          "value": 92.03,
+          "source": "intraday_structure.csv@20261021"
+        },
+        "day_low": {
+          "value": 84.99,
+          "source": "intraday_structure.csv@20261021"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "603236",
+      "name": "移远通信",
+      "tier": "TIER_A",
+      "score": 72,
+      "confidence": 61,
+      "theme": "通信设备/情绪高标",
+      "trigger": "观察开盘后是否能够稳定在昨日收盘附近或其上方，第一次回踩有承接，并且通信设备方向出现同步走强。",
+      "invalidation": "开盘后持续失守昨日收盘，反抽无力，或同方向高成交个股同步转弱。",
+      "forbidden": "不得忽略盘中17次炸板事实；禁止无确认追涨或在快速冲高时加仓。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 83.72,
+          "source": "TUSHARE_DAILY_CLOSE@20261021"
+        },
+        "day_high": {
+          "value": 83.72,
+          "source": "intraday_structure.csv@20261021"
+        },
+        "day_low": {
+          "value": 77.77,
+          "source": "intraday_structure.csv@20261021"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "tier": "TIER_A",
+      "score": 70,
+      "confidence": 60,
+      "theme": "小家电/情绪高标",
+      "trigger": "观察前30分钟能否保持相对强势，首次回踩承接后重新站回昨日收盘，并确认小家电或消费方向没有明显退潮。",
+      "invalidation": "冲高后跌破昨日收盘且承接不足，或高开后持续走弱。",
+      "forbidden": "不得仅依据连板和涨停强度追高；若开盘加速而无回踩承接，不参与。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 22.62,
+          "source": "TUSHARE_DAILY_CLOSE@20261021"
+        },
+        "day_high": {
+          "value": 22.62,
+          "source": "intraday_structure.csv@20261021"
+        },
+        "day_low": {
+          "value": 20.0,
+          "source": "intraday_structure.csv@20261021"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "002463",
+      "name": "沪电股份",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "603083",
+      "name": "剑桥科技",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "001309",
+      "name": "德明利",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "000530",
+      "name": "冰山冷热",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    },
+    {
+      "code": "000592",
+      "name": "平潭发展",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "IT服务/软件",
+        "confidence": 72,
+        "thesis": "涨停扩散数量居前，存在连板个股，短线情绪表现突出；但高成交板块同步性和持续承接证据不足。",
+        "evidence": [
+          "IT服务Ⅱ涨停5家，为行业统计中最多",
+          "南威软件2连板，太极股份涨停",
+          "市场炸板19家，整体封板质量需审慎看待"
+        ],
+        "risk": "涨停扩散未得到指数与高成交核心的广泛确认，存在次日情绪退潮风险。"
+      },
+      {
+        "rank": 2,
+        "name": "通信设备/消费电子",
+        "confidence": 68,
+        "thesis": "移远通信、利通电子等高成交个股涨停，通信设备有多只涨停，体现局部情绪聚集。",
+        "evidence": [
+          "通信设备涨停3家",
+          "移远通信涨停并被标记为风向标LEADER，但盘中炸板17次",
+          "利通电子高成交涨停并收于涨停价"
+        ],
+        "risk": "移远通信盘中反复开板，板块整体同步性有限，个股强势不等于板块主线成立。"
+      },
+      {
+        "rank": 3,
+        "name": "通用设备",
+        "confidence": 55,
+        "thesis": "涨停数量有一定扩散，冰山冷热等个股有明显日内反转，但行业高成交样本覆盖和同步性不足。",
+        "evidence": [
+          "通用设备涨停4家",
+          "冰山冷热收涨5.63%，结构标记DIP_RECOVERY、V_REVERSAL",
+          "行业高成交样本仅2只，板块判断证据有限"
+        ],
+        "risk": "局部情绪特征明显，但尚缺少足够的高成交核心与板块同步验证。"
+      }
+    ],
+    "trading": [
+      {
+        "rank": 1,
+        "name": "CPO",
+        "confidence": 62,
+        "thesis": "在弱市中仍有相对强度和多只高成交个股收涨，尾段相对表现为正；可作为条件性交易观察方向，但核心内部仍有分歧，暂不视为高确定性主线。",
+        "evidence": [
+          "主题样本5只，平均涨幅2.66%，正相对强度占比80%",
+          "平均日内相对强度为正，平均尾段相对强度为正",
+          "天孚通信涨5.104%、相对创业板显著走强；太辰光尾段相对强度为正",
+          "主题状态为CONFIRMING，但中际旭创、新易盛等高成交核心存在冲高回落或趋势走弱特征"
+        ],
+        "risk": "指数普遍收低，CPO核心结构不一致；若高成交核心开盘后不能维持相对强势并在第一次回踩中获得承接，应降低或取消交易预期。"
+      }
+    ],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "PCB",
+        "confidence": 55,
+        "thesis": "样本内均收涨且尾段相对表现为正，但高成交成员存在冲高回落，尚未形成可靠的强承接确认。",
+        "evidence": [
+          "主题样本4只，涨幅中位数为正，正相对强度占比75%",
+          "尾段平均相对强度为正",
+          "沪电股份相对强势，但结构标记SPIKE_FADE；东山精密收盘位置偏低"
+        ],
+        "risk": "板块内部结构分化，次日需验证高成交成员能否同步稳住。"
+      },
+      {
+        "rank": 2,
+        "name": "存储",
+        "confidence": 49,
+        "thesis": "样本当日均收涨，德明利、兆易创新等有一定关注度，但尾段走弱和趋势标签限制了持续性判断。",
+        "evidence": [
+          "存储主题样本3只，涨幅均为正",
+          "德明利日内相对强度较强，但尾段相对跑输",
+          "兆易创新带有LATE_WEAKNESS标签"
+        ],
+        "risk": "日内涨幅未转化为尾段稳定承接，避免依据单日涨幅追高。"
+      },
+      {
+        "rank": 3,
+        "name": "光模块",
+        "confidence": 48,
+        "thesis": "主题平均涨幅和日内相对强度为正，但高成交核心冲高回落较多，交易确定性低于表面涨幅。",
+        "evidence": [
+          "主题样本4只，平均涨幅2.52%，正相对强度占比75%",
+          "天孚通信表现强于指数",
+          "中际旭创、新易盛均有冲高回落或趋势走弱特征"
+        ],
+        "risk": "核心个股高位兑现压力显著，需观察是否出现板块同步承接。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "新能源/锂电及设备",
+        "confidence": 88,
+        "thesis": "高成交核心普遍走弱，指数相对表现差，尾段抛压明显，暂不宜按低位反弹方向处理。",
+        "evidence": [
+          "宁德时代收跌12.035%，接近日内低位并标记LATE_WEAKNESS、TREND_DOWN",
+          "阳光电源、亿纬锂能、蔚蓝锂芯均明显收跌，后两者结构接近日内低位",
+          "先导智能收跌8.999%，日内及尾段相对表现均弱",
+          "电气机械行业负相对强度占比83.3%，趋势下行占比66.7%"
+        ],
+        "risk": "若继续出现高成交核心放量走弱，可能加重指数与情绪压力；不宜仅凭超跌预期接回。"
+      },
+      {
+        "rank": 2,
+        "name": "AI硬件",
+        "confidence": 76,
+        "thesis": "高成交样本多数走弱，风向标弱锚集中，板块平均相对表现为负，冲高兑现特征明显。",
+        "evidence": [
+          "主题状态为FADING，正相对强度占比33.3%",
+          "趋势下行占比100%，风向标平均得分为负",
+          "中际旭创、新易盛、东山精密均有弱锚或冲高回落信号"
+        ],
+        "risk": "个别细分强势股可能造成板块表面回暖，但不能替代高成交核心结构修复。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "603236",
+      "name": "移远通信",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "000530",
+      "name": "冰山冷热",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "role": "WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300450",
+      "name": "先导智能",
+      "role": "WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "先观察四大指数开盘后能否止跌；若指数继续走弱或收盘位置持续偏低，执行低于仓位上限的风险控制。",
+    "检查CPO高成交核心是否同步出现承接，尤其区分天孚通信等相对强势个股与冲高回落的弱锚。",
+    "观察移远通信、利通电子、九阳股份的高开后承接与回落修复，勿以涨停收盘直接推导买入信号。",
+    "验证新能源及设备高成交核心是否止跌；若宁德时代、先导智能等继续弱势，避免抄底和扩散风险。",
+    "关注涨停开板与炸板情况；若开板增多、强势股快速回落，降低情绪交易预期。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "603629",
+        "name": "利通电子",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "603236",
+        "name": "移远通信",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "002242",
+        "name": "九阳股份",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "002463",
+        "name": "沪电股份",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "stock",
+        "code": "603083",
+        "name": "剑桥科技",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "stock",
+        "code": "001309",
+        "name": "德明利",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "stock",
+        "code": "000530",
+        "name": "冰山冷热",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "stock",
+        "code": "000592",
+        "name": "平潭发展",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "market_regime",
+        "rule": "NEUTRAL",
+        "researcher": "RISK_OFF",
+        "reviewer": "TOO_BEARISH"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

@@ -1,84 +1,78 @@
 {
   "status": "ok",
   "source": "a-stock-agent",
-  "trade_date": "20261021",
-  "generated_at": "2026-10-21 18:01:31",
+  "trade_date": "20261022",
+  "generated_at": "2026-10-22 20:21:06",
   "timezone": "Asia/Shanghai",
+  "market_data_complete": true,
+  "baseline_stale": false,
+  "source_trade_dates": {
+    "spot": "20261022",
+    "daily": "20261022",
+    "lhb": "20261022",
+    "zt": "20261022",
+    "zb": "20261022",
+    "dt": "20261022"
+  },
+  "market_input_sha256": {
+    "top100.csv": "5ce08e64c442bbab1824fece3fd3e79ed0041dde2182a562fecafb2767ab0044",
+    "lhb.csv": "31051d5d23a1cdc498137588f51b1cf489b03bb31874220c3615df708d29188b",
+    "core_pool.csv": "e9ad5b62f9949e90c25ddd9594a1b142465f45e99ff33e050ec39d4f14f2c3cd",
+    "zt.csv": "928a6f1f52c81fbd0d9a1e8cf88620511d19c1371d190b5e9471efd7277fa4d6",
+    "zb.csv": "18f57e050f5b86c526b36665c2c3261f839d8a7a0d575c6abde77183bf0ecb89",
+    "dt.csv": "8345361edb1e94d580b45dbc4693150ff7401d1f39a8824331ee04d4ed93d773"
+  },
   "market": {
     "top100_count": 100,
-    "limit_up_count": 50,
-    "broken_limit_count": 19,
-    "limit_down_count": 5
+    "limit_up_count": 33,
+    "broken_limit_count": 23,
+    "limit_down_count": 49
   },
   "lhb": {
-    "raw_records": 68,
-    "unique_stocks": 61,
-    "top100_intersection_count": 8
+    "raw_records": 75,
+    "unique_stocks": 66,
+    "top100_intersection_count": 5
   },
   "core_pool": [
     {
-      "股票代码": "603236",
-      "名称": "移远通信",
-      "最新价": 83.72,
-      "涨跌幅": 9.999,
-      "成交额": 4448293179.0,
-      "龙虎榜原因": "连续三个交易日内，涨幅偏离值累计达20%的证券"
-    },
-    {
-      "股票代码": "300115",
-      "名称": "长盈精密",
-      "最新价": 26.41,
-      "涨跌幅": 7.053,
-      "成交额": 3822352660.0,
-      "龙虎榜原因": ""
-    },
-    {
-      "股票代码": "000823",
-      "名称": "超声电子",
-      "最新价": 24.07,
-      "涨跌幅": -6.013,
-      "成交额": 3537884721.0,
-      "龙虎榜原因": "换手率达20%的证券"
-    },
-    {
-      "股票代码": "002245",
-      "名称": "蔚蓝锂芯",
-      "最新价": 11.68,
-      "涨跌幅": -9.246,
-      "成交额": 3117282725.0,
-      "龙虎榜原因": "跌幅偏离值达7%的证券"
-    },
-    {
-      "股票代码": "002242",
-      "名称": "九阳股份",
-      "最新价": 22.62,
-      "涨跌幅": 10.019,
-      "成交额": 3089118444.0,
-      "龙虎榜原因": "连续三个交易日内，涨幅偏离值累计达20%的证券 | 涨幅偏离值达7%的证券"
-    },
-    {
-      "股票代码": "600127",
-      "名称": "金健米业",
-      "最新价": 13.61,
-      "涨跌幅": 2.795,
-      "成交额": 2693965587.0,
-      "龙虎榜原因": "换手率达20%的证券"
-    },
-    {
-      "股票代码": "301486",
-      "名称": "致尚科技",
-      "最新价": 209.72,
-      "涨跌幅": 17.123,
-      "成交额": 2349440408.0,
+      "股票代码": "300296",
+      "名称": "利亚德",
+      "最新价": 6.1,
+      "涨跌幅": 8.348,
+      "成交额": 3516191970.0,
       "龙虎榜原因": ""
     },
     {
       "股票代码": "000530",
       "名称": "冰山冷热",
-      "最新价": 8.63,
-      "涨跌幅": 5.63,
-      "成交额": 2141168991.0,
-      "龙虎榜原因": "振幅值达15%的证券 | 换手率达20%的证券"
+      "最新价": 9.49,
+      "涨跌幅": 9.965,
+      "成交额": 2552115714.0,
+      "龙虎榜原因": "涨幅偏离值达7%的证券 | 换手率达20%的证券 | 连续三个交易日内，涨幅偏离值累计达20%的证券"
+    },
+    {
+      "股票代码": "301718",
+      "名称": "N通则",
+      "最新价": 72.99,
+      "涨跌幅": 171.54,
+      "成交额": 2187703775.0,
+      "龙虎榜原因": "无价格涨跌幅限制的证券"
+    },
+    {
+      "股票代码": "600127",
+      "名称": "金健米业",
+      "最新价": 12.25,
+      "涨跌幅": -9.993,
+      "成交额": 2179824599.0,
+      "龙虎榜原因": "换手率达20%的证券"
+    },
+    {
+      "股票代码": "601091",
+      "名称": "沈鼓集团",
+      "最新价": 21.58,
+      "涨跌幅": 9.99,
+      "成交额": 2170047505.0,
+      "龙虎榜原因": "换手率达20%的证券"
     }
   ],
   "files": {
@@ -103,17 +97,21 @@
     "a2": "/latest/a2.csv",
     "triggers": "/latest/triggers.json"
   },
+  "run_mode": "LATE_RUN",
+  "run_id": "20261022-late-201935-1354274",
+  "market_close_as_of": "2026-10-22T15:00:00+08:00",
+  "collected_at": "2026-10-22T20:21:06.986552+08:00",
   "candidate_pool": {
-    "count": 36,
+    "count": 33,
     "max_pool": 40,
-    "generated_at": "2026-10-21 18:01:33"
+    "generated_at": "2026-10-22 20:21:08"
   },
   "intraday": {
     "period": "5m",
-    "requested_stocks": 36,
-    "success_stocks": 36,
+    "requested_stocks": 33,
+    "success_stocks": 33,
     "failed_stocks": 0,
-    "generated_at": "2026-10-21 18:04:09"
+    "generated_at": "2026-10-22 20:23:35"
   },
   "relative_strength": {
     "benchmarks": [
@@ -122,31 +120,31 @@
       "创业板指",
       "科创50"
     ],
-    "stocks": 36,
-    "generated_at": "2026-10-21 18:04:29"
+    "stocks": 33,
+    "generated_at": "2026-10-22 20:23:55"
   },
   "windvane": {
-    "count": 29,
-    "leaders": 6,
-    "confirms": 8,
-    "weak_anchors": 15,
-    "generated_at": "2026-10-21 18:04:30"
+    "count": 30,
+    "leaders": 3,
+    "confirms": 3,
+    "weak_anchors": 23,
+    "generated_at": "2026-10-22 20:23:57"
   },
   "sector_strength": {
     "version": "1.2",
     "breadth_universe": 100,
-    "signal_universe": 35,
-    "industry_count": 28,
+    "signal_universe": 32,
+    "industry_count": 25,
     "theme_count": 11,
-    "generated_at": "2026-10-21 18:04:32"
+    "generated_at": "2026-10-22 20:23:58"
   },
   "decision": {
-    "market_regime": "NEUTRAL",
-    "market_regime_cn": "中性震荡",
-    "max_total_position": 0.5,
-    "decision_universe": 19,
-    "a1_count": 5,
-    "a2_count": 5,
-    "generated_at": "2026-10-21 18:04:33"
+    "market_regime": "RISK_OFF",
+    "market_regime_cn": "弱势",
+    "max_total_position": 0.3,
+    "decision_universe": 18,
+    "a1_count": 4,
+    "a2_count": 0,
+    "generated_at": "2026-10-22 20:23:59"
   }
 }

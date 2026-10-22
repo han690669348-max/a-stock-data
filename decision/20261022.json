@@ -1,0 +1,293 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261022",
+  "published_at": "2026-10-22T20:31:21.970955+08:00",
+  "market": {
+    "regime": "RISK_OFF",
+    "position_cap_pct": 0,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "001309",
+      "name": "德明利",
+      "tier": "TIER_A",
+      "score": 72,
+      "confidence": 67,
+      "theme": "存储",
+      "trigger": "开盘后观察第一次回踩能否获得承接；需在前30分钟维持相对指数强势，并在修复过程中重新站回昨日收盘，且存储方向其他高成交成员同步改善。",
+      "invalidation": "回踩承接失败、重新转为相对指数走弱，或存储高成交成员继续分化走弱。",
+      "forbidden": "不因单只个股强势追高；指数继续急跌、板块无同步修复或个股冲高回落时不参与。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 243.17,
+          "source": "TUSHARE_DAILY_CLOSE@20261022"
+        },
+        "day_high": {
+          "value": 250.01,
+          "source": "intraday_structure.csv@20261022"
+        },
+        "day_low": {
+          "value": 222.0,
+          "source": "intraday_structure.csv@20261022"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "002185",
+      "name": "华天科技",
+      "tier": "TIER_A",
+      "score": 66,
+      "confidence": 59,
+      "theme": "半导体/短线情绪",
+      "trigger": "观察开盘后能否在第一次回踩中维持承接，前30分钟相对指数保持强势，并在回落后重新站回昨日收盘；同时需有其他高成交半导体个股跟随修复。",
+      "invalidation": "回踩失守且无法收复，或个股转为相对指数走弱、半导体高成交成员无同步承接。",
+      "forbidden": "不把单日大涨等同于板块主线；高开后快速走弱、指数继续下探或板块无跟随时不追买。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 15.55,
+          "source": "TUSHARE_DAILY_CLOSE@20261022"
+        },
+        "day_high": {
+          "value": 15.68,
+          "source": "intraday_structure.csv@20261022"
+        },
+        "day_low": {
+          "value": 13.96,
+          "source": "intraday_structure.csv@20261022"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "000530",
+      "name": "冰山冷热",
+      "tier": "TIER_A",
+      "score": 61,
+      "confidence": 55,
+      "theme": "电机及通用设备",
+      "trigger": "观察次日开盘后的第一次回踩是否有承接，前30分钟能否维持相对指数强势；若开板，需见到回落后重新站回昨日收盘并有设备类个股同步走强。",
+      "invalidation": "涨停强度明显减弱且回踩无法收复，或设备类强势股普遍转弱、个股相对指数走弱。",
+      "forbidden": "不在高开急拉时追涨；若开板反复、承接不连续或市场跌停压力未缓和，不参与。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 9.49,
+          "source": "TUSHARE_DAILY_CLOSE@20261022"
+        },
+        "day_high": {
+          "value": 9.49,
+          "source": "intraday_structure.csv@20261022"
+        },
+        "day_low": {
+          "value": 8.84,
+          "source": "intraday_structure.csv@20261022"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "601091",
+      "name": "沈鼓集团",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "电机及设备类短线情绪",
+        "confidence": 72,
+        "thesis": "涨停扩散主要集中在电机及设备相关方向，属于局部短线情绪活跃，并非指数与高成交核心共同确认的交易主线。",
+        "evidence": [
+          "电机Ⅱ涨停7家，通用设备涨停4家，专用设备涨停3家",
+          "设备类有冰山冷热、沈鼓集团等高成交涨停股",
+          "全市场跌停49家、炸板23家，整体情绪环境仍明显偏弱"
+        ],
+        "risk": "涨停股反复开板且高换手，市场总体风险偏好急剧收缩，局部强势可能无法延续。"
+      }
+    ],
+    "trading": [],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "电机及通用设备",
+        "confidence": 42,
+        "thesis": "涨停扩散和个别高成交标的结构较强，但现有事实不足以证明板块高成交核心、同步性及次日承接均已确认。",
+        "evidence": [
+          "电机Ⅱ涨停7家、通用设备涨停4家",
+          "冰山冷热收涨停并收近高位，沈鼓集团收涨停并收近高位",
+          "冰山冷热、沈鼓集团均为高换手，且日内有多次开板或反复交易"
+        ],
+        "risk": "个股强度与板块广度尚未形成可靠共振；高换手及市场跌停扩张增加次日分歧风险。"
+      },
+      {
+        "rank": 2,
+        "name": "存储",
+        "confidence": 38,
+        "thesis": "德明利相对强势且收涨，但存储方向整体分化，尚不能据此认定为可交易主线。",
+        "evidence": [
+          "存储主题高成交成员3家，涨幅均值为负，状态为DIVERGING",
+          "德明利上涨4.003%，日相对强度为正，盘中回落后有修复",
+          "长鑫科技收跌且尾盘偏弱，兆易创新收跌并低于上证指数表现"
+        ],
+        "risk": "个股独强不等于板块同步；德明利尾盘相对走弱，指数风险可能压制次日承接。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "CPO及光模块",
+        "confidence": 96,
+        "thesis": "高成交核心集体大幅下跌并收近低位，趋势及相对强度均明显恶化。",
+        "evidence": [
+          "CPO主题5只高成交成员全部下跌，平均跌幅约9.49%，状态为FADING",
+          "光模块主题4只成员全部下跌，平均跌幅约9.85%，状态为FADING",
+          "中际旭创、新易盛、天孚通信均收近低位并出现TREND_DOWN或LATE_WEAKNESS",
+          "剑桥科技触及跌停，收近低位"
+        ],
+        "risk": "高位核心若次日继续弱势，可能带来进一步兑现和相关方向的负反馈。"
+      },
+      {
+        "rank": 2,
+        "name": "PCB及AI硬件",
+        "confidence": 94,
+        "thesis": "高成交成员同步下跌、相对强度普遍为负，暂不具备主线交易条件。",
+        "evidence": [
+          "PCB主题4只高成交成员全部下跌，状态为FADING",
+          "AI硬件主题3只成员全部下跌，状态为FADING",
+          "沪电股份、东山精密、生益科技及景旺电子均收近低位或呈趋势走弱",
+          "电子设备制造业高成交成员中趋势下行占比高，行业状态为DIVERGING"
+        ],
+        "risk": "次日即使出现反抽，也需验证高成交核心能否止跌及板块同步改善，避免把技术性反弹当作趋势修复。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "001309",
+      "name": "德明利",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "000530",
+      "name": "冰山冷热",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "601091",
+      "name": "沈鼓集团",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300296",
+      "name": "利亚德",
+      "role": "CONFIRM",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "role": "WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "先观察指数前30分钟结构及低位承接；若指数延续单边走弱，维持低仓位上限，不因局部涨停扩散提高风险预算。",
+    "检查跌停股及炸板股的开板、修复和承接变化，确认情绪负反馈是否缓和。",
+    "观察中际旭创、新易盛、天孚通信等高成交核心能否停止收近低位式下跌，并验证CPO、光模块、PCB方向是否出现同步修复。",
+    "对电机及设备方向，验证涨停股回踩承接和板块同步性；若只有个股强势，不确认交易主线。",
+    "对德明利、华天科技、冰山冷热、沈鼓集团，仅按结构触发条件观察；高开急拉、回踩失守或相对指数转弱均不追买。",
+    "总仓位上限为0%，保持防御，不新增风险敞口。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "001309",
+        "name": "德明利",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "002185",
+        "name": "华天科技",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "000530",
+        "name": "冰山冷热",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "601091",
+        "name": "沈鼓集团",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "market_regime",
+        "rule": "RISK_OFF",
+        "researcher": "PANIC",
+        "reviewer": "TOO_BEARISH"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

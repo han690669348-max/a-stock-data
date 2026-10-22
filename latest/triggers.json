@@ -1,15 +1,15 @@
 {
-  "trade_date": "20261021",
-  "market_regime": "NEUTRAL",
-  "max_total_position": 0.5,
+  "trade_date": "20261022",
+  "market_regime": "RISK_OFF",
+  "max_total_position": 0.3,
   "A1": [
     {
-      "股票代码": "002242",
-      "名称": "九阳股份",
-      "reference_close": 22.62,
-      "reference_high": 22.62,
-      "reference_low": 20.0,
-      "score": 12,
+      "股票代码": "601091",
+      "名称": "沈鼓集团",
+      "reference_close": 21.58,
+      "reference_high": 21.58,
+      "reference_low": 19.4,
+      "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -25,10 +25,10 @@
     {
       "股票代码": "000530",
       "名称": "冰山冷热",
-      "reference_close": 8.63,
-      "reference_high": 8.87,
-      "reference_low": 7.45,
-      "score": 9,
+      "reference_close": 9.49,
+      "reference_high": 9.49,
+      "reference_low": 8.84,
+      "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -42,30 +42,11 @@
       ]
     },
     {
-      "股票代码": "603236",
-      "名称": "移远通信",
-      "reference_close": 83.72,
-      "reference_high": 83.72,
-      "reference_low": 77.77,
-      "score": 9,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "603629",
-      "名称": "利通电子",
-      "reference_close": 92.03,
-      "reference_high": 92.03,
-      "reference_low": 84.99,
+      "股票代码": "001309",
+      "名称": "德明利",
+      "reference_close": 243.17,
+      "reference_high": 250.01,
+      "reference_low": 222.0,
       "score": 8,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -80,12 +61,12 @@
       ]
     },
     {
-      "股票代码": "000592",
-      "名称": "平潭发展",
-      "reference_close": 7.19,
-      "reference_high": 7.36,
-      "reference_low": 6.7,
-      "score": 5,
+      "股票代码": "002185",
+      "名称": "华天科技",
+      "reference_close": 15.55,
+      "reference_high": 15.68,
+      "reference_low": 13.96,
+      "score": 6,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -99,101 +80,5 @@
       ]
     }
   ],
-  "A2": [
-    {
-      "股票代码": "600127",
-      "名称": "金健米业",
-      "reference_close": 13.61,
-      "reference_high": 14.15,
-      "reference_low": 13.1,
-      "score": 7,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "603228",
-      "名称": "景旺电子",
-      "reference_close": 90.0,
-      "reference_high": 93.2,
-      "reference_low": 88.5,
-      "score": 6,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "002463",
-      "名称": "沪电股份",
-      "reference_close": 114.97,
-      "reference_high": 118.5,
-      "reference_low": 113.63,
-      "score": 4,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "002428",
-      "名称": "云南锗业",
-      "reference_close": 84.06,
-      "reference_high": 86.5,
-      "reference_low": 82.58,
-      "score": 4,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "603083",
-      "名称": "剑桥科技",
-      "reference_close": 173.61,
-      "reference_high": 179.25,
-      "reference_low": 167.02,
-      "score": 4,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    }
-  ]
+  "A2": []
 }

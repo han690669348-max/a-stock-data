@@ -1,17 +1,14 @@
 {
-  "effective_state": "PUBLISHED_SUCCESS",
+  "effective_state": "NOT_PUBLISHED",
   "current_step": "final_decision",
-  "last_valid_baseline_trade_date": "20261022",
+  "last_valid_baseline_trade_date": "20261023",
   "baseline_stale": false,
-  "run_mode": "LATE_RUN",
-  "late_run_evidence_path": "/root/Documents/Codex/2026-10-22/a-2026-10-22-a-2026/incident-20261022/recovery-after-cache/model_budget.json",
-  "actual_run_started_at": "2026-10-22T20:19:35.348398+08:00",
   "status": "SUCCESS",
-  "trade_date": "20261022",
-  "generated_at": "2026-10-22 20:31:35",
-  "run_id": "20261022-late-201935-1354274",
-  "original_run_id": "20261022-late-201935-1354274",
-  "pipeline_state": "SUCCESS",
+  "trade_date": "20261023",
+  "generated_at": "2026-10-23 18:12:34",
+  "run_id": "20261023-normal-180001-1373597",
+  "original_run_id": "20261023-normal-180001-1373597",
+  "pipeline_state": "NORMAL_RUNNING",
   "review": "SUCCESS",
   "candidate_pool": "SUCCESS",
   "intraday": "SUCCESS",
@@ -31,6 +28,6 @@
   "recovery_attempt": 0,
   "recovery_result": null,
   "publish_gate": "SUCCESS",
-  "github_sync": "SUCCESS",
-  "last_updated_at": "2026-10-22T20:31:35+08:00"
+  "github_sync": "PENDING",
+  "last_updated_at": "2026-10-23T18:12:34+08:00"
 }

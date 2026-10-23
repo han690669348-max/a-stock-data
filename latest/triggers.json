@@ -1,14 +1,52 @@
 {
-  "trade_date": "20261022",
-  "market_regime": "RISK_OFF",
-  "max_total_position": 0.3,
+  "trade_date": "20261023",
+  "market_regime": "RISK_ON",
+  "max_total_position": 0.8,
   "A1": [
     {
-      "股票代码": "601091",
-      "名称": "沈鼓集团",
-      "reference_close": 21.58,
-      "reference_high": 21.58,
-      "reference_low": 19.4,
+      "股票代码": "600487",
+      "名称": "亨通光电",
+      "reference_close": 52.32,
+      "reference_high": 52.63,
+      "reference_low": 48.0,
+      "score": 12,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "603083",
+      "名称": "剑桥科技",
+      "reference_close": 158.38,
+      "reference_high": 159.88,
+      "reference_low": 144.05,
+      "score": 12,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "002241",
+      "名称": "歌尔股份",
+      "reference_close": 23.11,
+      "reference_high": 23.11,
+      "reference_low": 20.73,
       "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -23,11 +61,11 @@
       ]
     },
     {
-      "股票代码": "000530",
-      "名称": "冰山冷热",
-      "reference_close": 9.49,
-      "reference_high": 9.49,
-      "reference_low": 8.84,
+      "股票代码": "603986",
+      "名称": "兆易创新",
+      "reference_close": 292.0,
+      "reference_high": 294.8,
+      "reference_low": 268.3,
       "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -42,31 +80,12 @@
       ]
     },
     {
-      "股票代码": "001309",
-      "名称": "德明利",
-      "reference_close": 243.17,
-      "reference_high": 250.01,
-      "reference_low": 222.0,
-      "score": 8,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "002185",
-      "名称": "华天科技",
-      "reference_close": 15.55,
-      "reference_high": 15.68,
-      "reference_low": 13.96,
-      "score": 6,
+      "股票代码": "601899",
+      "名称": "紫金矿业",
+      "reference_close": 28.79,
+      "reference_high": 28.79,
+      "reference_low": 26.6,
+      "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -80,5 +99,63 @@
       ]
     }
   ],
-  "A2": []
+  "A2": [
+    {
+      "股票代码": "603228",
+      "名称": "景旺电子",
+      "reference_close": 81.2,
+      "reference_high": 81.5,
+      "reference_low": 76.12,
+      "score": 8,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "603236",
+      "名称": "移远通信",
+      "reference_close": 80.74,
+      "reference_high": 81.8,
+      "reference_low": 75.8,
+      "score": 8,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "002384",
+      "名称": "东山精密",
+      "reference_close": 114.22,
+      "reference_high": 115.58,
+      "reference_low": 105.01,
+      "score": 4,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    }
+  ]
 }

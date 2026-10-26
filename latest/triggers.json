@@ -1,52 +1,14 @@
 {
-  "trade_date": "20261023",
-  "market_regime": "RISK_ON",
-  "max_total_position": 0.8,
+  "trade_date": "20261026",
+  "market_regime": "RISK_OFF",
+  "max_total_position": 0.3,
   "A1": [
     {
-      "股票代码": "600487",
-      "名称": "亨通光电",
-      "reference_close": 52.32,
-      "reference_high": 52.63,
-      "reference_low": 48.0,
-      "score": 12,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "603083",
-      "名称": "剑桥科技",
-      "reference_close": 158.38,
-      "reference_high": 159.88,
-      "reference_low": 144.05,
-      "score": 12,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "002241",
-      "名称": "歌尔股份",
-      "reference_close": 23.11,
-      "reference_high": 23.11,
-      "reference_low": 20.73,
+      "股票代码": "601857",
+      "名称": "中国石油",
+      "reference_close": 13.38,
+      "reference_high": 13.41,
+      "reference_low": 12.65,
       "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -61,12 +23,12 @@
       ]
     },
     {
-      "股票代码": "603986",
-      "名称": "兆易创新",
-      "reference_close": 292.0,
-      "reference_high": 294.8,
-      "reference_low": 268.3,
-      "score": 11,
+      "股票代码": "000559",
+      "名称": "万向钱潮",
+      "reference_close": 12.71,
+      "reference_high": 12.71,
+      "reference_low": 11.9,
+      "score": 9,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -80,12 +42,31 @@
       ]
     },
     {
-      "股票代码": "601899",
-      "名称": "紫金矿业",
-      "reference_close": 28.79,
-      "reference_high": 28.79,
-      "reference_low": 26.6,
-      "score": 11,
+      "股票代码": "003021",
+      "名称": "兆威机电",
+      "reference_close": 96.26,
+      "reference_high": 98.01,
+      "reference_low": 91.12,
+      "score": 8,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "603259",
+      "名称": "药明康德",
+      "reference_close": 146.0,
+      "reference_high": 147.66,
+      "reference_low": 137.9,
+      "score": 6,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,49 +82,11 @@
   ],
   "A2": [
     {
-      "股票代码": "603228",
-      "名称": "景旺电子",
-      "reference_close": 81.2,
-      "reference_high": 81.5,
-      "reference_low": 76.12,
-      "score": 8,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "603236",
-      "名称": "移远通信",
-      "reference_close": 80.74,
-      "reference_high": 81.8,
-      "reference_low": 75.8,
-      "score": 8,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "002384",
-      "名称": "东山精密",
-      "reference_close": 114.22,
-      "reference_high": 115.58,
-      "reference_low": 105.01,
+      "股票代码": "601899",
+      "名称": "紫金矿业",
+      "reference_close": 27.47,
+      "reference_high": 28.28,
+      "reference_low": 26.71,
       "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",

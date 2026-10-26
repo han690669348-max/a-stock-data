@@ -1,0 +1,276 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261026",
+  "published_at": "2026-10-26T18:10:53.457550+08:00",
+  "market": {
+    "regime": "RISK_OFF",
+    "position_cap_pct": 0,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "000559",
+      "name": "万向钱潮",
+      "tier": "TIER_A",
+      "score": 72,
+      "confidence": 59,
+      "theme": "汽车零部件",
+      "trigger": "开盘后观察前30分钟相对强度；只有在首次回踩出现承接、价格维持强势且汽车零部件方向有其他个股同步跟随时，才保留进一步验证资格。",
+      "invalidation": "首次回踩承接失败，或相对强度转弱且板块缺乏跟随。",
+      "forbidden": "禁止因涨停或前一日强势直接追高；禁止忽略盘中开板和午后成交偏低所反映的持续性风险。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 12.71,
+          "source": "TUSHARE_DAILY_CLOSE@20261026"
+        },
+        "day_high": {
+          "value": 12.71,
+          "source": "intraday_structure.csv@20261026"
+        },
+        "day_low": {
+          "value": 11.9,
+          "source": "intraday_structure.csv@20261026"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "003021",
+      "name": "兆威机电",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    },
+    {
+      "code": "601857",
+      "name": "中国石油",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    },
+    {
+      "code": "603259",
+      "name": "药明康德",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "汽车零部件",
+        "confidence": 69,
+        "thesis": "涨停扩散和高换手活跃度较突出，是当日短线情绪方向之一；但高成交板块同步性与午后持续性证据有限。",
+        "evidence": [
+          "汽车零部件涨停6家，为当日涨停行业数量靠前方向",
+          "万向钱潮涨停，成交额约25.08亿元，换手率约6.00%，盘中有2次开板",
+          "高成交样本中的万向钱潮收于日内高位，但其午后成交占比仅约0.02%"
+        ],
+        "risk": "涨停及高换手表现不等同于板块主线，个股开板和午后成交偏低提示次日需验证承接与扩散。"
+      },
+      {
+        "rank": 2,
+        "name": "设备制造",
+        "confidence": 64,
+        "thesis": "通用设备、专用设备均有较多涨停，局部情绪活跃；但高成交结构与风向标表现并未形成一致确认。",
+        "evidence": [
+          "专用设备涨停6家，通用设备涨停5家",
+          "通用设备制造业高成交样本上涨比例为75%，但平均午后相对强度转弱",
+          "埃斯顿上涨但出现午后走弱标签；大业股份涨幅较大但盘中炸板次数较多"
+        ],
+        "risk": "涨停扩散与高成交核心的持续承接不匹配，存在冲高回落及情绪退潮风险。"
+      }
+    ],
+    "trading": [],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "汽车零部件",
+        "confidence": 52,
+        "thesis": "具备局部情绪强度和高成交涨停个股，但当前样本不足以证明板块同步、午后承接及次日可交易性。",
+        "evidence": [
+          "汽车零部件涨停6家",
+          "万向钱潮日内相对上证基准明显占优并收于日内高位",
+          "万向钱潮盘中开板2次，午后成交占比偏低"
+        ],
+        "risk": "关注核心开盘后的承接和板块跟随，不因单只涨停直接认定主线。"
+      },
+      {
+        "rank": 2,
+        "name": "通用设备与机器人相关方向",
+        "confidence": 45,
+        "thesis": "有涨停扩散及个别强势股，但现有高成交样本数量有限，午后相对强度和风向标一致性不足。",
+        "evidence": [
+          "通用设备涨停5家",
+          "通用设备制造业高成交样本上涨比例为75%，平均日涨幅为正",
+          "该行业平均午后相对强度转负；埃斯顿有LATE_WEAKNESS标签"
+        ],
+        "risk": "宇树科技不属于上海或深圳主板，不能作为主板A1候选；设备方向需观察主板标的能否保持前30分钟相对强势。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "计算机、通信和其他电子设备制造业",
+        "confidence": 91,
+        "thesis": "高成交权重集中且板块内部广泛走弱，日内及相对强度均偏弱，属于当前主要风险方向。",
+        "evidence": [
+          "高成交样本45只，行业金额占比约49.90%",
+          "行业平均涨跌幅约-4.51%，正相对强度比例约18.75%",
+          "板块状态为FADING，弱锚点11个",
+          "中际旭创、新易盛、兆易创新、东山精密、亨通光电等多只高成交核心收跌"
+        ],
+        "risk": "若次日核心继续走弱或反弹无板块扩散，需防止高成交方向继续拖累风险偏好。"
+      },
+      {
+        "rank": 2,
+        "name": "CPO与光模块",
+        "confidence": 87,
+        "thesis": "高成交核心普遍收跌，板块状态为FADING；午后部分个股修复但未改变日内弱势。",
+        "evidence": [
+          "CPO及光模块高成交样本平均涨幅约-4.08%，状态均为FADING",
+          "天孚通信、中际旭创、新易盛均收跌，但具备不同程度的日内修复标签",
+          "相关板块高成交样本中缺少明确的领涨确认"
+        ],
+        "risk": "把个股反弹当作板块反转的风险较高，需观察核心能否形成同步承接。"
+      },
+      {
+        "rank": 3,
+        "name": "PCB与光纤光缆",
+        "confidence": 88,
+        "thesis": "高成交样本广泛收跌、弱锚点较多，板块同步性和相对强度不足。",
+        "evidence": [
+          "PCB高成交样本上涨比例为25%，行业状态为FADING",
+          "光纤光缆高成交样本上涨比例为0%，平均涨幅约-6.81%",
+          "生益科技、沪电股份、景旺电子、亨通光电等收跌且多有收盘靠近日内低位或趋势走弱标签"
+        ],
+        "risk": "弱势核心若继续低位运行，反弹参与的赔率和持续性均不确定。"
+      },
+      {
+        "rank": 4,
+        "name": "存储与半导体设备",
+        "confidence": 83,
+        "thesis": "存储方向状态为FADING，半导体设备相关高成交个股有明显下跌及收盘偏弱表现。",
+        "evidence": [
+          "存储高成交样本平均涨幅约-3.05%，上涨比例为0，状态为FADING",
+          "兆易创新、澜起科技、长川科技等收跌",
+          "长川科技收盘靠近日内低位并有TREND_DOWN、LATE_WEAKNESS标签"
+        ],
+        "risk": "需先看到高成交核心止跌及相对强度改善，不宜仅依据个别盘中反抽判断修复。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "000559",
+      "name": "万向钱潮",
+      "role": "汽车零部件情绪风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "688256",
+      "name": "寒武纪",
+      "role": "高成交成长风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "role": "高成交新能源风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "601857",
+      "name": "中国石油",
+      "role": "权重与能源风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "600487",
+      "name": "亨通光电",
+      "role": "光纤光缆弱势风向标",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "观察上证指数与深证成指、创业板指能否改善分化，尤其关注前30分钟结构和午后延续性。",
+    "跟踪涨停、炸板、跌停数量变化，重点判断涨停扩散是否伴随炸板减少及跌停压力缓解。",
+    "检查高成交电子硬件、CPO、PCB、存储核心能否出现同步承接；单只反弹不视为板块确认。",
+    "观察汽车零部件及设备方向的高成交主板个股能否维持前30分钟相对强势，并出现板块跟随。",
+    "若指数分化扩大、跌停或炸板压力增加，或高成交核心继续走弱，维持低仓位上限并避免追逐情绪股。",
+    "总仓位上限为0%，保持防御，不新增风险敞口。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "000559",
+        "name": "万向钱潮",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "003021",
+        "name": "兆威机电",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "stock",
+        "code": "601857",
+        "name": "中国石油",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "stock",
+        "code": "603259",
+        "name": "药明康德",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "market_regime",
+        "rule": "RISK_OFF",
+        "researcher": "NEUTRAL",
+        "reviewer": "TOO_BULLISH"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

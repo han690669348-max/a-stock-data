@@ -1,0 +1,325 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261027",
+  "published_at": "2026-10-27T18:11:36.822517+08:00",
+  "market": {
+    "regime": "RISK_OFF",
+    "position_cap_pct": 0,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "600309",
+      "name": "万华化学",
+      "tier": "TIER_A",
+      "score": 68,
+      "confidence": 61,
+      "theme": "化工相对强势观察",
+      "trigger": "次日观察第一次回踩是否出现承接，并确认相对指数保持强势；只有重新形成盘中上行结构且化工方向出现更多同步强势个股时，才提升观察优先级。",
+      "invalidation": "第一次回踩失守后不能收复，或盘中转为持续弱于指数，则取消观察。",
+      "forbidden": "禁止因单日逆势上涨而直接追高；指数继续急跌或板块无同步时，不以个股强势推断主线成立。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 70.33,
+          "source": "TUSHARE_DAILY_CLOSE@20261027"
+        },
+        "day_high": {
+          "value": 70.94,
+          "source": "intraday_structure.csv@20261027"
+        },
+        "day_low": {
+          "value": 68.69,
+          "source": "intraday_structure.csv@20261027"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "601899",
+      "name": "紫金矿业",
+      "tier": "TIER_A",
+      "score": 63,
+      "confidence": 56,
+      "theme": "有色相对强势观察",
+      "trigger": "观察开盘后能否维持相对指数强势，第一次回踩有承接，并在盘中重新形成高低点改善结构；同时关注有色方向是否出现同步。",
+      "invalidation": "回踩后持续弱于指数、无法形成承接，或有色方向同步转弱，则取消观察。",
+      "forbidden": "禁止仅凭资源股单日上涨追入；市场继续扩大下跌时，不做逆势硬接。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 27.85,
+          "source": "TUSHARE_DAILY_CLOSE@20261027"
+        },
+        "day_high": {
+          "value": 28.24,
+          "source": "intraday_structure.csv@20261027"
+        },
+        "day_low": {
+          "value": 27.19,
+          "source": "intraday_structure.csv@20261027"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "002724",
+      "name": "海洋王",
+      "tier": "TIER_A",
+      "score": 60,
+      "confidence": 53,
+      "theme": "短线情绪个股观察",
+      "trigger": "仅观察次日开盘后是否有主动承接、回踩后能否重新走强并稳定维持强势；若市场情绪及同方向个股未改善，不视为可执行机会。",
+      "invalidation": "开板后承接不足、盘中持续走弱，或情绪方向出现明显退潮，则取消观察。",
+      "forbidden": "禁止无条件追涨停或追高；不得忽略当日多次开板及整体PANIC环境。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 13.09,
+          "source": "TUSHARE_DAILY_CLOSE@20261027"
+        },
+        "day_high": {
+          "value": 13.09,
+          "source": "intraday_structure.csv@20261027"
+        },
+        "day_low": {
+          "value": 11.89,
+          "source": "intraday_structure.csv@20261027"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "600519",
+      "name": "贵州茅台",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "汽车零部件",
+        "confidence": 67,
+        "thesis": "涨停数量在行业中最多，短线情绪扩散明显，但当前数据不足以证明其形成高成交核心带动的可持续交易主线。",
+        "evidence": [
+          "汽车零部件涨停8家，为行业分类中最多",
+          "襄阳轴承4连板，但当日汽车方向亦有多只炸板个股"
+        ],
+        "risk": "市场指数收于日内低位，炸板与跌停数量偏高，情绪扩散可能快速退潮。"
+      },
+      {
+        "rank": 2,
+        "name": "一般零售",
+        "confidence": 57,
+        "thesis": "涨停数量居前，且出现连板标的，体现局部短线活跃度；但缺少高成交核心与板块承接结构的充分验证。",
+        "evidence": [
+          "一般零售涨停6家",
+          "上海九百5连板，国芳集团、新华百货涨停"
+        ],
+        "risk": "指数环境恶劣，涨停扩散不等于次日具有稳定接力条件。"
+      }
+    ],
+    "trading": [],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "银行防御",
+        "confidence": 55,
+        "thesis": "银行板块当日广度较强，可能具备相对防御属性，但信号样本和5分钟结构信息不足，暂不确认为交易主线。",
+        "evidence": [
+          "货币金融服务板块Top100成员6只，数据所示上涨比例为1.0",
+          "招商银行、兴业银行、工商银行、农业银行、交通银行均在板块代表名单中"
+        ],
+        "risk": "缺乏足够相对强度及盘中结构信号验证，若指数继续下行，防御表现也可能失效。"
+      },
+      {
+        "rank": 2,
+        "name": "汽车零部件",
+        "confidence": 50,
+        "thesis": "涨停扩散较多，可观察次日是否由高成交个股与板块承接共同确认；目前仅列观察方向。",
+        "evidence": [
+          "汽车零部件涨停8家",
+          "部分涨停股具有连板表现，但数据同时显示多只汽车方向个股炸板"
+        ],
+        "risk": "缺少高成交板块核心同步走强的证据，且整体市场处于高风险状态。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "计算机、通信和其他电子设备制造业",
+        "confidence": 94,
+        "thesis": "高成交权重集中方向广泛走弱，板块状态为FADING，不具备当前交易主线条件。",
+        "evidence": [
+          "Top100成员44只，成交额占比48.68%",
+          "上涨比例约13.6%，负相对强度占比75%",
+          "趋势下行比例80%，弱锚点16只",
+          "华天科技、光库科技等少数逆势个股未扭转板块整体结构"
+        ],
+        "risk": "若高成交核心继续收于低位，相关个股可能面临进一步兑现压力。"
+      },
+      {
+        "rank": 2,
+        "name": "CPO与光模块",
+        "confidence": 93,
+        "thesis": "高成交核心普遍收弱、相对强度为负，板块状态FADING，日内承接不足。",
+        "evidence": [
+          "板块Top100成员4只，均为下跌",
+          "平均涨跌幅约-4.49%，负相对强度占比100%",
+          "4只弱锚点、趋势上行比例为0",
+          "中际旭创、天孚通信、新易盛、剑桥科技均表现疲弱"
+        ],
+        "risk": "高成交核心持续走弱，次日不宜仅凭超跌预期博弈反弹。"
+      },
+      {
+        "rank": 3,
+        "name": "PCB",
+        "confidence": 88,
+        "thesis": "板块同步性偏弱，多个高成交成员收于日内低位附近，结构显示整体FADING。",
+        "evidence": [
+          "Top100成员4只，涨跌幅均值约-2.88%",
+          "负相对强度占比75%，趋势下行比例100%",
+          "沪电股份、景旺电子、东山精密收于日内低位附近，生益科技亦呈收弱结构"
+        ],
+        "risk": "沪电股份日内相对抗跌，但午后转弱，单一个股表现不足以确认板块止跌。"
+      },
+      {
+        "rank": 4,
+        "name": "存储",
+        "confidence": 83,
+        "thesis": "成交活跃但板块整体收跌，成员普遍趋势下行，尚无有效止跌确认。",
+        "evidence": [
+          "Top100成员3只，平均涨跌幅约-3.18%",
+          "3只趋势下行，弱锚点3只",
+          "德明利、兆易创新收于日内低位附近，长鑫科技虽收涨但收盘接近日内低位"
+        ],
+        "risk": "高成交个股分化且尾盘结构偏弱，反弹不能视为趋势修复。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "002724",
+      "name": "海洋王",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "600519",
+      "name": "贵州茅台",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "600309",
+      "name": "万华化学",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002354",
+      "name": "天娱数科",
+      "role": "CONFIRM",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "601899",
+      "name": "紫金矿业",
+      "role": "CONFIRM",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "先观察上证、深证及创业板开盘后的5分钟结构，确认是否停止连续走弱；若指数继续走低，维持极低仓位上限。",
+    "观察跌停与炸板是否明显缓解，以及高成交核心是否不再普遍收于日内低位；情绪数量改善但核心结构未改善，不视为风险解除。",
+    "观察电子、CPO、光模块、PCB等高成交方向是否出现核心与板块同步修复；未形成同步承接前，不确认交易主线。",
+    "银行等防御方向需进一步验证相对强度及盘中结构；在信号不足时仅列观察，不作为主线交易。",
+    "对A1仅按盘中结构条件复核；不因入选观察池而视作买入建议，避免在急跌环境中追高或无承接抄底。",
+    "总仓位上限为0%，保持防御，不新增风险敞口。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "600309",
+        "name": "万华化学",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "601899",
+        "name": "紫金矿业",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "002724",
+        "name": "海洋王",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "600519",
+        "name": "贵州茅台",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "market_regime",
+        "rule": "RISK_OFF",
+        "researcher": "PANIC",
+        "reviewer": "TOO_BEARISH"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

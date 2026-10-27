@@ -1,14 +1,14 @@
 {
-  "trade_date": "20261026",
+  "trade_date": "20261027",
   "market_regime": "RISK_OFF",
   "max_total_position": 0.3,
   "A1": [
     {
-      "股票代码": "601857",
-      "名称": "中国石油",
-      "reference_close": 13.38,
-      "reference_high": 13.41,
-      "reference_low": 12.65,
+      "股票代码": "002724",
+      "名称": "海洋王",
+      "reference_close": 13.09,
+      "reference_high": 13.09,
+      "reference_low": 11.89,
       "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -23,11 +23,11 @@
       ]
     },
     {
-      "股票代码": "000559",
-      "名称": "万向钱潮",
-      "reference_close": 12.71,
-      "reference_high": 12.71,
-      "reference_low": 11.9,
+      "股票代码": "600309",
+      "名称": "万华化学",
+      "reference_close": 70.33,
+      "reference_high": 70.94,
+      "reference_low": 68.69,
       "score": 9,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -42,12 +42,12 @@
       ]
     },
     {
-      "股票代码": "003021",
-      "名称": "兆威机电",
-      "reference_close": 96.26,
-      "reference_high": 98.01,
-      "reference_low": 91.12,
-      "score": 8,
+      "股票代码": "600519",
+      "名称": "贵州茅台",
+      "reference_close": 1355.9,
+      "reference_high": 1357.0,
+      "reference_low": 1338.01,
+      "score": 9,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -61,12 +61,12 @@
       ]
     },
     {
-      "股票代码": "603259",
-      "名称": "药明康德",
-      "reference_close": 146.0,
-      "reference_high": 147.66,
-      "reference_low": 137.9,
-      "score": 6,
+      "股票代码": "601899",
+      "名称": "紫金矿业",
+      "reference_close": 27.85,
+      "reference_high": 28.24,
+      "reference_low": 27.19,
+      "score": 5,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -82,12 +82,31 @@
   ],
   "A2": [
     {
-      "股票代码": "601899",
-      "名称": "紫金矿业",
-      "reference_close": 27.47,
-      "reference_high": 28.28,
-      "reference_low": 26.71,
-      "score": 4,
+      "股票代码": "002354",
+      "名称": "天娱数科",
+      "reference_close": 8.24,
+      "reference_high": 8.77,
+      "reference_low": 7.93,
+      "score": 7,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "002639",
+      "名称": "雪人集团",
+      "reference_close": 14.27,
+      "reference_high": 14.92,
+      "reference_low": 13.49,
+      "score": 6,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",

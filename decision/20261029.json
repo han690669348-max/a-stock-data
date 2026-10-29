@@ -1,0 +1,339 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261029",
+  "published_at": "2026-10-29T18:12:45.145588+08:00",
+  "market": {
+    "regime": "RISK_OFF",
+    "position_cap_pct": 0,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "600118",
+      "name": "中国卫星",
+      "tier": "TIER_A",
+      "score": 77,
+      "confidence": 68,
+      "theme": "卫星与航天装备",
+      "trigger": "次日观察开盘后第一次回踩承接；回踩后能维持强势并重新形成主动上攻，且相关方向出现同步表现时再评估。",
+      "invalidation": "开盘后持续走弱、失守昨日收盘且反抽无力，或相关方向未见同步承接。",
+      "forbidden": "禁止因涨停直接追高；禁止忽略盘中炸板记录及市场整体高风险状态。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 55.9,
+          "source": "TUSHARE_DAILY_CLOSE@20261029"
+        },
+        "day_high": {
+          "value": 55.9,
+          "source": "intraday_structure.csv@20261029"
+        },
+        "day_low": {
+          "value": 50.55,
+          "source": "intraday_structure.csv@20261029"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "002708",
+      "name": "光洋股份",
+      "tier": "TIER_A",
+      "score": 71,
+      "confidence": 64,
+      "theme": "汽车零部件与高换手连板",
+      "trigger": "次日观察开盘后能否在第一次分歧回落时获得承接，并在前30分钟维持相对强势；若再度快速开板且承接不足则不参与。",
+      "invalidation": "开盘后持续低于昨日收盘，或冲高后快速回落且无法重新站回昨日收盘。",
+      "forbidden": "禁止无条件接力或在高开后追涨；禁止把4板及涨停视为低风险信号。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 20.83,
+          "source": "TUSHARE_DAILY_CLOSE@20261029"
+        },
+        "day_high": {
+          "value": 20.83,
+          "source": "intraday_structure.csv@20261029"
+        },
+        "day_low": {
+          "value": 18.8,
+          "source": "intraday_structure.csv@20261029"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "002249",
+      "name": "大洋电机",
+      "tier": "TIER_A",
+      "score": 68,
+      "confidence": 59,
+      "theme": "电气机械与新能源链",
+      "trigger": "次日观察第一次回踩是否有承接，且前30分钟相对强于指数；回踩后重新站回昨日收盘并维持主动性时再评估。",
+      "invalidation": "回踩承接失败、持续弱于指数，或反抽无法重新站回昨日收盘。",
+      "forbidden": "禁止仅因单日相对强势而按板块主线交易；禁止在指数继续急跌时机械抄底。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 8.28,
+          "source": "TUSHARE_DAILY_CLOSE@20261029"
+        },
+        "day_high": {
+          "value": 8.58,
+          "source": "intraday_structure.csv@20261029"
+        },
+        "day_low": {
+          "value": 7.8,
+          "source": "intraday_structure.csv@20261029"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "601328",
+      "name": "交通银行",
+      "tier": "TIER_A",
+      "score": 60,
+      "confidence": 52,
+      "theme": "银行与防御性权重",
+      "trigger": "次日观察能否维持零轴附近的相对强势，并在第一次回踩中获得承接；同时观察指数是否仍明显弱于该股。",
+      "invalidation": "跌破昨日收盘后持续走弱，或相对指数的防御强度消失。",
+      "forbidden": "禁止将防御性表现误作高弹性进攻机会；禁止在缺少指数企稳时据此推导市场转强。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 8.56,
+          "source": "TUSHARE_DAILY_CLOSE@20261029"
+        },
+        "day_high": {
+          "value": 8.58,
+          "source": "intraday_structure.csv@20261029"
+        },
+        "day_low": {
+          "value": 8.29,
+          "source": "intraday_structure.csv@20261029"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "600879",
+      "name": "航天电子",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "通用设备",
+        "confidence": 62,
+        "thesis": "短线涨停扩散相对突出，但板块内部高成交同步性不足，暂按情绪方向而非交易主线处理。",
+        "evidence": [
+          "涨停行业统计中通用设备有4家涨停，为所列行业中最多",
+          "光洋股份收涨停并晋级4板，但盘中炸板17次，换手率27.90%",
+          "通用设备高成交样本仅3只，行业状态为NEUTRAL"
+        ],
+        "risk": "炸板与高换手显示分歧显著，指数及市场整体风险偏高，次日可能快速退潮。"
+      },
+      {
+        "rank": 2,
+        "name": "专用设备",
+        "confidence": 47,
+        "thesis": "涨停数量有局部扩散，但高成交样本整体偏弱，情绪强度尚未转化为可验证的板块承接。",
+        "evidence": [
+          "涨停行业统计中专用设备有3家涨停",
+          "高成交专用设备样本行业状态为BREADTH_WEAK，趋势向下比例为1.0"
+        ],
+        "risk": "高成交方向走弱，涨停扩散与核心表现背离。"
+      }
+    ],
+    "trading": [],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "卫星与航天装备",
+        "confidence": 55,
+        "thesis": "有少数高成交个股表现突出，具备局部相对强度，但样本和板块同步证据不足，尚不能确认为交易主线。",
+        "evidence": [
+          "中国卫星收涨停，日内相对强度明显为正，收于日内高位",
+          "航天电子收涨6.274%，日内相对强度为正并出现回落修复",
+          "相关高成交样本数量有限，缺少充分的板块广度确认"
+        ],
+        "risk": "中国卫星盘中有8次炸板；若次日不能维持强势承接，局部强度可能迅速消退。"
+      },
+      {
+        "rank": 2,
+        "name": "电气机械与新能源链",
+        "confidence": 43,
+        "thesis": "少数高成交标的相对抗跌或走强，但板块数据为DIVERGING，未形成一致性。",
+        "evidence": [
+          "大洋电机收涨3.242%，日内和尾盘相对强度均为正",
+          "宁德时代收跌0.031%，日内相对强于创业板指",
+          "行业高成交样本仅3只，状态为DIVERGING"
+        ],
+        "risk": "板块样本有限且分化明显，不能据个股表现外推整体主线。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "CPO与光模块",
+        "confidence": 94,
+        "thesis": "高成交核心全线走弱，缺乏相对强度、趋势承接和板块同步修复。",
+        "evidence": [
+          "CPO样本5只全部下跌，平均跌幅约12.01%，趋势向下比例为1.0",
+          "光模块样本4只全部下跌，平均跌幅约12.34%，均为弱锚",
+          "中际旭创、新易盛、天孚通信均收于日内低位附近"
+        ],
+        "risk": "核心继续走弱可能带来高成交成长方向的被动抛压；不宜仅因跌幅大而预设反弹。"
+      },
+      {
+        "rank": 2,
+        "name": "AI硬件与PCB",
+        "confidence": 91,
+        "thesis": "高成交样本普遍大幅下跌，日内相对强度显著偏弱，部分标的尾盘继续走低。",
+        "evidence": [
+          "AI硬件样本全部下跌，平均跌幅约9.86%，趋势向下比例为1.0",
+          "PCB样本全部下跌，平均跌幅约10.35%，趋势向下比例为1.0",
+          "沪电股份、东山精密、胜宏科技均收于日内低位附近；胜宏科技尾盘相对表现偏弱"
+        ],
+        "risk": "高成交核心尚未显示止跌结构，板块反抽易受抛压影响。"
+      },
+      {
+        "rank": 3,
+        "name": "存储",
+        "confidence": 86,
+        "thesis": "高成交样本一致走弱，且尾盘承接不足。",
+        "evidence": [
+          "存储样本3只全部下跌，平均跌幅约4.91%，趋势向下比例为1.0",
+          "佰维存储跌幅约15.79%，收于日内低位并出现尾盘走弱",
+          "德明利尾盘相对表现偏弱，长鑫科技亦出现尾盘走弱标签"
+        ],
+        "risk": "若次日不能出现核心止跌及板块同步修复，仍应按弱势方向对待。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "600118",
+      "name": "中国卫星",
+      "role": "局部强势风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002708",
+      "name": "光洋股份",
+      "role": "高换手连板风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "role": "高成交成长核心弱势锚",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "601328",
+      "name": "交通银行",
+      "role": "防御性权重风向标",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "观察上证、深成指、创业板指及科创50开盘后的5分钟结构，尤其是否继续接近日内低位运行。",
+    "跟踪跌停数量、炸板表现及高位兑现是否缓解；涨停数量不能单独作为加仓依据。",
+    "检查中际旭创、新易盛、天孚通信及PCB、存储核心是否出现止跌承接和板块同步修复。",
+    "观察中国卫星、光洋股份及航天电子的开盘分歧、第一次回踩承接与相对指数强弱。",
+    "若指数继续走弱、跌停扩散或高成交核心继续收于低位，维持低仓位上限并避免抄底。",
+    "总仓位上限为0%，保持防御，不新增风险敞口。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "600118",
+        "name": "中国卫星",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "002708",
+        "name": "光洋股份",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "002249",
+        "name": "大洋电机",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "601328",
+        "name": "交通银行",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "600879",
+        "name": "航天电子",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

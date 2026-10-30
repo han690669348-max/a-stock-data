@@ -1,0 +1,362 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261030",
+  "published_at": "2026-10-30T18:11:33.053844+08:00",
+  "market": {
+    "regime": "RISK_OFF",
+    "position_cap_pct": 5,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "600519",
+      "name": "贵州茅台",
+      "tier": "TIER_A",
+      "score": 82,
+      "confidence": 79,
+      "theme": "白酒",
+      "trigger": "次日开盘后观察其是否保持相对指数强势；第一次回踩有承接且能重新站回昨日收盘，同时白酒高成交成员多数同步维持强势，才视为结构有效。",
+      "invalidation": "失去昨日收盘附近承接并持续弱于指数，或白酒核心成员转为明显分化。",
+      "forbidden": "不得因前一日强势直接追高；若高开后快速走弱、板块不同步或大盘跌停压力继续扩大，不参与。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 1392.05,
+          "source": "TUSHARE_DAILY_CLOSE@20261030"
+        },
+        "day_high": {
+          "value": 1393.37,
+          "source": "intraday_structure.csv@20261030"
+        },
+        "day_low": {
+          "value": 1352.98,
+          "source": "intraday_structure.csv@20261030"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "000568",
+      "name": "泸州老窖",
+      "tier": "TIER_A",
+      "score": 79,
+      "confidence": 76,
+      "theme": "白酒",
+      "trigger": "观察次日开盘后涨停溢价是否有真实承接；若开板，需在第一次回踩中保持强势并重新站回昨日收盘附近，同时板块核心不明显转弱。",
+      "invalidation": "开板后承接持续减弱，或跌破昨日收盘附近后不能快速收复。",
+      "forbidden": "禁止无条件追逐涨停溢价；若高开急冲后放量回落、白酒核心同步转弱，不参与。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 77.07,
+          "source": "TUSHARE_DAILY_CLOSE@20261030"
+        },
+        "day_high": {
+          "value": 77.07,
+          "source": "intraday_structure.csv@20261030"
+        },
+        "day_low": {
+          "value": 71.39,
+          "source": "intraday_structure.csv@20261030"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "600809",
+      "name": "山西汾酒",
+      "tier": "TIER_A",
+      "score": 76,
+      "confidence": 73,
+      "theme": "白酒",
+      "trigger": "次日观察前30分钟相对指数表现及第一次回踩承接；能够维持昨日收盘附近并与其他白酒核心同步偏强，才保留观察资格。",
+      "invalidation": "相对强势消失且跌破昨日收盘附近后无法收复，或白酒板块核心出现普遍走弱。",
+      "forbidden": "不因板块强势而追逐快速拉升；若高开低走或市场继续出现广泛跌停，不参与。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 126.27,
+          "source": "TUSHARE_DAILY_CLOSE@20261030"
+        },
+        "day_high": {
+          "value": 128.0,
+          "source": "intraday_structure.csv@20261030"
+        },
+        "day_low": {
+          "value": 116.2,
+          "source": "intraday_structure.csv@20261030"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "002636",
+      "name": "金安国纪",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "600028",
+      "name": "中国石化",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "白酒",
+        "confidence": 91,
+        "thesis": "短线情绪扩散突出，涨停数量居前，且多只高成交白酒股同步收涨。",
+        "evidence": [
+          "白酒Ⅱ涨停4家，为所列行业中最多",
+          "贵州茅台、五粮液、泸州老窖、山西汾酒均收涨",
+          "泸州老窖涨停，贵州茅台和山西汾酒收盘位置靠近日内高位"
+        ],
+        "risk": "大盘跌停数量显著偏高；板块短线强势不代表次日可以追高，需验证开盘承接和板块同步性。"
+      },
+      {
+        "rank": 2,
+        "name": "休闲食品",
+        "confidence": 72,
+        "thesis": "涨停扩散数量较多，具备短线情绪表现，但缺少高成交核心与板块结构证据支撑交易主线判断。",
+        "evidence": [
+          "休闲食品涨停3家"
+        ],
+        "risk": "高成交核心、相对强度及次日承接结构缺少足够证据。"
+      },
+      {
+        "rank": 3,
+        "name": "元件",
+        "confidence": 68,
+        "thesis": "局部涨停情绪活跃，金安国纪强势收于涨停，但高成交板块内部并不同步。",
+        "evidence": [
+          "元件涨停3家",
+          "金安国纪涨停并收于日内高位",
+          "超声电子上涨但午后走弱"
+        ],
+        "risk": "高成交电子制造业整体分化且偏弱，局部强势可能受到板块负反馈影响。"
+      },
+      {
+        "rank": 4,
+        "name": "医疗服务",
+        "confidence": 64,
+        "thesis": "有一定涨停扩散，属于情绪观察方向，现有数据不足以确认高成交核心和次日可交易性。",
+        "evidence": [
+          "医疗服务涨停3家"
+        ],
+        "risk": "缺少足够的高成交核心、同步性和盘中承接证据。"
+      }
+    ],
+    "trading": [
+      {
+        "rank": 1,
+        "name": "白酒",
+        "confidence": 82,
+        "thesis": "当日具备相对完整的高成交核心与板块同步上涨证据，是少数能够从情绪扩散进一步确认交易性的方向；但需在高风险市场环境下等待次日结构验证。",
+        "evidence": [
+          "贵州茅台、五粮液、泸州老窖、山西汾酒等高成交成员均上涨",
+          "行业4只高成交成员中3只纳入信号统计，行业平均涨幅约5.98%",
+          "贵州茅台收盘位置接近日内高位并呈现尾盘强势",
+          "泸州老窖涨停且收于日内高位，山西汾酒上涨并收于日内高位附近"
+        ],
+        "risk": "全市场跌停82家且主要指数午后明显走弱；白酒强势可能是避险式轮动或单日集中表现，次日若核心股失去承接则不应视为持续主线。"
+      }
+    ],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "航运",
+        "confidence": 55,
+        "thesis": "中远海控表现强、成交规模较大且收盘位置靠近日内高位，具备个股层面的相对强度，但行业样本不足以确认板块同步。",
+        "evidence": [
+          "中远海控上涨7.019%",
+          "中远海控相对上证指数日内表现较强，收盘位置约0.86"
+        ],
+        "risk": "高成交样本仅见单一强势核心，缺少行业内部广泛确认。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "AI硬件及光模块",
+        "confidence": 95,
+        "thesis": "高成交核心普遍下跌，板块广度弱，午后多只核心继续承压，存在明显兑现和趋势破坏风险。",
+        "evidence": [
+          "CPO高成交成员平均跌幅约9.28%，板块状态为BREADTH_WEAK",
+          "光模块高成交成员平均跌幅约7.94%，板块状态为BREADTH_WEAK",
+          "新易盛、天孚通信、太辰光显著下跌，部分收盘接近日内低位",
+          "AI硬件板块状态为FADING，弱锚数量偏多"
+        ],
+        "risk": "短线急跌可能出现反抽，但在核心股未重新形成同步承接前，不宜将反抽认作趋势修复。"
+      },
+      {
+        "rank": 2,
+        "name": "PCB",
+        "confidence": 91,
+        "thesis": "高成交核心同步走弱，多个核心尾盘承压，板块状态显示FADING。",
+        "evidence": [
+          "PCB高成交成员平均跌幅约9.69%",
+          "板块状态为FADING，趋势走强占比为0",
+          "胜宏科技、东山精密、沪电股份均明显下跌"
+        ],
+        "risk": "个别元件股强势不足以抵消PCB及电子制造整体弱势。"
+      },
+      {
+        "rank": 3,
+        "name": "存储",
+        "confidence": 86,
+        "thesis": "高成交样本整体收跌且板块状态偏弱，核心股未形成有效同步修复。",
+        "evidence": [
+          "存储高成交成员平均跌幅约3.91%",
+          "板块状态为BREADTH_WEAK",
+          "长鑫科技、德明利、兆易创新均收跌，兆易创新收盘接近日内低位"
+        ],
+        "risk": "部分个股相对指数表现较好，但日内及尾盘承接不足以确认板块反转。"
+      },
+      {
+        "rank": 4,
+        "name": "汽车零部件",
+        "confidence": 85,
+        "thesis": "高成交样本同步走弱，日内及尾盘相对表现偏差，呈现FADING特征。",
+        "evidence": [
+          "行业状态为FADING",
+          "光洋股份、襄阳轴承均收跌并出现尾盘走弱",
+          "行业样本日内和尾盘相对强弱均为负"
+        ],
+        "risk": "弱势延续时可能进一步放大高位兑现和跌停扩散影响。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "600519",
+      "name": "贵州茅台",
+      "role": "国内风向标_LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "000568",
+      "name": "泸州老窖",
+      "role": "国内风向标_LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "600809",
+      "name": "山西汾酒",
+      "role": "国内风向标_LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002636",
+      "name": "金安国纪",
+      "role": "国内风向标_LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "601919",
+      "name": "中远海控",
+      "role": "国内风向标_LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "600028",
+      "name": "中国石化",
+      "role": "国内风向标_LEADER",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "观察主要指数开盘后及午后结构能否止跌，尤其关注深成指、创业板指是否摆脱收于日内低位的弱势状态。",
+    "跟踪跌停家数、炸板情况与高位股兑现压力；若负面情绪继续扩散，维持低仓位上限。",
+    "验证白酒高成交核心是否保持同步承接，不能仅凭单只涨停或前一日涨幅判断主线延续。",
+    "金安国纪需观察涨停溢价、第一次回踩承接及元件板块扩散情况，避免把个股强势误判为板块修复。",
+    "AI硬件、光模块、PCB与存储方向须观察高成交核心是否形成同步修复；在弱锚压力未缓解前，不追逐单股反抽。",
+    "中远海控、中国石化等个股强势方向需等待板块内部更多确认，不以单一风向标替代行业同步性判断。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "600519",
+        "name": "贵州茅台",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "000568",
+        "name": "泸州老窖",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "600809",
+        "name": "山西汾酒",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "002636",
+        "name": "金安国纪",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "stock",
+        "code": "600028",
+        "name": "中国石化",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

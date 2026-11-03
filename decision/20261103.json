@@ -1,0 +1,366 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261103",
+  "published_at": "2026-11-03T18:12:08.754877+08:00",
+  "market": {
+    "regime": "RISK_OFF",
+    "position_cap_pct": 5,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "600519",
+      "name": "贵州茅台",
+      "tier": "TIER_S",
+      "score": 69,
+      "confidence": 62,
+      "theme": "消费/权重防御",
+      "trigger": "观察前30分钟相对上证指数的强弱；若第一次回踩有承接并维持相对强势，再确认权重防御方向是否扩散。",
+      "invalidation": "相对指数转弱、修复结构失效，或仅个股独强而其他权重与防御样本不跟随。",
+      "forbidden": "不因风向标身份盲目买入，不把低波动或权重表现等同于短线进攻主线。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 1480.0,
+          "source": "TUSHARE_DAILY_CLOSE@20261103"
+        },
+        "day_high": {
+          "value": 1480.0,
+          "source": "intraday_structure.csv@20261103"
+        },
+        "day_low": {
+          "value": 1435.1,
+          "source": "intraday_structure.csv@20261103"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "000678",
+      "name": "襄阳轴承",
+      "tier": "TIER_A",
+      "score": 75,
+      "confidence": 68,
+      "theme": "汽车零部件/独立强势股",
+      "trigger": "观察开盘后能否维持相对指数强势；若首次回踩有承接、随后重新走强且成交与价格配合，才纳入盘中观察。",
+      "invalidation": "回踩承接失败、相对强度转弱，或重新走强时缺少成交配合。",
+      "forbidden": "不因单只风向标强势而追高，不在弱市中将其视为板块主线；不以涨停预期替代结构验证。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 20.26,
+          "source": "TUSHARE_DAILY_CLOSE@20261103"
+        },
+        "day_high": {
+          "value": 20.44,
+          "source": "intraday_structure.csv@20261103"
+        },
+        "day_low": {
+          "value": 19.3,
+          "source": "intraday_structure.csv@20261103"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "601899",
+      "name": "紫金矿业",
+      "tier": "TIER_A",
+      "score": 70,
+      "confidence": 63,
+      "theme": "有色金属",
+      "trigger": "观察开盘后相对指数强度是否延续，第一次回踩是否有承接，以及有色相关样本是否出现同步走强。",
+      "invalidation": "相对强度转负、回踩承接失败，或板块内缺少跟随而个股独自走强。",
+      "forbidden": "不因防御属性或单日上涨直接追高，不忽略市场整体风险偏高的背景。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 27.45,
+          "source": "TUSHARE_DAILY_CLOSE@20261103"
+        },
+        "day_high": {
+          "value": 27.74,
+          "source": "intraday_structure.csv@20261103"
+        },
+        "day_low": {
+          "value": 26.68,
+          "source": "intraday_structure.csv@20261103"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "002558",
+      "name": "巨人网络",
+      "tier": "TIER_B",
+      "score": 73,
+      "confidence": 65,
+      "theme": "互联网及游戏",
+      "trigger": "观察前30分钟能否保持相对强势；回踩时若承接稳定并重新站回昨日收盘，再结合板块内其他高成交个股同步改善验证。",
+      "invalidation": "相对指数转弱、回踩失守昨日收盘后不能修复，或板块内强势个股明显分化。",
+      "forbidden": "不追逐脉冲拉升，不把单股上涨外推为游戏板块全面走强。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 21.49,
+          "source": "TUSHARE_DAILY_CLOSE@20261103"
+        },
+        "day_high": {
+          "value": 22.0,
+          "source": "intraday_structure.csv@20261103"
+        },
+        "day_low": {
+          "value": 20.81,
+          "source": "intraday_structure.csv@20261103"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "002714",
+      "name": "牧原股份",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "电池",
+        "confidence": 72,
+        "thesis": "涨停行业数量居前，短线情绪扩散较明显；但全市场炸板和跌停数量偏高，暂不能据此推导为稳固交易主线。",
+        "evidence": [
+          "电池行业涨停7家，为已列行业中最多",
+          "涨停样本中包含圣阳股份、时代万恒、龙蟠科技等",
+          "全市场涨停48家、炸板34家、跌停17家"
+        ],
+        "risk": "涨停扩散与高位科技核心走弱并存，接力持续性及次日承接未确认。"
+      },
+      {
+        "rank": 2,
+        "name": "一般零售",
+        "confidence": 57,
+        "thesis": "涨停数量有一定集中度，体现局部情绪活跃，但缺少高成交核心和同步承接证据。",
+        "evidence": [
+          "一般零售行业涨停4家"
+        ],
+        "risk": "现有数据不足以确认板块核心、相对强度和次日可交易性。"
+      },
+      {
+        "rank": 3,
+        "name": "游戏及传媒",
+        "confidence": 54,
+        "thesis": "游戏行业涨停3家，局部情绪有扩散；高成交互联网相关个股表现偏强，但传媒个股存在冲高回落。",
+        "evidence": [
+          "游戏Ⅱ行业涨停3家",
+          "巨人网络上涨3.917%，芒果超媒上涨3.886%，掌阅科技上涨7.485%",
+          "掌阅科技发生10次炸板，收盘未封板"
+        ],
+        "risk": "强势个股之间的持续同步性不足，炸板和冲高回落提高接力风险。"
+      }
+    ],
+    "trading": [
+      {
+        "rank": 1,
+        "name": "新能源（电池/光伏）",
+        "confidence": 69,
+        "thesis": "少数高成交核心表现、相对强度和盘中修复结构相互印证，是当前相对可观察的交易方向，但板块样本有限且市场整体处于风险规避状态。",
+        "evidence": [
+          "电气机械和器材制造业状态为STRONG，正相对强度比例为1.0，平均日相对强度和午后相对强度均为正",
+          "阳光电源成交额约72.28亿元，上涨5.843%，标记DIP_RECOVERY、V_REVERSAL及LEADER",
+          "宁德时代成交额约155.12亿元，上涨3.801%，标记DIP_RECOVERY及CONFIRM",
+          "行业Top100成员5只，信号成员2只，样本规模仍有限"
+        ],
+        "risk": "强势主要集中于少数核心，指数与多数高成交科技股偏弱；若核心开盘后不能保持相对强势并形成板块跟随，不应按主线强势处理。"
+      }
+    ],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "互联网及游戏",
+        "confidence": 59,
+        "thesis": "高成交相关个股整体表现改善，具备局部相对强度，但板块仍处CONFIRMING而非明确主线状态。",
+        "evidence": [
+          "互联网和相关服务行业Top100成员4只、信号成员3只，上涨比例0.75，平均涨幅3.12575%",
+          "巨人网络上涨3.917%，日相对强度为正且午后仍为正",
+          "芒果超媒上涨3.886%，日及午后相对强度为正",
+          "掌阅科技虽上涨7.485%，但发生10次炸板且午后相对强度转弱"
+        ],
+        "risk": "冲高回落与炸板情况提示情绪强于结构，需观察次日板块同步和核心回踩承接。"
+      },
+      {
+        "rank": 2,
+        "name": "有色金属",
+        "confidence": 48,
+        "thesis": "紫金矿业及部分有色相关样本表现相对坚挺，可作为防御性轮动观察方向，当前证据不足以升级为交易主线。",
+        "evidence": [
+          "有色金属矿采选业Top100成员3只，上涨比例为1.0",
+          "紫金矿业上涨2.273%，日及午后相对强度为正，标记DIP_RECOVERY、LATE_STRENGTH"
+        ],
+        "risk": "板块信号样本有限，且冶炼相关个股并非普遍走强。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "电子设备及AI硬件（CPO/光模块、PCB、存储）",
+        "confidence": 94,
+        "thesis": "高成交权重集中方向同步走弱，多个核心股收近低位或跌停，短线趋势和承接均明显恶化。",
+        "evidence": [
+          "计算机、通信和其他电子设备制造业Top100成员41只，上涨比例0.073，平均跌幅7.462%，状态为FADING",
+          "CPO/光模块样本4只全部下跌，平均跌幅11.12%，均为弱锚且趋势下行",
+          "存储样本3只全部下跌，平均跌幅7.613%，均为趋势下行",
+          "PCB样本3只全部下跌，平均跌幅7.574%，均为弱锚",
+          "中际旭创、天孚通信等收近低位；深南电路跌停"
+        ],
+        "risk": "大幅下跌后的反抽可能快速出现，但当前数据不支持将反抽等同于趋势修复。"
+      },
+      {
+        "rank": 2,
+        "name": "专用设备及高弹性制造",
+        "confidence": 77,
+        "thesis": "高成交样本普遍相对走弱，跌幅和趋势下行占比偏高。",
+        "evidence": [
+          "专用设备制造业Top100成员9只，上涨比例0.222，平均跌幅4.387%，负相对强度比例为1.0，趋势下行比例为1.0",
+          "罗博特科下跌11.481%，标记CLOSE_NEAR_LOW、SPIKE_FADE、TREND_DOWN"
+        ],
+        "risk": "个股分化可能带来局部修复，但板块层面暂缺同步转强证据。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "300274",
+      "name": "阳光电源",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "600519",
+      "name": "贵州茅台",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "000678",
+      "name": "襄阳轴承",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002714",
+      "name": "牧原股份",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "601899",
+      "name": "紫金矿业",
+      "role": "CONFIRM",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "role": "CONFIRM",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "开盘后观察上证指数能否守住并修复当日弱势结构，以及创业板指、科创50是否继续明显弱于上证。",
+    "观察涨停、炸板、跌停情绪是否改善，尤其关注跌停扩散与高成交核心的开盘承接。",
+    "新能源方向需验证阳光电源、宁德时代是否保持相对强势，并观察板块跟随；若仅少数个股独强，不升级为主线。",
+    "互联网及游戏方向观察巨人网络等高成交样本是否维持同步相对强度，并检验回踩承接。",
+    "电子设备、CPO/光模块、PCB和存储方向，只有高成交核心出现明确结构修复且板块同步改善后，才重新评估弱势判断。",
+    "总仓位不得超过 Final 正式仓位上限5%。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "600519",
+        "name": "贵州茅台",
+        "tier": "TIER_S",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP"
+      },
+      {
+        "type": "stock",
+        "code": "000678",
+        "name": "襄阳轴承",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "601899",
+        "name": "紫金矿业",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "002714",
+        "name": "牧原股份",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "market_regime",
+        "rule": "NEUTRAL",
+        "researcher": "RISK_OFF",
+        "reviewer": "TOO_BEARISH"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

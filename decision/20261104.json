@@ -1,0 +1,449 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261104",
+  "published_at": "2026-11-04T19:13:25.467195+08:00",
+  "market": {
+    "regime": "RISK_ON_ROTATION",
+    "position_cap_pct": 45,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "600183",
+      "name": "生益科技",
+      "tier": "TIER_S",
+      "score": 85,
+      "confidence": 84,
+      "theme": "PCB产业链",
+      "trigger": "观察前30分钟是否保持相对强势；若出现第一次回踩，需看到承接并重新站回昨日收盘附近，且PCB核心同步不明显转弱。",
+      "invalidation": "前30分钟持续相对走弱，或回踩后不能重新站回昨日收盘并继续走弱。",
+      "forbidden": "不将接近涨停的强势收盘视为次日必然延续；不在板块同步性消失时追高。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 80.88,
+          "source": "TUSHARE_DAILY_CLOSE@20261104"
+        },
+        "day_high": {
+          "value": 81.2,
+          "source": "intraday_structure.csv@20261104"
+        },
+        "day_low": {
+          "value": 70.92,
+          "source": "intraday_structure.csv@20261104"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "002463",
+      "name": "沪电股份",
+      "tier": "TIER_A",
+      "score": 88,
+      "confidence": 86,
+      "theme": "PCB",
+      "trigger": "次日观察开盘后的第一次回踩承接；回踩时分时不出现持续弱于板块的表现，且随后能重新走强并维持在零轴附近或其上，方可继续列入结构观察。",
+      "invalidation": "回踩承接明显失效、分时持续弱于PCB同类核心，或跌破后无法重新站回昨日收盘，取消结构观察。",
+      "forbidden": "不因涨停或高开直接追价；板块核心普遍转弱时不单独以个股强势作交易依据。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 85.95,
+          "source": "TUSHARE_DAILY_CLOSE@20261104"
+        },
+        "day_high": {
+          "value": 85.95,
+          "source": "intraday_structure.csv@20261104"
+        },
+        "day_low": {
+          "value": 76.3,
+          "source": "intraday_structure.csv@20261104"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "603986",
+      "name": "兆易创新",
+      "tier": "TIER_A",
+      "score": 83,
+      "confidence": 82,
+      "theme": "存储",
+      "trigger": "观察零轴附近及第一次回踩承接；只有在承接有效、分时重新转强且存储方向保持同步时，才保留结构观察资格。",
+      "invalidation": "分时持续弱于存储同类核心，或回踩后不能重新站回昨日收盘并出现进一步走弱。",
+      "forbidden": "不因当日涨幅或题材热度直接追高；不把单只核心表现当作板块同步确认。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 271.38,
+          "source": "TUSHARE_DAILY_CLOSE@20261104"
+        },
+        "day_high": {
+          "value": 274.28,
+          "source": "intraday_structure.csv@20261104"
+        },
+        "day_low": {
+          "value": 248.0,
+          "source": "intraday_structure.csv@20261104"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "603228",
+      "name": "景旺电子",
+      "tier": "TIER_B",
+      "score": 79,
+      "confidence": 77,
+      "theme": "PCB",
+      "trigger": "观察前30分钟相对PCB核心的强弱；第一次回踩出现承接并能重新站回昨日收盘附近，同时板块仍有同步上涨，才继续关注。",
+      "invalidation": "回踩后持续落后于PCB核心，或无法重新站回昨日收盘且板块同步转弱。",
+      "forbidden": "不因板块涨停扩散而忽略个股分时转弱；不追逐无承接的快速拉升。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 61.53,
+          "source": "TUSHARE_DAILY_CLOSE@20261104"
+        },
+        "day_high": {
+          "value": 61.92,
+          "source": "intraday_structure.csv@20261104"
+        },
+        "day_low": {
+          "value": 54.65,
+          "source": "intraday_structure.csv@20261104"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "603083",
+      "name": "剑桥科技",
+      "tier": "TIER_B",
+      "score": 77,
+      "confidence": 75,
+      "theme": "通信硬件",
+      "trigger": "观察前30分钟相对强弱及第一次回踩承接；若分时重新站回昨日收盘附近并保持相对通信硬件核心不弱，才保留观察。",
+      "invalidation": "分时相对走弱并持续低于昨日收盘，或CPO及光模块核心同步走弱。",
+      "forbidden": "不将单只个股日内上涨视为主题主线确认；不在高开且无回踩承接时追价。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 121.58,
+          "source": "TUSHARE_DAILY_CLOSE@20261104"
+        },
+        "day_high": {
+          "value": 123.16,
+          "source": "intraday_structure.csv@20261104"
+        },
+        "day_low": {
+          "value": 106.5,
+          "source": "intraday_structure.csv@20261104"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "001309",
+      "name": "德明利",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "600487",
+      "name": "亨通光电",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    },
+    {
+      "code": "603259",
+      "name": "药明康德",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "半导体",
+        "confidence": 92,
+        "thesis": "短线情绪扩散最强的方向之一，涨停数量领先，且高成交半导体及设备核心普遍走强。",
+        "evidence": [
+          "半导体涨停19家，为行业统计中最多",
+          "高成交电子设备制造业48只成分股上涨比例100%，平均涨幅9.76%",
+          "拓荆科技、江丰电子、中科飞测等高成交核心收于当日高位附近"
+        ],
+        "risk": "板块单日涨幅大，炸板与次日获利兑现可能加剧；部分核心不属于主板，不能据此直接外推主板个股机会。"
+      },
+      {
+        "rank": 2,
+        "name": "贵金属",
+        "confidence": 78,
+        "thesis": "涨停扩散明显，具备较强的日内情绪表现，但高成交核心的午后相对强度不完全一致。",
+        "evidence": [
+          "贵金属涨停11家",
+          "紫金矿业上涨6.56%，收盘位置较高，但尾段相对上证指数走弱",
+          "山东黄金涨停"
+        ],
+        "risk": "涨停扩散不等于高成交核心同步承接，需观察次日板块延续与核心股回踩承接。"
+      },
+      {
+        "rank": 3,
+        "name": "专用设备",
+        "confidence": 77,
+        "thesis": "涨停情绪与高成交设备股表现共振，具备较强日内扩散。",
+        "evidence": [
+          "专用设备涨停6家",
+          "相关高成交行业统计中7只信号股平均涨幅14.07%，上涨比例88.9%",
+          "拓荆科技、华海清科、中科飞测、长川科技等收盘结构偏强"
+        ],
+        "risk": "多只强势股涨幅较大，次日需警惕高开后分歧及冲高兑现。"
+      }
+    ],
+    "trading": [
+      {
+        "rank": 1,
+        "name": "半导体设备",
+        "confidence": 87,
+        "thesis": "高成交设备核心、板块同步性与相对强度同时突出，是当前数据中交易条件较完整的方向之一。",
+        "evidence": [
+          "专用设备行业9只高成交成分股中7只进入信号统计，上涨比例88.9%",
+          "行业平均涨幅14.07%，平均日内相对强度6.79%，尾段相对强度为正",
+          "行业趋势向上比例85.7%，拓荆科技、华海清科、中科飞测、长川科技等结构偏强"
+        ],
+        "risk": "今日涨幅显著，次日执行应等待回踩承接或分时强度确认，避免追逐过度高开。"
+      },
+      {
+        "rank": 2,
+        "name": "PCB",
+        "confidence": 82,
+        "thesis": "高成交核心同步上涨且尾段相对强度为正，收盘结构整体较完整，具备次日验证价值。",
+        "evidence": [
+          "PCB统计4只高成交成分股，全部上涨且全部为正相对强度",
+          "平均涨幅8.52%，尾段平均相对强度为正",
+          "沪电股份涨停并收于当日高位，生益科技尾段走强，景旺电子收盘位置较高"
+        ],
+        "risk": "板块样本数量有限，个股日内涨幅较大，需确认次日回踩时板块仍有同步承接。"
+      },
+      {
+        "rank": 3,
+        "name": "存储",
+        "confidence": 79,
+        "thesis": "高成交样本全部上涨、趋势向上，且尾段相对强度为正，主板核心也具备验证价值。",
+        "evidence": [
+          "存储统计3只高成交成分股，上涨比例100%，趋势向上比例100%",
+          "平均涨幅9.71%，尾段平均相对强度为正",
+          "兆易创新、德明利均有完整日内结构且收盘位置偏强"
+        ],
+        "risk": "样本数较少，长鑫科技等强势表现不能替代主板个股自身的次日承接确认。"
+      }
+    ],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "CPO与光模块",
+        "confidence": 73,
+        "thesis": "高成交核心普遍上涨且日内相对强度为正，但主题尾段平均相对强度略弱，暂列观察而非确认主线。",
+        "evidence": [
+          "主题统计4只高成交成分股上涨比例100%，平均涨幅10.13%",
+          "日内平均相对强度为正，但尾段平均相对强度略为负值",
+          "天孚通信尾段相对强度为正，中际旭创、新易盛尾段相对表现偏弱"
+        ],
+        "risk": "高涨幅后分歧可能放大；需观察核心股回踩承接及板块内部强弱是否重新趋同。"
+      },
+      {
+        "rank": 2,
+        "name": "贵金属",
+        "confidence": 68,
+        "thesis": "涨停情绪扩散明显，紫金矿业等高成交标的仍保持较高收盘位置，但同步性和尾段强度尚不足以确认交易主线。",
+        "evidence": [
+          "贵金属涨停11家",
+          "紫金矿业上涨6.56%，日内相对强度为正",
+          "紫金矿业尾段相对强度转负"
+        ],
+        "risk": "情绪扩散可能先于高成交核心的持续承接，注意次日冲高回落。"
+      },
+      {
+        "rank": 3,
+        "name": "光纤光缆",
+        "confidence": 65,
+        "thesis": "高成交样本整体上涨且尾段表现改善，但进入信号统计的样本有限，仍需更多核心同步确认。",
+        "evidence": [
+          "光纤光缆统计3只高成交成分股，全部上涨",
+          "亨通光电上涨7.59%，尾段相对强度为正",
+          "该主题信号统计仅有1只成分股"
+        ],
+        "risk": "当前证据集中于少数标的，板块广度与次日持续性尚待验证。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "银行保险权重",
+        "confidence": 87,
+        "thesis": "高成交金融权重普遍跑输指数，收盘位置偏低，未参与当日风险偏好修复。",
+        "evidence": [
+          "货币金融服务行业上涨比例为0%，平均涨幅为负，状态为FADING",
+          "工商银行、农业银行收跌且日内相对上证指数走弱",
+          "中国平安收跌，收盘位置接近当日低位"
+        ],
+        "risk": "若权重继续走弱，可能削弱指数修复的广度；不宜将指数大涨等同于所有权重方向改善。"
+      },
+      {
+        "rank": 2,
+        "name": "消费白马",
+        "confidence": 83,
+        "thesis": "高成交消费代表股相对指数明显走弱，存在资金从传统消费向科技方向轮动的迹象。",
+        "evidence": [
+          "贵州茅台下跌2.27%，收盘位置接近当日低位并标记为TREND_DOWN",
+          "伊利股份下跌2.42%，标记为HIGH_VOLUME_FADE与TREND_DOWN",
+          "食品制造业信号样本表现偏弱"
+        ],
+        "risk": "单日相对弱势不能直接确认持续性，仍需观察是否出现止跌承接。"
+      },
+      {
+        "rank": 3,
+        "name": "油气权重",
+        "confidence": 72,
+        "thesis": "高成交中国石油下跌且收盘位置偏低，日内相对强度明显为负。",
+        "evidence": [
+          "中国石油下跌2.71%",
+          "中国石油标记为SPIKE_FADE、TREND_DOWN与HIGH_VOLUME_FADE",
+          "其日内相对上证指数表现为负"
+        ],
+        "risk": "当前判断基于高成交代表股，不能据此推断整个能源板块所有个股走势。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "002463",
+      "name": "沪电股份",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "600519",
+      "name": "贵州茅台",
+      "role": "WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "601318",
+      "name": "中国平安",
+      "role": "WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "000678",
+      "name": "襄阳轴承",
+      "role": "CONFIRM",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "确认指数5分钟结构是否延续修复，并重点观察创业板相对强度是否改善。",
+    "观察半导体设备、PCB、存储高成交核心是否同步承接；若仅少数个股延续强势，不视为主线确认。",
+    "观察CPO与光模块尾段分化是否收敛，关注第一次回踩承接和板块内部同步性。",
+    "跟踪涨停、炸板及跌停情绪变化，特别留意高位核心冲高兑现与开板后的承接。",
+    "检查银行保险、消费白马等弱势权重是否止跌，评估指数上涨的广度能否延续。",
+    "A1个股均以盘中结构验证为前提，不因高开、涨停或单日涨幅直接追价。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "600183",
+        "name": "生益科技",
+        "tier": "TIER_S",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP"
+      },
+      {
+        "type": "stock",
+        "code": "002463",
+        "name": "沪电股份",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "603986",
+        "name": "兆易创新",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "001309",
+        "name": "德明利",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "stock",
+        "code": "600487",
+        "name": "亨通光电",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "stock",
+        "code": "603259",
+        "name": "药明康德",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

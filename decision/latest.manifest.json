@@ -1,8 +1,8 @@
 {
   "status": "SUCCESS",
-  "trade_date": "20261104",
+  "trade_date": "20261105",
   "schema_version": "public-morning-baseline-1.0",
-  "sha256_canonical": "01add53646679b1f3bc2eff5a42d5bfa549339b1921759ea3d4705cb6282c1aa",
-  "published_at": "2026-11-04T19:13:25.467195+08:00",
+  "sha256_canonical": "d2ff58e8674d70ce2437414001bcea7ad7a4a6d6ae15c5f9e424da66c595462d",
+  "published_at": "2026-11-05T19:22:16.506104+08:00",
   "source": "PUBLIC_MORNING_SANITIZER_V1"
 }

@@ -1,15 +1,15 @@
 {
-  "trade_date": "20261104",
+  "trade_date": "20261105",
   "market_regime": "RISK_ON_ROTATION",
   "max_total_position": 0.7,
   "A1": [
     {
-      "股票代码": "002463",
-      "名称": "沪电股份",
-      "reference_close": 85.95,
-      "reference_high": 85.95,
-      "reference_low": 76.3,
-      "score": 13,
+      "股票代码": "603893",
+      "名称": "瑞芯微",
+      "reference_close": 217.81,
+      "reference_high": 217.81,
+      "reference_low": 199.01,
+      "score": 8,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -23,69 +23,12 @@
       ]
     },
     {
-      "股票代码": "600183",
-      "名称": "生益科技",
-      "reference_close": 80.88,
-      "reference_high": 81.2,
-      "reference_low": 70.92,
-      "score": 13,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "600487",
-      "名称": "亨通光电",
-      "reference_close": 43.52,
-      "reference_high": 43.94,
-      "reference_low": 38.81,
-      "score": 13,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "603259",
-      "名称": "药明康德",
-      "reference_close": 148.81,
-      "reference_high": 148.81,
-      "reference_low": 134.08,
-      "score": 11,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "603986",
-      "名称": "兆易创新",
-      "reference_close": 271.38,
-      "reference_high": 274.28,
-      "reference_low": 248.0,
-      "score": 11,
+      "股票代码": "600206",
+      "名称": "有研新材",
+      "reference_close": 38.39,
+      "reference_high": 38.39,
+      "reference_low": 35.42,
+      "score": 8,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,12 +44,88 @@
   ],
   "A2": [
     {
-      "股票代码": "000678",
-      "名称": "襄阳轴承",
-      "reference_close": 19.48,
-      "reference_high": 19.7,
-      "reference_low": 18.23,
-      "score": 7,
+      "股票代码": "600183",
+      "名称": "生益科技",
+      "reference_close": 77.78,
+      "reference_high": 80.32,
+      "reference_low": 74.4,
+      "score": 5,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "002384",
+      "名称": "东山精密",
+      "reference_close": 89.1,
+      "reference_high": 92.28,
+      "reference_low": 85.46,
+      "score": 5,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "603083",
+      "名称": "剑桥科技",
+      "reference_close": 116.45,
+      "reference_high": 122.79,
+      "reference_low": 112.21,
+      "score": 5,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "603986",
+      "名称": "兆易创新",
+      "reference_close": 263.15,
+      "reference_high": 272.99,
+      "reference_low": 259.0,
+      "score": 5,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "002463",
+      "名称": "沪电股份",
+      "reference_close": 81.0,
+      "reference_high": 84.83,
+      "reference_low": 78.68,
+      "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",

@@ -1,14 +1,71 @@
 {
-  "trade_date": "20261105",
-  "market_regime": "RISK_ON_ROTATION",
-  "max_total_position": 0.7,
+  "trade_date": "20261106",
+  "market_regime": "NEUTRAL",
+  "max_total_position": 0.5,
   "A1": [
     {
-      "股票代码": "603893",
-      "名称": "瑞芯微",
-      "reference_close": 217.81,
-      "reference_high": 217.81,
-      "reference_low": 199.01,
+      "股票代码": "002929",
+      "名称": "润建股份",
+      "reference_close": 63.11,
+      "reference_high": 63.11,
+      "reference_low": 59.2,
+      "score": 12,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "600127",
+      "名称": "金健米业",
+      "reference_close": 11.19,
+      "reference_high": 11.35,
+      "reference_low": 10.43,
+      "score": 11,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "002086",
+      "名称": "东方海洋",
+      "reference_close": 3.97,
+      "reference_high": 3.97,
+      "reference_low": 3.67,
+      "score": 9,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "600900",
+      "名称": "长江电力",
+      "reference_close": 29.91,
+      "reference_high": 29.91,
+      "reference_low": 29.25,
       "score": 8,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -23,12 +80,12 @@
       ]
     },
     {
-      "股票代码": "600206",
-      "名称": "有研新材",
-      "reference_close": 38.39,
-      "reference_high": 38.39,
-      "reference_low": 35.42,
-      "score": 8,
+      "股票代码": "600089",
+      "名称": "特变电工",
+      "reference_close": 18.92,
+      "reference_high": 19.16,
+      "reference_low": 18.15,
+      "score": 5,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -44,12 +101,12 @@
   ],
   "A2": [
     {
-      "股票代码": "600183",
-      "名称": "生益科技",
-      "reference_close": 77.78,
-      "reference_high": 80.32,
-      "reference_low": 74.4,
-      "score": 5,
+      "股票代码": "600641",
+      "名称": "先导基电",
+      "reference_close": 31.4,
+      "reference_high": 33.41,
+      "reference_low": 29.65,
+      "score": 7,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",
@@ -63,12 +120,12 @@
       ]
     },
     {
-      "股票代码": "002384",
-      "名称": "东山精密",
-      "reference_close": 89.1,
-      "reference_high": 92.28,
-      "reference_low": 85.46,
-      "score": 5,
+      "股票代码": "002371",
+      "名称": "北方华创",
+      "reference_close": 560.0,
+      "reference_high": 574.55,
+      "reference_low": 528.88,
+      "score": 6,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",
@@ -82,49 +139,11 @@
       ]
     },
     {
-      "股票代码": "603083",
-      "名称": "剑桥科技",
-      "reference_close": 116.45,
-      "reference_high": 122.79,
-      "reference_low": 112.21,
-      "score": 5,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "603986",
-      "名称": "兆易创新",
-      "reference_close": 263.15,
-      "reference_high": 272.99,
-      "reference_low": 259.0,
-      "score": 5,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "002463",
-      "名称": "沪电股份",
-      "reference_close": 81.0,
-      "reference_high": 84.83,
-      "reference_low": 78.68,
+      "股票代码": "601899",
+      "名称": "紫金矿业",
+      "reference_close": 28.28,
+      "reference_high": 29.06,
+      "reference_low": 27.81,
       "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",

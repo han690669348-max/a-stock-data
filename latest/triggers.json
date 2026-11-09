@@ -1,34 +1,15 @@
 {
-  "trade_date": "20261106",
+  "trade_date": "20261109",
   "market_regime": "NEUTRAL",
   "max_total_position": 0.5,
   "A1": [
     {
-      "股票代码": "002929",
-      "名称": "润建股份",
-      "reference_close": 63.11,
-      "reference_high": 63.11,
-      "reference_low": 59.2,
+      "股票代码": "002639",
+      "名称": "雪人集团",
+      "reference_close": 15.95,
+      "reference_high": 15.95,
+      "reference_low": 14.74,
       "score": 12,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "600127",
-      "名称": "金健米业",
-      "reference_close": 11.19,
-      "reference_high": 11.35,
-      "reference_low": 10.43,
-      "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -44,9 +25,9 @@
     {
       "股票代码": "002086",
       "名称": "东方海洋",
-      "reference_close": 3.97,
-      "reference_high": 3.97,
-      "reference_low": 3.67,
+      "reference_close": 4.37,
+      "reference_high": 4.37,
+      "reference_low": 4.16,
       "score": 9,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -61,11 +42,11 @@
       ]
     },
     {
-      "股票代码": "600900",
-      "名称": "长江电力",
-      "reference_close": 29.91,
-      "reference_high": 29.91,
-      "reference_low": 29.25,
+      "股票代码": "603228",
+      "名称": "景旺电子",
+      "reference_close": 57.59,
+      "reference_high": 59.14,
+      "reference_low": 51.81,
       "score": 8,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -80,12 +61,12 @@
       ]
     },
     {
-      "股票代码": "600089",
-      "名称": "特变电工",
-      "reference_close": 18.92,
-      "reference_high": 19.16,
-      "reference_low": 18.15,
-      "score": 5,
+      "股票代码": "002463",
+      "名称": "沪电股份",
+      "reference_close": 77.1,
+      "reference_high": 79.8,
+      "reference_low": 72.1,
+      "score": 6,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,49 +82,11 @@
   ],
   "A2": [
     {
-      "股票代码": "600641",
-      "名称": "先导基电",
-      "reference_close": 31.4,
-      "reference_high": 33.41,
-      "reference_low": 29.65,
-      "score": 7,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "002371",
-      "名称": "北方华创",
-      "reference_close": 560.0,
-      "reference_high": 574.55,
-      "reference_low": 528.88,
-      "score": 6,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "601899",
-      "名称": "紫金矿业",
-      "reference_close": 28.28,
-      "reference_high": 29.06,
-      "reference_low": 27.81,
+      "股票代码": "600487",
+      "名称": "亨通光电",
+      "reference_close": 42.21,
+      "reference_high": 43.68,
+      "reference_low": 41.5,
       "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",

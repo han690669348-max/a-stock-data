@@ -1,94 +1,70 @@
 {
   "status": "ok",
   "source": "a-stock-agent",
-  "trade_date": "20261106",
-  "generated_at": "2026-11-06 18:02:34",
+  "trade_date": "20261109",
+  "generated_at": "2026-11-09 18:02:34",
   "timezone": "Asia/Shanghai",
   "market_data_complete": true,
   "baseline_stale": false,
   "source_trade_dates": {
-    "spot": "20261106",
-    "daily": "20261106",
-    "lhb": "20261106",
-    "zt": "20261106",
-    "zb": "20261106",
-    "dt": "20261106"
+    "spot": "20261109",
+    "daily": "20261109",
+    "lhb": "20261109",
+    "zt": "20261109",
+    "zb": "20261109",
+    "dt": "20261109"
   },
   "market_input_sha256": {
-    "top100.csv": "29791934a68273b83274fa01105f7f7167cb1f20be3de9bc1a6f05f903556dd4",
-    "lhb.csv": "0571bfa660d75c624aaebe514f6b53eb7da103620f45b74e4808b476ac7e423d",
-    "core_pool.csv": "8e1ff62deeab94dfe86925feeda71f3589e99a5c3d36fe792332749225344d42",
-    "zt.csv": "9f5e2b5f62c76ee438af573dca24d9864ba732265e759014ec405bc5a80a07d8",
-    "zb.csv": "128ec023c93f6ab9a3604aec809726cc1ccc5c8468c0772ae9bea40d57dac518",
-    "dt.csv": "8b896f9dd22c630259f0c1c6e785456d39797832fadc931e9c724cc3f5fde0c3"
+    "top100.csv": "098e36f9769456dbd375c3fa2cd2bc286b138e8e8ee8f59f6d2a8465c1ecdf70",
+    "lhb.csv": "443251f8e48b7072de1c803510eb358977f58a73f8e04ce4006f77ac1693a873",
+    "core_pool.csv": "319d6d549f3e894ff9b2d5589998410f33f63034eb81d4f26c8eb4cbd01a808f",
+    "zt.csv": "7173f31d6c598887ef352c3f7beec69c0b26d8f72eee680cc0b48c1d3f7211af",
+    "zb.csv": "c744dd433f496e0a09258ea0a3bc535c5bc532a3d5e3f7ccf04e47c37f60c233",
+    "dt.csv": "226629342b92715229fd496c6aeedf6cb9ec3d822ccffe05ff4c220f1b5a74d8"
   },
   "market": {
     "top100_count": 100,
-    "limit_up_count": 32,
-    "broken_limit_count": 14,
-    "limit_down_count": 15
+    "limit_up_count": 54,
+    "broken_limit_count": 44,
+    "limit_down_count": 1
   },
   "lhb": {
-    "raw_records": 78,
-    "unique_stocks": 62,
-    "top100_intersection_count": 7
+    "raw_records": 40,
+    "unique_stocks": 35,
+    "top100_intersection_count": 4
   },
   "core_pool": [
     {
-      "股票代码": "002384",
-      "名称": "东山精密",
-      "最新价": 80.19,
-      "涨跌幅": -10.0,
-      "成交额": 12298448737.0,
-      "龙虎榜原因": "跌幅偏离值达7%的证券"
-    },
-    {
-      "股票代码": "600641",
-      "名称": "先导基电",
-      "最新价": 31.4,
-      "涨跌幅": 1.225,
-      "成交额": 5249356346.0,
-      "龙虎榜原因": "连续三个交易日内，涨幅偏离值累计达20%的证券"
-    },
-    {
-      "股票代码": "600127",
-      "名称": "金健米业",
-      "最新价": 11.19,
-      "涨跌幅": 6.877,
-      "成交额": 2866533367.0,
-      "龙虎榜原因": "换手率达20%的证券"
-    },
-    {
-      "股票代码": "002353",
-      "名称": "杰瑞股份",
-      "最新价": 79.44,
-      "涨跌幅": -10.003,
-      "成交额": 2727782690.0,
-      "龙虎榜原因": "跌幅偏离值达7%的证券"
+      "股票代码": "002086",
+      "名称": "东方海洋",
+      "最新价": 4.37,
+      "涨跌幅": 10.076,
+      "成交额": 3179635525.0,
+      "龙虎榜原因": "涨幅偏离值达7%的证券 | 换手率达20%的证券"
     },
     {
       "股票代码": "002929",
       "名称": "润建股份",
-      "最新价": 63.11,
-      "涨跌幅": 10.005,
-      "成交额": 2595074887.0,
-      "龙虎榜原因": "涨幅偏离值达7%的证券 | 连续三个交易日内，涨幅偏离值累计达20%的证券"
+      "最新价": 59.0,
+      "涨跌幅": -6.512,
+      "成交额": 3110988081.0,
+      "龙虎榜原因": "振幅值达15%的证券"
     },
     {
-      "股票代码": "002086",
-      "名称": "东方海洋",
-      "最新价": 3.97,
-      "涨跌幅": 9.972,
-      "成交额": 2576110018.0,
-      "龙虎榜原因": "涨幅偏离值达7%的证券 | 换手率达20%的证券 | 连续三个交易日内，涨幅偏离值累计达20%的证券"
+      "股票代码": "002639",
+      "名称": "雪人集团",
+      "最新价": 15.95,
+      "涨跌幅": 10.0,
+      "成交额": 2745382977.0,
+      "龙虎榜原因": "涨幅偏离值达7%的证券"
     },
     {
-      "股票代码": "603083",
-      "名称": "剑桥科技",
-      "最新价": 104.81,
-      "涨跌幅": -9.996,
-      "成交额": 2505218513.0,
-      "龙虎榜原因": "跌幅偏离值达7%的证券"
+      "股票代码": "301313",
+      "名称": "凡拓数创",
+      "最新价": 69.77,
+      "涨跌幅": 2.784,
+      "成交额": 2564393108.0,
+      "龙虎榜原因": ""
     }
   ],
   "files": {
@@ -114,16 +90,16 @@
     "triggers": "/latest/triggers.json"
   },
   "candidate_pool": {
-    "count": 33,
+    "count": 35,
     "max_pool": 40,
-    "generated_at": "2026-11-06 18:02:36"
+    "generated_at": "2026-11-09 18:02:35"
   },
   "intraday": {
     "period": "5m",
-    "requested_stocks": 33,
-    "success_stocks": 33,
+    "requested_stocks": 35,
+    "success_stocks": 35,
     "failed_stocks": 0,
-    "generated_at": "2026-11-06 18:04:06"
+    "generated_at": "2026-11-09 18:04:33"
   },
   "relative_strength": {
     "benchmarks": [
@@ -132,31 +108,31 @@
       "创业板指",
       "科创50"
     ],
-    "stocks": 33,
-    "generated_at": "2026-11-06 18:04:21"
+    "stocks": 35,
+    "generated_at": "2026-11-09 18:04:49"
   },
   "windvane": {
     "count": 28,
-    "leaders": 5,
-    "confirms": 9,
-    "weak_anchors": 13,
-    "generated_at": "2026-11-06 18:04:23"
+    "leaders": 6,
+    "confirms": 4,
+    "weak_anchors": 18,
+    "generated_at": "2026-11-09 18:04:50"
   },
   "sector_strength": {
     "version": "1.2",
     "breadth_universe": 100,
-    "signal_universe": 31,
-    "industry_count": 26,
+    "signal_universe": 33,
+    "industry_count": 27,
     "theme_count": 11,
-    "generated_at": "2026-11-06 18:04:25"
+    "generated_at": "2026-11-09 18:04:52"
   },
   "decision": {
     "market_regime": "NEUTRAL",
     "market_regime_cn": "中性震荡",
     "max_total_position": 0.5,
-    "decision_universe": 18,
-    "a1_count": 5,
-    "a2_count": 3,
-    "generated_at": "2026-11-06 18:04:27"
+    "decision_universe": 13,
+    "a1_count": 4,
+    "a2_count": 1,
+    "generated_at": "2026-11-09 18:04:53"
   }
 }

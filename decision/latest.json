@@ -2,36 +2,36 @@
   "status": "SUCCESS",
   "schema_version": "public-morning-baseline-1.0",
   "morning_contract_version": "1.0",
-  "trade_date": "20261106",
-  "published_at": "2026-11-06T18:12:40.799998+08:00",
+  "trade_date": "20261109",
+  "published_at": "2026-11-09T18:10:31.595931+08:00",
   "market": {
-    "regime": "RISK_OFF",
-    "position_cap_pct": 0,
+    "regime": "RISK_ON_ROTATION",
+    "position_cap_pct": 40,
     "source": "FINAL_ARBITER_V1_1"
   },
   "A1": [
     {
-      "code": "002929",
-      "name": "润建股份",
+      "code": "002463",
+      "name": "沪电股份",
       "tier": "TIER_A",
-      "score": 76,
+      "score": 79,
       "confidence": 72,
-      "theme": "通信服务与云网运维观察",
-      "trigger": "次日观察开盘后是否能维持在昨日收盘附近或上方；首次回踩出现承接，且前30分钟相对强势不转弱后，再评估结构是否延续。",
-      "invalidation": "开盘后持续运行在昨日收盘下方，首次回踩无承接，或强势封板结构快速瓦解。",
-      "forbidden": "不因涨停直接追高；若高开后快速走弱、放量回落或通信服务方向没有扩散，不参与。",
+      "theme": "PCB",
+      "trigger": "次日观察开盘后能否在首次回踩中获得承接，维持相对深证成指强势，并重新站回昨日收盘；同时需看到PCB核心同步稳住，而非单股反抽。",
+      "invalidation": "反弹后再度跌回昨日收盘下方且首次回踩承接失败，或板块核心同步转弱。",
+      "forbidden": "禁止仅因昨日涨幅或盘中快速拉升追高；若高开后无承接、相对强度转弱，不做追涨验证。",
       "reference_prices": {
         "previous_close": {
-          "value": 63.11,
-          "source": "TUSHARE_DAILY_CLOSE@20261106"
+          "value": 77.1,
+          "source": "TUSHARE_DAILY_CLOSE@20261109"
         },
         "day_high": {
-          "value": 63.11,
-          "source": "intraday_structure.csv@20261106"
+          "value": 79.8,
+          "source": "intraday_structure.csv@20261109"
         },
         "day_low": {
-          "value": 59.2,
-          "source": "intraday_structure.csv@20261106"
+          "value": 72.1,
+          "source": "intraday_structure.csv@20261109"
         }
       },
       "provenance": {
@@ -42,58 +42,27 @@
       }
     },
     {
-      "code": "600127",
-      "name": "金健米业",
+      "code": "603228",
+      "name": "景旺电子",
       "tier": "TIER_A",
-      "score": 68,
-      "confidence": 62,
-      "theme": "粮食与农产品",
-      "trigger": "次日观察是否能维持昨日收盘附近的承接，首次回踩不破坏前30分钟相对强势，并且农产品方向仍有同步表现。",
-      "invalidation": "回落至昨日收盘下方后无法快速收复，或前30分钟显著弱于指数且板块无跟随。",
-      "forbidden": "不追逐大幅高开；若高开后快速兑现或板块只剩单一个股强势，不参与。",
+      "score": 75,
+      "confidence": 68,
+      "theme": "PCB",
+      "trigger": "次日观察开盘后是否能在第一次回踩中形成承接、守住昨日收盘附近的结构，并在相对上证指数保持强势时带动PCB核心同步企稳。",
+      "invalidation": "冲高后持续回落、失去昨日收盘且首次回踩无承接，或板块同步性明显消失。",
+      "forbidden": "禁止把涨停尝试或高日内相对强度当作次日必然延续；高开急拉而没有回踩承接时不追。",
       "reference_prices": {
         "previous_close": {
-          "value": 11.19,
-          "source": "TUSHARE_DAILY_CLOSE@20261106"
+          "value": 57.59,
+          "source": "TUSHARE_DAILY_CLOSE@20261109"
         },
         "day_high": {
-          "value": 11.35,
-          "source": "intraday_structure.csv@20261106"
+          "value": 59.14,
+          "source": "intraday_structure.csv@20261109"
         },
         "day_low": {
-          "value": 10.43,
-          "source": "intraday_structure.csv@20261106"
-        }
-      },
-      "provenance": {
-        "membership": "FINAL_ARBITER_V1_1",
-        "tier": "FINAL_ARBITER_V1_1",
-        "execution_conditions": "TERRA_V2_INHERITED",
-        "reference_prices": "PYTHON_VERIFIED"
-      }
-    },
-    {
-      "code": "600900",
-      "name": "长江电力",
-      "tier": "TIER_A",
-      "score": 64,
-      "confidence": 61,
-      "theme": "电力与绿色电力观察",
-      "trigger": "次日观察开盘后能否维持昨日收盘附近的稳定承接，首次回踩后重新转强，且电力方向的涨停与跟随个股没有明显退潮。",
-      "invalidation": "开盘后持续弱于指数、跌回昨日收盘下方且回抽无力，或电力方向同步性消失。",
-      "forbidden": "不把防御属性当成短线买入信号；若无结构性承接或仅个股独强，不参与。",
-      "reference_prices": {
-        "previous_close": {
-          "value": 29.91,
-          "source": "TUSHARE_DAILY_CLOSE@20261106"
-        },
-        "day_high": {
-          "value": 29.91,
-          "source": "intraday_structure.csv@20261106"
-        },
-        "day_low": {
-          "value": 29.25,
-          "source": "intraday_structure.csv@20261106"
+          "value": 51.81,
+          "source": "intraday_structure.csv@20261109"
         }
       },
       "provenance": {
@@ -107,8 +76,8 @@
   "A2": [],
   "observe": [
     {
-      "code": "002371",
-      "name": "北方华创",
+      "code": "002384",
+      "name": "东山精密",
       "tier": "OBSERVE",
       "reviewer_verdict": "DOWNGRADE"
     },
@@ -119,8 +88,8 @@
       "reviewer_verdict": null
     },
     {
-      "code": "600089",
-      "name": "特变电工",
+      "code": "002639",
+      "name": "雪人集团",
       "tier": "OBSERVE",
       "reviewer_verdict": null
     }
@@ -129,134 +98,151 @@
     "emotion": [
       {
         "rank": 1,
-        "name": "光伏设备与电力",
-        "confidence": 57,
-        "thesis": "涨停分布相对集中于光伏设备、电力，是当日情绪扩散较明显的方向，但高成交电气机械板块表现偏弱，涨停扩散尚不足以证明板块交易主线成立。",
+        "name": "通用设备与机器人情绪扩散",
+        "confidence": 68,
+        "thesis": "通用设备方向涨停数量居前，雪人集团等高成交个股收于涨停，体现局部短线情绪强度；但炸板较多，不能据此推导板块整体交易质量。",
         "evidence": [
-          "光伏设备、电力行业涨停数各为3家",
-          "电气机械和器材制造业Top100成员9家，平均涨幅为-1.54%，板块状态为NEUTRAL",
-          "当日炸板14家、跌停15家，情绪结构分化"
+          "通用设备行业涨停5家，为当日涨停行业数量最多的方向之一",
+          "雪人集团涨停，成交额约27.45亿元，收于日内高位",
+          "雪人集团盘中曾炸板4次"
         ],
-        "risk": "涨停家数与高成交板块表现不一致，需防止局部涨停扩散后承接不足。"
+        "risk": "情绪强度集中于少数个股，炸板和高换手提示分歧，次日需观察强势能否扩散并形成承接。"
       },
       {
         "rank": 2,
-        "name": "粮食与农产品",
-        "confidence": 52,
-        "thesis": "农产品加工、种植业出现涨停扩散，金健米业、东方海洋成交额较高且日内收于相对高位，但相关高成交样本有限，不能据此确认广泛主线。",
+        "name": "汽车零部件短线扩散",
+        "confidence": 58,
+        "thesis": "汽车零部件涨停数量靠前，显示局部情绪活跃，但数据未证明高成交核心同步走强，暂按情绪扩散而非交易主线处理。",
         "evidence": [
-          "种植业涨停2家，农产品加工涨停1家",
-          "金健米业涨幅6.877%，收盘位置0.826，日内及尾盘相对强势",
-          "东方海洋涨幅9.972%，收盘位置1.0，但换手率42.55%且有2次炸板"
+          "汽车零部件行业涨停5家",
+          "光洋股份涨停但盘中炸板6次"
         ],
-        "risk": "方向样本少，个股高换手及炸板意味着次日分歧、兑现风险较高。"
+        "risk": "高炸板频次且缺少高成交核心同步性验证，次日追涨风险较高。"
       },
       {
         "rank": 3,
-        "name": "纺织制造",
-        "confidence": 38,
-        "thesis": "纺织制造有2家涨停，且有高连板个股，但缺少高成交核心及板块内部同步性的充分证据。",
+        "name": "PCB与元件情绪扩散",
+        "confidence": 64,
+        "thesis": "PCB相关个股涨幅和相对强度突出，元件方向有涨停扩散，但核心股尾盘回落、盘中炸板，情绪强于收盘承接。",
         "evidence": [
-          "纺织制造行业涨停2家",
-          "浙文影业涨停且为5连板，盘中有1次炸板"
+          "元件行业涨停3家",
+          "PCB主题样本4只均上涨，平均涨幅约4.94%，正相对强度占比为100%",
+          "景旺电子涨停未果，盘中炸板1次；沪电股份盘中回落"
         ],
-        "risk": "高连板个股有炸板记录，板块高成交承接数据不足，持续性未确认。"
+        "risk": "强势股冲高回落与尾盘走弱并存，情绪扩散不等于次日可无条件接力。"
       }
     ],
-    "trading": [],
+    "trading": [
+      {
+        "rank": 1,
+        "name": "PCB",
+        "confidence": 71,
+        "thesis": "在可识别的高成交主题中，PCB的核心表现、样本同步性和日内相对强度较突出，具备次日结构验证价值；但午后及尾盘承接减弱，暂不视为已经确认的强趋势主线。",
+        "evidence": [
+          "主题样本4只全部上涨，平均涨幅约4.94%，正相对强度占比100%",
+          "沪电股份涨5.313%，相对深证成指显著占优，结构标注DIP_RECOVERY",
+          "景旺电子涨7.124%，相对上证指数占优，结构标注DIP_RECOVERY、V_REVERSAL、TREND_UP",
+          "东山精密涨1.621%，成交额约107.15亿元"
+        ],
+        "risk": "主题平均尾盘相对强度为负；景旺电子、沪电股份均有尾盘回落，次日需验证板块核心同步承接，避免将日内强势当作持续确认。"
+      }
+    ],
     "watch": [
       {
         "rank": 1,
-        "name": "电力与绿色电力",
-        "confidence": 49,
-        "thesis": "情绪端有电力涨停扩散，长江电力成交额较高、收于日内高位并呈TREND_UP；但行业样本有限，整体同步性与次日可交易性仍待验证。",
+        "name": "CPO与光模块",
+        "confidence": 57,
+        "thesis": "主题样本多数收涨、日内相对强度略占优，但高成交核心缺少明确领涨确认，普遍存在冲高回落或弱锚点，暂列观察。",
         "evidence": [
-          "电力行业涨停3家",
-          "长江电力成交额约50.41亿元，涨幅2.152%，收盘位置1.0，标签包含CLOSE_NEAR_HIGH、TREND_UP",
-          "电力、热力生产和供应业Top100成员仅2家，板块状态置信度不足"
+          "CPO样本4只中3只上涨，平均涨幅约0.60%",
+          "样本平均日内相对强度约为正，平均尾盘相对强度为负",
+          "新易盛、中际旭创、天孚通信均有SPIKE_FADE标签",
+          "主题弱锚点4个，趋势向上样本占比为0"
         ],
-        "risk": "个股强势不等于板块主线，若涨停扩散或长江电力承接转弱，应取消观察优先级。"
+        "risk": "高成交核心冲高回落、尾盘承接不足；次日若不能同步改善，不宜仅凭局部收涨认定转强。"
       },
       {
         "rank": 2,
-        "name": "半导体设备修复观察",
-        "confidence": 42,
-        "thesis": "北方华创、中微公司呈现日内回升与相对强势，具备局部修复迹象；但电子行业高成交核心整体承压，暂不能视为可交易主线。",
+        "name": "AI硬件",
+        "confidence": 56,
+        "thesis": "样本当日均收涨且相对强度为正，但尾盘相对强度转负，且高成交核心缺少趋势向上确认，等待次日结构验证。",
         "evidence": [
-          "北方华创涨幅-0.18%，日相对强度为正，标签包含DIP_RECOVERY",
-          "中微公司涨幅0.0%，日内及尾盘相对强势，标签包含DIP_RECOVERY",
-          "计算机、通信和其他电子设备制造业Top100成员43家，平均涨幅-5.21%，状态为FADING"
+          "AI硬件样本3只均上涨，平均涨幅约1.60%",
+          "样本正相对强度占比100%",
+          "平均尾盘相对强度约为负0.49%，趋势向上样本占比为0",
+          "中际旭创与新易盛均出现冲高回落特征"
         ],
-        "risk": "修复样本与行业整体走弱相矛盾，需确认高成交核心止跌及板块同步改善。"
+        "risk": "板块涨幅与尾盘承接背离，次日需关注高成交核心能否稳住并带动同步性改善。"
       }
     ],
     "weak": [
       {
         "rank": 1,
-        "name": "CPO与光模块",
+        "name": "电气设备与新能源核心",
         "confidence": 77,
-        "thesis": "高成交核心普遍大幅下跌，行业及主题广度偏弱，盘中局部回升不足以抵消收盘弱势，暂列弱势方向。",
+        "thesis": "高成交样本整体偏弱，板块处于FADING状态，多个核心股收盘靠近日内低位并呈趋势走弱特征。",
         "evidence": [
-          "CPO主题4个Top100成员平均涨幅-8.06%，状态为BREADTH_WEAK",
-          "中际旭创成交额约239.73亿元、跌9.189%；新易盛成交额约152.77亿元、跌7.279%",
-          "天孚通信跌5.792%，剑桥科技跌9.996%并触及跌停"
+          "电气机械和器材制造业状态为FADING，样本平均跌幅约0.64%，负相对强度占比75%",
+          "宁德时代跌2.195%，收盘位置靠近日内低位",
+          "阳光电源跌5.026%、亿纬锂能跌6.747%，均有TREND_DOWN标签",
+          "阳光电源、亿纬锂能均有CLOSE_NEAR_LOW标签"
         ],
-        "risk": "若次日高成交核心重新站回昨日收盘并出现板块同步承接，需重新评估；在此之前避免把盘中修复当作反转。"
+        "risk": "若弱势继续扩散，可能加重指数和高成交成长方向的风险偏好压力。"
       },
       {
         "rank": 2,
-        "name": "PCB与存储",
-        "confidence": 75,
-        "thesis": "高成交成员普遍下跌且多个个股接近低位收盘，板块状态FADING，存在明显兑现压力。",
+        "name": "存储",
+        "confidence": 70,
+        "thesis": "存储样本涨跌分化偏弱，整体相对强度为负，缺少趋势向上及强势核心确认。",
         "evidence": [
-          "PCB主题平均涨幅-9.20%，状态为FADING",
-          "存储主题平均涨幅-7.12%，状态为FADING，尾盘相对强度为负",
-          "东山精密跌停并收于当日低位；沪电股份跌9.617%；兆易创新跌8.991%且接近低位收盘"
+          "存储主题3只样本中仅1只上涨",
+          "平均涨幅约为负0.24%，正相对强度占比约33%",
+          "主题状态为FADING，趋势向上样本占比为0",
+          "长鑫科技收盘靠近日内低位，兆易创新有CLOSE_NEAR_LOW与LATE_WEAKNESS标签"
         ],
-        "risk": "高成交核心若延续弱势，板块反抽可能面临抛压；不宜仅凭低位或单只个股反弹预判企稳。"
+        "risk": "高成交个股若继续弱于指数，反弹可能只是弱势修复，不宜按主线预期交易。"
+      },
+      {
+        "rank": 3,
+        "name": "软件和信息技术服务",
+        "confidence": 68,
+        "thesis": "行业表面上涨比例不低，但相对强度、趋势结构和尾盘表现均偏弱，属于广度与核心质量背离。",
+        "evidence": [
+          "行业状态为BREADTH_STRONG，但样本正相对强度占比约33%",
+          "平均日内相对强度约为负3.71%，趋势向下样本占比约67%",
+          "润建股份跌6.512%，收盘靠近日内低位并有TREND_DOWN标签",
+          "凡拓数创收盘靠近日内低位并有SPIKE_FADE、TREND_DOWN标签"
+        ],
+        "risk": "个别上涨或情绪股不能代表高成交核心转强，需防止把宽度数据误判为可交易主线。"
       }
     ]
   },
   "B": [
     {
+      "code": "002639",
+      "name": "雪人集团",
+      "role": "国内风向标：LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "role": "国内风向标：LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "603228",
+      "name": "景旺电子",
+      "role": "国内风向标：LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
       "code": "002929",
       "name": "润建股份",
-      "role": "LEADER",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "600127",
-      "name": "金健米业",
-      "role": "LEADER",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "600900",
-      "name": "长江电力",
-      "role": "LEADER",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "002384",
-      "name": "东山精密",
-      "role": "WEAK_ANCHOR",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "603083",
-      "name": "剑桥科技",
-      "role": "WEAK_ANCHOR",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "002353",
-      "name": "杰瑞股份",
-      "role": "WEAK_ANCHOR",
+      "role": "国内风向标：WEAK_ANCHOR",
       "windvane_score": null,
       "source": null
     }
@@ -268,33 +254,25 @@
     "source": "PRIVATE_SERVER_ONLY"
   },
   "next_day_checks": [
-    "观察上证、深证、创业板指数前30分钟结构及午后承接，尤其关注深证与创业板能否改善收盘偏弱的位置结构。",
-    "跟踪涨停、炸板和跌停数量变化；重点确认情绪扩散是否由少数个股拓展为板块同步。",
-    "观察中际旭创、新易盛、天孚通信及PCB、存储高成交核心是否止跌并出现板块承接；弱势延续时避免抄底。",
-    "观察润建股份、金健米业、长江电力的首次回踩承接与前30分钟相对强势；不因涨停或单只个股强势直接追入。",
-    "半导体设备修复须由高成交相关个股同步确认；若仅个别股票走强，不按交易主线处理。",
-    "总仓位上限为0%，保持防御，不新增风险敞口。"
+    "观察上证、深成指和创业板前30分钟结构是否收敛；若深成指与创业板继续走弱，维持低仓位上限。",
+    "观察涨停与炸板情绪是否改善，重点看高成交涨停股和连板方向能否获得有效承接，而非只看涨停总数。",
+    "验证PCB是否由沪电股份、景旺电子、东山精密等核心形成同步承接，并确认尾盘走弱得到修复。",
+    "观察CPO高成交核心首次回踩承接及相对强度；若继续冲高回落，不将日内普涨视为交易主线确认。",
+    "跟踪新能源、电气设备、存储及软件方向的高成交核心是否止跌；若仍收于日内低位附近，避免抄底式交易。"
   ],
   "decision_state": {
     "consensus": [
       {
         "type": "stock",
-        "code": "002929",
-        "name": "润建股份",
+        "code": "002463",
+        "name": "沪电股份",
         "tier": "TIER_A",
         "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
       },
       {
         "type": "stock",
-        "code": "600127",
-        "name": "金健米业",
-        "tier": "TIER_A",
-        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
-      },
-      {
-        "type": "stock",
-        "code": "600900",
-        "name": "长江电力",
+        "code": "603228",
+        "name": "景旺电子",
         "tier": "TIER_A",
         "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
       }
@@ -302,8 +280,8 @@
     "disagreement": [
       {
         "type": "stock",
-        "code": "002371",
-        "name": "北方华创",
+        "code": "002384",
+        "name": "东山精密",
         "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
       },
       {
@@ -314,15 +292,9 @@
       },
       {
         "type": "stock",
-        "code": "600089",
-        "name": "特变电工",
+        "code": "002639",
+        "name": "雪人集团",
         "summary": "多系统存在明显分歧，Reviewer=None"
-      },
-      {
-        "type": "market_regime",
-        "rule": "NEUTRAL",
-        "researcher": "RISK_ON_ROTATION",
-        "reviewer": "TOO_BULLISH"
       }
     ],
     "uncertainty": []

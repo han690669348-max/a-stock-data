@@ -1,5 +1,5 @@
 {
-  "effective_state": "NOT_PUBLISHED",
+  "effective_state": "PUBLISHED_SUCCESS",
   "current_step": "final_decision",
   "actual_run_started_at": "2026-11-09T18:00:01.577210+08:00",
   "pipeline_pid": 1713860,
@@ -10,10 +10,10 @@
   "baseline_stale": false,
   "status": "SUCCESS",
   "trade_date": "20261109",
-  "generated_at": "2026-11-09 18:10:31",
+  "generated_at": "2026-11-09 18:10:45",
   "run_id": "20261109-normal-180001-1713860",
   "original_run_id": "20261109-normal-180001-1713860",
-  "pipeline_state": "NORMAL_RUNNING",
+  "pipeline_state": "SUCCESS",
   "review": "SUCCESS",
   "candidate_pool": "SUCCESS",
   "intraday": "SUCCESS",
@@ -33,6 +33,6 @@
   "recovery_attempt": 0,
   "recovery_result": null,
   "publish_gate": "SUCCESS",
-  "github_sync": "PENDING",
-  "last_updated_at": "2026-11-09T18:10:31+08:00"
+  "github_sync": "SUCCESS",
+  "last_updated_at": "2026-11-09T18:10:45+08:00"
 }

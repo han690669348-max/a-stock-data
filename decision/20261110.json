@@ -1,0 +1,359 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261110",
+  "published_at": "2026-11-10T18:53:54.985008+08:00",
+  "market": {
+    "regime": "RISK_ON",
+    "position_cap_pct": 55,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "002865",
+      "name": "钧达股份",
+      "tier": "TIER_A",
+      "score": 82,
+      "confidence": 72,
+      "theme": "光伏设备",
+      "trigger": "前30分钟保持相对强势，第一次回踩获得承接并重新走强，同时东方日升及光伏同向配合。",
+      "invalidation": "开盘后持续失守昨日收盘且回抽无力，或板块核心同步转弱。",
+      "forbidden": "禁止在高开快速加速、回踩尚未确认时追买；禁止忽视板块分歧。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 48.9,
+          "source": "TUSHARE_DAILY_CLOSE@20261110"
+        },
+        "day_high": {
+          "value": 48.9,
+          "source": "intraday_structure.csv@20261110"
+        },
+        "day_low": {
+          "value": 44.1,
+          "source": "intraday_structure.csv@20261110"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "603893",
+      "name": "瑞芯微",
+      "tier": "TIER_A",
+      "score": 80,
+      "confidence": 70,
+      "theme": "芯片局部强势",
+      "trigger": "前30分钟维持相对强势，第一次回踩承接后再次转强，并观察富瀚微等核心是否同步。",
+      "invalidation": "跌破昨日收盘后持续无法收回，或相关核心同步走弱。",
+      "forbidden": "禁止无回踩承接地追逐高开加速；板块仅个股独强时不扩大风险。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 233.2,
+          "source": "TUSHARE_DAILY_CLOSE@20261110"
+        },
+        "day_high": {
+          "value": 233.2,
+          "source": "intraday_structure.csv@20261110"
+        },
+        "day_low": {
+          "value": 211.0,
+          "source": "intraday_structure.csv@20261110"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "tier": "TIER_A",
+      "score": 73,
+      "confidence": 62,
+      "theme": "水产个股观察",
+      "trigger": "前30分钟保持相对强势，第一次回踩获得承接后重新向上，且成交有序。",
+      "invalidation": "跌破昨日收盘后持续无法收回，或冲高后连续回落且承接消失。",
+      "forbidden": "禁止将单股强势视为板块确认；禁止追逐无承接的急拉。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 4.62,
+          "source": "TUSHARE_DAILY_CLOSE@20261110"
+        },
+        "day_high": {
+          "value": 4.62,
+          "source": "intraday_structure.csv@20261110"
+        },
+        "day_low": {
+          "value": 4.34,
+          "source": "intraday_structure.csv@20261110"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "601599",
+      "name": "浙文影业",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "汽车零部件",
+        "confidence": 85,
+        "thesis": "涨停数量领先，短线情绪扩散最广，但尚缺高成交核心同步承接的充分证据。",
+        "evidence": [
+          "汽车零部件11只涨停",
+          "宁波华翔涨停但盘中开板5次，日盈电子2连板",
+          "友升股份、明新旭腾、浙江世宝炸板"
+        ],
+        "risk": "行业内分歧存在，涨停扩散不能直接等同于可交易主线。"
+      },
+      {
+        "rank": 2,
+        "name": "影视与数字内容",
+        "confidence": 72,
+        "thesis": "影视、数字媒体及相关内容方向出现多点情绪扩散。",
+        "evidence": [
+          "影视院线4只涨停，数字媒体2只涨停",
+          "华策影视成交约36.7亿元，涨幅16.392%，但盘中炸板3次",
+          "掌阅科技、风语筑涨停，均曾开板"
+        ],
+        "risk": "华策影视炸板，部分高成交个股尾盘兑现，次日需验证承接。"
+      },
+      {
+        "rank": 3,
+        "name": "通用设备与光学光电",
+        "confidence": 72,
+        "thesis": "两个行业各有6只涨停，短线活跃，但不能据此合并认定交易主线。",
+        "evidence": [
+          "通用设备6只涨停，冰山冷热2连板且盘中开板5次",
+          "光学光电6只涨停，盛洋科技2连板且盘中开板5次"
+        ],
+        "risk": "部分连板股反复开板，内部高成交核心表现并不一致。"
+      }
+    ],
+    "trading": [
+      {
+        "rank": 1,
+        "name": "光伏设备",
+        "confidence": 58,
+        "thesis": "钧达股份与东方日升均为高成交核心，日内相对强势，午后分别封板和走强，具备次日验证价值；但板块判断依赖少量核心样本。",
+        "evidence": [
+          "钧达股份成交约25亿元，午后涨停，五分钟结构为回踩修复和趋势上行",
+          "东方日升成交约24.7亿元，午后走强，收盘接近日内高位",
+          "光伏设备3只涨停，永臻股份盘中开板4次后封板"
+        ],
+        "risk": "核心样本有限，所属电气机械行业整体为分化状态；钧达股份换手较高，次日不可追逐无承接加速。"
+      }
+    ],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "芯片局部强势",
+        "confidence": 65,
+        "thesis": "瑞芯微与富瀚微高成交涨停，局部芯片方向有明显午后修复，但更广泛的电子核心分化。",
+        "evidence": [
+          "瑞芯微成交约41.4亿元，午后封板，日内相对强势",
+          "富瀚微成交约22.2亿元，午后封板",
+          "电子设备制造业信号样本中弱风向标12个，行业状态为DIVERGING"
+        ],
+        "risk": "不能将局部强势外推为整个半导体板块同步走强；次日需验证核心回踩和扩散。"
+      },
+      {
+        "rank": 2,
+        "name": "影视与数字内容",
+        "confidence": 58,
+        "thesis": "情绪扩散与部分高成交个股强势并存，但核心炸板及尾盘兑现使交易同步性尚不充分。",
+        "evidence": [
+          "华策影视高成交、日内相对强势，但炸板3次",
+          "浙文影业日内趋势向上，尾盘相对走弱",
+          "影视院线4只涨停"
+        ],
+        "risk": "板块高成交样本有限，需验证次日是否有多只核心共同承接。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "CPO、光模块及AI硬件",
+        "confidence": 84,
+        "thesis": "涨幅为正不代表承接强：高成交核心普遍冲高回落、相对走弱。",
+        "evidence": [
+          "CPO四个信号样本均为弱风向标，三个为TREND_DOWN",
+          "中际旭创、新易盛均接近日内低点收盘",
+          "AI硬件三个信号样本均为TREND_DOWN"
+        ],
+        "risk": "高成交核心兑现可能继续压制指数和相关方向；需观察是否止跌修复。"
+      },
+      {
+        "rank": 2,
+        "name": "PCB及覆铜板",
+        "confidence": 80,
+        "thesis": "高成交核心同步冲高回落，板块上涨广度与盘中承接背离。",
+        "evidence": [
+          "PCB四个信号样本中三个为弱风向标、三个为TREND_DOWN",
+          "东山精密和生益科技均接近日内低点收盘",
+          "生益科技收盘较日内高点回落约6.15%"
+        ],
+        "risk": "修复需多只高成交核心同步确认，不能仅凭板块收涨判断转强。"
+      },
+      {
+        "rank": 3,
+        "name": "油气开采与有色冶炼",
+        "confidence": 76,
+        "thesis": "油气开采状态为FADING，有色冶炼的两个信号核心均趋势走弱。",
+        "evidence": [
+          "中国石油、中国海油均接近日内低点收盘",
+          "云南锗业、云铝股份均为TREND_DOWN，云铝股份同时出现HIGH_VOLUME_FADE"
+        ],
+        "risk": "两个行业的信号样本均较少，结论主要适用于所列高成交核心。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "002865",
+      "name": "钧达股份",
+      "role": "光伏局部强势风向标，LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300118",
+      "name": "东方日升",
+      "role": "光伏午后强势风向标，LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "603893",
+      "name": "瑞芯微",
+      "role": "芯片局部强势风向标，LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300613",
+      "name": "富瀚微",
+      "role": "芯片局部强势风向标，LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "role": "高成交光模块弱风向标，WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "role": "高成交PCB及AI硬件弱风向标，WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "600183",
+      "name": "生益科技",
+      "role": "覆铜板弱风向标，WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "role": "个股强势风向标，LEADER",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "观察四大指数前30分钟及午后五分钟结构，确认尾盘弱势是否延续。",
+    "观察涨停、炸板和跌停变化，以及高换手连板股是否出现集中兑现。",
+    "验证钧达股份、东方日升是否同步承接，光伏强势是否超出少数核心。",
+    "验证瑞芯微、富瀚微及其他芯片核心能否共同维持强势。",
+    "观察中际旭创、新易盛、东山精密和生益科技是否同步止跌修复。",
+    "仅在结构触发且风险可控时考虑执行；总仓位不超过30%。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "002865",
+        "name": "钧达股份",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "603893",
+        "name": "瑞芯微",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "002086",
+        "name": "东方海洋",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "601599",
+        "name": "浙文影业",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "market_regime",
+        "rule": "RISK_ON",
+        "researcher": "NEUTRAL",
+        "reviewer": "AGREE"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

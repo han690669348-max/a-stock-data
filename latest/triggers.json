@@ -1,14 +1,33 @@
 {
-  "trade_date": "20261109",
-  "market_regime": "NEUTRAL",
-  "max_total_position": 0.5,
+  "trade_date": "20261110",
+  "market_regime": "RISK_ON",
+  "max_total_position": 0.8,
   "A1": [
     {
-      "股票代码": "002639",
-      "名称": "雪人集团",
-      "reference_close": 15.95,
-      "reference_high": 15.95,
-      "reference_low": 14.74,
+      "股票代码": "002086",
+      "名称": "东方海洋",
+      "reference_close": 4.62,
+      "reference_high": 4.62,
+      "reference_low": 4.34,
+      "score": 14,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "002865",
+      "名称": "钧达股份",
+      "reference_close": 48.9,
+      "reference_high": 48.9,
+      "reference_low": 44.1,
       "score": 12,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -23,50 +42,31 @@
       ]
     },
     {
-      "股票代码": "002086",
-      "名称": "东方海洋",
-      "reference_close": 4.37,
-      "reference_high": 4.37,
-      "reference_low": 4.16,
+      "股票代码": "603893",
+      "名称": "瑞芯微",
+      "reference_close": 233.2,
+      "reference_high": 233.2,
+      "reference_low": 211.0,
+      "score": 11,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "601599",
+      "名称": "浙文影业",
+      "reference_close": 5.6,
+      "reference_high": 5.76,
+      "reference_low": 5.15,
       "score": 9,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "603228",
-      "名称": "景旺电子",
-      "reference_close": 57.59,
-      "reference_high": 59.14,
-      "reference_low": 51.81,
-      "score": 8,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "002463",
-      "名称": "沪电股份",
-      "reference_close": 77.1,
-      "reference_high": 79.8,
-      "reference_low": 72.1,
-      "score": 6,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -80,25 +80,5 @@
       ]
     }
   ],
-  "A2": [
-    {
-      "股票代码": "600487",
-      "名称": "亨通光电",
-      "reference_close": 42.21,
-      "reference_high": 43.68,
-      "reference_low": 41.5,
-      "score": 4,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    }
-  ]
+  "A2": []
 }

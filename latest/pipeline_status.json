@@ -1,5 +1,5 @@
 {
-  "effective_state": "NOT_PUBLISHED",
+  "effective_state": "PUBLISHED_SUCCESS",
   "current_step": "final_decision",
   "actual_run_started_at": "2026-11-12T19:03:33.037180+08:00",
   "pipeline_pid": 1777597,
@@ -12,10 +12,10 @@
   "late_run_evidence_path": "/opt/a-stock-agent/audit/late-complete-20261112-1903/controlled/model_budget.json",
   "status": "SUCCESS",
   "trade_date": "20261112",
-  "generated_at": "2026-11-12 19:13:04",
+  "generated_at": "2026-11-12 19:13:18",
   "run_id": "20261112-late-190332-1777597",
   "original_run_id": "20261112-late-190332-1777597",
-  "pipeline_state": "NORMAL_RUNNING",
+  "pipeline_state": "SUCCESS",
   "review": "SUCCESS",
   "candidate_pool": "SUCCESS",
   "intraday": "SUCCESS",
@@ -35,6 +35,6 @@
   "recovery_attempt": 0,
   "recovery_result": null,
   "publish_gate": "SUCCESS",
-  "github_sync": "PENDING",
-  "last_updated_at": "2026-11-12T19:13:04+08:00"
+  "github_sync": "SUCCESS",
+  "last_updated_at": "2026-11-12T19:13:18+08:00"
 }

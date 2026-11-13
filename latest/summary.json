@@ -1,70 +1,78 @@
 {
   "status": "ok",
   "source": "a-stock-agent",
-  "trade_date": "20261112",
-  "generated_at": "2026-11-12 19:05:30",
+  "trade_date": "20261113",
+  "generated_at": "2026-11-13 18:02:53",
   "timezone": "Asia/Shanghai",
   "market_data_complete": true,
   "baseline_stale": false,
   "source_trade_dates": {
-    "spot": "20261112",
-    "daily": "20261112",
-    "lhb": "20261112",
-    "zt": "20261112",
-    "zb": "20261112",
-    "dt": "20261112"
+    "spot": "20261113",
+    "daily": "20261113",
+    "lhb": "20261113",
+    "zt": "20261113",
+    "zb": "20261113",
+    "dt": "20261113"
   },
   "market_input_sha256": {
-    "top100.csv": "fc86b407d2d4e0e1a02e8bc1dd448a337320cc419f6895d9b385877952e58a59",
-    "lhb.csv": "88ea496bb9733e392dcf5f9fed7a2cebfe5a5d9ba317926d02fe4b9c3e7a0b50",
-    "core_pool.csv": "5e70b76bd013f7608306b8f4132e6d0faff99a8f01a7617ea125d22f193a66ef",
-    "zt.csv": "b16cda378c0f30e70771c10ccd37f996c5b46c01541ca98d40ccadc45f8edda5",
-    "zb.csv": "fc6288589b1470fb9242703c2cb26b646f1e2fda851944a42995aeab057ae6af",
-    "dt.csv": "591a4a7dea04b875f9c3b8468dd8b0612927850377b33a85a83fead23b4e9f73"
+    "top100.csv": "babbe79da67fb1071cc8058cf1bb060b2f8c8bc94cc8295c61df77e45fe783a2",
+    "lhb.csv": "40f86c18aef50197c57308294cd0d7101959dfc9a0c917936447808466ff60e5",
+    "core_pool.csv": "bd6577a1ed3936c0c786364736acdce947239a22e8466d84d23ffa815c95b02e",
+    "zt.csv": "095de7a536e55e84979ef0c16a5a087562ac86758d8c4667806fe61e3d353337",
+    "zb.csv": "00c1aa5facf93555a22f3ee110a3ba54a8c0b807c359190d06e2a3d98484fb96",
+    "dt.csv": "7b8e175eca73da9e51a05f28925bfa754ac9f110704bbd967a52ff29033c9127"
   },
   "market": {
     "top100_count": 100,
     "limit_up_count": 37,
-    "broken_limit_count": 35,
-    "limit_down_count": 5
+    "broken_limit_count": 21,
+    "limit_down_count": 33
   },
   "lhb": {
-    "raw_records": 65,
+    "raw_records": 64,
     "unique_stocks": 56,
-    "top100_intersection_count": 4
+    "top100_intersection_count": 5
   },
   "core_pool": [
     {
-      "股票代码": "000678",
-      "名称": "襄阳轴承",
-      "最新价": 21.94,
-      "涨跌幅": 3.539,
-      "成交额": 3953522535.0,
-      "龙虎榜原因": "换手率达20%的证券 | 连续三个交易日内，涨幅偏离值累计达20%的证券"
-    },
-    {
-      "股票代码": "600715",
-      "名称": "文投控股",
-      "最新价": 3.09,
-      "涨跌幅": -1.592,
-      "成交额": 3552944847.0,
-      "龙虎榜原因": "换手率达20%的证券 | 振幅值达15%的证券"
-    },
-    {
-      "股票代码": "605488",
-      "名称": "福莱新材",
-      "最新价": 56.73,
-      "涨跌幅": -9.995,
-      "成交额": 3000686267.0,
+      "股票代码": "002463",
+      "名称": "沪电股份",
+      "最新价": 82.2,
+      "涨跌幅": -10.0,
+      "成交额": 7588717536.0,
       "龙虎榜原因": "跌幅偏离值达7%的证券"
     },
     {
-      "股票代码": "603466",
-      "名称": "风语筑",
-      "最新价": 16.03,
-      "涨跌幅": -4.923,
-      "成交额": 2943402907.0,
+      "股票代码": "002086",
+      "名称": "东方海洋",
+      "最新价": 4.82,
+      "涨跌幅": -6.59,
+      "成交额": 2939440423.0,
+      "龙虎榜原因": "换手率达20%的证券"
+    },
+    {
+      "股票代码": "603366",
+      "名称": "日出东方",
+      "最新价": 13.9,
+      "涨跌幅": 5.54,
+      "成交额": 2844975660.0,
       "龙虎榜原因": "振幅值达15%的证券"
+    },
+    {
+      "股票代码": "000678",
+      "名称": "襄阳轴承",
+      "最新价": 19.75,
+      "涨跌幅": -9.98,
+      "成交额": 2720515752.0,
+      "龙虎榜原因": "跌幅偏离值达7%的证券"
+    },
+    {
+      "股票代码": "002164",
+      "名称": "宁波东力",
+      "最新价": 23.71,
+      "涨跌幅": 0.81,
+      "成交额": 2383598803.0,
+      "龙虎榜原因": "连续三个交易日内，涨幅偏离值累计达20%的证券"
     }
   ],
   "files": {
@@ -89,21 +97,17 @@
     "a2": "/latest/a2.csv",
     "triggers": "/latest/triggers.json"
   },
-  "run_mode": "LATE_RUN",
-  "run_id": "20261112-late-190332-1777597",
-  "market_close_as_of": "2026-11-12T15:00:00+08:00",
-  "collected_at": "2026-11-12T19:05:30.088363+08:00",
   "candidate_pool": {
-    "count": 35,
+    "count": 34,
     "max_pool": 40,
-    "generated_at": "2026-11-12 19:05:31"
+    "generated_at": "2026-11-13 18:02:55"
   },
   "intraday": {
     "period": "5m",
-    "requested_stocks": 35,
-    "success_stocks": 35,
+    "requested_stocks": 34,
+    "success_stocks": 34,
     "failed_stocks": 0,
-    "generated_at": "2026-11-12 19:07:18"
+    "generated_at": "2026-11-13 18:05:15"
   },
   "relative_strength": {
     "benchmarks": [
@@ -112,31 +116,31 @@
       "创业板指",
       "科创50"
     ],
-    "stocks": 35,
-    "generated_at": "2026-11-12 19:07:48"
+    "stocks": 34,
+    "generated_at": "2026-11-13 18:05:37"
   },
   "windvane": {
     "count": 31,
-    "leaders": 0,
-    "confirms": 5,
-    "weak_anchors": 26,
-    "generated_at": "2026-11-12 19:07:49"
+    "leaders": 6,
+    "confirms": 1,
+    "weak_anchors": 24,
+    "generated_at": "2026-11-13 18:05:38"
   },
   "sector_strength": {
     "version": "1.2",
     "breadth_universe": 100,
-    "signal_universe": 34,
+    "signal_universe": 32,
     "industry_count": 24,
     "theme_count": 11,
-    "generated_at": "2026-11-12 19:07:51"
+    "generated_at": "2026-11-13 18:05:40"
   },
   "decision": {
-    "market_regime": "NEUTRAL",
-    "market_regime_cn": "中性震荡",
-    "max_total_position": 0.5,
-    "decision_universe": 14,
-    "a1_count": 0,
+    "market_regime": "RISK_OFF",
+    "market_regime_cn": "弱势",
+    "max_total_position": 0.3,
+    "decision_universe": 19,
+    "a1_count": 5,
     "a2_count": 2,
-    "generated_at": "2026-11-12 19:07:53"
+    "generated_at": "2026-11-13 18:05:42"
   }
 }

@@ -1,15 +1,111 @@
 {
-  "trade_date": "20261112",
-  "market_regime": "NEUTRAL",
-  "max_total_position": 0.5,
-  "A1": [],
+  "trade_date": "20261113",
+  "market_regime": "RISK_OFF",
+  "max_total_position": 0.3,
+  "A1": [
+    {
+      "股票代码": "603366",
+      "名称": "日出东方",
+      "reference_close": 13.9,
+      "reference_high": 14.21,
+      "reference_low": 11.86,
+      "score": 12,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "000333",
+      "名称": "美的集团",
+      "reference_close": 90.55,
+      "reference_high": 90.77,
+      "reference_low": 87.16,
+      "score": 10,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "002714",
+      "名称": "牧原股份",
+      "reference_close": 45.84,
+      "reference_high": 46.0,
+      "reference_low": 44.23,
+      "score": 10,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "000651",
+      "名称": "格力电器",
+      "reference_close": 39.96,
+      "reference_high": 39.99,
+      "reference_low": 38.78,
+      "score": 10,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "000001",
+      "名称": "平安银行",
+      "reference_close": 12.07,
+      "reference_high": 12.1,
+      "reference_low": 11.7,
+      "score": 10,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    }
+  ],
   "A2": [
     {
-      "股票代码": "000678",
-      "名称": "襄阳轴承",
-      "reference_close": 21.94,
-      "reference_high": 23.31,
-      "reference_low": 21.21,
+      "股票代码": "002086",
+      "名称": "东方海洋",
+      "reference_close": 4.82,
+      "reference_high": 5.06,
+      "reference_low": 4.64,
       "score": 6,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
@@ -24,11 +120,11 @@
       ]
     },
     {
-      "股票代码": "002156",
-      "名称": "通富微电",
-      "reference_close": 48.36,
-      "reference_high": 50.49,
-      "reference_low": 46.76,
+      "股票代码": "002931",
+      "名称": "锋龙股份",
+      "reference_close": 58.1,
+      "reference_high": 62.26,
+      "reference_low": 55.75,
       "score": 6,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",

@@ -1,34 +1,15 @@
 {
-  "trade_date": "20261116",
+  "trade_date": "20261117",
   "market_regime": "RISK_OFF",
   "max_total_position": 0.3,
   "A1": [
     {
-      "股票代码": "603118",
-      "名称": "共进股份",
-      "reference_close": 14.71,
-      "reference_high": 14.71,
-      "reference_low": 12.95,
-      "score": 14,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
       "股票代码": "000530",
       "名称": "冰山冷热",
-      "reference_close": 11.0,
-      "reference_high": 11.2,
+      "reference_close": 11.85,
+      "reference_high": 12.1,
       "reference_low": 10.2,
-      "score": 11,
+      "score": 12,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -42,30 +23,11 @@
       ]
     },
     {
-      "股票代码": "600406",
-      "名称": "国电南瑞",
-      "reference_close": 24.19,
-      "reference_high": 24.28,
-      "reference_low": 23.01,
-      "score": 11,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "601288",
-      "名称": "农业银行",
-      "reference_close": 7.59,
-      "reference_high": 7.6,
-      "reference_low": 7.35,
+      "股票代码": "002371",
+      "名称": "北方华创",
+      "reference_close": 568.75,
+      "reference_high": 571.0,
+      "reference_low": 540.0,
       "score": 10,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -80,12 +42,31 @@
       ]
     },
     {
-      "股票代码": "600519",
-      "名称": "贵州茅台",
-      "reference_close": 1453.9,
-      "reference_high": 1454.93,
-      "reference_low": 1425.0,
-      "score": 10,
+      "股票代码": "600206",
+      "名称": "有研新材",
+      "reference_close": 39.33,
+      "reference_high": 39.33,
+      "reference_low": 35.29,
+      "score": 9,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "002242",
+      "名称": "九阳股份",
+      "reference_close": 31.52,
+      "reference_high": 31.52,
+      "reference_low": 25.79,
+      "score": 9,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,11 +82,30 @@
   ],
   "A2": [
     {
-      "股票代码": "000831",
-      "名称": "中国稀土",
-      "reference_close": 49.8,
-      "reference_high": 52.35,
-      "reference_low": 47.59,
+      "股票代码": "600183",
+      "名称": "生益科技",
+      "reference_close": 58.61,
+      "reference_high": 61.65,
+      "reference_low": 57.3,
+      "score": 6,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "603083",
+      "名称": "剑桥科技",
+      "reference_close": 104.32,
+      "reference_high": 111.95,
+      "reference_low": 102.0,
       "score": 5,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
@@ -120,11 +120,11 @@
       ]
     },
     {
-      "股票代码": "002371",
-      "名称": "北方华创",
-      "reference_close": 546.39,
-      "reference_high": 565.0,
-      "reference_low": 539.0,
+      "股票代码": "001309",
+      "名称": "德明利",
+      "reference_close": 177.25,
+      "reference_high": 185.58,
+      "reference_low": 174.13,
       "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",

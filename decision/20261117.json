@@ -1,0 +1,355 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261117",
+  "published_at": "2026-11-17T18:11:00.536373+08:00",
+  "market": {
+    "regime": "RISK_OFF",
+    "position_cap_pct": 0,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "tier": "TIER_A",
+      "score": 83,
+      "confidence": 77,
+      "theme": "中芯概念相关设备与制造分支",
+      "trigger": "前30分钟保持相对指数强势，回踩昨日收盘附近或盘中第一次回踩时出现连续五分钟承接，并有中芯国际、长川科技等同步配合。",
+      "invalidation": "跌回昨日收盘下方后反抽不能站回，或板块核心同步转弱。",
+      "forbidden": "禁止高开急拉时追价；禁止无板块配合地将单股强势视为主线确认。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 568.75,
+          "source": "TUSHARE_DAILY_CLOSE@20261117"
+        },
+        "day_high": {
+          "value": 571.0,
+          "source": "intraday_structure.csv@20261117"
+        },
+        "day_low": {
+          "value": 540.0,
+          "source": "intraday_structure.csv@20261117"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "600206",
+      "name": "有研新材",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "000530",
+      "name": "冰山冷热",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "IT服务Ⅱ",
+        "confidence": 76,
+        "thesis": "涨停扩散数量并列领先，但封板稳定性分化。",
+        "evidence": [
+          "行业涨停3只",
+          "北投科技两连板、14次炸板，华胜天成首板"
+        ],
+        "risk": "北投科技尾盘回封，反复开板反映分歧；行业情绪不等于交易主线。"
+      },
+      {
+        "rank": 2,
+        "name": "电子化学",
+        "confidence": 75,
+        "thesis": "行业涨停数量并列领先，封板表现相对稳定。",
+        "evidence": [
+          "行业涨停3只",
+          "江化微未炸板，西陇科学和格林达各炸板1次"
+        ],
+        "risk": "涨停股成交额相对有限，不能仅凭数量认定高成交交易主线。"
+      },
+      {
+        "rank": 3,
+        "name": "环保设备",
+        "confidence": 73,
+        "thesis": "行业内有3只涨停，短线情绪出现扩散。",
+        "evidence": [
+          "国林科技和清研环境涨停幅度约20%",
+          "清研环境炸板3次"
+        ],
+        "risk": "高成交核心及板块五分钟同步证据不足；环保相关个股表现并不一致。"
+      },
+      {
+        "rank": 4,
+        "name": "小家电",
+        "confidence": 72,
+        "thesis": "高成交个股带动局部情绪，小范围出现连板。",
+        "evidence": [
+          "行业涨停2只",
+          "九阳股份成交约35.4亿元，小熊电器两连板"
+        ],
+        "risk": "九阳股份当日振幅较大，且龙虎榜列示连续三个交易日涨幅偏离值累计达20%的上榜原因，注意兑现。"
+      }
+    ],
+    "trading": [
+      {
+        "rank": 1,
+        "name": "中芯概念相关设备与制造分支",
+        "confidence": 66,
+        "thesis": "高成交设备和制造核心出现相对强势与五分钟承接，具备次日验证价值；定位为分化市场中的局部交易方向，而非全市场一致主线。",
+        "evidence": [
+          "北方华创成交约74.4亿元，日内和尾段相对深证成指均占优，收盘接近日高",
+          "中芯国际成交约83.8亿元，日内相对科创50占优，五分钟结构显示回踩修复",
+          "中芯概念历史成员快照与Top100交叉样本中，14只里13只上涨；已采五分钟的6只中5只日内相对强势",
+          "专用设备制造业Top100样本8只中上涨比例75%，但已采信号仅3只"
+        ],
+        "risk": "概念成员快照生效日期未验证，交叉样本不代表全板块宽度；罗博特科走弱，长川科技自日高回落，电子行业整体分化且存储核心走弱。"
+      }
+    ],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "小家电",
+        "confidence": 57,
+        "thesis": "九阳股份高成交涨停，小熊电器两连板，等待高成交核心次日承接确认。",
+        "evidence": [
+          "九阳股份成交约35.4亿元，收于日高",
+          "小家电行业两只涨停"
+        ],
+        "risk": "九阳股份高振幅且当日下午成交占比较低，次日可交易承接尚待验证。"
+      },
+      {
+        "rank": 2,
+        "name": "有色金属冶炼和压延加工",
+        "confidence": 50,
+        "thesis": "有研新材高成交封板，但同方向核心表现分裂。",
+        "evidence": [
+          "有研新材成交约47.5亿元，日内相对上证指数明显占优",
+          "有色冶炼行业Top100样本3只中2只上涨"
+        ],
+        "risk": "中国稀土跌停，有研新材8次炸板，行业信号样本仅2只，不能确认板块同步。"
+      },
+      {
+        "rank": 3,
+        "name": "通用设备",
+        "confidence": 45,
+        "thesis": "冰山冷热高成交、高相对强度，但主要是个股局部表现。",
+        "evidence": [
+          "冰山冷热成交约28.7亿元，五分钟结构为趋势向上",
+          "其日内相对深证成指超额约10.33个百分点"
+        ],
+        "risk": "冰山冷热两次炸板、换手率约41.68%；通用设备高成交样本分化，宇树科技-W明显走弱。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "CPO与光模块",
+        "confidence": 88,
+        "thesis": "高成交核心普遍下跌，板块状态为FADING；尾段修复尚不足以确认反转。",
+        "evidence": [
+          "CPO的5只Top100样本全部下跌，4只为弱势风向标",
+          "中际旭创、新易盛分别下跌3.90%和4.08%，尾段虽反弹但全天相对走弱"
+        ],
+        "risk": "尾段相对强度改善可能带来反抽，需区分反抽和持续修复。"
+      },
+      {
+        "rank": 2,
+        "name": "PCB与AI服务器",
+        "confidence": 87,
+        "thesis": "高成交核心同步走弱，五分钟下行结构集中。",
+        "evidence": [
+          "PCB的4只Top100样本全部下跌，已采信号全部为TREND_DOWN",
+          "AI服务器两只Top100样本全部下跌且均为TREND_DOWN"
+        ],
+        "risk": "生益科技和沪电股份尾段有修复，不能将尾段反弹直接视为趋势反转。"
+      },
+      {
+        "rank": 3,
+        "name": "存储",
+        "confidence": 82,
+        "thesis": "高成交核心承压，尾段整体相对强度为负。",
+        "evidence": [
+          "存储的3只Top100样本全部下跌",
+          "长鑫科技收盘接近日低并出现LATE_WEAKNESS，兆易创新为TREND_DOWN"
+        ],
+        "risk": "辅助概念指数与高成交核心样本口径不同，不宜互相替代。"
+      },
+      {
+        "rank": 4,
+        "name": "影视传媒与数字内容",
+        "confidence": 86,
+        "thesis": "跌停集中，高成交核心收盘靠近日低，兑现压力明显。",
+        "evidence": [
+          "影视院线行业5只跌停，出版行业3只跌停",
+          "文投控股跌停，华策影视和中文在线五分钟结构走弱"
+        ],
+        "risk": "个别反抽不代表整体修复，应观察跌停股开板后的持续承接。"
+      },
+      {
+        "rank": 5,
+        "name": "机器人相关",
+        "confidence": 75,
+        "thesis": "高成交风向标明显走弱，局部强股不能代表方向同步。",
+        "evidence": [
+          "宇树科技-W下跌11.97%，收盘接近日低",
+          "辅助概念指数中机器人概念下跌2.34%，人形机器人下跌3.54%"
+        ],
+        "risk": "辅助概念指数为延时供应商数据，成员快照日期未验证；个股分化仍可能较大。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "688981",
+      "name": "中芯国际",
+      "role": "CONFIRM",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "688820",
+      "name": "盛合晶微",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "600206",
+      "name": "有研新材",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "000530",
+      "name": "冰山冷热",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "role": "WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "688825",
+      "name": "长鑫科技",
+      "role": "WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "000831",
+      "name": "中国稀土",
+      "role": "WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "600715",
+      "name": "文投控股",
+      "role": "WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "先观察跌停数量及传媒、零售等前日弱势方向的开板承接，确认情绪是否继续恶化。",
+    "观察指数前30分钟及午后五分钟结构，区分尾段反弹延续与冲高回落。",
+    "核对北方华创、中芯国际、长川科技等是否同步相对强势，避免把单一个股走强当作板块确认。",
+    "观察中际旭创、新易盛、长鑫科技等高成交弱势核心是否止跌，警惕反抽后继续下行。",
+    "关注有研新材、九阳股份和冰山冷热的充分换手、第一次回踩与兑现压力；触发条件未出现时不执行。",
+    "25%为下一交易日总仓位上限而非目标仓位；若承接不足或风险扩散，可低于上限或空仓。",
+    "总仓位上限为0%，保持防御，不新增风险敞口。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "002371",
+        "name": "北方华创",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "600206",
+        "name": "有研新材",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "stock",
+        "code": "002242",
+        "name": "九阳股份",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "stock",
+        "code": "000530",
+        "name": "冰山冷热",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

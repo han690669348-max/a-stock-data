@@ -1,0 +1,460 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261118",
+  "published_at": "2026-11-18T19:12:13.477032+08:00",
+  "market": {
+    "regime": "RISK_OFF",
+    "position_cap_pct": 0,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "002463",
+      "name": "沪电股份",
+      "tier": "TIER_A",
+      "score": 85,
+      "confidence": 76,
+      "theme": "PCB",
+      "trigger": "前30分钟保持相对指数强势，首次回踩后五分钟止跌并重新走强，同时深南电路、生益科技至少有一只同步承接。",
+      "invalidation": "开盘后持续跌破昨日收盘且反抽无力，或板块核心同步走弱。",
+      "forbidden": "禁止高开直线冲高追买，也不因再次触板而忽视反复开板风险。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 80.19,
+          "source": "TENCENT_EOD_QUOTE_CLOSE@20261118"
+        },
+        "day_high": {
+          "value": 80.19,
+          "source": "intraday_structure.csv@20261118"
+        },
+        "day_low": {
+          "value": 75.89,
+          "source": "intraday_structure.csv@20261118"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "601138",
+      "name": "工业富联",
+      "tier": "TIER_A",
+      "score": 82,
+      "confidence": 73,
+      "theme": "电子设备制造",
+      "trigger": "前30分钟相对指数保持强势，首次回踩获得承接后重新走强，同时电子设备制造核心未出现同步转弱。",
+      "invalidation": "跌破昨日收盘后反抽不能收复，或五分钟结构持续走低。",
+      "forbidden": "禁止在高开快速拉升且未形成承接时追涨。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 37.94,
+          "source": "TENCENT_EOD_QUOTE_CLOSE@20261118"
+        },
+        "day_high": {
+          "value": 38.2,
+          "source": "intraday_structure.csv@20261118"
+        },
+        "day_low": {
+          "value": 36.5,
+          "source": "intraday_structure.csv@20261118"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "002916",
+      "name": "深南电路",
+      "tier": "TIER_A",
+      "score": 80,
+      "confidence": 71,
+      "theme": "PCB",
+      "trigger": "开板或正常交易后，前30分钟相对强势，首次回踩出现五分钟止跌回升，且PCB核心同步承接。",
+      "invalidation": "开板后持续走低，无法收复昨日收盘，或沪电股份同步显著转弱。",
+      "forbidden": "禁止一字封板排队追价，禁止无承接的高开抢买。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 201.19,
+          "source": "TENCENT_EOD_QUOTE_CLOSE@20261118"
+        },
+        "day_high": {
+          "value": 201.19,
+          "source": "intraday_structure.csv@20261118"
+        },
+        "day_low": {
+          "value": 184.96,
+          "source": "intraday_structure.csv@20261118"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "600183",
+      "name": "生益科技",
+      "tier": "TIER_B",
+      "score": 81,
+      "confidence": 73,
+      "theme": "PCB及覆铜板",
+      "trigger": "围绕昨日收盘形成五分钟止跌回升，首次回踩不破盘中新低，并有沪电股份或深南电路同步走强。",
+      "invalidation": "持续跌破昨日收盘且反抽无力，或PCB核心集体转弱。",
+      "forbidden": "禁止在板块核心明显兑现时单凭个股短暂拉升追买。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 60.9,
+          "source": "TENCENT_EOD_QUOTE_CLOSE@20261118"
+        },
+        "day_high": {
+          "value": 62.15,
+          "source": "intraday_structure.csv@20261118"
+        },
+        "day_low": {
+          "value": 57.7,
+          "source": "intraday_structure.csv@20261118"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "001309",
+      "name": "德明利",
+      "tier": "TIER_B",
+      "score": 76,
+      "confidence": 68,
+      "theme": "存储",
+      "trigger": "首次回踩形成五分钟止跌回升，前30分钟相对指数占优，同时兆易创新或长鑫科技出现同步承接。",
+      "invalidation": "持续跌破昨日收盘且五分钟反抽无力，或存储核心同步转弱。",
+      "forbidden": "禁止无板块确认时追高，尤其避免把单次急拉当作承接。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 187.49,
+          "source": "TENCENT_EOD_QUOTE_CLOSE@20261118"
+        },
+        "day_high": {
+          "value": 192.33,
+          "source": "intraday_structure.csv@20261118"
+        },
+        "day_low": {
+          "value": 174.0,
+          "source": "intraday_structure.csv@20261118"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "603228",
+      "name": "景旺电子",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "600410",
+      "name": "华胜天成",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "603986",
+      "name": "兆易创新",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "601188",
+      "name": "龙江交通",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "IT服务",
+        "confidence": 88,
+        "thesis": "短线涨停扩散最集中，兼有高成交和连板表现。",
+        "evidence": [
+          "供应商行业统计中IT服务Ⅱ涨停7只。",
+          "华胜天成二连板，换手约19%；宏景科技20%涨停。",
+          "真视通二连板，常山北明首板。"
+        ],
+        "risk": "高换手和连续上涨增加次日兑现压力；情绪扩散不等于盘中必有可执行买点。"
+      },
+      {
+        "rank": 2,
+        "name": "通信服务",
+        "confidence": 77,
+        "thesis": "涨停数量次于IT服务，短线情绪活跃。",
+        "evidence": [
+          "供应商行业统计中通信服务涨停5只。",
+          "润建股份首板并曾开板；北纬科技换手约42%，开板4次后回封。"
+        ],
+        "risk": "高换手和反复开板显示分歧，缺少足够高成交核心的完整结构确认。"
+      }
+    ],
+    "trading": [
+      {
+        "rank": 1,
+        "name": "PCB及覆铜板",
+        "confidence": 66,
+        "thesis": "高成交核心、板块样本同步和盘中承接相对突出，是次日优先验证的交易方向，但并非无分歧主线。",
+        "evidence": [
+          "沪电股份成交约81.9亿元，回踩修复后涨停，日内及尾盘相对深证成指占优；深南电路同步涨停。",
+          "生益科技成交约57.8亿元，五分钟结构显示回踩修复、趋势向上及尾盘走强。",
+          "服务器PCB样本4只均上涨，平均涨幅约5.92%，但状态为DIVERGING，仅半数日内相对强势。",
+          "电子设备制造业Top100样本49只、上涨比例约89.8%；这是高成交样本而非全板块广度。"
+        ],
+        "risk": "沪电股份3次开板，景旺电子炸板，东山精密相对偏弱；多只核心大涨后可能高开兑现，须等待回踩承接和板块同步确认。"
+      }
+    ],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "软件和信息技术服务",
+        "confidence": 68,
+        "thesis": "涨停情绪强且高成交样本表现较好，但封板核心次日能否提供可交易承接仍需验证。",
+        "evidence": [
+          "行业Top100样本6只，其中4只上涨；3只有结构信号的样本均为日内相对强势。",
+          "华胜天成二连板，宏景科技20%涨停。"
+        ],
+        "risk": "华胜天成早盘封板后午后成交占比低，难以据此确认充分的午后换手承接；高位接力可能面临兑现。"
+      },
+      {
+        "rank": 2,
+        "name": "存储",
+        "confidence": 61,
+        "thesis": "高成交样本均上涨，德明利趋势结构较好，但核心之间强弱不一。",
+        "evidence": [
+          "服务器存储主题Top100样本3只均上涨，2只日内相对强势。",
+          "德明利回踩修复并趋势向上；兆易创新日内相对上证指数占优。"
+        ],
+        "risk": "长鑫科技尾盘相对偏弱，样本仅3只，尚不足以确认全面同步。"
+      },
+      {
+        "rank": 3,
+        "name": "CPO和光模块",
+        "confidence": 63,
+        "thesis": "局部核心和尾盘有修复，但超高成交核心未能同步走强。",
+        "evidence": [
+          "CPO样本5只中4只上涨，状态为DIVERGING。",
+          "天孚通信日内相对强势；中际旭创和新易盛均被标记为弱锚。"
+        ],
+        "risk": "中际旭创日内相对偏弱，新易盛收跌且尾盘相对偏弱，不宜将局部反弹等同于板块同步转强。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "有色金属矿采选",
+        "confidence": 79,
+        "thesis": "高成交核心同步弱于指数，行业状态为FADING。",
+        "evidence": [
+          "紫金矿业跌5.656%，五分钟结构为冲高回落、趋势向下。",
+          "洛阳钼业跌3.5%，两只样本均为日内相对弱势。"
+        ],
+        "risk": "两只核心尾盘相对有所修复，但不能仅凭尾盘反弹确认趋势反转；样本仅2只。"
+      },
+      {
+        "rank": 2,
+        "name": "小家电",
+        "confidence": 78,
+        "thesis": "高成交风向标由冲高转为跌停，兑现压力明显。",
+        "evidence": [
+          "九阳股份成交约56.9亿元，炸板2次后跌停，收于日内低点。",
+          "小家电行业有3只出现在炸板清单。"
+        ],
+        "risk": "同方向个股存在分化，不能将个别强势股直接视作板块修复。"
+      },
+      {
+        "rank": 3,
+        "name": "医药制造",
+        "confidence": 69,
+        "thesis": "高成交样本偏弱，莱美药业大幅下跌并收近低位。",
+        "evidence": [
+          "医药制造业Top100样本2只均下跌，服务器标记为BREADTH_WEAK。",
+          "莱美药业跌15.839%，五分钟结构为趋势向下。"
+        ],
+        "risk": "样本仅2只，尾盘相对修复不改变当日整体弱势，不能外推全部医药细分。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "002463",
+      "name": "沪电股份",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002916",
+      "name": "深南电路",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "601138",
+      "name": "工业富联",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "600410",
+      "name": "华胜天成",
+      "role": "LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "role": "WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "role": "WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "role": "WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "601899",
+      "name": "紫金矿业",
+      "role": "WEAK_ANCHOR",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "观察跌停数量、炸板后的负反馈及九阳股份等弱锚是否继续恶化。",
+    "观察指数前30分钟与午后五分钟结构，确认修复能否延续。",
+    "验证沪电股份、深南电路、生益科技的承接与同步性，防范PCB高开兑现。",
+    "验证华胜天成开板换手后的承接，不以情绪涨停数替代买点。",
+    "观察中际旭创、新易盛能否同步修复，以及存储核心是否转为一致。",
+    "海外风向标等待次日可靠增量；账户未知，不生成A2。",
+    "总仓位上限为0%，保持防御，不新增风险敞口。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "002463",
+        "name": "沪电股份",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "601138",
+        "name": "工业富联",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "002916",
+        "name": "深南电路",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "603228",
+        "name": "景旺电子",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "stock",
+        "code": "600410",
+        "name": "华胜天成",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "stock",
+        "code": "603986",
+        "name": "兆易创新",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "stock",
+        "code": "601188",
+        "name": "龙江交通",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "stock",
+        "code": "603629",
+        "name": "利通电子",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

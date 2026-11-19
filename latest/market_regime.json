@@ -1,11 +1,11 @@
 {
-  "trade_date": "20261118",
-  "generated_at": "2026-11-18 19:07:54",
+  "trade_date": "20261119",
+  "generated_at": "2026-11-19 18:53:31",
   "regime": "RISK_OFF",
   "regime_cn": "弱势",
-  "limit_up": 41,
+  "limit_up": 23,
   "broken_limit": 24,
-  "limit_down": 40,
-  "broken_ratio": 0.36923076923076925,
+  "limit_down": 68,
+  "broken_ratio": 0.5106382978723404,
   "max_total_position": 0.3
 }

@@ -1,33 +1,14 @@
 {
-  "trade_date": "20261118",
+  "trade_date": "20261119",
   "market_regime": "RISK_OFF",
   "max_total_position": 0.3,
   "A1": [
     {
       "股票代码": "002463",
       "名称": "沪电股份",
-      "reference_close": 80.19,
-      "reference_high": 80.19,
-      "reference_low": 75.89,
-      "score": 14,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "002916",
-      "名称": "深南电路",
-      "reference_close": 201.19,
-      "reference_high": 201.19,
-      "reference_low": 184.96,
+      "reference_close": 81.1,
+      "reference_high": 81.86,
+      "reference_low": 77.0,
       "score": 12,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -42,11 +23,11 @@
       ]
     },
     {
-      "股票代码": "603629",
-      "名称": "利通电子",
-      "reference_close": 60.93,
-      "reference_high": 60.93,
-      "reference_low": 54.21,
+      "股票代码": "002242",
+      "名称": "九阳股份",
+      "reference_close": 31.21,
+      "reference_high": 31.21,
+      "reference_low": 25.53,
       "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -61,31 +42,50 @@
       ]
     },
     {
-      "股票代码": "601138",
-      "名称": "工业富联",
-      "reference_close": 37.94,
-      "reference_high": 38.2,
-      "reference_low": 36.5,
-      "score": 11,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "601188",
-      "名称": "龙江交通",
-      "reference_close": 5.08,
-      "reference_high": 5.21,
-      "reference_low": 4.8,
+      "股票代码": "000678",
+      "名称": "襄阳轴承",
+      "reference_close": 16.74,
+      "reference_high": 16.74,
+      "reference_low": 14.59,
       "score": 9,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "002148",
+      "名称": "北纬科技",
+      "reference_close": 9.3,
+      "reference_high": 9.8,
+      "reference_low": 8.51,
+      "score": 9,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "600519",
+      "名称": "贵州茅台",
+      "reference_close": 1460.21,
+      "reference_high": 1464.99,
+      "reference_low": 1432.1,
+      "score": 8,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,50 +101,88 @@
   ],
   "A2": [
     {
-      "股票代码": "603083",
-      "名称": "剑桥科技",
-      "reference_close": 107.0,
-      "reference_high": 109.8,
-      "reference_low": 104.41,
+      "股票代码": "601899",
+      "名称": "紫金矿业",
+      "reference_close": 23.88,
+      "reference_high": 24.03,
+      "reference_low": 23.06,
+      "score": 8,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "600183",
+      "名称": "生益科技",
+      "reference_close": 60.29,
+      "reference_high": 60.76,
+      "reference_low": 58.6,
+      "score": 8,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "603986",
+      "名称": "兆易创新",
+      "reference_close": 218.81,
+      "reference_high": 220.88,
+      "reference_low": 212.59,
+      "score": 8,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "000158",
+      "名称": "常山北明",
+      "reference_close": 13.03,
+      "reference_high": 13.5,
+      "reference_low": 12.59,
+      "score": 7,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "002384",
+      "名称": "东山精密",
+      "reference_close": 71.7,
+      "reference_high": 73.0,
+      "reference_low": 68.89,
       "score": 6,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "603993",
-      "名称": "洛阳钼业",
-      "reference_close": 12.13,
-      "reference_high": 12.55,
-      "reference_low": 11.95,
-      "score": 4,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "603893",
-      "名称": "瑞芯微",
-      "reference_close": 197.57,
-      "reference_high": 207.4,
-      "reference_low": 192.76,
-      "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",

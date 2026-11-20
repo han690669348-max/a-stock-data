@@ -1,0 +1,375 @@
+{
+  "status": "SUCCESS",
+  "schema_version": "public-morning-baseline-1.0",
+  "morning_contract_version": "1.0",
+  "trade_date": "20261120",
+  "published_at": "2026-11-20T18:07:41.494577+08:00",
+  "market": {
+    "regime": "RISK_OFF",
+    "position_cap_pct": 0,
+    "source": "FINAL_ARBITER_V1_1"
+  },
+  "A1": [
+    {
+      "code": "600036",
+      "name": "招商银行",
+      "tier": "TIER_A",
+      "score": 76,
+      "confidence": 72,
+      "theme": "银行防御",
+      "trigger": "前30分钟保持相对强势，第一次回踩有承接并重新站回昨日收盘，同时银行核心保持同步。",
+      "invalidation": "跌回昨日收盘下方且反抽无力，或银行核心同步转弱。",
+      "forbidden": "禁止因尾盘强势而开盘追高；银行分化时不按板块共振处理。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 44.0,
+          "source": "TUSHARE_DAILY_CLOSE@20261120"
+        },
+        "day_high": {
+          "value": 44.16,
+          "source": "intraday_structure.csv@20261120"
+        },
+        "day_low": {
+          "value": 42.7,
+          "source": "intraday_structure.csv@20261120"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "601398",
+      "name": "工商银行",
+      "tier": "TIER_B",
+      "score": 72,
+      "confidence": 68,
+      "theme": "银行防御",
+      "trigger": "前30分钟保持相对强势，回踩后重新站稳昨日收盘，并有其他银行核心同步确认。",
+      "invalidation": "回踩后持续处于昨日收盘下方，或银行核心同步走弱。",
+      "forbidden": "禁止孤立追逐高开或急拉，尤其是银行整体未确认时。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 9.4,
+          "source": "TUSHARE_DAILY_CLOSE@20261120"
+        },
+        "day_high": {
+          "value": 9.49,
+          "source": "intraday_structure.csv@20261120"
+        },
+        "day_low": {
+          "value": 9.04,
+          "source": "intraday_structure.csv@20261120"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "000823",
+      "name": "超声电子",
+      "tier": "TIER_B",
+      "score": 70,
+      "confidence": 63,
+      "theme": "元件",
+      "trigger": "开板后第一次回踩出现承接，重新走强且元件情绪股同步稳定。",
+      "invalidation": "开板后持续走弱，回踩无承接，同时元件情绪股明显分化。",
+      "forbidden": "禁止一字板或快速拉升时追单；禁止把元件涨停数量等同于PCB核心共振。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 18.51,
+          "source": "TUSHARE_DAILY_CLOSE@20261120"
+        },
+        "day_high": {
+          "value": 18.51,
+          "source": "intraday_structure.csv@20261120"
+        },
+        "day_low": {
+          "value": 16.29,
+          "source": "intraday_structure.csv@20261120"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    }
+  ],
+  "A2": [],
+  "observe": [
+    {
+      "code": "000530",
+      "name": "冰山冷热",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "002148",
+      "name": "北纬科技",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "600410",
+      "name": "华胜天成",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "600519",
+      "name": "贵州茅台",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    },
+    {
+      "code": "601318",
+      "name": "中国平安",
+      "tier": "OBSERVE",
+      "reviewer_verdict": null
+    }
+  ],
+  "themes": {
+    "emotion": [
+      {
+        "rank": 1,
+        "name": "元件",
+        "confidence": 86,
+        "thesis": "按供应商行业分类，元件是当日涨停扩散最集中的方向，但不能据此认定PCB大成交核心同步走强。",
+        "evidence": [
+          "元件行业6只涨停，中京电子2连板。",
+          "超声电子成交约21.35亿元，首板且未炸板；满坤科技20%涨停。"
+        ],
+        "risk": "PCB高成交样本整体走弱，情绪扩散与容量核心表现背离。"
+      },
+      {
+        "rank": 2,
+        "name": "数字媒体",
+        "confidence": 65,
+        "thesis": "数字媒体出现局部高成交涨停扩散，但规模小于元件。",
+        "evidence": [
+          "数字媒体2只涨停：凡拓数创和风语筑。",
+          "凡拓数创炸板3次后回封，风语筑炸板1次后回封。"
+        ],
+        "risk": "高波动和反复开板提示次日分化风险，不能仅凭两只涨停认定主线。"
+      }
+    ],
+    "trading": [
+      {
+        "rank": 1,
+        "name": "银行防御",
+        "confidence": 64,
+        "thesis": "银行具备高成交核心、样本同步和午后相对强势，可作为防御性方向观察次日回踩承接；不等同于短线进攻主线。",
+        "evidence": [
+          "货币金融服务Top100样本8只全部上涨，平均涨幅约2.17%。",
+          "招商银行和工商银行均为风向标领涨角色，午后走强并收于日内相对高位。",
+          "招商银行和工商银行当日及午后相对强度均为正。"
+        ],
+        "risk": "仅2只有结构信号，行业状态信号置信度低；尾盘上行后的次日承接和买点尚未验证。"
+      }
+    ],
+    "watch": [
+      {
+        "rank": 1,
+        "name": "软件和信息技术服务",
+        "confidence": 55,
+        "thesis": "华胜天成、北纬科技具备局部相对强度，但高成交行业样本内部分化，尚不能确认持续同步。",
+        "evidence": [
+          "行业Top100样本7只中3只上涨，状态为DIVERGING。",
+          "华胜天成日内相对强势；北纬科技收于日内高位附近。"
+        ],
+        "risk": "华胜天成午后相对偏弱；北纬科技换手约51.95%、炸板3次，兑现压力较大。"
+      },
+      {
+        "rank": 2,
+        "name": "通用设备局部强势",
+        "confidence": 48,
+        "thesis": "冰山冷热涨停、华东重机低位修复，但高成交样本分化，暂以个股结构观察为主。",
+        "evidence": [
+          "冰山冷热换手约42.64%，两次炸板后回封。",
+          "华东重机当日及午后相对强度为正，但收盘下跌3.52%。"
+        ],
+        "risk": "通用设备涨停1只、跌停5只，局部强势不能代表行业普遍修复。"
+      },
+      {
+        "rank": 3,
+        "name": "半导体局部修复",
+        "confidence": 45,
+        "thesis": "中芯国际、中微公司午后强势，但与其他高成交芯片股明显分化。",
+        "evidence": [
+          "中芯国际和中微公司均收于日内高位附近，午后相对强度为正。",
+          "长鑫科技、兆易创新及长电科技走弱，通富微电跌停。"
+        ],
+        "risk": "核心之间走势冲突，不能将少数强势股外推为板块同步修复。"
+      }
+    ],
+    "weak": [
+      {
+        "rank": 1,
+        "name": "存储",
+        "confidence": 90,
+        "thesis": "高成交存储样本同步走弱，状态为FADING。",
+        "evidence": [
+          "德明利、兆易创新、长鑫科技均下跌，三只结构样本均为TREND_DOWN。",
+          "样本平均跌幅约6.14%，午后平均相对强度为负。"
+        ],
+        "risk": "若次日延续弱势，反抽仍可能遭遇抛压；需观察核心能否共同止跌。"
+      },
+      {
+        "rank": 2,
+        "name": "CPO与光模块",
+        "confidence": 86,
+        "thesis": "高成交核心普遍下跌且午后承接转弱。",
+        "evidence": [
+          "四只高成交样本全部下跌，平均跌幅约5.12%。",
+          "中际旭创、新易盛午后走弱；天孚通信、剑桥科技接近日内低位。"
+        ],
+        "risk": "个别核心日内相对抗跌不代表板块修复，需防反抽后的再度分化。"
+      },
+      {
+        "rank": 3,
+        "name": "PCB容量核心",
+        "confidence": 81,
+        "thesis": "元件涨停扩散的同时，PCB高成交核心广度偏弱。",
+        "evidence": [
+          "行业归类的PCB四只Top100样本全部下跌，状态为BREADTH_WEAK。",
+          "东山精密收于日内低点；沪电股份和景旺电子午后走弱。"
+        ],
+        "risk": "元件情绪股与PCB容量股可能继续背离，不能混同为全面同步上涨。"
+      }
+    ]
+  },
+  "B": [
+    {
+      "code": "600036",
+      "name": "招商银行",
+      "role": "银行防御领涨风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "000823",
+      "name": "超声电子",
+      "role": "元件情绪领涨风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "000530",
+      "name": "冰山冷热",
+      "role": "通用设备局部领涨风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002148",
+      "name": "北纬科技",
+      "role": "高换手情绪领涨风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "role": "光模块高成交确认风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "603986",
+      "name": "兆易创新",
+      "role": "存储弱势锚",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "688981",
+      "name": "中芯国际",
+      "role": "半导体局部领涨风向标",
+      "windvane_score": null,
+      "source": null
+    }
+  ],
+  "C": [],
+  "account_state": {
+    "complete": false,
+    "details_public": false,
+    "source": "PRIVATE_SERVER_ONLY"
+  },
+  "next_day_checks": [
+    "核对跌停数量、开板后的承接以及元件和通用设备的分化情况。",
+    "观察深成指、创业板指前30分钟及午后5分钟结构，确认是否摆脱尾盘弱势。",
+    "观察银行核心是否维持同步，以及回踩后的承接是否可执行。",
+    "观察存储、CPO及PCB高成交核心是否共同止跌，不把单一个股反弹视为板块修复。",
+    "关注北纬科技、冰山冷热等高换手股兑现压力；未出现结构确认时保持观望。",
+    "概念辅助快照成员生效日期未验证、部分行情缺失，不据此推断全板块广度；海外风向标等待次日增量数据。",
+    "总仓位上限为0%，保持防御，不新增风险敞口。"
+  ],
+  "decision_state": {
+    "consensus": [
+      {
+        "type": "stock",
+        "code": "600036",
+        "name": "招商银行",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      }
+    ],
+    "disagreement": [
+      {
+        "type": "stock",
+        "code": "000530",
+        "name": "冰山冷热",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "stock",
+        "code": "002148",
+        "name": "北纬科技",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "stock",
+        "code": "600410",
+        "name": "华胜天成",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+      },
+      {
+        "type": "stock",
+        "code": "600519",
+        "name": "贵州茅台",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      },
+      {
+        "type": "stock",
+        "code": "601318",
+        "name": "中国平安",
+        "summary": "多系统存在明显分歧，Reviewer=None"
+      }
+    ],
+    "uncertainty": []
+  },
+  "data_integrity": {
+    "market_baseline_complete": true,
+    "review_complete": true,
+    "account_complete": false,
+    "execution_baseline_complete": false,
+    "adapter_complete": true,
+    "public_sanitized": true,
+    "account_details_public": false,
+    "source": "PUBLIC_MORNING_SANITIZER_V1"
+  },
+  "source_versions": {
+    "final": "final-arbiter-v1.1",
+    "adapter": "morning-adapter-v1",
+    "sanitizer": "public-morning-sanitizer-v1"
+  }
+}

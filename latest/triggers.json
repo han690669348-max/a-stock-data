@@ -1,15 +1,15 @@
 {
-  "trade_date": "20261120",
-  "market_regime": "RISK_OFF",
-  "max_total_position": 0.3,
+  "trade_date": "20261123",
+  "market_regime": "RISK_ON_ROTATION",
+  "max_total_position": 0.7,
   "A1": [
     {
-      "股票代码": "002148",
-      "名称": "北纬科技",
-      "reference_close": 10.06,
-      "reference_high": 10.23,
-      "reference_low": 8.86,
-      "score": 12,
+      "股票代码": "000678",
+      "名称": "襄阳轴承",
+      "reference_close": 18.68,
+      "reference_high": 18.68,
+      "reference_low": 16.79,
+      "score": 14,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -23,12 +23,12 @@
       ]
     },
     {
-      "股票代码": "600519",
-      "名称": "贵州茅台",
-      "reference_close": 1485.75,
-      "reference_high": 1489.09,
-      "reference_low": 1423.9,
-      "score": 12,
+      "股票代码": "603083",
+      "名称": "剑桥科技",
+      "reference_close": 100.0,
+      "reference_high": 100.05,
+      "reference_low": 89.13,
+      "score": 13,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -42,12 +42,12 @@
       ]
     },
     {
-      "股票代码": "601318",
-      "名称": "中国平安",
-      "reference_close": 55.46,
-      "reference_high": 55.46,
-      "reference_low": 53.29,
-      "score": 12,
+      "股票代码": "600183",
+      "名称": "生益科技",
+      "reference_close": 60.75,
+      "reference_high": 61.0,
+      "reference_low": 56.66,
+      "score": 13,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -61,11 +61,11 @@
       ]
     },
     {
-      "股票代码": "600036",
-      "名称": "招商银行",
-      "reference_close": 44.0,
-      "reference_high": 44.16,
-      "reference_low": 42.7,
+      "股票代码": "000636",
+      "名称": "风华高科",
+      "reference_close": 28.99,
+      "reference_high": 28.99,
+      "reference_low": 25.77,
       "score": 12,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
@@ -82,10 +82,10 @@
     {
       "股票代码": "000530",
       "名称": "冰山冷热",
-      "reference_close": 12.29,
-      "reference_high": 12.29,
-      "reference_low": 10.71,
-      "score": 11,
+      "reference_close": 13.52,
+      "reference_high": 13.52,
+      "reference_low": 12.0,
+      "score": 12,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,50 +101,31 @@
   ],
   "A2": [
     {
-      "股票代码": "002685",
-      "名称": "华东重机",
-      "reference_close": 7.4,
-      "reference_high": 7.68,
-      "reference_low": 6.9,
-      "score": 8,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "601899",
-      "名称": "紫金矿业",
-      "reference_close": 23.73,
-      "reference_high": 23.91,
-      "reference_low": 22.56,
-      "score": 8,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "002916",
-      "名称": "深南电路",
-      "reference_close": 210.0,
-      "reference_high": 217.3,
-      "reference_low": 205.96,
+      "股票代码": "002579",
+      "名称": "中京电子",
+      "reference_close": 14.73,
+      "reference_high": 14.73,
+      "reference_low": 14.1,
       "score": 7,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "600410",
+      "名称": "华胜天成",
+      "reference_close": 16.65,
+      "reference_high": 17.16,
+      "reference_low": 15.59,
+      "score": 4,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",

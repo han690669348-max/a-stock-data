@@ -2,67 +2,36 @@
   "status": "SUCCESS",
   "schema_version": "public-morning-baseline-1.0",
   "morning_contract_version": "1.0",
-  "trade_date": "20261123",
-  "published_at": "2026-11-23T18:12:13.781099+08:00",
+  "trade_date": "20261124",
+  "published_at": "2026-11-24T18:08:57.564725+08:00",
   "market": {
-    "regime": "RISK_ON",
-    "position_cap_pct": 50,
+    "regime": "RISK_ON_ROTATION",
+    "position_cap_pct": 40,
     "source": "FINAL_ARBITER_V1_1"
   },
   "A1": [
     {
-      "code": "603083",
-      "name": "剑桥科技",
-      "tier": "TIER_S",
-      "score": 88,
-      "confidence": 82,
-      "theme": "CPO与光模块",
-      "trigger": "前30分钟相对指数和光模块核心保持强势，第一次回踩有承接并重新向上。",
-      "invalidation": "回踩后持续跌破昨日收盘且板块核心同步转弱。",
-      "forbidden": "禁止大幅高开后未经回踩承接直接追涨。",
-      "reference_prices": {
-        "previous_close": {
-          "value": 100.0,
-          "source": "TUSHARE_DAILY_CLOSE@20261123"
-        },
-        "day_high": {
-          "value": 100.05,
-          "source": "intraday_structure.csv@20261123"
-        },
-        "day_low": {
-          "value": 89.13,
-          "source": "intraday_structure.csv@20261123"
-        }
-      },
-      "provenance": {
-        "membership": "FINAL_ARBITER_V1_1",
-        "tier": "FINAL_ARBITER_V1_1",
-        "execution_conditions": "TERRA_V2_INHERITED",
-        "reference_prices": "PYTHON_VERIFIED"
-      }
-    },
-    {
-      "code": "600183",
-      "name": "生益科技",
+      "code": "002685",
+      "name": "华东重机",
       "tier": "TIER_A",
-      "score": 84,
-      "confidence": 79,
-      "theme": "PCB及覆铜板",
-      "trigger": "回踩后守住或重新站回昨日收盘，5分钟结构转强，PCB核心同步承接。",
-      "invalidation": "持续位于昨日收盘下方且反抽无力。",
-      "forbidden": "禁止脱离板块同步性后追逐快速拉升。",
+      "score": 78,
+      "confidence": 65,
+      "theme": "通用设备及工程机械",
+      "trigger": "前30分钟保持相对强势，首次回踩出现连续5分钟承接，且设备方向有其他个股同步改善。",
+      "invalidation": "回踩后持续跌破昨日收盘且反抽无力，或板块同步转弱。",
+      "forbidden": "禁止开盘急拉追价、反复开板时追封，或忽略高换手兑现风险。",
       "reference_prices": {
         "previous_close": {
-          "value": 60.75,
-          "source": "TUSHARE_DAILY_CLOSE@20261123"
+          "value": 8.95,
+          "source": "TUSHARE_DAILY_CLOSE@20261124"
         },
         "day_high": {
-          "value": 61.0,
-          "source": "intraday_structure.csv@20261123"
+          "value": 8.95,
+          "source": "intraday_structure.csv@20261124"
         },
         "day_low": {
-          "value": 56.66,
-          "source": "intraday_structure.csv@20261123"
+          "value": 8.21,
+          "source": "intraday_structure.csv@20261124"
         }
       },
       "provenance": {
@@ -73,89 +42,27 @@
       }
     },
     {
-      "code": "000636",
-      "name": "风华高科",
+      "code": "600715",
+      "name": "文投控股",
       "tier": "TIER_A",
-      "score": 77,
-      "confidence": 72,
-      "theme": "电子元件",
-      "trigger": "若开板，第一次回踩有承接并重新走强，同时电子元件方向保持同步。",
-      "invalidation": "开板后持续回落、反抽乏力且板块同步走弱。",
-      "forbidden": "禁止无承接直接追板，也不以封单或无法成交视为可执行机会。",
+      "score": 75,
+      "confidence": 61,
+      "theme": "文娱局部强势",
+      "trigger": "前30分钟维持相对强势，首次回踩获得5分钟承接，并有文娱相关个股同步走强。",
+      "invalidation": "跌破昨日收盘后反抽不能站回，或冲高后连续5分钟走弱。",
+      "forbidden": "禁止因尾盘封板直接追高；没有板块配合时不把个股强势视为主线。",
       "reference_prices": {
         "previous_close": {
-          "value": 28.99,
-          "source": "TUSHARE_DAILY_CLOSE@20261123"
+          "value": 3.14,
+          "source": "TUSHARE_DAILY_CLOSE@20261124"
         },
         "day_high": {
-          "value": 28.99,
-          "source": "intraday_structure.csv@20261123"
+          "value": 3.14,
+          "source": "intraday_structure.csv@20261124"
         },
         "day_low": {
-          "value": 25.77,
-          "source": "intraday_structure.csv@20261123"
-        }
-      },
-      "provenance": {
-        "membership": "FINAL_ARBITER_V1_1",
-        "tier": "FINAL_ARBITER_V1_1",
-        "execution_conditions": "TERRA_V2_INHERITED",
-        "reference_prices": "PYTHON_VERIFIED"
-      }
-    },
-    {
-      "code": "002384",
-      "name": "东山精密",
-      "tier": "TIER_B",
-      "score": 87,
-      "confidence": 81,
-      "theme": "PCB",
-      "trigger": "前30分钟相对深证成指保持强势，回踩承接后重新上行，PCB核心同步稳定。",
-      "invalidation": "反弹持续受压并跌回昨日收盘下方，板块同步走弱。",
-      "forbidden": "禁止板块核心集体冲高回落时追涨。",
-      "reference_prices": {
-        "previous_close": {
-          "value": 71.47,
-          "source": "TUSHARE_DAILY_CLOSE@20261123"
-        },
-        "day_high": {
-          "value": 72.11,
-          "source": "intraday_structure.csv@20261123"
-        },
-        "day_low": {
-          "value": 66.04,
-          "source": "intraday_structure.csv@20261123"
-        }
-      },
-      "provenance": {
-        "membership": "FINAL_ARBITER_V1_1",
-        "tier": "FINAL_ARBITER_V1_1",
-        "execution_conditions": "TERRA_V2_INHERITED",
-        "reference_prices": "PYTHON_VERIFIED"
-      }
-    },
-    {
-      "code": "603986",
-      "name": "兆易创新",
-      "tier": "TIER_B",
-      "score": 82,
-      "confidence": 76,
-      "theme": "存储",
-      "trigger": "前30分钟保持相对强势，第一次回踩承接后恢复上行，存储核心同步稳定。",
-      "invalidation": "跌回昨日收盘下方且反抽失败，存储核心同步转弱。",
-      "forbidden": "禁止仅因半导体个股异动而追高，尤其设备端继续明显走弱时。",
-      "reference_prices": {
-        "previous_close": {
-          "value": 214.61,
-          "source": "TUSHARE_DAILY_CLOSE@20261123"
-        },
-        "day_high": {
-          "value": 215.77,
-          "source": "intraday_structure.csv@20261123"
-        },
-        "day_low": {
-          "value": 198.66,
-          "source": "intraday_structure.csv@20261123"
+          "value": 2.8,
+          "source": "intraday_structure.csv@20261124"
         }
       },
       "provenance": {
@@ -169,28 +76,22 @@
   "A2": [],
   "observe": [
     {
-      "code": "603228",
-      "name": "景旺电子",
+      "code": "002148",
+      "name": "北纬科技",
       "tier": "OBSERVE",
       "reviewer_verdict": "DOWNGRADE"
     },
     {
-      "code": "002463",
-      "name": "沪电股份",
+      "code": "600410",
+      "name": "华胜天成",
       "tier": "OBSERVE",
       "reviewer_verdict": "DOWNGRADE"
     },
     {
-      "code": "000678",
-      "name": "襄阳轴承",
+      "code": "002086",
+      "name": "东方海洋",
       "tier": "OBSERVE",
-      "reviewer_verdict": "DOWNGRADE"
-    },
-    {
-      "code": "000530",
-      "name": "冰山冷热",
-      "tier": "OBSERVE",
-      "reviewer_verdict": "DOWNGRADE"
+      "reviewer_verdict": null
     }
   ],
   "themes": {
@@ -198,208 +99,181 @@
       {
         "rank": 1,
         "name": "汽车零部件",
-        "confidence": 90,
-        "thesis": "涨停扩散最广，兼有高成交个股，但情绪强度不等于已确认交易主线。",
+        "confidence": 88,
+        "thesis": "涨停扩散数量居前，部分个股已有连板，但板块分歧也很明显。",
         "evidence": [
-          "供应商汽车零部行业涨停23只、炸板4只、跌停1只",
-          "襄阳轴承成交约24.48亿元，换手约29.94%，首板无炸板",
-          "拓普集团成交约27.61亿元涨停，炸板1次"
+          "供应商行业分类中汽车零部件涨停8只、炸板10只",
+          "克来机电、长华集团均为3连板"
         ],
-        "risk": "高换手及行业内跌停并存，次日需验证接力承接。"
+        "risk": "炸板较多，不能仅凭涨停数量确认高成交交易主线。"
       },
       {
         "rank": 2,
-        "name": "通用设备与自动化",
-        "confidence": 87,
-        "thesis": "通用设备涨停扩散明显，自动化方向有高成交强势核心。",
+        "name": "通用设备",
+        "confidence": 82,
+        "thesis": "涨停和连板形成一定扩散，换手龙头活跃，但封板稳定性不足。",
         "evidence": [
-          "通用设备涨停15只、炸板3只；自动化设备涨停6只、炸板2只",
-          "冰山冷热两连板，换手约37.31%，盘中炸板4次",
-          "宇树科技-W涨停，成交约46.77亿元"
+          "供应商行业分类中通用设备涨停5只、炸板3只",
+          "安培龙2连板、盘中开板12次；柯力传感2连板、开板32次"
         ],
-        "risk": "行业口径不等同单一概念，高换手连板股存在明显兑现压力。"
-      },
-      {
-        "rank": 3,
-        "name": "电子元件",
-        "confidence": 81,
-        "thesis": "电子元件有涨停扩散和高成交连板，亦有反复开板。",
-        "evidence": [
-          "元件行业涨停7只、炸板1只",
-          "中京电子三连板，换手约30.34%，盘中炸板6次",
-          "风华高科涨停且盘中未炸板"
-        ],
-        "risk": "连板高换手与多次炸板提示接力风险，元件行业不等同整个PCB主题。"
+        "risk": "高频开板反映分歧，情绪扩散不等于板块高成交核心同步走强。"
       }
     ],
-    "trading": [
-      {
-        "rank": 1,
-        "name": "CPO与光模块",
-        "confidence": 86,
-        "thesis": "高成交核心同步上行、相对强势且午后有承接，是当前最清晰的交易观察方向；次日仍需回踩确认。",
-        "evidence": [
-          "CPO高成交样本5只全部上涨、均为风向标领涨，5分钟结构均为趋势向上",
-          "中际旭创、新易盛成交分别约227.67亿元和205.61亿元，均有回落修复",
-          "剑桥科技和天孚通信尾盘相对强势"
-        ],
-        "risk": "核心当日涨幅及成交集中度较高，若次日集体冲高回落，易发生兑现；CPO与光模块成员重叠。"
-      },
-      {
-        "rank": 2,
-        "name": "PCB及覆铜板",
-        "confidence": 79,
-        "thesis": "PCB高成交样本同步走强，东山精密、生益科技等具有盘中修复和次日验证价值。",
-        "evidence": [
-          "PCB高成交样本4只全部上涨，5分钟结构均为趋势向上",
-          "东山精密成交约107.26亿元，收盘接近日高",
-          "生益科技尾盘上涨约1.05%，相对上证指数尾盘强势"
-        ],
-        "risk": "部分核心尾盘相对强度有限，且与其他AI硬件主题存在成员重叠。"
-      }
-    ],
+    "trading": [],
     "watch": [
       {
         "rank": 1,
-        "name": "机器人相关与通用设备",
-        "confidence": 70,
-        "thesis": "宇树科技-W、绿的谐波等强势，通用设备高成交样本同步上行；机器人概念覆盖和成分仍需次日核实。",
+        "name": "软件和信息技术服务",
+        "confidence": 60,
+        "thesis": "高成交样本涨幅和相对强度较好，但核心结构分化，尚需验证持续承接。",
         "evidence": [
-          "通用设备高成交样本4只全部上涨，3只有5分钟信号且均为趋势向上",
-          "宇树科技-W涨停，绿的谐波上涨12.77%",
-          "辅助概念快照中的机器人样本具局部强度，但成员生效日期未验证"
+          "Top100行业样本7只中6只上涨，已采信号中4只盘中相对强势",
+          "华胜天成高成交且盘中相对强势，北纬科技为确认型风向标",
+          "华胜天成冲高回落并尾盘相对走弱，宏景科技收近低位"
         ],
-        "risk": "通用设备行业并非机器人概念全体，核心大涨后可能高开兑现，概念快照不能替代实时成员确认。"
+        "risk": "行业状态为DIVERGING，强弱个股并存，不能确认交易主线。"
       },
       {
         "rank": 2,
-        "name": "存储",
-        "confidence": 69,
-        "thesis": "高成交样本呈同步修复，但样本较少，半导体设备端分化限制主题确定性。",
+        "name": "通用设备及工程机械",
+        "confidence": 56,
+        "thesis": "华东重机午后走强并封板，设备方向有情绪扩散，但高成交样本同步性不足。",
         "evidence": [
-          "存储高成交样本3只全部上涨，均为趋势向上且日内相对强度为正",
-          "兆易创新收盘接近日高，长鑫科技尾盘相对强势"
+          "华东重机成交约42.9亿元，2连板，盘中和尾盘相对强势",
+          "通用设备Top100样本5只中3只上涨，已采结构仅2只",
+          "冰山冷热冲高回落且尾盘明显走弱"
         ],
-        "risk": "样本仅3只，存储与设备方向不能简单视为同步，需观察次日核心能否继续承接。"
+        "risk": "样本信号置信度低；华东重机换手约49%、开板7次，次日兑现压力较大。"
       },
       {
         "rank": 3,
-        "name": "汽车零部件",
-        "confidence": 66,
-        "thesis": "涨停扩散突出，襄阳轴承有高成交和午后封板，但可比较的完整高成交结构样本不足。",
+        "name": "芯片制造局部强势",
+        "confidence": 54,
+        "thesis": "中芯国际和华虹宏力高成交、收盘位置较高，且尾盘相对强势，值得观察扩散。",
         "evidence": [
-          "汽车零部行业涨停23只",
-          "襄阳轴承尾盘相对强势，成交约24.48亿元",
-          "拓普集团涨停，但本包未提供其完整5分钟结构"
+          "中芯国际成交约84.7亿元，尾盘相对强势",
+          "华虹宏力成交约72.8亿元，尾盘走强并收近当日高位"
         ],
-        "risk": "行业内同时有炸板和跌停，不能仅凭涨停数量认定交易主线。"
+        "risk": "电子制造整体明显分化，存储核心走弱；现有数据不足以确认整个半导体方向同步。"
       }
     ],
     "weak": [
       {
         "rank": 1,
-        "name": "半导体设备",
-        "confidence": 86,
-        "thesis": "高成交设备核心整体相对偏弱，尾盘分化和兑现明显。",
+        "name": "CPO与光模块",
+        "confidence": 91,
+        "thesis": "高成交核心同步冲高回落，盘中相对强度和尾盘结构偏弱。",
         "evidence": [
-          "专用设备高成交样本上涨比例25%，5只有信号个股的日内相对强度均为负",
-          "北方华创下跌6.55%，尾盘走弱；拓荆科技、华海清科均有尾盘走弱标签",
-          "中微公司午后修复，但全天相对强度仍为负"
+          "CPO已采5只全部为TREND_DOWN和弱锚，板块状态为FADING",
+          "中际旭创、新易盛分别成交约285.8亿元和249.8亿元，均收近当日低位",
+          "剑桥科技炸板后收近低位"
         ],
-        "risk": "设备端弱势不代表全部半导体或存储方向同步走弱。"
+        "risk": "高成交核心若继续破坏低点，可能拖累风险偏好；反弹也需验证是否有同步承接。"
       },
       {
         "rank": 2,
-        "name": "银行",
-        "confidence": 78,
-        "thesis": "高成交银行样本广度偏弱。",
+        "name": "PCB及覆铜板",
+        "confidence": 87,
+        "thesis": "部分核心收涨掩盖了盘中高位兑现，已采PCB核心同步下行。",
         "evidence": [
-          "货币金融服务高成交样本8只中上涨比例25%，状态为BREADTH_WEAK",
-          "招商银行、工商银行和建设银行分别下跌1.68%、2.66%和2.90%"
+          "PCB的4只已采信号全部为TREND_DOWN和弱锚，盘中相对强度均为负",
+          "东山精密炸板后收近低位，沪电股份、生益科技同样冲高回落",
+          "景旺电子尾盘有所修复，但仍收于当日区间低部"
         ],
-        "risk": "该行业没有5分钟信号样本，不能推断完整盘中结构或全行业表现。"
+        "risk": "不能把收涨或BREADTH_STRONG标签直接视为盘中结构强；修复需多只核心同步确认。"
       },
       {
         "rank": 3,
-        "name": "保险和油气权重",
-        "confidence": 67,
-        "thesis": "相关高成交风向标回落，拖累权重风格。",
+        "name": "存储",
+        "confidence": 82,
+        "thesis": "高成交核心同步走弱，板块状态为FADING。",
         "evidence": [
-          "中国平安下跌3.17%，收盘接近日低，5分钟结构为趋势向下",
-          "中国石油下跌5.22%，收盘接近日低，5分钟结构为趋势向下"
+          "已采3只存储核心均为TREND_DOWN和弱锚",
+          "兆易创新、德明利收近当日低位，长鑫科技冲高回落"
         ],
-        "risk": "各方向仅有单一风向标，不能据此推断整个行业同步走弱。"
+        "risk": "芯片制造局部强势不代表存储核心已完成修复。"
+      },
+      {
+        "rank": 4,
+        "name": "有色金属矿采选",
+        "confidence": 76,
+        "thesis": "紫金矿业与洛阳钼业同步走弱，均收近低位。",
+        "evidence": [
+          "2只Top100样本均下跌，已采信号均为TREND_DOWN和弱锚",
+          "行业状态为FADING"
+        ],
+        "risk": "样本仅2只，不宜外推整个有色产业链。"
       }
     ]
   },
   "B": [
     {
+      "code": "002685",
+      "name": "华东重机",
+      "role": "设备方向LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "600715",
+      "name": "文投控股",
+      "role": "文娱局部LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "role": "连板情绪LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "688256",
+      "name": "寒武纪",
+      "role": "高成交LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "688981",
+      "name": "中芯国际",
+      "role": "芯片制造LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "688347",
+      "name": "华虹宏力",
+      "role": "芯片制造LEADER",
+      "windvane_score": null,
+      "source": null
+    },
+    {
       "code": "300308",
       "name": "中际旭创",
-      "role": "CPO高成交领涨风向标",
+      "role": "光模块高成交WEAK_ANCHOR",
       "windvane_score": null,
       "source": null
     },
     {
       "code": "300502",
       "name": "新易盛",
-      "role": "光模块高成交领涨风向标",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "300394",
-      "name": "天孚通信",
-      "role": "光模块强势风向标",
+      "role": "光模块高成交WEAK_ANCHOR",
       "windvane_score": null,
       "source": null
     },
     {
       "code": "002384",
       "name": "东山精密",
-      "role": "PCB高成交领涨风向标",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "688836",
-      "name": "宇树科技-W",
-      "role": "自动化高成交领涨风向标",
+      "role": "PCB高成交WEAK_ANCHOR",
       "windvane_score": null,
       "source": null
     },
     {
       "code": "000530",
       "name": "冰山冷热",
-      "role": "通用设备高换手连板风向标",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "000678",
-      "name": "襄阳轴承",
-      "role": "汽车零部件情绪风向标",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "002371",
-      "name": "北方华创",
-      "role": "半导体设备弱势风向标",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "601318",
-      "name": "中国平安",
-      "role": "保险权重弱势风向标",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "600410",
-      "name": "华胜天成",
-      "role": "软件高成交弱势风向标",
+      "role": "设备方向WEAK_ANCHOR",
       "windvane_score": null,
       "source": null
     }
@@ -411,33 +285,25 @@
     "source": "PRIVATE_SERVER_ONLY"
   },
   "next_day_checks": [
-    "先核对指数前30分钟及午后5分钟结构，确认高位承接还是冲高回落。",
-    "观察中际旭创、新易盛、剑桥科技是否同步承接，防范高成交核心集体兑现。",
-    "观察PCB核心是否继续同步，避免将重叠主题成交额相加。",
-    "核对汽车零部件和通用设备涨停接力、炸板及高换手股承接。",
-    "观察半导体设备、银行及保险权重是否继续走弱，警惕风格分化扩大。",
-    "A1仅为质量观察池；未出现结构触发条件或无法成交时不执行。"
+    "观察深成指、创业板指前30分钟能否止跌，以及午后是否再创新低。",
+    "观察炸板股及高换手连板股的承接，确认兑现压力是否继续扩散。",
+    "跟踪中际旭创、新易盛、东山精密等高成交弱锚是否同步修复，而非仅看个股反弹。",
+    "核验软件、设备及芯片制造局部强势是否出现高成交核心与板块同步承接。",
+    "概念成员为历史快照且现时有效性未核验，不能将样本统计视为全板块表现。"
   ],
   "decision_state": {
     "consensus": [
       {
         "type": "stock",
-        "code": "603083",
-        "name": "剑桥科技",
-        "tier": "TIER_S",
-        "summary": "Rule与Researcher共同选择，Reviewer=KEEP"
-      },
-      {
-        "type": "stock",
-        "code": "600183",
-        "name": "生益科技",
+        "code": "002685",
+        "name": "华东重机",
         "tier": "TIER_A",
         "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
       },
       {
         "type": "stock",
-        "code": "000636",
-        "name": "风华高科",
+        "code": "600715",
+        "name": "文投控股",
         "tier": "TIER_A",
         "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
       }
@@ -445,27 +311,27 @@
     "disagreement": [
       {
         "type": "stock",
-        "code": "603228",
-        "name": "景旺电子",
+        "code": "002148",
+        "name": "北纬科技",
         "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
       },
       {
         "type": "stock",
-        "code": "002463",
-        "name": "沪电股份",
+        "code": "600410",
+        "name": "华胜天成",
         "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
       },
       {
         "type": "stock",
-        "code": "000678",
-        "name": "襄阳轴承",
-        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+        "code": "002086",
+        "name": "东方海洋",
+        "summary": "多系统存在明显分歧，Reviewer=None"
       },
       {
-        "type": "stock",
-        "code": "000530",
-        "name": "冰山冷热",
-        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
+        "type": "market_regime",
+        "rule": "NEUTRAL",
+        "researcher": "RISK_OFF",
+        "reviewer": "UNCERTAIN"
       }
     ],
     "uncertainty": []

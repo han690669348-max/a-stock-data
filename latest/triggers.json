@@ -1,15 +1,72 @@
 {
-  "trade_date": "20261124",
-  "market_regime": "NEUTRAL",
-  "max_total_position": 0.5,
+  "trade_date": "20261125",
+  "market_regime": "RISK_OFF",
+  "max_total_position": 0.3,
   "A1": [
     {
-      "股票代码": "600715",
-      "名称": "文投控股",
-      "reference_close": 3.14,
-      "reference_high": 3.14,
-      "reference_low": 2.8,
+      "股票代码": "002771",
+      "名称": "真视通",
+      "reference_close": 18.73,
+      "reference_high": 19.0,
+      "reference_low": 16.8,
       "score": 14,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "002579",
+      "名称": "中京电子",
+      "reference_close": 17.82,
+      "reference_high": 17.82,
+      "reference_low": 16.29,
+      "score": 14,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "000530",
+      "名称": "冰山冷热",
+      "reference_close": 14.7,
+      "reference_high": 14.75,
+      "reference_low": 13.76,
+      "score": 14,
+      "trigger": [
+        "次日开盘后不出现明显冲高回落",
+        "前30分钟相对对应指数保持强势",
+        "板块风向标不出现同步走弱",
+        "优先等待第一次回踩承接，而不是高开追涨"
+      ],
+      "invalidation": [
+        "跌破前一日低点且不能快速收回",
+        "出现TREND_DOWN结构",
+        "相对指数持续转弱"
+      ]
+    },
+    {
+      "股票代码": "600722",
+      "名称": "金牛化工",
+      "reference_close": 13.15,
+      "reference_high": 13.15,
+      "reference_low": 12.24,
+      "score": 12,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -25,29 +82,10 @@
     {
       "股票代码": "002685",
       "名称": "华东重机",
-      "reference_close": 8.95,
-      "reference_high": 8.95,
-      "reference_low": 8.21,
-      "score": 14,
-      "trigger": [
-        "次日开盘后不出现明显冲高回落",
-        "前30分钟相对对应指数保持强势",
-        "板块风向标不出现同步走弱",
-        "优先等待第一次回踩承接，而不是高开追涨"
-      ],
-      "invalidation": [
-        "跌破前一日低点且不能快速收回",
-        "出现TREND_DOWN结构",
-        "相对指数持续转弱"
-      ]
-    },
-    {
-      "股票代码": "002086",
-      "名称": "东方海洋",
-      "reference_close": 4.54,
-      "reference_high": 4.54,
-      "reference_low": 4.29,
-      "score": 9,
+      "reference_close": 8.99,
+      "reference_high": 9.01,
+      "reference_low": 8.51,
+      "score": 12,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -61,5 +99,44 @@
       ]
     }
   ],
-  "A2": []
+  "A2": [
+    {
+      "股票代码": "002086",
+      "名称": "东方海洋",
+      "reference_close": 4.34,
+      "reference_high": 4.73,
+      "reference_low": 4.16,
+      "score": 5,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    },
+    {
+      "股票代码": "603228",
+      "名称": "景旺电子",
+      "reference_close": 57.89,
+      "reference_high": 61.11,
+      "reference_low": 55.8,
+      "score": 4,
+      "trigger": [
+        "必须先出现从弱转强，而不是因为板块概念直接买入",
+        "前30分钟相对指数由负转正",
+        "重新站回前一日收盘附近并出现承接",
+        "对应主线核心风向标同步转强"
+      ],
+      "invalidation": [
+        "继续DAY_UNDERPERFORM",
+        "冲高再次形成SPIKE_FADE",
+        "板块核心风向标继续走弱"
+      ]
+    }
+  ]
 }

@@ -2,36 +2,36 @@
   "status": "SUCCESS",
   "schema_version": "public-morning-baseline-1.0",
   "morning_contract_version": "1.0",
-  "trade_date": "20261124",
-  "published_at": "2026-11-24T18:08:57.564725+08:00",
+  "trade_date": "20261125",
+  "published_at": "2026-11-25T18:10:28.561931+08:00",
   "market": {
-    "regime": "RISK_ON_ROTATION",
-    "position_cap_pct": 40,
+    "regime": "RISK_OFF",
+    "position_cap_pct": 0,
     "source": "FINAL_ARBITER_V1_1"
   },
   "A1": [
     {
-      "code": "002685",
-      "name": "华东重机",
+      "code": "002771",
+      "name": "真视通",
       "tier": "TIER_A",
-      "score": 78,
-      "confidence": 65,
-      "theme": "通用设备及工程机械",
-      "trigger": "前30分钟保持相对强势，首次回踩出现连续5分钟承接，且设备方向有其他个股同步改善。",
-      "invalidation": "回踩后持续跌破昨日收盘且反抽无力，或板块同步转弱。",
-      "forbidden": "禁止开盘急拉追价、反复开板时追封，或忽略高换手兑现风险。",
+      "score": 77,
+      "confidence": 67,
+      "theme": "软件和信息技术服务",
+      "trigger": "前30分钟保持相对指数强势，首次回踩获得承接并重新走强，同时华胜天成保持稳定。",
+      "invalidation": "跌破首次回踩低点后持续走弱，或板块核心同步转弱。",
+      "forbidden": "禁止高开急拉时追价，禁止忽略高换手兑现风险。",
       "reference_prices": {
         "previous_close": {
-          "value": 8.95,
-          "source": "TUSHARE_DAILY_CLOSE@20261124"
+          "value": 18.73,
+          "source": "TUSHARE_DAILY_CLOSE@20261125"
         },
         "day_high": {
-          "value": 8.95,
-          "source": "intraday_structure.csv@20261124"
+          "value": 19.0,
+          "source": "intraday_structure.csv@20261125"
         },
         "day_low": {
-          "value": 8.21,
-          "source": "intraday_structure.csv@20261124"
+          "value": 16.8,
+          "source": "intraday_structure.csv@20261125"
         }
       },
       "provenance": {
@@ -42,27 +42,58 @@
       }
     },
     {
-      "code": "600715",
-      "name": "文投控股",
+      "code": "000530",
+      "name": "冰山冷热",
       "tier": "TIER_A",
-      "score": 75,
-      "confidence": 61,
-      "theme": "文娱局部强势",
-      "trigger": "前30分钟维持相对强势，首次回踩获得5分钟承接，并有文娱相关个股同步走强。",
-      "invalidation": "跌破昨日收盘后反抽不能站回，或冲高后连续5分钟走弱。",
-      "forbidden": "禁止因尾盘封板直接追高；没有板块配合时不把个股强势视为主线。",
+      "score": 76,
+      "confidence": 65,
+      "theme": "通用设备",
+      "trigger": "前30分钟保持相对强势，第一次回踩形成5分钟承接后再走强，华东重机同步稳定。",
+      "invalidation": "回踩后连续5分钟走弱并失守当日早盘低点，或同方向核心同步转弱。",
+      "forbidden": "禁止大幅高开后无承接追涨，禁止把龙虎榜上榜原因解读为资金净买入。",
       "reference_prices": {
         "previous_close": {
-          "value": 3.14,
-          "source": "TUSHARE_DAILY_CLOSE@20261124"
+          "value": 14.7,
+          "source": "TUSHARE_DAILY_CLOSE@20261125"
         },
         "day_high": {
-          "value": 3.14,
-          "source": "intraday_structure.csv@20261124"
+          "value": 14.75,
+          "source": "intraday_structure.csv@20261125"
         },
         "day_low": {
-          "value": 2.8,
-          "source": "intraday_structure.csv@20261124"
+          "value": 13.76,
+          "source": "intraday_structure.csv@20261125"
+        }
+      },
+      "provenance": {
+        "membership": "FINAL_ARBITER_V1_1",
+        "tier": "FINAL_ARBITER_V1_1",
+        "execution_conditions": "TERRA_V2_INHERITED",
+        "reference_prices": "PYTHON_VERIFIED"
+      }
+    },
+    {
+      "code": "002685",
+      "name": "华东重机",
+      "tier": "TIER_A",
+      "score": 72,
+      "confidence": 61,
+      "theme": "通用设备",
+      "trigger": "开盘后保持相对指数强势，第一次回踩不破当日早盘低点并形成5分钟回升，冰山冷热同步稳定。",
+      "invalidation": "跌破当日早盘低点后反抽无力，或冰山冷热明显转弱。",
+      "forbidden": "禁止仅凭昨日收盘位置追价，禁止在高换手失控时接力。",
+      "reference_prices": {
+        "previous_close": {
+          "value": 8.99,
+          "source": "TUSHARE_DAILY_CLOSE@20261125"
+        },
+        "day_high": {
+          "value": 9.01,
+          "source": "intraday_structure.csv@20261125"
+        },
+        "day_low": {
+          "value": 8.51,
+          "source": "intraday_structure.csv@20261125"
         }
       },
       "provenance": {
@@ -76,20 +107,20 @@
   "A2": [],
   "observe": [
     {
-      "code": "002148",
-      "name": "北纬科技",
-      "tier": "OBSERVE",
-      "reviewer_verdict": "DOWNGRADE"
-    },
-    {
       "code": "600410",
       "name": "华胜天成",
       "tier": "OBSERVE",
       "reviewer_verdict": "DOWNGRADE"
     },
     {
-      "code": "002086",
-      "name": "东方海洋",
+      "code": "002579",
+      "name": "中京电子",
+      "tier": "OBSERVE",
+      "reviewer_verdict": "DOWNGRADE"
+    },
+    {
+      "code": "600722",
+      "name": "金牛化工",
       "tier": "OBSERVE",
       "reviewer_verdict": null
     }
@@ -98,25 +129,37 @@
     "emotion": [
       {
         "rank": 1,
-        "name": "汽车零部件",
-        "confidence": 88,
-        "thesis": "涨停扩散数量居前，部分个股已有连板，但板块分歧也很明显。",
+        "name": "医药",
+        "confidence": 85,
+        "thesis": "化学制药和中药的涨停扩散最集中，但尚未证明高成交核心和板块承接同步。",
         "evidence": [
-          "供应商行业分类中汽车零部件涨停8只、炸板10只",
-          "克来机电、长华集团均为3连板"
+          "化学制药8只涨停，中药Ⅱ3只涨停",
+          "天圣制药2连板，多只化学制药股为首板",
+          "化学制药3只、中药Ⅱ2只进入炸板名单"
         ],
-        "risk": "炸板较多，不能仅凭涨停数量确认高成交交易主线。"
+        "risk": "涨停以首板为主，炸板并存；现有高成交及5分钟样本不足以确认交易主线。"
       },
       {
         "rank": 2,
-        "name": "通用设备",
-        "confidence": 82,
-        "thesis": "涨停和连板形成一定扩散，换手龙头活跃，但封板稳定性不足。",
+        "name": "一般零售",
+        "confidence": 75,
+        "thesis": "零售有涨停扩散和连板，但板块内部兑现明显。",
         "evidence": [
-          "供应商行业分类中通用设备涨停5只、炸板3只",
-          "安培龙2连板、盘中开板12次；柯力传感2连板、开板32次"
+          "一般零售4只涨停，杭州解百3连板",
+          "一般零售3只炸板，大东方跌停"
         ],
-        "risk": "高频开板反映分歧，情绪扩散不等于板块高成交核心同步走强。"
+        "risk": "涨跌停并存，次日延续性与高成交核心承接尚待验证。"
+      },
+      {
+        "rank": 3,
+        "name": "通用设备",
+        "confidence": 68,
+        "thesis": "连板情绪和高成交个股局部共振，但行业整体同步性尚未确认。",
+        "evidence": [
+          "汇洲智能和宁波东力均为3连板",
+          "冰山冷热收涨9.54%，华东重机午后相对走强"
+        ],
+        "risk": "行业高成交结构信号样本仅2只，难以外推全板块。"
       }
     ],
     "trading": [],
@@ -124,156 +167,143 @@
       {
         "rank": 1,
         "name": "软件和信息技术服务",
-        "confidence": 60,
-        "thesis": "高成交样本涨幅和相对强度较好，但核心结构分化，尚需验证持续承接。",
+        "confidence": 62,
+        "thesis": "华胜天成和真视通提供高成交及相对强势样本，等待板块同步和次日承接确认。",
         "evidence": [
-          "Top100行业样本7只中6只上涨，已采信号中4只盘中相对强势",
-          "华胜天成高成交且盘中相对强势，北纬科技为确认型风向标",
-          "华胜天成冲高回落并尾盘相对走弱，宏景科技收近低位"
+          "华胜天成成交约60.3亿元，收涨4.37%，5分钟结构为探底回升",
+          "真视通成交约20.3亿元，收涨8.08%，尾盘相对强势",
+          "行业状态为DIVERGING，4个结构信号中2个为弱锚"
         ],
-        "risk": "行业状态为DIVERGING，强弱个股并存，不能确认交易主线。"
+        "risk": "行业分化，不能把两只强股直接等同于主线；高换手后可能兑现。"
       },
       {
         "rank": 2,
-        "name": "通用设备及工程机械",
-        "confidence": 56,
-        "thesis": "华东重机午后走强并封板，设备方向有情绪扩散，但高成交样本同步性不足。",
+        "name": "通用设备",
+        "confidence": 58,
+        "thesis": "冰山冷热与华东重机均有高成交、相对强势和回升结构，值得观察能否持续。",
         "evidence": [
-          "华东重机成交约42.9亿元，2连板，盘中和尾盘相对强势",
-          "通用设备Top100样本5只中3只上涨，已采结构仅2只",
-          "冰山冷热冲高回落且尾盘明显走弱"
+          "两股分别成交约33.0亿元和35.6亿元",
+          "两只结构信号均为TREND_UP，行业状态仍为DIVERGING",
+          "汇洲智能和宁波东力均为3连板"
         ],
-        "risk": "样本信号置信度低；华东重机换手约49%、开板7次，次日兑现压力较大。"
+        "risk": "高成交结构样本少，个股涨幅差异较大，不能视作已确认的板块同步。"
       },
       {
         "rank": 3,
-        "name": "芯片制造局部强势",
-        "confidence": 54,
-        "thesis": "中芯国际和华虹宏力高成交、收盘位置较高，且尾盘相对强势，值得观察扩散。",
+        "name": "光模块及CPO",
+        "confidence": 55,
+        "thesis": "高成交核心整体具有相对强度，但冲高回落和内部背离使承接尚不可靠。",
         "evidence": [
-          "中芯国际成交约84.7亿元，尾盘相对强势",
-          "华虹宏力成交约72.8亿元，尾盘走强并收近当日高位"
+          "天孚通信收涨7.65%，尾盘走强；新易盛收涨0.72%但冲高回落",
+          "中际旭创收跌1.92%，剑桥科技收跌3.23%且收盘接近日内低点",
+          "光模块和CPO状态均为DIVERGING"
         ],
-        "risk": "电子制造整体明显分化，存储核心走弱；现有数据不足以确认整个半导体方向同步。"
+        "risk": "相对强不等于绝对上涨；多数核心早盘冲高后回落，可能继续兑现。"
       }
     ],
     "weak": [
       {
         "rank": 1,
-        "name": "CPO与光模块",
+        "name": "存储",
         "confidence": 91,
-        "thesis": "高成交核心同步冲高回落，盘中相对强度和尾盘结构偏弱。",
+        "thesis": "高成交核心同步走弱，板块处于FADING状态。",
         "evidence": [
-          "CPO已采5只全部为TREND_DOWN和弱锚，板块状态为FADING",
-          "中际旭创、新易盛分别成交约285.8亿元和249.8亿元，均收近当日低位",
-          "剑桥科技炸板后收近低位"
+          "长鑫科技、兆易创新、德明利均下跌，3只信号均为TREND_DOWN",
+          "3只核心日内相对强度均为负，兆易创新和德明利收于日内低点"
         ],
-        "risk": "高成交核心若继续破坏低点，可能拖累风险偏好；反弹也需验证是否有同步承接。"
+        "risk": "弱势反弹可能缺乏持续承接，不宜仅凭超跌判断修复。"
       },
       {
         "rank": 2,
-        "name": "PCB及覆铜板",
-        "confidence": 87,
-        "thesis": "部分核心收涨掩盖了盘中高位兑现，已采PCB核心同步下行。",
+        "name": "专用设备制造",
+        "confidence": 89,
+        "thesis": "高成交核心同步走弱，尾盘承压。",
         "evidence": [
-          "PCB的4只已采信号全部为TREND_DOWN和弱锚，盘中相对强度均为负",
-          "东山精密炸板后收近低位，沪电股份、生益科技同样冲高回落",
-          "景旺电子尾盘有所修复，但仍收于当日区间低部"
+          "行业状态为FADING，7只高成交样本无上涨",
+          "4只结构信号均为TREND_DOWN和弱锚，包括北方华创、中微公司、长川科技和拓荆科技"
         ],
-        "risk": "不能把收涨或BREADTH_STRONG标签直接视为盘中结构强；修复需多只核心同步确认。"
+        "risk": "板块同步性向下，反抽需先验证核心止跌及修复广度。"
       },
       {
         "rank": 3,
-        "name": "存储",
-        "confidence": 82,
-        "thesis": "高成交核心同步走弱，板块状态为FADING。",
+        "name": "PCB",
+        "confidence": 80,
+        "thesis": "高成交样本整体走弱，中京电子的强势不足以代表板块同步修复。",
         "evidence": [
-          "已采3只存储核心均为TREND_DOWN和弱锚",
-          "兆易创新、德明利收近当日低位，长鑫科技冲高回落"
+          "服务器PCB主题4只高成交样本全部下跌，状态为BREADTH_WEAK",
+          "沪电股份收盘接近日内低点，东山精密冲高回落",
+          "中京电子5连板，但换手率42.49%，高位兑现风险突出"
         ],
-        "risk": "芯片制造局部强势不代表存储核心已完成修复。"
+        "risk": "个股分化显著，不宜以单一连板股推断板块转强。"
       },
       {
         "rank": 4,
-        "name": "有色金属矿采选",
-        "confidence": 76,
-        "thesis": "紫金矿业与洛阳钼业同步走弱，均收近低位。",
+        "name": "汽车零部件",
+        "confidence": 72,
+        "thesis": "情绪端炸板和跌停较多，高成交样本宽度偏弱。",
         "evidence": [
-          "2只Top100样本均下跌，已采信号均为TREND_DOWN和弱锚",
-          "行业状态为FADING"
+          "汽车零部行业2只涨停、5只炸板、3只跌停",
+          "汽车制造业高成交样本上涨比例25%，状态为BREADTH_WEAK",
+          "光洋股份冲高回落并收盘接近日内低点"
         ],
-        "risk": "样本仅2只，不宜外推整个有色产业链。"
+        "risk": "个别连板股仍可能活跃，但不能据此确认板块修复。"
       }
     ]
   },
   "B": [
     {
-      "code": "002685",
-      "name": "华东重机",
-      "role": "设备方向LEADER",
+      "code": "300750",
+      "name": "宁德时代",
+      "role": "高成交弱锚",
       "windvane_score": null,
       "source": null
     },
     {
-      "code": "600715",
-      "name": "文投控股",
-      "role": "文娱局部LEADER",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "002086",
-      "name": "东方海洋",
-      "role": "连板情绪LEADER",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "688256",
-      "name": "寒武纪",
-      "role": "高成交LEADER",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "688981",
-      "name": "中芯国际",
-      "role": "芯片制造LEADER",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "688347",
-      "name": "华虹宏力",
-      "role": "芯片制造LEADER",
-      "windvane_score": null,
-      "source": null
-    },
-    {
-      "code": "300308",
-      "name": "中际旭创",
-      "role": "光模块高成交WEAK_ANCHOR",
+      "code": "300394",
+      "name": "天孚通信",
+      "role": "光模块强势风向标",
       "windvane_score": null,
       "source": null
     },
     {
       "code": "300502",
       "name": "新易盛",
-      "role": "光模块高成交WEAK_ANCHOR",
+      "role": "光模块高成交弱锚",
       "windvane_score": null,
       "source": null
     },
     {
-      "code": "002384",
-      "name": "东山精密",
-      "role": "PCB高成交WEAK_ANCHOR",
+      "code": "002579",
+      "name": "中京电子",
+      "role": "高位连板情绪风向标",
       "windvane_score": null,
       "source": null
     },
     {
       "code": "000530",
       "name": "冰山冷热",
-      "role": "设备方向WEAK_ANCHOR",
+      "role": "通用设备强势风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "600410",
+      "name": "华胜天成",
+      "role": "软件高成交强势风向标",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "role": "专用设备弱锚",
+      "windvane_score": null,
+      "source": null
+    },
+    {
+      "code": "603986",
+      "name": "兆易创新",
+      "role": "存储弱锚",
       "windvane_score": null,
       "source": null
     }
@@ -285,36 +315,37 @@
     "source": "PRIVATE_SERVER_ONLY"
   },
   "next_day_checks": [
-    "观察深成指、创业板指前30分钟能否止跌，以及午后是否再创新低。",
-    "观察炸板股及高换手连板股的承接，确认兑现压力是否继续扩散。",
-    "跟踪中际旭创、新易盛、东山精密等高成交弱锚是否同步修复，而非仅看个股反弹。",
-    "核验软件、设备及芯片制造局部强势是否出现高成交核心与板块同步承接。",
-    "概念成员为历史快照且现时有效性未核验，不能将样本统计视为全板块表现。"
+    "观察主要指数前30分钟及午后5分钟结构能否止跌，尤其是深成指和创业板指是否继续走弱。",
+    "观察跌停、炸板及高位连板股兑现是否收敛；若亏钱效应扩散，放弃接力。",
+    "观察软件与通用设备强势核心是否同步承接；未形成同步时维持观察而非认定主线。",
+    "观察光模块核心能否从相对强转为稳定承接，并检查存储、专用设备高成交弱锚是否止跌。",
+    "总仓位上限为0%，保持防御，不新增风险敞口。"
   ],
   "decision_state": {
     "consensus": [
+      {
+        "type": "stock",
+        "code": "002771",
+        "name": "真视通",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
+      {
+        "type": "stock",
+        "code": "000530",
+        "name": "冰山冷热",
+        "tier": "TIER_A",
+        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
+      },
       {
         "type": "stock",
         "code": "002685",
         "name": "华东重机",
         "tier": "TIER_A",
         "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
-      },
-      {
-        "type": "stock",
-        "code": "600715",
-        "name": "文投控股",
-        "tier": "TIER_A",
-        "summary": "Rule与Researcher共同选择，Reviewer=KEEP_WITH_CAUTION"
       }
     ],
     "disagreement": [
-      {
-        "type": "stock",
-        "code": "002148",
-        "name": "北纬科技",
-        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
-      },
       {
         "type": "stock",
         "code": "600410",
@@ -323,15 +354,15 @@
       },
       {
         "type": "stock",
-        "code": "002086",
-        "name": "东方海洋",
-        "summary": "多系统存在明显分歧，Reviewer=None"
+        "code": "002579",
+        "name": "中京电子",
+        "summary": "多系统存在明显分歧，Reviewer=DOWNGRADE"
       },
       {
-        "type": "market_regime",
-        "rule": "NEUTRAL",
-        "researcher": "RISK_OFF",
-        "reviewer": "UNCERTAIN"
+        "type": "stock",
+        "code": "600722",
+        "name": "金牛化工",
+        "summary": "多系统存在明显分歧，Reviewer=None"
       }
     ],
     "uncertainty": []

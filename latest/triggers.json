@@ -1,15 +1,15 @@
 {
-  "trade_date": "20261126",
+  "trade_date": "20261127",
   "market_regime": "RISK_ON_ROTATION",
   "max_total_position": 0.7,
   "A1": [
     {
-      "股票代码": "002148",
-      "名称": "北纬科技",
-      "reference_close": 11.3,
-      "reference_high": 11.3,
-      "reference_low": 9.24,
-      "score": 14,
+      "股票代码": "600183",
+      "名称": "生益科技",
+      "reference_close": 68.04,
+      "reference_high": 68.04,
+      "reference_low": 60.74,
+      "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -23,12 +23,12 @@
       ]
     },
     {
-      "股票代码": "002771",
-      "名称": "真视通",
-      "reference_close": 19.6,
-      "reference_high": 19.86,
-      "reference_low": 17.41,
-      "score": 14,
+      "股票代码": "603228",
+      "名称": "景旺电子",
+      "reference_close": 64.53,
+      "reference_high": 64.53,
+      "reference_low": 57.72,
+      "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -42,12 +42,12 @@
       ]
     },
     {
-      "股票代码": "000678",
-      "名称": "襄阳轴承",
-      "reference_close": 21.96,
-      "reference_high": 21.96,
-      "reference_low": 18.76,
-      "score": 12,
+      "股票代码": "603083",
+      "名称": "剑桥科技",
+      "reference_close": 105.63,
+      "reference_high": 105.63,
+      "reference_low": 95.5,
+      "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -61,12 +61,12 @@
       ]
     },
     {
-      "股票代码": "000530",
-      "名称": "冰山冷热",
-      "reference_close": 16.17,
-      "reference_high": 16.17,
-      "reference_low": 14.13,
-      "score": 12,
+      "股票代码": "603986",
+      "名称": "兆易创新",
+      "reference_close": 217.34,
+      "reference_high": 217.34,
+      "reference_low": 197.25,
+      "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -80,12 +80,12 @@
       ]
     },
     {
-      "股票代码": "002261",
-      "名称": "拓维信息",
-      "reference_close": 20.96,
-      "reference_high": 20.96,
-      "reference_low": 18.54,
-      "score": 12,
+      "股票代码": "601138",
+      "名称": "工业富联",
+      "reference_close": 44.74,
+      "reference_high": 44.82,
+      "reference_low": 40.66,
+      "score": 11,
       "trigger": [
         "次日开盘后不出现明显冲高回落",
         "前30分钟相对对应指数保持强势",
@@ -101,88 +101,12 @@
   ],
   "A2": [
     {
-      "股票代码": "001309",
-      "名称": "德明利",
-      "reference_close": 157.66,
-      "reference_high": 162.7,
-      "reference_low": 154.5,
-      "score": 6,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "002463",
-      "名称": "沪电股份",
-      "reference_close": 81.09,
-      "reference_high": 84.48,
-      "reference_low": 79.6,
-      "score": 6,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "603986",
-      "名称": "兆易创新",
-      "reference_close": 197.58,
-      "reference_high": 202.83,
-      "reference_low": 194.0,
-      "score": 5,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "603228",
-      "名称": "景旺电子",
-      "reference_close": 58.66,
-      "reference_high": 60.85,
-      "reference_low": 57.6,
-      "score": 5,
-      "trigger": [
-        "必须先出现从弱转强，而不是因为板块概念直接买入",
-        "前30分钟相对指数由负转正",
-        "重新站回前一日收盘附近并出现承接",
-        "对应主线核心风向标同步转强"
-      ],
-      "invalidation": [
-        "继续DAY_UNDERPERFORM",
-        "冲高再次形成SPIKE_FADE",
-        "板块核心风向标继续走弱"
-      ]
-    },
-    {
-      "股票代码": "603083",
-      "名称": "剑桥科技",
-      "reference_close": 96.03,
-      "reference_high": 99.1,
-      "reference_low": 94.0,
-      "score": 5,
+      "股票代码": "600103",
+      "名称": "XD青山纸",
+      "reference_close": 4.06,
+      "reference_high": 4.24,
+      "reference_low": 3.76,
+      "score": 8,
       "trigger": [
         "必须先出现从弱转强，而不是因为板块概念直接买入",
         "前30分钟相对指数由负转正",
